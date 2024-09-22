@@ -27,6 +27,6 @@
     "gitbook-plugin-hints": "^1.0.2",
     "gitbook-plugin-intopic-toc": "^1.1.1",
     "honkit": "^5.1.4",
-    "honkit-plugin-tooltips": "^0.0.4"
+    "honkit-plugin-tooltips": "^0.0.5"
   }
 }

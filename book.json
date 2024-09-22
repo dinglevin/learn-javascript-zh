@@ -1,0 +1,21 @@
+{
+    "title": "JavaScript学习教程, 初学者版本",
+    "description": "JavaScript学习教程, 初学者版本",
+    "author": "Suman Kunwar, dinglevin",
+    "language": "zh-cn",
+    "website": "https://learn-javascript.dinglevin.tech/",
+    "keywords": "JavaScript tutorial, JavaScript学习教程",
+    "theme": "Sepia",
+    "plugins": [
+        "tooltips",
+        "hints",
+        "hide-published-with",
+        "chapter-fold",
+        "intopic-toc"
+    ],
+    "pluginsConfig": {
+        "intopic-toc": {
+            "label": "In this Chapter"
+        }
+    }
+}

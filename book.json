@@ -6,16 +6,23 @@
     "website": "https://learn-javascript.dinglevin.tech/",
     "keywords": "JavaScript tutorial, JavaScript学习教程",
     "theme": "Sepia",
+    "styles": {
+        "website": ".gitbook/css/custom.css"
+    },
+    "structure": {
+        "readme": "README.md",
+        "summary": "SUMMARY.md"
+    },
     "plugins": [
-        "tooltips",
         "hints",
         "hide-published-with",
         "chapter-fold",
-        "intopic-toc"
+        "intopic-toc",
+        "tooltips"
     ],
     "pluginsConfig": {
         "intopic-toc": {
-            "label": "In this Chapter"
+            "label": "概览"
         }
     }
 }

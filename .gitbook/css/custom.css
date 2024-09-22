@@ -1,0 +1,11 @@
+/* 自定义链接样式 */
+a {
+    color: #007bff; /* 改变链接颜色 */
+    font-weight: bold; /* 使链接文字加粗 */
+    text-decoration: underline; /* 添加下划线 */
+}
+
+a:hover {
+    color: #0056b3; /* 鼠标悬停时更改颜色 */
+    text-decoration: none; /* 悬停时移除下划线 */
+}

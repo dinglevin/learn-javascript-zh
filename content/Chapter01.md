@@ -3,8 +3,7 @@ chapter: 1
 pageNumber: 9
 description: JavaScript is a high-level, interpreted, and dynamically-typed programming language primarily used for web development. It is one of the core technologies used to create interactive and dynamic websites and web applications. 
 ---
-# 第一章
-# 介绍
+# 第一章·介绍
 
 {% tooltips %}
 计算机在当今世界中非常普遍，因为它们能够快速准确地执行各种任务。它们被广泛应用于多个行业，如商业、医疗、教育和娱乐，已经成为许多人日常生活中不可或缺的一部分。除此之外，计算机还用于执行复杂的科学和数学计算、存储和处理大量数据，以及与全球各地的人进行交流。

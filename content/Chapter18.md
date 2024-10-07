@@ -1,0 +1,135 @@
+# 第十八章·Promise、async/await
+
+Promises are now used by most modern APIs. It is therefore important to understand how they work and to know how to use them to optimize the code. In this chapter, we'll define in detail what promises are and how to use them in asynchronous operations.
+
+* [Promise](./promise.md)
+* [Async/Await](./async-await.md)
+
+# Promise, async/await
+
+Imagine you are a popular book writer, and you are planning to release a new book on a certain day. Readers who have an interest in this book are adding this book to their wishlist and are notified when published or even if the release day got postponed too. On the release day, everyone gets notified and can buy the book making all parties happy. This is a real-life analogy that happens in programming.
+
+1. A "_producing code_" is something that takes time and accomplishes something. Here it's a book writer.
+2. A "_consuming code_" is someone who consumes the "producing code" once it's ready. In this case, it's a "reader".
+3. The linkage between the "_producing code_" and the "_consuming code_" can be called a _promise_ as it assures getting the results from the "_producing code_" to the "_consuming code_".
+
+# Promise
+
+The analogy that we made is also true for the JavaScript `promise` object. The constructor syntax for the `promise` object is:
+
+```javascript
+let promise = new Promise(function(resolve, reject) {
+  // executor (the producing code, "writer")
+});
+```
+
+Here, a function is passed to `new Promise` also known as the _executor_, and runs automatically upon creation. It contains the producing code that gives the result. `resolve` and `reject` are the arguments provided by the JavaScript itself and are called one of these upon results.
+
+* `resolve(value):` a callback function that returns `value` upon result
+* `reject(error)`: a callback function that returns `error` upon error, it returns an error object
+
+![Promise with resolve and reject callbacks](../../.gitbook/assets/async_await.png)
+
+The internal properties of `promise` object returned by the `new Promise` constructor are as follows:
+
+* `state` - initially `pending,` then changes to either `fulfill` upon `resolve` or `rejected` when `reject` is called
+* `result` - initially `undefined`, then changes to `value` upon `resolve` or `error` when `reject` is called
+
+{% hint style="warning" %}
+One cannot access promise properties: `state` and `result`. Promise methods are needed to handle promises.
+{% endhint %}
+
+Example of a promise.
+
+```javascript
+let promiseOne = new Promise(function(resolve, reject) {
+  // the function is executed automatically when the promise is constructed
+
+  // after 1-second signal that the job is done with the result "done"
+  setTimeout(() => resolve("done"), 1000);
+})
+
+let promiseTwo = new Promise(function(resolve, reject) {
+  // the function is executed automatically when the promise is constructed
+
+  // after 1-second signal that the job is done with the result "error"
+  setTimeout(() => reject(new Error("Whoops!")), 1000);
+})
+```
+
+Here, the `promiseOne` is an example of a "_fulfilled promise_" as it successfully resolves the values, whereas the `promiseTwo` is a "_rejected promise_" as it gets rejected. A promise that is neither rejected or resolved is called a _settled_ promise, as opposed to an initially _pending_ promise. Consuming function from the promise can be registered using the `.then` and `.catch` methods. We can also add `.finally` method for performing cleanup or finalizing after previous methods have been completed.
+
+```javascript
+let promiseOne = new Promise(function(resolve, reject) {
+  setTimeout(() => resolve("done!"), 1000);
+});
+
+// resolve runs the first function in .then
+promiseOne.then(
+  result => alert(result), // shows "done!" after 1 second
+  error => alert(error) // doesn't run
+);
+
+let promiseTwo = new Promise(function(resolve, reject) {
+  setTimeout(() => reject(new Error("Whoops!")), 1000);
+});
+
+// reject runs the second function in .then
+promiseTwo.then(
+  result => alert(result), // doesn't run
+  error => alert(error) // shows "Error: Whoops!" after 1 second
+);
+
+let promiseThree = new Promise((resolve, reject) => {
+  setTimeout(() => reject(new Error("Whoops!")), 1000);
+});
+
+// .catch(f) is the same as promise.then(null, f)
+promiseThree.catch(alert); // shows "Error: Whoops!" after 1 second
+```
+
+{% hint style="warning" %}
+In the `Promise.then()` method, both callback arguments are optional.
+{% endhint %}
+
+# Async/Await
+
+With promises, one can use a `async` keyword to declare an asynchronous function that returns a promise whereas the `await`  syntax makes JavaScript wait until that promise settles and returns its value. These keywords make promises easier to write.  An example of async is shown below.
+
+```javascript
+//async function f
+async function f() {
+  return 1;
+}
+// promise being resolved
+f().then(alert); // 1
+```
+
+The above example can be written as follows:
+
+```javascript
+function f() {
+  return Promise.resolve(1);
+}
+
+f().then(alert); // 1
+```
+
+`async` ensures that the function returns a promise, and wraps non-promises in it. With `await`, we can make JavaScript wait until the promise is settled with its value returned.&#x20;
+
+```javascript
+async function f() {
+  let promise = new Promise((resolve, reject) => {
+    setTimeout(() => resolve("Welcome to Learn JavaScript!"), 1000)
+  });
+  
+  let result = await promise; // wait until the promise resolves (*)
+  alert(result); // "Welcome to Learn JavaScript!"
+}
+
+f();
+```
+
+{% hint style="warning" %}
+The `await` keyword can only be used inside an `async` function.
+{% endhint %}

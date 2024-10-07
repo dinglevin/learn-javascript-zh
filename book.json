@@ -18,11 +18,54 @@
         "hide-published-with",
         "chapter-fold",
         "intopic-toc",
-        "tooltips"
+        "tooltips",
+        "exercises",
+        "theme-creative",
+        "sharing",
+        "@honkit/honkit-plugin-ga",
+        "sitemap",
+        "favicon-custom",
+        "edit-link",
+        "ace-editor"
     ],
     "pluginsConfig": {
         "intopic-toc": {
             "label": "概览"
+        },
+        "edit-link": {
+            "base": "https://github.com/dinglevin/learn-javascript-zh/edit/main",
+            "label": ""
+        },
+        "sitemap": {
+            "hostname": "https://javascript.sumankunwar.com.np/"
+        },
+        "sharing": {
+            "facebook": true,
+            "twitter": true,
+            "google": false,
+            "weibo": false,
+            "instapaper": false,
+            "vk": false,
+            "all": [
+                "facebook",
+                "google",
+                "twitter",
+                "weibo",
+                "instapaper"
+            ]
+        },
+        "favicon": "favicon.ico",
+        "appleTouchIconPrecomposed152": "js.png",
+        "theme-creative": {
+            "colorPrimary": "#D8CFC4",
+            "colorSecondary": "#E6D7C1",
+            "fontFamily": "'Times New Roman', serif",
+            "fontSize": 18,
+            "lineHeight": 1.6,
+            "maxWidth": "800px",
+            "textAlign": "justify",
+            "backgroundColor": "#F9F6F1",
+            "textColor": "#3E3E3E"
         }
     }
 }

@@ -22,7 +22,6 @@
   },
   "homepage": "https://github.com/dinglevin/learn-javascript-zh#readme",
   "devDependencies": {
-    "@honkit/honkit-plugin-ga": "^1.0.1",
     "cz-conventional-changelog": "^3.3.0",
     "gitbook-plugin-ace-editor": "github:sumn2u/gitbook-plugin-ace-editor",
     "gitbook-plugin-chapter-fold": "^0.0.4",

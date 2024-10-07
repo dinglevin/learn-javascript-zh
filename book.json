@@ -21,7 +21,6 @@
         "tooltips",
         "exercises",
         "sharing",
-        "@honkit/honkit-plugin-ga",
         "sitemap",
         "favicon-custom",
         "edit-link",
@@ -36,7 +35,7 @@
             "label": ""
         },
         "sitemap": {
-            "hostname": "https://javascript.sumankunwar.com.np/"
+            "hostname": "https://learn-javascript.dinglevin.tech/"
         },
         "sharing": {
             "facebook": true,

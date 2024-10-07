@@ -34,7 +34,6 @@
     "gitbook-plugin-intopic-toc": "^1.1.1",
     "gitbook-plugin-sharing": "^1.0.2",
     "gitbook-plugin-sitemap": "^1.2.0",
-    "gitbook-plugin-theme-creative": "^1.0.6",
     "honkit": "^5.1.4",
     "honkit-plugin-tooltips": "^0.0.5"
   }

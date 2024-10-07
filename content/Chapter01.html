@@ -1,0 +1,864 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-cn" >
+    <head>
+        <title>第一章·介绍 · JavaScript学习教程, 初学者版本</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="JavaScript is a high-level, interpreted, and dynamically-typed programming language primarily used for web development. It is one of the core technologies used to create interactive and dynamic websites and web applications.">
+        <meta name="generator" content="GitBook 5.1.4">
+        <meta name="author" content="Suman Kunwar, dinglevin">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-hints/plugin-hints.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-intopic-toc/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/honkit-plugin-tooltips/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-exercises/exercises.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-ace-editor/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../.gitbook/css/custom.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Chapter02.html" />
+    
+    
+    <link rel="prev" href="Preface.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="輸入並搜尋" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="Dedication.html">
+            
+                <a href="Dedication.html">
+            
+                    
+                    献词
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Copyright.html">
+            
+                <a href="Copyright.html">
+            
+                    
+                    版权声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="Preface.html">
+            
+                <a href="Preface.html">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5" data-path="Chapter01.html">
+            
+                <a href="Chapter01.html">
+            
+                    
+                    第一章·介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="Chapter02.html">
+            
+                <a href="Chapter02.html">
+            
+                    
+                    第二章·基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="Chapter03.html">
+            
+                <a href="Chapter03.html">
+            
+                    
+                    第三章·数值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="Chapter04.html">
+            
+                <a href="Chapter04.html">
+            
+                    
+                    第四章·字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="Chapter05.html">
+            
+                <a href="Chapter05.html">
+            
+                    
+                    第五章·条件逻辑
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="Chapter06.html">
+            
+                <a href="Chapter06.html">
+            
+                    
+                    第六章·数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="Chapter07.html">
+            
+                <a href="Chapter07.html">
+            
+                    
+                    第七章·循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="Chapter08.html">
+            
+                <a href="Chapter08.html">
+            
+                    
+                    第八章·函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="Chapter09.html">
+            
+                <a href="Chapter09.html">
+            
+                    
+                    第九章·对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="Chapter10.html">
+            
+                <a href="Chapter10.html">
+            
+                    
+                    第十章·日期和时间
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="Chapter11.html">
+            
+                <a href="Chapter11.html">
+            
+                    
+                    第十一章·JSON
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="Chapter12.html">
+            
+                <a href="Chapter12.html">
+            
+                    
+                    第十二章·错误处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="Chapter13.html">
+            
+                <a href="Chapter13.html">
+            
+                    
+                    第十三章·模块化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="Chapter14.html">
+            
+                <a href="Chapter14.html">
+            
+                    
+                    第十四章·正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="Chapter15.html">
+            
+                <a href="Chapter15.html">
+            
+                    
+                    第十五章·类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="Chapter16.html">
+            
+                <a href="Chapter16.html">
+            
+                    
+                    第十六章·浏览器对象模型(BOM)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="Chapter17.html">
+            
+                <a href="Chapter17.html">
+            
+                    
+                    第十七章·事件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="Chapter18.html">
+            
+                <a href="Chapter18.html">
+            
+                    
+                    第十八章·Promise、async/await
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="Chapter19.html">
+            
+                <a href="Chapter19.html">
+            
+                    
+                    第十九章·其他杂项
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="Chapter20.html">
+            
+                <a href="Chapter20.html">
+            
+                    
+                    第二十章·服务端代码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="Chapter21.html">
+            
+                <a href="Chapter21.html">
+            
+                    
+                    第二十一章·实战练习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="Chapter22.html">
+            
+                <a href="Chapter22.html">
+            
+                    
+                    第二十二章·面试问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27" data-path="Chapter23.html">
+            
+                <a href="Chapter23.html">
+            
+                    
+                    第二十三章·设计模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.28" data-path="Chapter24.html">
+            
+                <a href="Chapter24.html">
+            
+                    
+                    第二十四章·文件系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29" data-path="Chapter25.html">
+            
+                <a href="Chapter25.html">
+            
+                    
+                    第二十五章·ES6概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.30" data-path="Chapter26.html">
+            
+                <a href="Chapter26.html">
+            
+                    
+                    第二十六章·动画资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.31" data-path="Chapter27.html">
+            
+                <a href="Chapter27.html">
+            
+                    
+                    第二十七章·JavaScript运行原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.32" data-path="References.html">
+            
+                <a href="References.html">
+            
+                    
+                    引用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.33" data-path="Resources.html">
+            
+                <a href="Resources.html">
+            
+                    
+                    资料
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34" data-path="Credits.html">
+            
+                <a href="Credits.html">
+            
+                    
+                    鸣谢
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本書使用 GitBook 釋出
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >第一章·介绍</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="第一章·介绍">第一章·介绍</h1>
+<p>
+            </p><div class="tooltips">
+                <p>计算机在当今世界中非常普遍，因为它们能够快速准确地执行各种任务。它们被广泛应用于多个行业，如商业、医疗、教育和娱乐，已经成为许多人日常生活中不可或缺的一部分。除此之外，计算机还用于执行复杂的科学和数学计算、存储和处理大量数据，以及与全球各地的人进行交流。</p>
+
+                <div class="tooltipstext-bottom"><p>Computers are common in today's world, as they are able to perform a wide variety of tasks quickly and accurately. They are used in many different industries, such as business, healthcare, education, and entertainment, and have become an essential part of daily life for many people. Besides this, they are also used to perform complex scientific and mathematical calculations, to store and process large amounts of data, and to communicate with people around the world.</p>
+</div>
+            </div>
+        <p></p>
+<p>
+            </p><div class="tooltips">
+                <p>编程是为计算机创建一组指令（称为程序）的过程。编写程序有时可能会非常繁琐和令人沮丧，因为计算机非常精确，需要特定的指令才能完成任务。</p>
+
+                <div class="tooltipstext-bottom"><p>Programming involves creating a set of instructions, called a program, for a computer to follow. Writing a program can be tedious and frustrating at times because computers are very precise and need specific instructions in order to complete tasks.</p>
+</div>
+            </div>
+        <p></p>
+<p><img src="../.gitbook/assets/intro.png" alt="Intro Page"></img></p>
+<p>
+            </p><div class="tooltips">
+                <p>编程语言是用于向计算机发出指令的人造语言。它们用于大多数编程任务，基于人类之间的交流方式。像人类语言一样，编程语言允许通过组合单词和短语来表达新的概念。有趣的是，与计算机进行最有效的交流方式涉及使用与人类语言相似的语言。</p>
+
+                <div class="tooltipstext-bottom"><p>Programming languages are artificial languages used to give instructions to computers. They are used in most programming tasks and are based on the way humans communicate with each other. Like human languages, programming languages allow words and phrases to be combined to express new concepts. It is interesting to note that the most effective way to communicate with computers involves using a language that is similar to human language.</p>
+</div>
+            </div>
+        <p></p>
+<p>
+            </p><div class="tooltips">
+                <p>过去，主要与计算机交互的方式是通过基于语言的接口，如 BASIC 和 DOS 提示符。这些接口大多已被视觉界面取代，后者更易于学习但灵活性较低。然而，像 <em>JavaScript</em> 这样的计算机语言仍在使用中，并且可以在现代 Web 浏览器和大多数设备上找到。</p>
+
+                <div class="tooltipstext-bottom"><p>In the past, the primary way to interact with computers was through language-based interfaces like BASIC and DOS prompts. These have been largely replaced by visual interfaces, which are easier to learn but offer less flexibility. However, computer languages like <em>JavaScript</em> are still in use and can be found in modern web browsers and on most devices.</p>
+</div>
+            </div>
+        <p></p>
+<p>
+            </p><div class="tooltips">
+                <p>JavaScript（<em>简称 JS</em>）是一种编程语言，用于在开发网页、游戏、应用程序甚至服务器时创建动态交互。JavaScript 起源于 1990 年代开发的网页浏览器 Netscape，如今是最著名和使用最广泛的编程语言之一。</p>
+
+                <div class="tooltipstext-bottom"><p>JavaScript (<em>JS for short</em>) is the programming language that is used to create dynamic interaction while developing webpages, games, applications, and even servers. JavaScript started at Netscape, a web browser developed in the 1990s, and is today one of the most famous and used programming languages.</p>
+</div>
+            </div>
+        <p></p>
+<p>
+            </p><div class="tooltips">
+                <p>最初，它是为让网页变得生动而创建的，只能在浏览器中运行。而现在，任何支持 JavaScript 引擎的设备都可以运行它。JavaScript 中提供了标准对象，如 <a href="arrays/README.md">Array</a>、<a href="date-and-time.md">Date</a> 和 <a href="numbers/math.md">Math</a>，以及运算符、控制结构和语句。<em>客户端 JavaScript</em> 和<em>服务器端 JavaScript</em> 是核心 JavaScript 的扩展版本。</p>
+
+                <div class="tooltipstext-bottom"><p>Initially, it was created for making webpages alive and was able to run only on a browser. Now, it runs on any device that supports the JavaScript engine. Standard objects such as <a href="arrays/README.md">Array</a>, <a href="date-and-time.md">Date</a>, and <a href="numbers/math.md">Math</a> are available in JavaScript, as well as operators, control structures, and statements. <em>Client-side JavaScript</em> and <em>Server-side JavaScript</em> are the extended versions of core JavaScript.</p>
+</div>
+            </div>
+        <p></p>
+<p>
+            </p><div class="tooltips">
+                <ul>
+<li><em>客户端 JavaScript</em> 使网页和客户端浏览器的增强和操作成为可能。响应用户事件，如鼠标点击、表单输入和页面导航，便是其一些示例。</li>
+<li><a href="server-side/README.md"><em>服务器端 JavaScript</em></a> 则允许访问服务器、数据库和文件系统。</li>
+</ul>
+
+                <div class="tooltipstext-bottom"><ul>
+<li><em>Client-side JavaScript</em> enables the enhancement and manipulation of web pages, and client browsers. Responses to user events such as mouse clicks, form input, and page navigation are some of its examples.</li>
+<li><a href="server-side/README.md"><em>Server-side JavaScript</em></a> enables access to servers, databases, and file systems.</li>
+</ul>
+</div>
+            </div>
+        <p></p>
+<p>
+            </p><div class="tooltips">
+                <p>JavaScript 是一种解释型语言。在运行 JavaScript 时，解释器逐行解释并执行代码。现代浏览器使用<a href="https://hacks.mozilla.org/2017/02/a-crash-course-in-just-in-time-jit-compilers/" target="_blank">即时编译器（JIT 编译器）</a>来编译，将 JavaScript 编译成可执行的字节码。</p>
+
+                <div class="tooltipstext-bottom"><p>JavaScript is an interpreted language. While running Javascript an interpreter interprets each line and runs it. The modern browser uses <a href="https://hacks.mozilla.org/2017/02/a-crash-course-in-just-in-time-jit-compilers/" target="_blank">Just In Time (JIT)</a> compilers for compilation, which compiles JavaScript into executable bytecode.</p>
+</div>
+            </div>
+        <p></p>
+<p>
+            </p><div class="tooltips">
+                
+        <div class="alert alert-info hints-alert">
+            <div class="hints-icon"><i class="fa fa-info-circle"></i></div>
+            <div class="hints-container"><p>JavaScript 最初的名字是 "LiveScript"。</p>
+</div>
+        </div>
+    
+                <div class="tooltipstext-bottom"><p>"LiveScript" was the initial name given to JavaScript.</p>
+</div>
+            </div>
+        <p></p>
+<p>
+            </p><div class="tooltips">
+                <h3 id="代码、如何处理以及如何排版">代码、如何处理以及如何排版</h3>
+
+                <div class="tooltipstext-bottom"><p>Code, and what to do with it and Typographic conventions</p>
+</div>
+            </div>
+        <p></p>
+<p>
+            </p><div class="tooltips">
+                <p><em>代码</em>是构成程序的书面指令。在这里，许多章节包含大量代码，阅读和编写代码是学习编程的重要组成部分。你不应该只是快速浏览例子，而是要认真阅读并尝试理解它们。刚开始时这可能会有些困难，但通过练习，你会有所进步。练习题也是如此——确保在假设你理解之前，实际尝试写出解决方案。将你的解决方案在 JavaScript 解释器中运行也是有帮助的，这样可以让你查看代码是否正确工作，并鼓励你进行实验，超越练习内容。</p>
+
+                <div class="tooltipstext-bottom"><p><em>Code</em> is the written instructions that make up a program. Here, many chapters contain a lot of code, and it is important to read and write code as part of learning how to program. You should not just quickly scan the examples - read them carefully and try to understand them. This may be difficult at first, but with practice, you will improve. The same goes for the exercises - make sure you actually try to write a solution before assuming you understand them. It is also helpful to try running your solutions to the exercises in a JavaScript interpreter, as this will allow you to see if your code is working correctly and may encourage you to experiment and go beyond the exercises.</p>
+</div>
+            </div>
+        <p></p>
+<p>
+            </p><div class="tooltips">
+                <p>在这里，使用等宽字体书写的文本表示程序的元素。这可以是一个独立的片段，也可以是对附近程序部分的引用。程序，如下所示，都是这样书写的：</p>
+
+                <div class="tooltipstext-bottom"><p>Here, text is written in a monospaced font represents elements of a program. This can be a self-contained fragment or a reference to part of a nearby program. Programs, like the one shown below, are written in this way:</p>
+</div>
+            </div>
+        <p></p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> numbers = [<span class="hljs-number">45</span>, <span class="hljs-number">4</span>, <span class="hljs-number">9</span>, <span class="hljs-number">16</span>, <span class="hljs-number">25</span>];
+<span class="hljs-keyword">let</span> txt = <span class="hljs-string">""</span>;
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> x <span class="hljs-keyword">in</span> numbers) {
+  txt += numbers[x];
+}
+</code></pre>
+<p>
+            </p><div class="tooltips">
+                <p>有时，程序的预期输出会写在代码后面，前面加上两个斜杠和<em>Result</em>，如下所示：</p>
+
+                <div class="tooltipstext-bottom"><p>Sometimes, the expected output of a program is written after it, preceded by two slashes with a <em>Result</em>, like this:</p>
+</div>
+            </div>
+        <p></p>
+<pre><code class="lang-javascript"><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(txt);
+
+<span class="hljs-comment">// Result: txt = '45491625'</span>
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Preface.html" class="navigation navigation-prev " aria-label="Previous page: 前言">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Chapter02.html" class="navigation navigation-next " aria-label="Next page: 第二章·基础">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"chapter":1,"pageNumber":9,"description":"JavaScript is a high-level, interpreted, and dynamically-typed programming language primarily used for web development. It is one of the core technologies used to create interactive and dynamic websites and web applications.","title":"第一章·介绍","level":"1.5","depth":1,"next":{"title":"第二章·基础","level":"1.6","depth":1,"path":"content/Chapter02.md","ref":"content/Chapter02.md","articles":[]},"previous":{"title":"前言","level":"1.4","depth":1,"path":"content/Preface.md","ref":"content/Preface.md","articles":[]},"dir":"ltr"},"config":{"plugins":["hints","hide-published-with","chapter-fold","intopic-toc","tooltips","exercises","theme-creative","sharing","@honkit/honkit-plugin-ga","sitemap","favicon-custom","edit-link","ace-editor"],"styles":{"website":".gitbook/css/custom.css"},"pluginsConfig":{"chapter-fold":{},"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"概览"},"search":{},"favicon-custom":{"favicon":"./favicon.ico","appleTouchIconPrecomposed152":"./favicon.ico"},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"tooltips":{},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-creative":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"maxWidth":"800px","showLevel":false,"fontSize":18,"colorSecondary":"#E6D7C1","fontFamily":"'Times New Roman', serif","backgroundColor":"#F9F6F1","textColor":"#3E3E3E","textAlign":"justify","lineHeight":1.6,"colorPrimary":"#D8CFC4"},"highlight":{},"favicon":"favicon.ico","sitemap":{"hostname":"https://javascript.sumankunwar.com.np/"},"@honkit/honkit-plugin-ga":{},"ace-editor":{},"appleTouchIconPrecomposed152":"js.png","exercises":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"","base":"https://github.com/dinglevin/learn-javascript-zh/edit/main"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"Sepia","keywords":"JavaScript tutorial, JavaScript学习教程","author":"Suman Kunwar, dinglevin","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"JavaScript学习教程, 初学者版本","language":"zh-cn","website":"https://learn-javascript.dinglevin.tech/","gitbook":"*","description":"JavaScript学习教程, 初学者版本"},"file":{"path":"content/Chapter01.md","mtime":"2024-10-07T08:10:38.063Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-10-07T08:10:49.404Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook-plugin-exercises/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+    
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-published-with/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-intopic-toc/anchor.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-intopic-toc/gumshoe.polyfills.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-intopic-toc/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/ace/theme-tomorrow.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/ace/mode-javascript.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/exercises.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace-editor/ace.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace-editor/ace/theme-tomorrow.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace-editor/ace/mode-javascript.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace-editor/main.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+
+    </body>
+</html>
+

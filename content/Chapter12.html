@@ -1,0 +1,877 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-cn" >
+    <head>
+        <title>第十二章·错误处理 · JavaScript学习教程, 初学者版本</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 5.1.4">
+        <meta name="author" content="Suman Kunwar, dinglevin">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-hints/plugin-hints.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-intopic-toc/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/honkit-plugin-tooltips/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-exercises/exercises.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-ace-editor/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../.gitbook/css/custom.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Chapter13.html" />
+    
+    
+    <link rel="prev" href="Chapter11.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="輸入並搜尋" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="Dedication.html">
+            
+                <a href="Dedication.html">
+            
+                    
+                    献词
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Copyright.html">
+            
+                <a href="Copyright.html">
+            
+                    
+                    版权声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="Preface.html">
+            
+                <a href="Preface.html">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="Chapter01.html">
+            
+                <a href="Chapter01.html">
+            
+                    
+                    第一章·介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="Chapter02.html">
+            
+                <a href="Chapter02.html">
+            
+                    
+                    第二章·基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="Chapter03.html">
+            
+                <a href="Chapter03.html">
+            
+                    
+                    第三章·数值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="Chapter04.html">
+            
+                <a href="Chapter04.html">
+            
+                    
+                    第四章·字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="Chapter05.html">
+            
+                <a href="Chapter05.html">
+            
+                    
+                    第五章·条件逻辑
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="Chapter06.html">
+            
+                <a href="Chapter06.html">
+            
+                    
+                    第六章·数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="Chapter07.html">
+            
+                <a href="Chapter07.html">
+            
+                    
+                    第七章·循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="Chapter08.html">
+            
+                <a href="Chapter08.html">
+            
+                    
+                    第八章·函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="Chapter09.html">
+            
+                <a href="Chapter09.html">
+            
+                    
+                    第九章·对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="Chapter10.html">
+            
+                <a href="Chapter10.html">
+            
+                    
+                    第十章·日期和时间
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="Chapter11.html">
+            
+                <a href="Chapter11.html">
+            
+                    
+                    第十一章·JSON
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.16" data-path="Chapter12.html">
+            
+                <a href="Chapter12.html">
+            
+                    
+                    第十二章·错误处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="Chapter13.html">
+            
+                <a href="Chapter13.html">
+            
+                    
+                    第十三章·模块化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="Chapter14.html">
+            
+                <a href="Chapter14.html">
+            
+                    
+                    第十四章·正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="Chapter15.html">
+            
+                <a href="Chapter15.html">
+            
+                    
+                    第十五章·类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="Chapter16.html">
+            
+                <a href="Chapter16.html">
+            
+                    
+                    第十六章·浏览器对象模型(BOM)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="Chapter17.html">
+            
+                <a href="Chapter17.html">
+            
+                    
+                    第十七章·事件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="Chapter18.html">
+            
+                <a href="Chapter18.html">
+            
+                    
+                    第十八章·Promise、async/await
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="Chapter19.html">
+            
+                <a href="Chapter19.html">
+            
+                    
+                    第十九章·其他杂项
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="Chapter20.html">
+            
+                <a href="Chapter20.html">
+            
+                    
+                    第二十章·服务端代码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="Chapter21.html">
+            
+                <a href="Chapter21.html">
+            
+                    
+                    第二十一章·实战练习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="Chapter22.html">
+            
+                <a href="Chapter22.html">
+            
+                    
+                    第二十二章·面试问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27" data-path="Chapter23.html">
+            
+                <a href="Chapter23.html">
+            
+                    
+                    第二十三章·设计模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.28" data-path="Chapter24.html">
+            
+                <a href="Chapter24.html">
+            
+                    
+                    第二十四章·文件系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29" data-path="Chapter25.html">
+            
+                <a href="Chapter25.html">
+            
+                    
+                    第二十五章·ES6概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.30" data-path="Chapter26.html">
+            
+                <a href="Chapter26.html">
+            
+                    
+                    第二十六章·动画资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.31" data-path="Chapter27.html">
+            
+                <a href="Chapter27.html">
+            
+                    
+                    第二十七章·JavaScript运行原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.32" data-path="References.html">
+            
+                <a href="References.html">
+            
+                    
+                    引用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.33" data-path="Resources.html">
+            
+                <a href="Resources.html">
+            
+                    
+                    资料
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34" data-path="Credits.html">
+            
+                <a href="Credits.html">
+            
+                    
+                    鸣谢
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本書使用 GitBook 釋出
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >第十二章·错误处理</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="第十二章·错误处理">第十二章·错误处理</h1>
+<p>Errors are an inevitable part of software development. Handling them effectively is crucial for writing robust and reliable JavaScript code. This guide will walk you through the fundamentals of error handling in JavaScript, including why it's important, types of errors, and how to use the <code>try...catch</code> statement.</p>
+<h2 id="why-error-handling-matters">Why Error Handling Matters</h2>
+<p>Error handling is essential for several reasons:</p>
+<ul>
+<li><strong>Graceful Recovery</strong>: It allows your code to recover gracefully from unexpected issues and continue executing.</li>
+<li><strong>User Experience</strong>: Effective error handling enhances the user experience by providing meaningful error messages.</li>
+<li><strong>Debugging</strong>: Properly handled errors make debugging easier as you can pinpoint issues quickly.</li>
+<li><strong>Code Reliability</strong>: Error handling ensures that your code is reliable and robust, reducing the risk of crashes.</li>
+</ul>
+<h2 id="types-of-errors">Types of Errors</h2>
+<p>JavaScript errors can be categorized into several types, including:</p>
+<ul>
+<li><strong>Syntax Errors</strong>: Errors that occur due to incorrect syntax.</li>
+<li><strong>Runtime Errors</strong>: Errors that happen during code execution.</li>
+<li><strong>Logic Errors</strong>: Errors resulting from flawed logic in the code.</li>
+</ul>
+<h2 id="common-use-cases">Common Use Cases</h2>
+<p>Handling network requests that might fail.
+Parsing and validating user input.
+Managing third-party library errors.</p>
+<h2 id="advantages-of-error-handling">Advantages of Error Handling</h2>
+<p>Effective error handling offers several advantages:</p>
+<ul>
+<li>Prevents script termination.</li>
+<li>Allows for controlled handling of errors.</li>
+<li>Provides detailed error information for debugging.</li>
+<li>Enhances code reliability and user experience.</li>
+</ul>
+<h2 id="best-practices">Best Practices</h2>
+<p>To make the most of error handling, consider these best practices:</p>
+<ul>
+<li>Use specific error types whenever possible.</li>
+<li>Log errors for debugging purposes.</li>
+<li>Provide clear and user-friendly error messages.</li>
+<li>Handle errors as close to their source as possible.</li>
+</ul>
+<h2 id="trycatch-error-handling">try...catch Error Handling:</h2>
+<p>One of the common error handling techniques is the <code>try...catch</code> block, which is described in the following sections.</p>
+<ul>
+<li><a href="try...-catch.md">try...catch</a></li>
+<li><a href="try...catch...finally.md">try...catch...finally</a></li>
+</ul>
+<p>Error handling is a critical aspect of JavaScript development.
+By understanding the types of errors, and following best practices, 
+you can write more reliable and user-friendly applications.</p>
+<h1 id="try-catch">try... catch</h1>
+<p>Instead of halting the code execution, we can use the <code>try...catch</code> construct that allows catching errors without dying the script. The <code>try...catch</code> construct has two main blocks; <code>try</code> and then <code>catch</code>. </p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">try</span> {
+  <span class="hljs-comment">// code...</span>
+} <span class="hljs-keyword">catch</span> (err) {
+  <span class="hljs-comment">// error handling</span>
+}
+</code></pre>
+<p>At first, the code in the <code>try</code> block is executed. If no errors are encountered then it skips the <code>catch</code> block. If an error occurs then the <code>try</code> execution is stopped, moving the control sequence to the <code>catch</code> block. The cause of the error is captured in <code>err</code> variable.</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">try</span> {
+  <span class="hljs-comment">// code...</span>
+  <span class="hljs-title function_">alert</span>(<span class="hljs-string">'Welcome to Learn JavaScript'</span>);  
+  asdk; <span class="hljs-comment">// error asdk variable is not defined</span>
+} <span class="hljs-keyword">catch</span> (err) {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"Error has occurred"</span>);
+}
+</code></pre>
+<p></p><div class="alert alert-undefined hints-alert"><div class="hints-icon"><i class="undefined"></i></div><div class="hints-container"><p><code>try...catch</code> works for runtime errors meaning that the code must be runnable and synchronous.</p>
+</div></div><p></p>
+<p>To throw a custom error, a <code>throw</code> statement can be used. The error object, that gets generated by errors has two main properties. </p>
+<ul>
+<li><strong>name</strong>:  error name</li>
+<li><strong>message</strong>: details about the error </li>
+</ul>
+<p></p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle"></i></div><div class="hints-container"><p>If we don't need an <code>error</code> message catch can be omitted.</p>
+</div></div><p></p>
+<h1 id="trycatchfinally">try...catch...finally</h1>
+<p>We can add one more construct to <code>try...catch</code> called <code>finally</code>, this code executes in all cases. i.e. after <code>try</code> when there is no error and after a <code>catch</code> in case of error. The syntax for <code>try ...catch...finally</code> is shown below.</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">try</span> {
+   <span class="hljs-comment">// try to execute the code</span>
+} <span class="hljs-keyword">catch</span> (err) {
+    <span class="hljs-comment">// handle errors </span>
+} <span class="hljs-keyword">finally</span> {
+   <span class="hljs-comment">// execute always</span>
+}
+</code></pre>
+<p>Running real-world example code.</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">try</span> {
+  <span class="hljs-title function_">alert</span>( <span class="hljs-string">'try'</span> );
+} <span class="hljs-keyword">catch</span> (err) {
+  <span class="hljs-title function_">alert</span>( <span class="hljs-string">'catch'</span> );
+} <span class="hljs-keyword">finally</span> {
+  <span class="hljs-title function_">alert</span>( <span class="hljs-string">'finally'</span> );
+}
+</code></pre>
+<p>In the above example, the <code>try</code> block is executed first which is then followed by <code>finally</code> as there are no errors.</p>
+<p></p><div class="exercise">
+	<div class="header">Exercise</div>
+	<div class="alert alert-success">
+	    <b>Correct!</b>
+	</div>
+
+	<div class="alert alert-danger error-message">
+	    <b>False!</b>
+	</div>
+
+	<div class="message">
+	
+Write a function `divideNumbers()` that takes two arguments numerator and denominator and returns the result of dividing numerator by denominator using following settings.
+
+
+	</div>
+	<div class="editor" style="height: 240px">function divideNumbers(numerator, denominator) {
+    try {
+      // try statement to divide numerator by denominator.
+    } catch (error) {
+      // print error message
+    } finally {
+      // print execution has finished
+    }
+   // return result
+  }
+  let answer = divideNumbers(10, 2);</div>
+
+	<pre class="hidden code-solution">function divideNumbers(numerator, denominator) {
+  let result;
+    try {
+      result = numerator / denominator;
+    } catch (error) {
+      console.error(`Error: ${error}`);
+    } finally {
+      console.log('Function finished executing');
+    }
+    return result;
+  }
+let answer = divideNumbers(10, 2);</pre>
+	<pre class="hidden code-validation">assert(answer == 5);</pre>
+	
+
+	<div class="buttons">
+	    <a href="#" class="button size-2 action-submit">Submit</a>
+	    <a href="#" class="button size-2 action-solution">Solution</a>
+	</div>
+</div><p></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Chapter11.html" class="navigation navigation-prev " aria-label="Previous page: 第十一章·JSON">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Chapter13.html" class="navigation navigation-next " aria-label="Next page: 第十三章·模块化">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"第十二章·错误处理","level":"1.16","depth":1,"next":{"title":"第十三章·模块化","level":"1.17","depth":1,"path":"content/Chapter13.md","ref":"content/Chapter13.md","articles":[]},"previous":{"title":"第十一章·JSON","level":"1.15","depth":1,"path":"content/Chapter11.md","ref":"content/Chapter11.md","articles":[]},"dir":"ltr"},"config":{"plugins":["hints","hide-published-with","chapter-fold","intopic-toc","tooltips","exercises","theme-creative","sharing","@honkit/honkit-plugin-ga","sitemap","favicon-custom","edit-link","ace-editor"],"styles":{"website":".gitbook/css/custom.css"},"pluginsConfig":{"chapter-fold":{},"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"概览"},"search":{},"favicon-custom":{"favicon":"./favicon.ico","appleTouchIconPrecomposed152":"./favicon.ico"},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"tooltips":{},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-creative":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"maxWidth":"800px","showLevel":false,"fontSize":18,"colorSecondary":"#E6D7C1","fontFamily":"'Times New Roman', serif","backgroundColor":"#F9F6F1","textColor":"#3E3E3E","textAlign":"justify","lineHeight":1.6,"colorPrimary":"#D8CFC4"},"highlight":{},"favicon":"favicon.ico","sitemap":{"hostname":"https://javascript.sumankunwar.com.np/"},"@honkit/honkit-plugin-ga":{},"ace-editor":{},"appleTouchIconPrecomposed152":"js.png","exercises":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"","base":"https://github.com/dinglevin/learn-javascript-zh/edit/main"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"Sepia","keywords":"JavaScript tutorial, JavaScript学习教程","author":"Suman Kunwar, dinglevin","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"JavaScript学习教程, 初学者版本","language":"zh-cn","website":"https://learn-javascript.dinglevin.tech/","gitbook":"*","description":"JavaScript学习教程, 初学者版本"},"file":{"path":"content/Chapter12.md","mtime":"2024-10-07T08:10:38.064Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-10-07T08:10:49.404Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook-plugin-exercises/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+    
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-published-with/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-intopic-toc/anchor.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-intopic-toc/gumshoe.polyfills.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-intopic-toc/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/ace/theme-tomorrow.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/ace/mode-javascript.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/exercises.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace-editor/ace.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace-editor/ace/theme-tomorrow.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace-editor/ace/mode-javascript.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace-editor/main.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+
+    </body>
+</html>
+

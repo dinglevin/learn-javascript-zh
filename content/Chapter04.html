@@ -1,0 +1,1130 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-cn" >
+    <head>
+        <title>第四章·字符串 · JavaScript学习教程, 初学者版本</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 5.1.4">
+        <meta name="author" content="Suman Kunwar, dinglevin">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-hints/plugin-hints.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-intopic-toc/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/honkit-plugin-tooltips/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-exercises/exercises.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-ace-editor/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../.gitbook/css/custom.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Chapter05.html" />
+    
+    
+    <link rel="prev" href="Chapter03.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="輸入並搜尋" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="Dedication.html">
+            
+                <a href="Dedication.html">
+            
+                    
+                    献词
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Copyright.html">
+            
+                <a href="Copyright.html">
+            
+                    
+                    版权声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="Preface.html">
+            
+                <a href="Preface.html">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="Chapter01.html">
+            
+                <a href="Chapter01.html">
+            
+                    
+                    第一章·介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="Chapter02.html">
+            
+                <a href="Chapter02.html">
+            
+                    
+                    第二章·基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="Chapter03.html">
+            
+                <a href="Chapter03.html">
+            
+                    
+                    第三章·数值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.8" data-path="Chapter04.html">
+            
+                <a href="Chapter04.html">
+            
+                    
+                    第四章·字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="Chapter05.html">
+            
+                <a href="Chapter05.html">
+            
+                    
+                    第五章·条件逻辑
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="Chapter06.html">
+            
+                <a href="Chapter06.html">
+            
+                    
+                    第六章·数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="Chapter07.html">
+            
+                <a href="Chapter07.html">
+            
+                    
+                    第七章·循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="Chapter08.html">
+            
+                <a href="Chapter08.html">
+            
+                    
+                    第八章·函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="Chapter09.html">
+            
+                <a href="Chapter09.html">
+            
+                    
+                    第九章·对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="Chapter10.html">
+            
+                <a href="Chapter10.html">
+            
+                    
+                    第十章·日期和时间
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="Chapter11.html">
+            
+                <a href="Chapter11.html">
+            
+                    
+                    第十一章·JSON
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="Chapter12.html">
+            
+                <a href="Chapter12.html">
+            
+                    
+                    第十二章·错误处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="Chapter13.html">
+            
+                <a href="Chapter13.html">
+            
+                    
+                    第十三章·模块化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="Chapter14.html">
+            
+                <a href="Chapter14.html">
+            
+                    
+                    第十四章·正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="Chapter15.html">
+            
+                <a href="Chapter15.html">
+            
+                    
+                    第十五章·类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="Chapter16.html">
+            
+                <a href="Chapter16.html">
+            
+                    
+                    第十六章·浏览器对象模型(BOM)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="Chapter17.html">
+            
+                <a href="Chapter17.html">
+            
+                    
+                    第十七章·事件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="Chapter18.html">
+            
+                <a href="Chapter18.html">
+            
+                    
+                    第十八章·Promise、async/await
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="Chapter19.html">
+            
+                <a href="Chapter19.html">
+            
+                    
+                    第十九章·其他杂项
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="Chapter20.html">
+            
+                <a href="Chapter20.html">
+            
+                    
+                    第二十章·服务端代码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="Chapter21.html">
+            
+                <a href="Chapter21.html">
+            
+                    
+                    第二十一章·实战练习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="Chapter22.html">
+            
+                <a href="Chapter22.html">
+            
+                    
+                    第二十二章·面试问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27" data-path="Chapter23.html">
+            
+                <a href="Chapter23.html">
+            
+                    
+                    第二十三章·设计模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.28" data-path="Chapter24.html">
+            
+                <a href="Chapter24.html">
+            
+                    
+                    第二十四章·文件系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29" data-path="Chapter25.html">
+            
+                <a href="Chapter25.html">
+            
+                    
+                    第二十五章·ES6概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.30" data-path="Chapter26.html">
+            
+                <a href="Chapter26.html">
+            
+                    
+                    第二十六章·动画资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.31" data-path="Chapter27.html">
+            
+                <a href="Chapter27.html">
+            
+                    
+                    第二十七章·JavaScript运行原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.32" data-path="References.html">
+            
+                <a href="References.html">
+            
+                    
+                    引用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.33" data-path="Resources.html">
+            
+                <a href="Resources.html">
+            
+                    
+                    资料
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34" data-path="Credits.html">
+            
+                <a href="Credits.html">
+            
+                    
+                    鸣谢
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本書使用 GitBook 釋出
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >第四章·字符串</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="第四章·字符串">第四章·字符串</h1>
+<p>JavaScript strings share many similarities with string implementations in other high-level languages. They represent text-based messages and data. In this course, we will cover the basics, including how to create new strings and perform common operations on them.</p>
+<p>Here is an example of a string:</p>
+<pre><code>"Hello World"
+</code></pre><p>String indexes are zero-based, meaning that starting position of the first character at <code>0</code> followed by others in incremental order. Various methods are supported by string and return a new value. These methods are described below.</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>charAt()</code></td>
+<td>Returns character at specified index</td>
+</tr>
+<tr>
+<td><code>charCodeAt()</code></td>
+<td>Returns Unicode character at specified index</td>
+</tr>
+<tr>
+<td><code>concat()</code></td>
+<td>Returns two or more combined strings</td>
+</tr>
+<tr>
+<td><code>constructor</code></td>
+<td>Returns string's constructor function</td>
+</tr>
+<tr>
+<td><code>endsWith()</code></td>
+<td>Checks if a string ends with a specified value</td>
+</tr>
+<tr>
+<td><code>fromCharCode()</code></td>
+<td>Returns Unicode values as characters</td>
+</tr>
+<tr>
+<td><code>includes()</code></td>
+<td>Checks if a string contains with a specified value</td>
+</tr>
+<tr>
+<td><code>indexOf()</code></td>
+<td>Returns the index of its first occurrence</td>
+</tr>
+<tr>
+<td><code>lastIndexOf()</code></td>
+<td>Returns the index of its last occurrence</td>
+</tr>
+<tr>
+<td><code>length</code></td>
+<td>Returns the length of the string</td>
+</tr>
+<tr>
+<td><code>localeCompare()</code></td>
+<td>Compares two strings with locale</td>
+</tr>
+<tr>
+<td><code>match()</code></td>
+<td>Matches a string against a value or regular expression</td>
+</tr>
+<tr>
+<td><code>prototype</code></td>
+<td>Used to add properties and method of an object</td>
+</tr>
+<tr>
+<td><code>repeat()</code></td>
+<td>Returns new string with number of copies specified</td>
+</tr>
+<tr>
+<td><code>replace()</code></td>
+<td>Returns a string with values replaced by a regular expression or a string with a value</td>
+</tr>
+<tr>
+<td><code>search()</code></td>
+<td>Returns an index based on a string's match against a value or regular expression</td>
+</tr>
+<tr>
+<td><code>slice()</code></td>
+<td>Returns a string containing part of a string</td>
+</tr>
+<tr>
+<td><code>split()</code></td>
+<td>Splits string into array of substrings</td>
+</tr>
+<tr>
+<td><code>startsWith()</code></td>
+<td>Checks strings beginning against specified character</td>
+</tr>
+<tr>
+<td><code>substr()</code></td>
+<td>Extracts part of string, from start index</td>
+</tr>
+<tr>
+<td><code>substring()</code></td>
+<td>Extracts part of string, between two indices</td>
+</tr>
+<tr>
+<td><code>toLocalLowerCase()</code></td>
+<td>Returns string with lowercase characters using host's locale</td>
+</tr>
+<tr>
+<td><code>toLocalUpperCase()</code></td>
+<td>Returns string with uppercase characters using host's locale</td>
+</tr>
+<tr>
+<td><code>toLowerCase()</code></td>
+<td>Returns string with lowercase characters</td>
+</tr>
+<tr>
+<td><code>toString()</code></td>
+<td>Returns string or string object as string</td>
+</tr>
+<tr>
+<td><code>toUpperCase()</code></td>
+<td>Returns string with uppercase characters</td>
+</tr>
+<tr>
+<td><code>trim()</code></td>
+<td>Returns string with removed whitespaces</td>
+</tr>
+<tr>
+<td><code>trimEnd()</code></td>
+<td>Returns string with removed whitespaces from end</td>
+</tr>
+<tr>
+<td><code>trimStart()</code></td>
+<td>Returns string with removed whitespaces from start</td>
+</tr>
+<tr>
+<td><code>valueOf()</code></td>
+<td>Returns primitive value of string or string object</td>
+</tr>
+</tbody>
+</table>
+<p>In this chapter, we will explore following topics:</p>
+<ul>
+<li><a href="charAt.md">CharAt</a></li>
+<li><a href="concat.md">Concat</a></li>
+<li><a href="create.md">Create</a></li>
+<li><a href="length.md">Length</a></li>
+<li><a href="replace.md">Replace</a></li>
+<li><a href="split.md">Split</a></li>
+<li><a href="substring.md">Substring</a></li>
+</ul>
+<h1 id="charat">CharAt</h1>
+<p>The <code>str.charAt()</code> method returns the character at the given index of the string index holds the array element position.</p>
+<ul>
+<li>using the <code>charAt()</code> method</li>
+<li>using the template literal <code>(``)</code> (introduced in <a href="../es6-concepts/template-literals.md">ES6</a>)</li>
+</ul>
+<p>The <code>charAt()</code> method takes in:</p>
+<ul>
+<li><p><strong>arguments</strong>: The only argument to this function is the index in the string from where the single character is to be extracted. </p>
+</li>
+<li><p><strong>index</strong>: The range of this index is between <code>0</code> and length <code>–1</code>. If no index is specified then the first character of the string is returned as <code>0</code> is the default index used for this function. </p>
+</li>
+<li><p><strong>return value</strong> : Returns a single character located at the index specified as the argument to the function. If the index is out of range, then this function returns an empty string.</p>
+</li>
+</ul>
+<pre><code class="lang-javascript"><span class="hljs-comment">//Example 1:</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">func</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-comment">// Original string</span>
+    <span class="hljs-keyword">let</span> str = <span class="hljs-string">'JavaScript is object oriented language'</span>;
+
+    <span class="hljs-comment">// Finding the character at given index</span>
+    <span class="hljs-keyword">let</span> value = str.<span class="hljs-title function_">charAt</span>(<span class="hljs-number">0</span>);
+    <span class="hljs-keyword">let</span> value1 = str.<span class="hljs-title function_">charAt</span>(<span class="hljs-number">4</span>);
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(value);
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(value1);
+}
+<span class="hljs-title function_">func</span>();
+
+<span class="hljs-comment">//Output</span>
+j
+s
+
+<span class="hljs-comment">//Example 2: </span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">func</span>(<span class="hljs-params"></span>) {
+
+    <span class="hljs-comment">// Original string</span>
+    <span class="hljs-keyword">let</span> str = <span class="hljs-string">'JavaScript is object oriented language'</span>;
+
+    <span class="hljs-comment">// Finding the character at given index</span>
+    <span class="hljs-keyword">let</span> value = str.<span class="hljs-title function_">charAt</span>(<span class="hljs-number">9</span>);
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(value);
+}
+<span class="hljs-title function_">func</span>();
+
+
+<span class="hljs-comment">//Output</span>
+t
+</code></pre>
+<h1 id="concatenation">Concatenation</h1>
+<p>Concatenation involves adding two or more strings together, creating a larger string containing the combined data of those original strings.  The concatenation of a string appends one or more strings to another string.  This is done in JavaScript using the following ways:</p>
+<ul>
+<li>using the  <strong><code>+</code></strong> operator</li>
+<li>using the <code>concat()</code> method</li>
+<li>using the array <code>join()</code> method</li>
+<li>using the template <code>(``)</code> literal (introduced in <a href="../es6-concepts/template-literals.md">ES6</a>)</li>
+</ul>
+<p>The string <code>concat()</code> method accepts the list of strings as parameters and returns a new string after concatenation i.e. combination of all the strings. Whereas the array <code>join()</code> method is used to concatenate all the elements present in an array by converting them into a single string. </p>
+<p>The template literal  uses backtick <code>(``)</code> and provides an easy way to create multiline strings and perform string interpolation. An expression can be used inside the backtick using <code>$</code> sign and curly braces <code>${expression}</code>.</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> icon = <span class="hljs-string">'👋'</span>;
+<span class="hljs-comment">// using template Strings</span>
+<span class="hljs-string">`hi <span class="hljs-subst">${icon}</span>`</span>;
+
+<span class="hljs-comment">// using join() Method</span>
+[<span class="hljs-string">'hi'</span>, icon].<span class="hljs-title function_">join</span>(<span class="hljs-string">' '</span>);
+
+<span class="hljs-comment">// using concat() Method</span>
+<span class="hljs-string">''</span>.<span class="hljs-title function_">concat</span>(<span class="hljs-string">'hi '</span>, icon);
+
+<span class="hljs-comment">//  using + operator</span>
+<span class="hljs-string">'hi '</span> + icon;
+<span class="hljs-comment">// hi 👋</span>
+</code></pre>
+<h1 id="creation">Creation</h1>
+<p>Strings can be defined by enclosing the text in single quotes or double quotes:</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// Single quotes can be used</span>
+<span class="hljs-keyword">let</span> str = <span class="hljs-string">"Our lovely string"</span>;
+
+<span class="hljs-comment">// Double quotes as well</span>
+<span class="hljs-keyword">let</span> otherStr = <span class="hljs-string">"Another nice string"</span>;
+</code></pre>
+<p>In Javascript, Strings can contain UTF-8 characters:</p>
+<pre><code>"中文 español English हिन्दी العربية português বাংলা русский 日本語 ਪੰਜਾਬੀ 한국어";
+</code></pre><p>You can also use the <code>String</code> constructor to create a string object:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> stringObject = <span class="hljs-keyword">new</span> <span class="hljs-title class_">String</span>(<span class="hljs-string">'This is a string'</span>);
+</code></pre>
+<p>However, it is generally not recommended to use the <code>String</code> constructor to create strings, as it can cause confusion between string primitives and string objects. It is usually better to use string literals to create strings.</p>
+<p>You can also use template literals to create strings. Template literals are strings that are enclosed in backticks <code>(``)</code> and can contain placeholders for values. Placeholders are denoted with the <code>`${}` </code> syntax.</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> name = <span class="hljs-string">'John'</span>;
+<span class="hljs-keyword">const</span> message = <span class="hljs-string">`Hello, <span class="hljs-subst">${name}</span>!`</span>;
+</code></pre>
+<p>Template literals can also contain multiple lines and can include any expression inside the placeholders.</p>
+<p></p><div class="alert alert-undefined hints-alert"><div class="hints-icon"><i class="undefined"></i></div><div class="hints-container"><p>Strings can not be subtracted, multiplied, or divided.</p>
+</div></div><p></p>
+<p></p><div class="exercise">
+	<div class="header">Exercise</div>
+	<div class="alert alert-success">
+	    <b>Correct!</b>
+	</div>
+
+	<div class="alert alert-danger error-message">
+	    <b>False!</b>
+	</div>
+
+	<div class="message">
+	
+Use a template literal to create a string that includes the values of `name` and `age`. The string should have the following format: "My name is John and I am 25 years old.".
+
+
+	</div>
+	<div class="editor" style="height: 100px">let name = "John";
+let age = 25;
+
+// My name is John and I am 25 years old.
+let result =</div>
+
+	<pre class="hidden code-solution">let name = "John";
+let age = 25;
+
+// My name is John and I am 25 years old.
+let result = `My name is ${name} and I am ${age} years old.`</pre>
+	<pre class="hidden code-validation">assert(result == "My name is John and I am 25 years old.");</pre>
+	
+
+	<div class="buttons">
+	    <a href="#" class="button size-2 action-submit">Submit</a>
+	    <a href="#" class="button size-2 action-solution">Solution</a>
+	</div>
+</div><p></p>
+<h1 id="length">Length</h1>
+<p>It's easy in Javascript to know how many characters are in a string using the property <code>.length</code>. The <code>length</code> property returns the number of characters in the string, including spaces and special characters.</p>
+<pre><code class="lang-javascript">
+<span class="hljs-keyword">let</span> size = <span class="hljs-string">"Our lovely string"</span>.<span class="hljs-property">length</span>;
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(size);
+<span class="hljs-comment">// size: 17</span>
+
+<span class="hljs-keyword">let</span> emptyStringSize = <span class="hljs-string">""</span>.<span class="hljs-property">length</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(emptyStringSize);
+<span class="hljs-comment">// emptyStringSize: 0</span>
+</code></pre>
+<p>The length property of an empty string is <code>0</code>. </p>
+<p></p><div class="alert alert-undefined hints-alert"><div class="hints-icon"><i class="undefined"></i></div><div class="hints-container"><p>The <code>length</code> property is a read-only property, so you cannot assign a new value to it.</p>
+</div></div><p></p>
+<h1 id="replace">Replace</h1>
+<p>The <code>replace</code> method allows us to replace a character, word, or sentence with a string. For example.</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> str = <span class="hljs-string">"Hello World!"</span>;
+<span class="hljs-keyword">let</span> new_str = str.<span class="hljs-title function_">replace</span>(<span class="hljs-string">"Hello"</span>, <span class="hljs-string">"Hi"</span>);
+
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(new_str);
+
+<span class="hljs-comment">// Result: Hi World!</span>
+</code></pre>
+<p></p><div class="alert alert-undefined hints-alert"><div class="hints-icon"><i class="undefined"></i></div><div class="hints-container"><p>To replace a value on all instances of a <a href="../regular-expression.md">regular expression</a> with a <code>g</code> modifier is set.</p>
+</div></div><p></p>
+<p>It searches for a string for a value or a regular expression and returns a new string with the value(s) replaced. It doesn't change the original string. Let's see the global case-insensitive replacement example.</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> text = <span class="hljs-string">"Mr Blue has a blue house and a blue car"</span>;
+<span class="hljs-keyword">let</span> result = text.<span class="hljs-title function_">replace</span>(<span class="hljs-regexp">/blue/gi</span>, <span class="hljs-string">"red"</span>); 
+
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(result); 
+<span class="hljs-comment">//Result: Mr red has a red house and a red car</span>
+</code></pre>
+<h1 id="split">Split</h1>
+<p>The <code>split()</code> method divides a string into a list of substrings and returns them as an array.</p>
+<ul>
+<li>using the <code>split()</code> method</li>
+<li>using the template literal (introduced in ES6)</li>
+</ul>
+<p>The <code>split()</code> method takes in:</p>
+<ul>
+<li><strong>separator (optional)</strong> - The pattern (string or regular expression) describing where each split should occur.</li>
+<li><strong>limit (optional)</strong> - A non-negative integer limiting the number of pieces to split the given string into.</li>
+</ul>
+<pre><code class="lang-javascript"><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"ABCDEF"</span>.<span class="hljs-title function_">split</span>(<span class="hljs-string">""</span>)); <span class="hljs-comment">// [ 'A', 'B', 'C', 'D', 'E', 'F' ]</span>
+
+<span class="hljs-keyword">const</span> text = <span class="hljs-string">"Java is awesome. Java is fun."</span>;
+
+<span class="hljs-keyword">let</span> pattern = <span class="hljs-string">"."</span>;
+<span class="hljs-keyword">let</span> newText = text.<span class="hljs-title function_">split</span>(pattern);
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(newText); <span class="hljs-comment">// [ 'Java is awesome', ' Java is fun', '' ]</span>
+
+<span class="hljs-keyword">let</span> pattern1 = <span class="hljs-string">"."</span>;
+<span class="hljs-comment">// only split string to maximum to parts</span>
+<span class="hljs-keyword">let</span> newText1 = text.<span class="hljs-title function_">split</span>(pattern1, <span class="hljs-number">2</span>);
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(newText1); <span class="hljs-comment">// [ 'Java is awesome', ' Java is fun' ]</span>
+
+<span class="hljs-keyword">const</span> text2 = <span class="hljs-string">"JavaScript ;  Python ;C;C++"</span>;
+<span class="hljs-keyword">let</span> pattern2 = <span class="hljs-string">";"</span>;
+<span class="hljs-keyword">let</span> newText2 = text2.<span class="hljs-title function_">split</span>(pattern2);
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(newText2); <span class="hljs-comment">// [ 'JavaScript ', '  Python ', 'C', 'C++' ]</span>
+
+<span class="hljs-comment">// using RegEx</span>
+<span class="hljs-keyword">let</span> pattern3 = <span class="hljs-regexp">/\s*(?:;|$)\s*/</span>;
+<span class="hljs-keyword">let</span> newText3 = text2.<span class="hljs-title function_">split</span>(pattern3);
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(newText3); <span class="hljs-comment">// [ 'JavaScript', 'Python', 'C', 'C++' ]</span>
+
+<span class="hljs-comment">//Output</span>
+[ <span class="hljs-string">'A'</span>, <span class="hljs-string">'B'</span>, <span class="hljs-string">'C'</span>, <span class="hljs-string">'D'</span>, <span class="hljs-string">'E'</span>, <span class="hljs-string">'F'</span> ]
+[ <span class="hljs-string">'Java is awesome'</span>, <span class="hljs-string">' Java is fun'</span>, <span class="hljs-string">''</span> ]
+[ <span class="hljs-string">'Java is awesome'</span>, <span class="hljs-string">' Java is fun'</span> ]
+[ <span class="hljs-string">'JavaScript '</span>, <span class="hljs-string">'  Python '</span>, <span class="hljs-string">'C'</span>, <span class="hljs-string">'C++'</span> ]
+[ <span class="hljs-string">'JavaScript'</span>, <span class="hljs-string">'Python'</span>, <span class="hljs-string">'C'</span>, <span class="hljs-string">'C++'</span> ]
+</code></pre>
+<h1 id="substring">Substring</h1>
+<p>The <code>string.substring()</code> is an inbuilt function in JavaScript that is used to return the part of the given string from the start index to the end index. Indexing start from zero <code>(0)</code>. </p>
+<p>Syntax: </p>
+<p><code>string.substring(StartIndex, EndIndex)</code></p>
+<h3 id="syntax">Syntax:</h3>
+<ul>
+<li>using <code>str.substr(start , length)</code></li>
+<li>using the <code>substr()</code> method</li>
+<li>using the template <code>(``)</code> literal (introduced in <a href="../es6-concepts/template-literals.md">ES6</a>)</li>
+</ul>
+<p>The <code>substr()</code> method takes in:</p>
+<ul>
+<li><strong>parameters</strong>: Here the StartIndex and EndIndex describe the part of the string to be taken as a substring. Here, the EndIndex is optional. </li>
+<li><strong>return value</strong>: It returns a new string that is part of the given string. JavaScript code to show the working of <code>string.substring()</code> function: </li>
+</ul>
+<pre><code class="lang-javascript"><span class="hljs-comment">//Example 1:</span>
+<span class="hljs-comment">// JavaScript to illustrate substr() method</span>
+
+<span class="hljs-keyword">const</span> str = <span class="hljs-string">"GeeksforGeeks"</span>;
+<span class="hljs-keyword">const</span> result = str.<span class="hljs-title function_">substring</span>(<span class="hljs-number">8</span>);
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(result);
+
+
+
+<span class="hljs-comment">//Output</span>
+<span class="hljs-keyword">for</span>
+</code></pre>
+<pre><code class="lang-javascript">
+<span class="hljs-comment">//Example 2: </span>
+<span class="hljs-comment">// Taking a string as letiable</span>
+<span class="hljs-keyword">let</span> string = <span class="hljs-string">"geeksforgeeks"</span>;
+a = string.<span class="hljs-title function_">substring</span>(-<span class="hljs-number">1</span>)
+b = string.<span class="hljs-title function_">substring</span>(<span class="hljs-number">2.5</span>)
+c = string.<span class="hljs-title function_">substring</span>(<span class="hljs-number">2.9</span>)
+
+<span class="hljs-comment">// Printing new string which are</span>
+<span class="hljs-comment">// the part of the given string</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(a);
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(b);
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(c);
+
+
+<span class="hljs-comment">//Output</span>
+geeksforgeeks
+eksforgeeks
+eksforgeeks
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Chapter03.html" class="navigation navigation-prev " aria-label="Previous page: 第三章·数值">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Chapter05.html" class="navigation navigation-next " aria-label="Next page: 第五章·条件逻辑">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"第四章·字符串","level":"1.8","depth":1,"next":{"title":"第五章·条件逻辑","level":"1.9","depth":1,"path":"content/Chapter05.md","ref":"content/Chapter05.md","articles":[]},"previous":{"title":"第三章·数值","level":"1.7","depth":1,"path":"content/Chapter03.md","ref":"content/Chapter03.md","articles":[]},"dir":"ltr"},"config":{"plugins":["hints","hide-published-with","chapter-fold","intopic-toc","tooltips","exercises","theme-creative","sharing","@honkit/honkit-plugin-ga","sitemap","favicon-custom","edit-link","ace-editor"],"styles":{"website":".gitbook/css/custom.css"},"pluginsConfig":{"chapter-fold":{},"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"概览"},"search":{},"favicon-custom":{"favicon":"./favicon.ico","appleTouchIconPrecomposed152":"./favicon.ico"},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"tooltips":{},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-creative":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"maxWidth":"800px","showLevel":false,"fontSize":18,"colorSecondary":"#E6D7C1","fontFamily":"'Times New Roman', serif","backgroundColor":"#F9F6F1","textColor":"#3E3E3E","textAlign":"justify","lineHeight":1.6,"colorPrimary":"#D8CFC4"},"highlight":{},"favicon":"favicon.ico","sitemap":{"hostname":"https://javascript.sumankunwar.com.np/"},"@honkit/honkit-plugin-ga":{},"ace-editor":{},"appleTouchIconPrecomposed152":"js.png","exercises":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"","base":"https://github.com/dinglevin/learn-javascript-zh/edit/main"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"Sepia","keywords":"JavaScript tutorial, JavaScript学习教程","author":"Suman Kunwar, dinglevin","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"JavaScript学习教程, 初学者版本","language":"zh-cn","website":"https://learn-javascript.dinglevin.tech/","gitbook":"*","description":"JavaScript学习教程, 初学者版本"},"file":{"path":"content/Chapter04.md","mtime":"2024-10-07T08:10:38.064Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-10-07T08:10:49.404Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook-plugin-exercises/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+    
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-published-with/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-intopic-toc/anchor.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-intopic-toc/gumshoe.polyfills.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-intopic-toc/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/ace/theme-tomorrow.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/ace/mode-javascript.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/exercises.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace-editor/ace.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace-editor/ace/theme-tomorrow.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace-editor/ace/mode-javascript.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace-editor/main.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+
+    </body>
+</html>
+

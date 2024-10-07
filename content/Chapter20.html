@@ -1,0 +1,884 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-cn" >
+    <head>
+        <title>第二十章·服务端代码 · JavaScript学习教程, 初学者版本</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 5.1.4">
+        <meta name="author" content="Suman Kunwar, dinglevin">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-hints/plugin-hints.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-intopic-toc/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/honkit-plugin-tooltips/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-exercises/exercises.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-ace-editor/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../.gitbook/css/custom.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Chapter21.html" />
+    
+    
+    <link rel="prev" href="Chapter19.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="輸入並搜尋" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="Dedication.html">
+            
+                <a href="Dedication.html">
+            
+                    
+                    献词
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Copyright.html">
+            
+                <a href="Copyright.html">
+            
+                    
+                    版权声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="Preface.html">
+            
+                <a href="Preface.html">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="Chapter01.html">
+            
+                <a href="Chapter01.html">
+            
+                    
+                    第一章·介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="Chapter02.html">
+            
+                <a href="Chapter02.html">
+            
+                    
+                    第二章·基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="Chapter03.html">
+            
+                <a href="Chapter03.html">
+            
+                    
+                    第三章·数值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="Chapter04.html">
+            
+                <a href="Chapter04.html">
+            
+                    
+                    第四章·字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="Chapter05.html">
+            
+                <a href="Chapter05.html">
+            
+                    
+                    第五章·条件逻辑
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="Chapter06.html">
+            
+                <a href="Chapter06.html">
+            
+                    
+                    第六章·数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="Chapter07.html">
+            
+                <a href="Chapter07.html">
+            
+                    
+                    第七章·循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="Chapter08.html">
+            
+                <a href="Chapter08.html">
+            
+                    
+                    第八章·函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="Chapter09.html">
+            
+                <a href="Chapter09.html">
+            
+                    
+                    第九章·对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="Chapter10.html">
+            
+                <a href="Chapter10.html">
+            
+                    
+                    第十章·日期和时间
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="Chapter11.html">
+            
+                <a href="Chapter11.html">
+            
+                    
+                    第十一章·JSON
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="Chapter12.html">
+            
+                <a href="Chapter12.html">
+            
+                    
+                    第十二章·错误处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="Chapter13.html">
+            
+                <a href="Chapter13.html">
+            
+                    
+                    第十三章·模块化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="Chapter14.html">
+            
+                <a href="Chapter14.html">
+            
+                    
+                    第十四章·正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="Chapter15.html">
+            
+                <a href="Chapter15.html">
+            
+                    
+                    第十五章·类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="Chapter16.html">
+            
+                <a href="Chapter16.html">
+            
+                    
+                    第十六章·浏览器对象模型(BOM)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="Chapter17.html">
+            
+                <a href="Chapter17.html">
+            
+                    
+                    第十七章·事件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="Chapter18.html">
+            
+                <a href="Chapter18.html">
+            
+                    
+                    第十八章·Promise、async/await
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="Chapter19.html">
+            
+                <a href="Chapter19.html">
+            
+                    
+                    第十九章·其他杂项
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.24" data-path="Chapter20.html">
+            
+                <a href="Chapter20.html">
+            
+                    
+                    第二十章·服务端代码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="Chapter21.html">
+            
+                <a href="Chapter21.html">
+            
+                    
+                    第二十一章·实战练习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="Chapter22.html">
+            
+                <a href="Chapter22.html">
+            
+                    
+                    第二十二章·面试问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27" data-path="Chapter23.html">
+            
+                <a href="Chapter23.html">
+            
+                    
+                    第二十三章·设计模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.28" data-path="Chapter24.html">
+            
+                <a href="Chapter24.html">
+            
+                    
+                    第二十四章·文件系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29" data-path="Chapter25.html">
+            
+                <a href="Chapter25.html">
+            
+                    
+                    第二十五章·ES6概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.30" data-path="Chapter26.html">
+            
+                <a href="Chapter26.html">
+            
+                    
+                    第二十六章·动画资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.31" data-path="Chapter27.html">
+            
+                <a href="Chapter27.html">
+            
+                    
+                    第二十七章·JavaScript运行原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.32" data-path="References.html">
+            
+                <a href="References.html">
+            
+                    
+                    引用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.33" data-path="Resources.html">
+            
+                <a href="Resources.html">
+            
+                    
+                    资料
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34" data-path="Credits.html">
+            
+                <a href="Credits.html">
+            
+                    
+                    鸣谢
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本書使用 GitBook 釋出
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >第二十章·服务端代码</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="第二十章·服务端代码">第二十章·服务端代码</h1>
+<p><strong>Server-side code</strong> refers to the code that runs on a <em>web server</em> rather than in a user's web browser. It is responsible for processing requests from clients (typically web browsers) and generating dynamic web pages or providing data to the client.</p>
+<p><strong>Client-side code</strong> refers to the code that runs in a user's <em>web browser</em> rather than on a web server. It is responsible for generating the user interface and handling user interactions. Client-side code is typically written in JavaScript and is executed by the browser.</p>
+<h2 id="why-do-we-need-server-side-code">Why do we need server-side code?</h2>
+<p>Server-side code is essential in web development for several reasons:</p>
+<ul>
+<li><strong>Security</strong>: Server-side code is not visible to the user, so it is more secure than client-side code. </li>
+<li><strong>Performance</strong>: Server-side code can be used to perform computationally expensive tasks, such as data processing, without affecting the user's experience.</li>
+<li><strong>Data Storage</strong>: Server-side code can be used to store data in a database, which can then be accessed by the client-side code.</li>
+<li><strong>User Authentication</strong>: Server-side code can be used to authenticate users and restrict access to certain parts of the website.</li>
+<li><strong>Dynamic Content</strong>: Server-side code can be used to generate dynamic web pages, which can be customized for each user.</li>
+</ul>
+<h2 id="server-side-vs-client-side">Server-side vs. Client-side</h2>
+<p>The differences are summarized in the table below:</p>
+<table>
+<thead>
+<tr>
+<th>Server-side Code</th>
+<th>Client-side Code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Runs on a web server</td>
+<td>Runs in a web browser</td>
+</tr>
+<tr>
+<td>Has access to server resources (file system, databases, etc.).</td>
+<td>Has access to client resources (cookies, local storage, etc.).</td>
+</tr>
+<tr>
+<td>Can be written in a variety of languages (PHP, Python, Ruby, Java, C#, etc.).</td>
+<td>Can only be written in JavaScript.</td>
+</tr>
+<tr>
+<td>May use server-side rendering (SSR) to generate HTML on the server.</td>
+<td>Uses client-side rendering (CSR) to generate HTML in the browser.</td>
+</tr>
+<tr>
+<td>Better for SEO as content is readily available for search engines.</td>
+<td>Worse for SEO as content is not readily available for search engines.</td>
+</tr>
+<tr>
+<td>Can leverage caching and Content Delivery Networks (CDNs) for performance.</td>
+<td>Limited control over caching, relies on browser cache.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="why-use-javascript-for-server-side-code">Why use JavaScript for server-side code?</h2>
+<p>Unlike client-side code, which can only be written in JavaScript, server-side code can be written in a variety of languages, including PHP, Python, Ruby, Java, C#, and many more. So why use JavaScript for server-side code? There are several reasons:</p>
+<ul>
+<li><p><strong>Unified Language</strong>: Developers can use the same language and programming paradigms throughout the entire application stack, which can lead to code reusability and easier collaboration among front-end and back-end developers.</p>
+</li>
+<li><p><strong>Large Ecosystem</strong>: JavaScript has a vast ecosystem of libraries and packages available through npm (Node Package Manager). This rich ecosystem simplifies the development process by providing pre-built modules for various functionalities, from server routing to database connectivity.</p>
+</li>
+<li><p><strong>JSON</strong>: JavaScript Object Notation (JSON) is a popular data format that is used to transmit data between a server and a web application. JSON is based on JavaScript, so it is easy to work with JSON data in JavaScript.</p>
+</li>
+</ul>
+<p>Up next, we will learn how to use JavaScript for server-side code with Node.js and how to use Server Side Rendering (SSR) to generate HTML on the server.</p>
+<p>In this chapter, we will explore following topics:</p>
+<ul>
+<li><a href="nodejs.md">Node.js</a></li>
+<li><a href="server-side-rendering.md">Server Side Rendering (SSR)</a></li>
+</ul>
+<h1 id="nodejs">Node.js</h1>
+<p><strong>Node.js</strong> is a JavaScript runtime environment that allows developers to run JavaScript code outside of a web browser. It is built on top of the V8 JavaScript engine, which is the same engine used by Google Chrome. Node.js is open-source and cross-platform, which means it can run on Windows, macOS, and Linux.</p>
+<h2 id="nodejs-is-not-a-programming-language">Node.js is not a programming language</h2>
+<p>Many people mistakenly believe that Node.js is a programming language. This is not true. Node.js is a JavaScript runtime environment, which means it provides an environment for JavaScript code to run. It is not a programming language itself.</p>
+<p>Node.js is <strong>not</strong> the only JavaScript runtime environment. There are many others, including Deno, Nashorn, and most recently, Bun. But Node.js is by far the most popular and widely used JavaScript runtime environment.</p>
+<h2 id="getting-started-with-nodejs">Getting started with Node.js</h2>
+<p>To get started with Node.js, you will need to install it on your computer. You can download the latest version of Node.js from the official website at <a href="https://nodejs.org/en/" target="_blank">nodejs.org</a>. Once you have downloaded and installed Node.js, you can verify the installation by running the following command in your terminal:</p>
+<pre><code class="lang-bash">node --version
+</code></pre>
+<p>This should print the version number of Node.js like this:</p>
+<pre><code class="lang-bash">v20.7.0
+</code></pre>
+<h2 id="nodejs-repl">Node.js REPL</h2>
+<p>REPL is a command line interface that stands for Read Evaluate Print Loop, which enables you to run code from the terminal. To get started, type the following command into your terminal:</p>
+<pre><code class="lang-bash">node
+</code></pre>
+<p>Once you enter this prompt, you can run code, like this:</p>
+<pre><code class="lang-js">&gt; <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"Hello World"</span>)
+</code></pre>
+<p>You can leave the REPL by typing CTRL + d</p>
+<h2 id="writing-your-first-nodejs-program">Writing your first Node.js program</h2>
+<p>Now that you have installed Node.js, let's write our first Node.js program. Create a new file called <code>hello.js</code> and add the following code:</p>
+<pre><code class="lang-js"><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'Hello World!'</span>);
+</code></pre>
+<p>To run this program, open your terminal and navigate to the directory where you saved the <code>hello.js</code> file. Then run the following command:</p>
+<pre><code class="lang-bash">node hello.js
+</code></pre>
+<p>This should print the following output:</p>
+<pre><code class="lang-bash">Hello World!
+</code></pre>
+<h2 id="writing-a-simple-web-server-using-express-and-nodejs">Writing a simple web server using Express and Node.js</h2>
+<p>Express is a popular web framework for Node.js. It provides a simple and elegant API for building web applications. Let's use Express to create a simple web server that will respond to HTTP requests with a "Hello World!" message.</p>
+<p>First, we need to initialize npm by running npm init.</p>
+<pre><code class="lang-bash">npm init
+</code></pre>
+<p>Then, install express</p>
+<pre><code class="lang-bash">npm install express
+</code></pre>
+<p>This will install Express and all its dependencies. Once the installation is complete, create a new file called <code>server.js</code> and add the following code:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">'express'</span>);
+<span class="hljs-keyword">const</span> app = <span class="hljs-title function_">express</span>();
+
+app.<span class="hljs-title function_">get</span>(<span class="hljs-string">'/'</span>, <span class="hljs-function">(<span class="hljs-params">req, res</span>) =&gt;</span> {
+  res.<span class="hljs-title function_">send</span>(<span class="hljs-string">'Hello World!'</span>);
+});
+
+app.<span class="hljs-title function_">listen</span>(<span class="hljs-number">3000</span>, <span class="hljs-function">() =&gt;</span> {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'Server is listening on port 3000'</span>);
+});
+</code></pre>
+<p>This code creates a new Express application and defines a route for the root path (<code>/</code>). When a request is made to this route, the server will respond with a "Hello World!" message.</p>
+<p>To run this program, open your terminal and navigate to the directory where you saved the <code>server.js</code> file. Then run the following command:</p>
+<pre><code class="lang-bash">node server.js
+</code></pre>
+<p>This should print the following output:</p>
+<pre><code class="lang-bash">Server is listening on port 3000
+</code></pre>
+<p>Now open your web browser and go to <a href="http://localhost:3000" target="_blank">http://localhost:3000</a>. You should see a "Hello World!" message.</p>
+<h1 id="server-side-rendering-ssr">Server Side Rendering (SSR)</h1>
+<p>Normally, when a user visits a website, the browser sends a request to the server, which responds with HTML, CSS, and JavaScript. But with libraries like <em>React</em> and <em>Vue</em>, the server only sends a blank HTML page along with a JavaScript file. The JavaScript file then renders the page in the browser. This is called <strong>Client Side Rendering (CSR)</strong>.</p>
+<p><strong>Server Side Rendering (SSR)</strong> is a technique where the server processes the request and generates the HTML on the server from the React or Vue components. The server then sends the generated HTML to the browser, which can then render the page without having to wait for the JavaScript to load.</p>
+<h2 id="why-use-ssr">Why use SSR?</h2>
+<p>There are several advantages to using SSR over CSR:</p>
+<ul>
+<li><p><strong>Better for SEO</strong>: Search engines can crawl and index the content of your website more easily if it is rendered on the server. This can lead to better search engine rankings and more traffic from search engines.</p>
+</li>
+<li><p><strong>Faster initial page load</strong>: Since the HTML is generated on the server, the browser does not have to wait for JavaScript to load before rendering the page. This can lead to a faster initial page load time.</p>
+</li>
+<li><p><strong>Better performance on low-end devices</strong>: Since the HTML is generated on the server, the browser does not have to do as much work to render the page. This can lead to better performance on low-end devices, such as mobile phones and tablets.</p>
+</li>
+</ul>
+<h2 id="disadvantages-of-ssr">Disadvantages of SSR</h2>
+<p>There are also some disadvantages to using SSR:</p>
+<ul>
+<li><p><strong>More complex development process</strong>: SSR requires more work on the server side, which can make the development process more complex.</p>
+</li>
+<li><p><strong>More server resources</strong>: SSR requires more server resources, which can lead to higher hosting costs.</p>
+</li>
+<li><p><strong>Limited client-side functionality</strong>: SSR does not allow you to use client-side libraries, such as jQuery or Bootstrap, since they are not available on the server.</p>
+</li>
+</ul>
+<h2 id="how-to-implement-ssr">How to implement SSR?</h2>
+<p>Each library has its own way of implementing SSR. For example, for React, you can use <a href="https://nextjs.org/" target="_blank">Next.js</a> or <a href="https://www.gatsbyjs.com/" target="_blank">Gatsby</a>. For Vue, you can use <a href="https://nuxtjs.org/" target="_blank">Nuxt.js</a>. For Svelte you can use <a href="https://kit.svelte.dev/" target="_blank">SvelteKit</a>.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Chapter19.html" class="navigation navigation-prev " aria-label="Previous page: 第十九章·其他杂项">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Chapter21.html" class="navigation navigation-next " aria-label="Next page: 第二十一章·实战练习">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"第二十章·服务端代码","level":"1.24","depth":1,"next":{"title":"第二十一章·实战练习","level":"1.25","depth":1,"path":"content/Chapter21.md","ref":"content/Chapter21.md","articles":[]},"previous":{"title":"第十九章·其他杂项","level":"1.23","depth":1,"path":"content/Chapter19.md","ref":"content/Chapter19.md","articles":[]},"dir":"ltr"},"config":{"plugins":["hints","hide-published-with","chapter-fold","intopic-toc","tooltips","exercises","theme-creative","sharing","@honkit/honkit-plugin-ga","sitemap","favicon-custom","edit-link","ace-editor"],"styles":{"website":".gitbook/css/custom.css"},"pluginsConfig":{"chapter-fold":{},"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"概览"},"search":{},"favicon-custom":{"favicon":"./favicon.ico","appleTouchIconPrecomposed152":"./favicon.ico"},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"tooltips":{},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-creative":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"maxWidth":"800px","showLevel":false,"fontSize":18,"colorSecondary":"#E6D7C1","fontFamily":"'Times New Roman', serif","backgroundColor":"#F9F6F1","textColor":"#3E3E3E","textAlign":"justify","lineHeight":1.6,"colorPrimary":"#D8CFC4"},"highlight":{},"favicon":"favicon.ico","sitemap":{"hostname":"https://javascript.sumankunwar.com.np/"},"@honkit/honkit-plugin-ga":{},"ace-editor":{},"appleTouchIconPrecomposed152":"js.png","exercises":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"","base":"https://github.com/dinglevin/learn-javascript-zh/edit/main"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"Sepia","keywords":"JavaScript tutorial, JavaScript学习教程","author":"Suman Kunwar, dinglevin","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"JavaScript学习教程, 初学者版本","language":"zh-cn","website":"https://learn-javascript.dinglevin.tech/","gitbook":"*","description":"JavaScript学习教程, 初学者版本"},"file":{"path":"content/Chapter20.md","mtime":"2024-10-07T08:10:38.065Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-10-07T08:10:49.404Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook-plugin-exercises/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+    
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-published-with/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-intopic-toc/anchor.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-intopic-toc/gumshoe.polyfills.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-intopic-toc/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/ace/theme-tomorrow.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/ace/mode-javascript.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/exercises.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace-editor/ace.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace-editor/ace/theme-tomorrow.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace-editor/ace/mode-javascript.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace-editor/main.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+
+    </body>
+</html>
+

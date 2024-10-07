@@ -1,0 +1,1208 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-cn" >
+    <head>
+        <title>第二十七章·JavaScript运行原理 · JavaScript学习教程, 初学者版本</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 5.1.4">
+        <meta name="author" content="Suman Kunwar, dinglevin">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-hints/plugin-hints.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-intopic-toc/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/honkit-plugin-tooltips/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-exercises/exercises.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-ace-editor/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../.gitbook/css/custom.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="References.html" />
+    
+    
+    <link rel="prev" href="Chapter26.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="輸入並搜尋" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="Dedication.html">
+            
+                <a href="Dedication.html">
+            
+                    
+                    献词
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Copyright.html">
+            
+                <a href="Copyright.html">
+            
+                    
+                    版权声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="Preface.html">
+            
+                <a href="Preface.html">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="Chapter01.html">
+            
+                <a href="Chapter01.html">
+            
+                    
+                    第一章·介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="Chapter02.html">
+            
+                <a href="Chapter02.html">
+            
+                    
+                    第二章·基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="Chapter03.html">
+            
+                <a href="Chapter03.html">
+            
+                    
+                    第三章·数值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="Chapter04.html">
+            
+                <a href="Chapter04.html">
+            
+                    
+                    第四章·字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="Chapter05.html">
+            
+                <a href="Chapter05.html">
+            
+                    
+                    第五章·条件逻辑
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="Chapter06.html">
+            
+                <a href="Chapter06.html">
+            
+                    
+                    第六章·数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="Chapter07.html">
+            
+                <a href="Chapter07.html">
+            
+                    
+                    第七章·循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="Chapter08.html">
+            
+                <a href="Chapter08.html">
+            
+                    
+                    第八章·函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="Chapter09.html">
+            
+                <a href="Chapter09.html">
+            
+                    
+                    第九章·对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="Chapter10.html">
+            
+                <a href="Chapter10.html">
+            
+                    
+                    第十章·日期和时间
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="Chapter11.html">
+            
+                <a href="Chapter11.html">
+            
+                    
+                    第十一章·JSON
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="Chapter12.html">
+            
+                <a href="Chapter12.html">
+            
+                    
+                    第十二章·错误处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="Chapter13.html">
+            
+                <a href="Chapter13.html">
+            
+                    
+                    第十三章·模块化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="Chapter14.html">
+            
+                <a href="Chapter14.html">
+            
+                    
+                    第十四章·正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="Chapter15.html">
+            
+                <a href="Chapter15.html">
+            
+                    
+                    第十五章·类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="Chapter16.html">
+            
+                <a href="Chapter16.html">
+            
+                    
+                    第十六章·浏览器对象模型(BOM)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="Chapter17.html">
+            
+                <a href="Chapter17.html">
+            
+                    
+                    第十七章·事件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="Chapter18.html">
+            
+                <a href="Chapter18.html">
+            
+                    
+                    第十八章·Promise、async/await
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="Chapter19.html">
+            
+                <a href="Chapter19.html">
+            
+                    
+                    第十九章·其他杂项
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="Chapter20.html">
+            
+                <a href="Chapter20.html">
+            
+                    
+                    第二十章·服务端代码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="Chapter21.html">
+            
+                <a href="Chapter21.html">
+            
+                    
+                    第二十一章·实战练习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="Chapter22.html">
+            
+                <a href="Chapter22.html">
+            
+                    
+                    第二十二章·面试问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27" data-path="Chapter23.html">
+            
+                <a href="Chapter23.html">
+            
+                    
+                    第二十三章·设计模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.28" data-path="Chapter24.html">
+            
+                <a href="Chapter24.html">
+            
+                    
+                    第二十四章·文件系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29" data-path="Chapter25.html">
+            
+                <a href="Chapter25.html">
+            
+                    
+                    第二十五章·ES6概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.30" data-path="Chapter26.html">
+            
+                <a href="Chapter26.html">
+            
+                    
+                    第二十六章·动画资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.31" data-path="Chapter27.html">
+            
+                <a href="Chapter27.html">
+            
+                    
+                    第二十七章·JavaScript运行原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.32" data-path="References.html">
+            
+                <a href="References.html">
+            
+                    
+                    引用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.33" data-path="Resources.html">
+            
+                <a href="Resources.html">
+            
+                    
+                    资料
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34" data-path="Credits.html">
+            
+                <a href="Credits.html">
+            
+                    
+                    鸣谢
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本書使用 GitBook 釋出
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >第二十七章·JavaScript运行原理</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="第二十七章·javascript运行原理">第二十七章·JavaScript运行原理</h2>
+<p>JavaScript is a versatile language that runs in various environments, including browsers and servers. Understanding how
+JavaScript works behind the scenes can help you write more efficient and effective code. This guide covers key concepts
+such as the JavaScript engine, execution context, call stack, memory heap, runtime environment, and event loop.</p>
+<h3 id="javascript-engine">JavaScript Engine</h3>
+<p>A JavaScript engine is a program or interpreter that executes JavaScript code. Popular engines like V8 (used in Google
+Chrome and Node.js), SpiderMonkey (used in Firefox), and JavaScriptCore (used in Safari) parse the code into an Abstract
+Syntax Tree (AST), compile it into bytecode or machine code, and then execute it.</p>
+<h3 id="execution-context">Execution Context</h3>
+<p>An execution context is an environment where JavaScript code is evaluated and executed. There are three types: global,
+function, and eval. Each context has a creation phase, where variables, functions, and the <code>this</code> keyword are created,
+and an execution phase, where the code is executed line by line.</p>
+<h3 id="call-stack">Call Stack</h3>
+<p>The call stack is a data structure that keeps track of function calls in a Last-In, First-Out (LIFO) manner. It helps
+the JavaScript engine manage the execution of multiple functions by pushing and popping function calls as they are
+invoked and completed.</p>
+<h3 id="memory-heap">Memory Heap</h3>
+<p>The memory heap is a region in memory where objects are stored. JavaScript uses garbage collection to manage memory,
+automatically freeing up memory that is no longer in use, thus preventing memory leaks and optimizing performance.</p>
+<h3 id="runtime-environment">Runtime Environment</h3>
+<p>The runtime environment provides the necessary resources for JavaScript to execute. In a browser, this includes the
+Document Object Model (DOM), Web APIs, and the JavaScript engine. In Node.js, it includes the file system, HTTP module,
+and other Node.js-specific APIs.</p>
+<h3 id="event-loop">Event Loop</h3>
+<p>The event loop allows JavaScript to perform non-blocking operations by offloading tasks to the system kernel whenever
+possible. It continuously checks the call stack and processes the callback queue, enabling asynchronous programming and
+efficient execution of code.</p>
+<h2 id="understanding-call-stacks-in-javascript">Understanding Call Stacks in JavaScript</h2>
+<p>In JavaScript, a Call Stack is a data structure that uses the Last-In, First-Out (LIFO) principle to temporarily store and manage function invocation (call).</p>
+<h3 id="what-is-a-call-stack">What is a Call Stack?</h3>
+<p>A call stack is responsible for keeping track of function calls in your code. The call stack helps the JavaScript interpreter to keep track of what function is currently being run and what functions are called from within that function, and so on.</p>
+<p>When a script calls a function, JavaScript's interpreter adds that function to the call stack and then starts carrying out the function. Any functions that are called by that function are added to the call stack further up, and run where their calls are reached.</p>
+<p>When the current function is finished, the interpreter takes it off the stack and resumes execution where it left off in the last line of code that was run.</p>
+<h3 id="example-of-a-call-stack">Example of a Call Stack</h3>
+<p>Here's a basic example to understand how a call stack works:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">firstFunction</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"First function is called."</span>);
+    <span class="hljs-title function_">secondFunction</span>();
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"First function is done."</span>);
+}
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">secondFunction</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"Second function is called."</span>);
+    <span class="hljs-title function_">thirdFunction</span>();
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"Second function is done."</span>);
+}
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">thirdFunction</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"Third function is called."</span>);
+}
+
+<span class="hljs-title function_">firstFunction</span>();
+</code></pre>
+<p><strong>Output:</strong></p>
+<pre><code>First function is called.
+Second function is called.
+Third function is called.
+Second function is done.
+First function is done.
+</code></pre><h3 id="how-the-call-stack-works">How the Call Stack Works</h3>
+<ol>
+<li>When <code>firstFunction</code> is called, it is added to the call stack.</li>
+<li>Inside <code>firstFunction</code>, <code>secondFunction</code> is called, so it is added to the call stack.</li>
+<li>Inside <code>secondFunction</code>, <code>thirdFunction</code> is called, so it is added to the call stack.</li>
+<li><code>thirdFunction</code> completes and is removed from the call stack.</li>
+<li><code>secondFunction</code> resumes, completes, and is removed from the call stack.</li>
+<li><code>firstFunction</code> resumes, completes, and is removed from the call stack.</li>
+</ol>
+<h3 id="stack-overflow">Stack Overflow</h3>
+<p>A stack overflow occurs when there are too many function calls in the call stack. This can happen with recursive functions that do not have a base case to stop the recursion.</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">recursiveFunction</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-title function_">recursiveFunction</span>();
+}
+
+<span class="hljs-title function_">recursiveFunction</span>();
+</code></pre>
+<p>This will result in a "Maximum call stack size exceeded" error.</p>
+<h2 id="understanding-javascript-engines">Understanding JavaScript Engines</h2>
+<p>A JavaScript engine is a program or an interpreter that executes JavaScript code. The most well-known JavaScript engines are V8 (used in Google Chrome and Node.js), SpiderMonkey (used in Firefox), and JavaScriptCore (used in Safari).</p>
+<h3 id="how-javascript-engines-work">How JavaScript Engines Work</h3>
+<p>JavaScript engines perform several key tasks to execute JavaScript code efficiently:</p>
+<ol>
+<li><strong>Parsing</strong>: The engine parses the JavaScript code into an Abstract Syntax Tree (AST).</li>
+<li><strong>Compilation</strong>: The AST is then compiled into bytecode or machine code.</li>
+<li><strong>Execution</strong>: The compiled code is executed by the engine.</li>
+</ol>
+<h3 id="example-of-javascript-engine-workflow">Example of JavaScript Engine Workflow</h3>
+<p>Here's a simple example to illustrate the workflow of a JavaScript engine:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">add</span>(<span class="hljs-params">a, b</span>) {
+    <span class="hljs-keyword">return</span> a + b;
+}
+
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-title function_">add</span>(<span class="hljs-number">2</span>, <span class="hljs-number">3</span>)); <span class="hljs-comment">// Output: 5</span>
+</code></pre>
+<h3 id="parsing">Parsing</h3>
+<p>The engine first parses the code into an AST. For the above code, the AST might look something like this:</p>
+<pre><code>Program
+ ├── FunctionDeclaration (add)
+ │   ├── Identifier (a)
+ │   ├── Identifier (b)
+ │   └── BlockStatement
+ │       └── ReturnStatement
+ │           └── BinaryExpression (+)
+ │               ├── Identifier (a)
+ │               └── Identifier (b)
+ └── ExpressionStatement
+     └── CallExpression (console.log)
+         └── CallExpression (add)
+             ├── Literal (2)
+             └── Literal (3)
+</code></pre><h3 id="compilation">Compilation</h3>
+<p>The AST is then compiled into bytecode or machine code. This step involves optimizations to improve performance.</p>
+<h3 id="execution">Execution</h3>
+<p>The compiled code is executed by the engine. In this case, the <code>add</code> function is called with arguments <code>2</code> and <code>3</code>, and the result <code>5</code> is logged to the console.</p>
+<h3 id="just-in-time-jit-compilation">Just-In-Time (JIT) Compilation</h3>
+<p>Modern JavaScript engines use Just-In-Time (JIT) compilation to improve performance. JIT compilation involves compiling code at runtime, rather than before execution. This allows the engine to optimize the code based on actual usage patterns.</p>
+<h3 id="example-of-jit-compilation">Example of JIT Compilation</h3>
+<pre><code class="lang-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">multiply</span>(<span class="hljs-params">a, b</span>) {
+    <span class="hljs-keyword">return</span> a * b;
+}
+
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">1000000</span>; i++) {
+    <span class="hljs-title function_">multiply</span>(<span class="hljs-number">2</span>, <span class="hljs-number">3</span>);
+}
+</code></pre>
+<p>In this example, the <code>multiply</code> function is called repeatedly. A JIT compiler can optimize the function after detecting that it is a hot function (i.e., frequently called).</p>
+<h3 id="garbage-collection">Garbage Collection</h3>
+<p>JavaScript engines also include garbage collectors to manage memory. The garbage collector automatically frees up memory that is no longer in use, preventing memory leaks.</p>
+<h3 id="example-of-garbage-collection">Example of Garbage Collection</h3>
+<pre><code class="lang-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">createObject</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">return</span> { <span class="hljs-attr">name</span>: <span class="hljs-string">"Object"</span> };
+}
+
+<span class="hljs-keyword">let</span> obj = <span class="hljs-title function_">createObject</span>();
+obj = <span class="hljs-literal">null</span>; <span class="hljs-comment">// The object is now eligible for garbage collection</span>
+</code></pre>
+<p>In this example, the object created by <code>createObject</code> is eligible for garbage collection after <code>obj</code> is set to <code>null</code>.</p>
+<h2 id="understanding-the-event-loop-in-javascript">Understanding the Event Loop in JavaScript</h2>
+<p>The event loop is a fundamental concept in JavaScript that allows for asynchronous programming. It is responsible for executing code, collecting and processing events, and executing queued sub-tasks.</p>
+<h3 id="how-the-event-loop-works">How the Event Loop Works</h3>
+<p>JavaScript is single-threaded, meaning it can execute one piece of code at a time. The event loop allows JavaScript to perform non-blocking operations by offloading operations to the system kernel whenever possible.</p>
+<h3 id="components-of-the-event-loop">Components of the Event Loop</h3>
+<ol>
+<li><strong>Call Stack</strong>: The call stack is where the JavaScript engine keeps track of function calls.</li>
+<li><strong>Web APIs</strong>: These are provided by the browser (or Node.js) and include things like <code>setTimeout</code>, <code>DOM events</code>, and <code>HTTP requests</code>.</li>
+<li><strong>Callback Queue</strong>: This is where functions are queued up to be executed after the call stack is clear.</li>
+<li><strong>Event Loop</strong>: The event loop continuously checks the call stack to see if it's empty. If it is, it takes the first event from the callback queue and pushes it to the call stack.</li>
+</ol>
+<h3 id="example-of-the-event-loop">Example of the Event Loop</h3>
+<p>Here's a simple example to illustrate how the event loop works:</p>
+<pre><code class="lang-javascript"><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"Start"</span>);
+
+<span class="hljs-built_in">setTimeout</span>(<span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"Timeout"</span>);
+}, <span class="hljs-number">0</span>);
+
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"End"</span>);
+</code></pre>
+<p><strong>Output:</strong></p>
+<pre><code>Start
+End
+Timeout
+</code></pre><h3 id="explanation">Explanation</h3>
+<ol>
+<li><code>console.log("Start")</code> is executed and "Start" is printed.</li>
+<li><code>setTimeout</code> is called, and the callback is sent to the Web API. The main thread continues.</li>
+<li><code>console.log("End")</code> is executed and "End" is printed.</li>
+<li>The event loop checks the call stack and finds it empty. It then pushes the <code>setTimeout</code> callback to the call stack.</li>
+<li>The <code>setTimeout</code> callback is executed and "Timeout" is printed.</li>
+</ol>
+<h3 id="event-loop-in-action">Event Loop in Action</h3>
+<p>Here's a more complex example to demonstrate the event loop in action:</p>
+<pre><code class="lang-javascript"><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"Start"</span>);
+
+<span class="hljs-built_in">setTimeout</span>(<span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"Timeout 1"</span>);
+}, <span class="hljs-number">1000</span>);
+
+<span class="hljs-built_in">setTimeout</span>(<span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"Timeout 2"</span>);
+}, <span class="hljs-number">0</span>);
+
+<span class="hljs-title class_">Promise</span>.<span class="hljs-title function_">resolve</span>().<span class="hljs-title function_">then</span>(<span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"Promise"</span>);
+});
+
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"End"</span>);
+</code></pre>
+<p><strong>Output:</strong></p>
+<pre><code>Start
+End
+Promise
+Timeout 2
+Timeout 1
+</code></pre><h3 id="explanation">Explanation</h3>
+<ol>
+<li><code>console.log("Start")</code> is executed and "Start" is printed.</li>
+<li><code>setTimeout</code> with 1000ms delay is called and the callback is sent to the Web API.</li>
+<li><code>setTimeout</code> with 0ms delay is called and the callback is sent to the Web API.</li>
+<li><code>Promise.resolve().then</code> is called and the callback is sent to the microtask queue.</li>
+<li><code>console.log("End")</code> is executed and "End" is printed.</li>
+<li>The event loop checks the call stack and finds it empty. It then processes the microtask queue first, executing the <code>Promise</code> callback and printing "Promise".</li>
+<li>The event loop then processes the callback queue, executing the <code>setTimeout</code> with 0ms delay and printing "Timeout 2".</li>
+<li>Finally, the <code>setTimeout</code> with 1000ms delay is executed and "Timeout 1" is printed.</li>
+</ol>
+<h3 id="microtasks-vs-macrotasks">Microtasks vs Macrotasks</h3>
+<p>Microtasks (e.g., Promises) have higher priority than macrotasks (e.g., <code>setTimeout</code>). The event loop processes all microtasks before moving on to the next macrotask.</p>
+<h3 id="example-of-microtasks-and-macrotasks">Example of Microtasks and Macrotasks</h3>
+<pre><code class="lang-javascript"><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"Start"</span>);
+
+<span class="hljs-built_in">setTimeout</span>(<span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"Timeout"</span>);
+}, <span class="hljs-number">0</span>);
+
+<span class="hljs-title class_">Promise</span>.<span class="hljs-title function_">resolve</span>().<span class="hljs-title function_">then</span>(<span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"Promise 1"</span>);
+}).<span class="hljs-title function_">then</span>(<span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"Promise 2"</span>);
+});
+
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"End"</span>);
+</code></pre>
+<p><strong>Output:</strong></p>
+<pre><code>Start
+End
+Promise 1
+Promise 2
+Timeout
+</code></pre><h3 id="explanation">Explanation</h3>
+<ol>
+<li><code>console.log("Start")</code> is executed and "Start" is printed.</li>
+<li><code>setTimeout</code> is called and the callback is sent to the Web API.</li>
+<li><code>Promise.resolve().then</code> is called and the callback is sent to the microtask queue.</li>
+<li><code>console.log("End")</code> is executed and "End" is printed.</li>
+<li>The event loop processes the microtask queue, executing the <code>Promise</code> callbacks and printing "Promise 1" and "Promise 2".</li>
+<li>The event loop then processes the callback queue, executing the <code>setTimeout</code> callback and printing "Timeout".</li>
+</ol>
+<h2 id="understanding-execution-context-in-javascript">Understanding Execution Context in JavaScript</h2>
+<p>In JavaScript, an execution context is an environment where the code is evaluated and executed. It is a fundamental concept that helps manage the scope and behavior of variables and functions.</p>
+<h3 id="types-of-execution-context">Types of Execution Context</h3>
+<p>There are three main types of execution contexts in JavaScript:</p>
+<ol>
+<li><strong>Global Execution Context</strong>: This is the default context where the code starts execution. It creates a global object (e.g., <code>window</code> in browsers) and sets up the global scope.</li>
+<li><strong>Function Execution Context</strong>: Created whenever a function is invoked. Each function has its own execution context.</li>
+<li><strong>Eval Execution Context</strong>: Created when code is executed inside the <code>eval</code> function.</li>
+</ol>
+<h3 id="phases-of-execution-context">Phases of Execution Context</h3>
+<p>Each execution context goes through two phases:</p>
+<ol>
+<li><p><strong>Creation Phase</strong>: In this phase, the JavaScript engine sets up the environment for the code to be executed. It involves:</p>
+<ul>
+<li>Creating the <code>this</code> binding.</li>
+<li>Setting up the scope chain.</li>
+<li>Creating the variable object (variables, functions, and arguments).</li>
+</ul>
+</li>
+<li><p><strong>Execution Phase</strong>: In this phase, the JavaScript engine executes the code line by line.</p>
+</li>
+</ol>
+<h3 id="example-of-execution-context">Example of Execution Context</h3>
+<p>Here's an example to illustrate how execution contexts work:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> globalVar = <span class="hljs-string">"I am a global variable"</span>;
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">outerFunction</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">var</span> outerVar = <span class="hljs-string">"I am an outer variable"</span>;
+
+    <span class="hljs-keyword">function</span> <span class="hljs-title function_">innerFunction</span>(<span class="hljs-params"></span>) {
+        <span class="hljs-keyword">var</span> innerVar = <span class="hljs-string">"I am an inner variable"</span>;
+        <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(globalVar); <span class="hljs-comment">// Accesses global variable</span>
+        <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(outerVar);  <span class="hljs-comment">// Accesses outer variable</span>
+        <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(innerVar);  <span class="hljs-comment">// Accesses inner variable</span>
+    }
+
+    <span class="hljs-title function_">innerFunction</span>();
+}
+
+<span class="hljs-title function_">outerFunction</span>();
+</code></pre>
+<p><strong>Output:</strong></p>
+<pre><code>I am a global variable
+I am an outer variable
+I am an inner variable
+</code></pre><h3 id="explanation">Explanation</h3>
+<ol>
+<li><p><strong>Global Execution Context</strong>:</p>
+<ul>
+<li><code>globalVar</code> is created and assigned the value "I am a global variable".</li>
+<li><code>outerFunction</code> is created and stored in memory.</li>
+</ul>
+</li>
+<li><p><strong>Function Execution Context (outerFunction)</strong>:</p>
+<ul>
+<li><code>outerVar</code> is created and assigned the value "I am an outer variable".</li>
+<li><code>innerFunction</code> is created and stored in memory.</li>
+</ul>
+</li>
+<li><p><strong>Function Execution Context (innerFunction)</strong>:</p>
+<ul>
+<li><code>innerVar</code> is created and assigned the value "I am an inner variable".</li>
+<li>The <code>console.log</code> statements access variables from their respective scopes.</li>
+</ul>
+</li>
+</ol>
+<h3 id="scope-chain-and-lexical-environment">Scope Chain and Lexical Environment</h3>
+<p>The scope chain is a list of all the variable objects that the currently executing code has access to. The lexical environment is the environment in which the code is written, and it determines the scope chain.</p>
+<h3 id="example-of-scope-chain">Example of Scope Chain</h3>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> a = <span class="hljs-number">10</span>;
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">foo</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">var</span> b = <span class="hljs-number">20</span>;
+
+    <span class="hljs-keyword">function</span> <span class="hljs-title function_">bar</span>(<span class="hljs-params"></span>) {
+        <span class="hljs-keyword">var</span> c = <span class="hljs-number">30</span>;
+        <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(a + b + c); <span class="hljs-comment">// Accesses variables from all scopes</span>
+    }
+
+    <span class="hljs-title function_">bar</span>();
+}
+
+<span class="hljs-title function_">foo</span>();
+</code></pre>
+<p><strong>Output:</strong></p>
+<pre><code>60
+</code></pre><h3 id="explanation">Explanation</h3>
+<ol>
+<li><strong>Global Scope</strong>: Contains <code>a</code>.</li>
+<li><strong>Function Scope (foo)</strong>: Contains <code>b</code> and has access to <code>a</code>.</li>
+<li><strong>Function Scope (bar)</strong>: Contains <code>c</code> and has access to <code>a</code> and <code>b</code>.</li>
+</ol>
+<h3 id="hoisting">Hoisting</h3>
+<p>Hoisting is a behavior in JavaScript where variable and function declarations are moved to the top of their containing scope during the creation phase.</p>
+<h3 id="example-of-hoisting">Example of Hoisting</h3>
+<pre><code class="lang-javascript"><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(hoistedVar); <span class="hljs-comment">// Output: undefined</span>
+<span class="hljs-keyword">var</span> hoistedVar = <span class="hljs-string">"I am hoisted"</span>;
+
+<span class="hljs-title function_">hoistedFunction</span>(); <span class="hljs-comment">// Output: I am a hoisted function</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">hoistedFunction</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"I am a hoisted function"</span>);
+}
+</code></pre>
+<h3 id="explanation">Explanation</h3>
+<ul>
+<li><code>hoistedVar</code> is declared but not initialized during the creation phase, so it is <code>undefined</code> when accessed.</li>
+<li><code>hoistedFunction</code> is fully hoisted and can be called before its declaration.</li>
+</ul>
+<h2 id="understanding-memory-heap-in-javascript">Understanding Memory Heap in JavaScript</h2>
+<p>In JavaScript, memory management is crucial for ensuring efficient and smooth performance of applications. The memory heap is a region in memory where objects, strings, and closures are stored. It is managed by the JavaScript engine's garbage collector.</p>
+<h3 id="what-is-a-memory-heap">What is a Memory Heap?</h3>
+<p>The memory heap is an area of pre-reserved computer memory that a program can use to store data in some variable amount. Unlike the stack, which is used for static memory allocation, the heap is used for dynamic memory allocation.</p>
+<h3 id="how-memory-heap-works">How Memory Heap Works</h3>
+<p>When you create objects or variables in JavaScript, they are allocated in the memory heap. The JavaScript engine's garbage collector periodically scans the heap to identify and reclaim memory that is no longer in use.</p>
+<h3 id="example-of-memory-allocation">Example of Memory Allocation</h3>
+<p>Here's an example to illustrate how memory is allocated in the heap:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> obj = {
+    <span class="hljs-attr">name</span>: <span class="hljs-string">"John"</span>,
+    <span class="hljs-attr">age</span>: <span class="hljs-number">30</span>
+};
+
+<span class="hljs-keyword">let</span> arr = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>];
+</code></pre>
+<p>In this example, the object <code>obj</code> and the array <code>arr</code> are allocated in the memory heap.</p>
+<h3 id="garbage-collection">Garbage Collection</h3>
+<p>JavaScript uses an automatic garbage collection mechanism to manage memory. The garbage collector identifies objects that are no longer reachable and reclaims their memory.</p>
+<h3 id="example-of-garbage-collection">Example of Garbage Collection</h3>
+<p>Consider the following example:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">createUser</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">let</span> user = {
+        <span class="hljs-attr">name</span>: <span class="hljs-string">"Alice"</span>,
+        <span class="hljs-attr">age</span>: <span class="hljs-number">25</span>
+    };
+    <span class="hljs-keyword">return</span> user;
+}
+
+<span class="hljs-keyword">let</span> user1 = <span class="hljs-title function_">createUser</span>();
+<span class="hljs-keyword">let</span> user2 = <span class="hljs-title function_">createUser</span>();
+user1 = <span class="hljs-literal">null</span>; <span class="hljs-comment">// The object referenced by user1 is now eligible for garbage collection</span>
+</code></pre>
+<p>In this example, when <code>user1</code> is set to <code>null</code>, the object it referenced becomes eligible for garbage collection because it is no longer reachable.</p>
+<h3 id="memory-leaks">Memory Leaks</h3>
+<p>Memory leaks occur when memory that is no longer needed is not released. This can happen if references to objects are unintentionally retained.</p>
+<h3 id="example-of-memory-leak">Example of Memory Leak</h3>
+<p>Here's an example of a memory leak:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> arr = [];
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">addElement</span>(<span class="hljs-params"></span>) {
+    arr.<span class="hljs-title function_">push</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">Array</span>(<span class="hljs-number">1000000</span>).<span class="hljs-title function_">join</span>(<span class="hljs-string">'x'</span>));
+}
+
+<span class="hljs-built_in">setInterval</span>(addElement, <span class="hljs-number">1000</span>); <span class="hljs-comment">// This will cause a memory leak as the array keeps growing</span>
+</code></pre>
+<p>In this example, the <code>arr</code> array keeps growing because new elements are continuously added without being removed, leading to a memory leak.</p>
+<h3 id="best-practices-for-memory-management">Best Practices for Memory Management</h3>
+<ol>
+<li><strong>Avoid Global Variables</strong>: Minimize the use of global variables to reduce the risk of memory leaks.</li>
+<li><strong>Use <code>let</code> and <code>const</code></strong>: Prefer <code>let</code> and <code>const</code> over <code>var</code> to limit the scope of variables.</li>
+<li><strong>Clean Up References</strong>: Explicitly set references to <code>null</code> when they are no longer needed.</li>
+<li><strong>Use Closures Wisely</strong>: Be cautious with closures as they can retain references to outer variables.</li>
+</ol>
+<h3 id="conclusion">Conclusion</h3>
+<p>Understanding how the memory heap works in JavaScript is essential for writing efficient and performant code. By following best practices and being mindful of memory allocation and garbage collection, you can avoid common pitfalls such as memory leaks.</p>
+<h2 id="understanding-runtime-environment-in-javascript">Understanding Runtime Environment in JavaScript</h2>
+<p>The runtime environment in JavaScript is the context in which your code is executed. It includes the JavaScript engine, the call stack, the memory heap, and the APIs provided by the environment (such as the browser or Node.js).</p>
+<h3 id="javascript-engine">JavaScript Engine</h3>
+<p>The JavaScript engine is responsible for executing your code. Popular engines include V8 (used in Chrome and Node.js), SpiderMonkey (used in Firefox), and JavaScriptCore (used in Safari).</p>
+<h3 id="call-stack">Call Stack</h3>
+<p>The call stack is a data structure that keeps track of function calls. When a function is called, it is added to the top of the stack. When the function returns, it is removed from the stack.</p>
+<h3 id="example-of-call-stack">Example of Call Stack</h3>
+<pre><code class="lang-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">first</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"First function"</span>);
+    <span class="hljs-title function_">second</span>();
+}
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">second</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"Second function"</span>);
+    <span class="hljs-title function_">third</span>();
+}
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">third</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"Third function"</span>);
+}
+
+<span class="hljs-title function_">first</span>();
+</code></pre>
+<p><strong>Output:</strong></p>
+<pre><code>First function
+Second function
+Third function
+</code></pre><h3 id="memory-heap">Memory Heap</h3>
+<p>The memory heap is where objects, strings, and closures are stored. It is managed by the garbage collector, which reclaims memory that is no longer in use.</p>
+<h3 id="example-of-memory-allocation">Example of Memory Allocation</h3>
+<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> obj = {
+    <span class="hljs-attr">name</span>: <span class="hljs-string">"John"</span>,
+    <span class="hljs-attr">age</span>: <span class="hljs-number">30</span>
+};
+
+<span class="hljs-keyword">let</span> arr = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>];
+</code></pre>
+<h3 id="event-loop">Event Loop</h3>
+<p>The event loop is responsible for handling asynchronous operations. It continuously checks the call stack and the task queue, executing tasks from the queue when the stack is empty.</p>
+<h3 id="example-of-event-loop">Example of Event Loop</h3>
+<pre><code class="lang-javascript"><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"Start"</span>);
+
+<span class="hljs-built_in">setTimeout</span>(<span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"Timeout"</span>);
+}, <span class="hljs-number">0</span>);
+
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"End"</span>);
+</code></pre>
+<p><strong>Output:</strong></p>
+<pre><code>Start
+End
+Timeout
+</code></pre><h3 id="apis-provided-by-the-environment">APIs Provided by the Environment</h3>
+<p>The runtime environment provides various APIs that you can use in your code. In a browser, these include the DOM, fetch, and setTimeout. In Node.js, these include file system operations, HTTP requests, and more.</p>
+<h3 id="example-of-browser-api">Example of Browser API</h3>
+<pre><code class="lang-javascript"><span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">"myButton"</span>).<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">"click"</span>, <span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-title function_">alert</span>(<span class="hljs-string">"Button clicked!"</span>);
+});
+</code></pre>
+<h3 id="example-of-nodejs-api">Example of Node.js API</h3>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">'fs'</span>);
+
+fs.<span class="hljs-title function_">readFile</span>(<span class="hljs-string">'example.txt'</span>, <span class="hljs-string">'utf8'</span>, <span class="hljs-function">(<span class="hljs-params">err, data</span>) =&gt;</span> {
+    <span class="hljs-keyword">if</span> (err) {
+        <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(err);
+        <span class="hljs-keyword">return</span>;
+    }
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(data);
+});
+</code></pre>
+<h3 id="conclusion">Conclusion</h3>
+<p>Understanding the runtime environment in JavaScript is crucial for writing efficient and effective code. By knowing how the call stack, memory heap, event loop, and provided APIs work, you can better manage your code's execution and performance.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Chapter26.html" class="navigation navigation-prev " aria-label="Previous page: 第二十六章·动画资源">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="References.html" class="navigation navigation-next " aria-label="Next page: 引用">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"第二十七章·JavaScript运行原理","level":"1.31","depth":1,"next":{"title":"引用","level":"1.32","depth":1,"path":"content/References.md","ref":"content/References.md","articles":[]},"previous":{"title":"第二十六章·动画资源","level":"1.30","depth":1,"path":"content/Chapter26.md","ref":"content/Chapter26.md","articles":[]},"dir":"ltr"},"config":{"plugins":["hints","hide-published-with","chapter-fold","intopic-toc","tooltips","exercises","theme-creative","sharing","@honkit/honkit-plugin-ga","sitemap","favicon-custom","edit-link","ace-editor"],"styles":{"website":".gitbook/css/custom.css"},"pluginsConfig":{"chapter-fold":{},"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"概览"},"search":{},"favicon-custom":{"favicon":"./favicon.ico","appleTouchIconPrecomposed152":"./favicon.ico"},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"tooltips":{},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-creative":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"maxWidth":"800px","showLevel":false,"fontSize":18,"colorSecondary":"#E6D7C1","fontFamily":"'Times New Roman', serif","backgroundColor":"#F9F6F1","textColor":"#3E3E3E","textAlign":"justify","lineHeight":1.6,"colorPrimary":"#D8CFC4"},"highlight":{},"favicon":"favicon.ico","sitemap":{"hostname":"https://javascript.sumankunwar.com.np/"},"@honkit/honkit-plugin-ga":{},"ace-editor":{},"appleTouchIconPrecomposed152":"js.png","exercises":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"","base":"https://github.com/dinglevin/learn-javascript-zh/edit/main"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"Sepia","keywords":"JavaScript tutorial, JavaScript学习教程","author":"Suman Kunwar, dinglevin","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"JavaScript学习教程, 初学者版本","language":"zh-cn","website":"https://learn-javascript.dinglevin.tech/","gitbook":"*","description":"JavaScript学习教程, 初学者版本"},"file":{"path":"content/Chapter27.md","mtime":"2024-10-07T08:10:38.067Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-10-07T08:10:49.404Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook-plugin-exercises/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+    
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-published-with/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-intopic-toc/anchor.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-intopic-toc/gumshoe.polyfills.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-intopic-toc/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/ace/theme-tomorrow.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/ace/mode-javascript.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/exercises.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace-editor/ace.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace-editor/ace/theme-tomorrow.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace-editor/ace/mode-javascript.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace-editor/main.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+
+    </body>
+</html>
+

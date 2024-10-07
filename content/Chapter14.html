@@ -1,0 +1,1052 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-cn" >
+    <head>
+        <title>第十四章·正则表达式 · JavaScript学习教程, 初学者版本</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 5.1.4">
+        <meta name="author" content="Suman Kunwar, dinglevin">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-hints/plugin-hints.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-intopic-toc/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/honkit-plugin-tooltips/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-exercises/exercises.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-ace-editor/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../.gitbook/css/custom.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Chapter15.html" />
+    
+    
+    <link rel="prev" href="Chapter13.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="輸入並搜尋" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="Dedication.html">
+            
+                <a href="Dedication.html">
+            
+                    
+                    献词
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Copyright.html">
+            
+                <a href="Copyright.html">
+            
+                    
+                    版权声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="Preface.html">
+            
+                <a href="Preface.html">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="Chapter01.html">
+            
+                <a href="Chapter01.html">
+            
+                    
+                    第一章·介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="Chapter02.html">
+            
+                <a href="Chapter02.html">
+            
+                    
+                    第二章·基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="Chapter03.html">
+            
+                <a href="Chapter03.html">
+            
+                    
+                    第三章·数值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="Chapter04.html">
+            
+                <a href="Chapter04.html">
+            
+                    
+                    第四章·字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="Chapter05.html">
+            
+                <a href="Chapter05.html">
+            
+                    
+                    第五章·条件逻辑
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="Chapter06.html">
+            
+                <a href="Chapter06.html">
+            
+                    
+                    第六章·数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="Chapter07.html">
+            
+                <a href="Chapter07.html">
+            
+                    
+                    第七章·循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="Chapter08.html">
+            
+                <a href="Chapter08.html">
+            
+                    
+                    第八章·函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="Chapter09.html">
+            
+                <a href="Chapter09.html">
+            
+                    
+                    第九章·对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="Chapter10.html">
+            
+                <a href="Chapter10.html">
+            
+                    
+                    第十章·日期和时间
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="Chapter11.html">
+            
+                <a href="Chapter11.html">
+            
+                    
+                    第十一章·JSON
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="Chapter12.html">
+            
+                <a href="Chapter12.html">
+            
+                    
+                    第十二章·错误处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="Chapter13.html">
+            
+                <a href="Chapter13.html">
+            
+                    
+                    第十三章·模块化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.18" data-path="Chapter14.html">
+            
+                <a href="Chapter14.html">
+            
+                    
+                    第十四章·正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="Chapter15.html">
+            
+                <a href="Chapter15.html">
+            
+                    
+                    第十五章·类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="Chapter16.html">
+            
+                <a href="Chapter16.html">
+            
+                    
+                    第十六章·浏览器对象模型(BOM)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="Chapter17.html">
+            
+                <a href="Chapter17.html">
+            
+                    
+                    第十七章·事件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="Chapter18.html">
+            
+                <a href="Chapter18.html">
+            
+                    
+                    第十八章·Promise、async/await
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="Chapter19.html">
+            
+                <a href="Chapter19.html">
+            
+                    
+                    第十九章·其他杂项
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="Chapter20.html">
+            
+                <a href="Chapter20.html">
+            
+                    
+                    第二十章·服务端代码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="Chapter21.html">
+            
+                <a href="Chapter21.html">
+            
+                    
+                    第二十一章·实战练习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="Chapter22.html">
+            
+                <a href="Chapter22.html">
+            
+                    
+                    第二十二章·面试问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27" data-path="Chapter23.html">
+            
+                <a href="Chapter23.html">
+            
+                    
+                    第二十三章·设计模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.28" data-path="Chapter24.html">
+            
+                <a href="Chapter24.html">
+            
+                    
+                    第二十四章·文件系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29" data-path="Chapter25.html">
+            
+                <a href="Chapter25.html">
+            
+                    
+                    第二十五章·ES6概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.30" data-path="Chapter26.html">
+            
+                <a href="Chapter26.html">
+            
+                    
+                    第二十六章·动画资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.31" data-path="Chapter27.html">
+            
+                <a href="Chapter27.html">
+            
+                    
+                    第二十七章·JavaScript运行原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.32" data-path="References.html">
+            
+                <a href="References.html">
+            
+                    
+                    引用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.33" data-path="Resources.html">
+            
+                <a href="Resources.html">
+            
+                    
+                    资料
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34" data-path="Credits.html">
+            
+                <a href="Credits.html">
+            
+                    
+                    鸣谢
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本書使用 GitBook 釋出
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >第十四章·正则表达式</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="第十四章·正则表达式">第十四章·正则表达式</h1>
+<p>A regular expression is an object that can either be constructed with the <code>RegEx</code> constructor or written as a literal value by enclosing a pattern in a forward slash <code>(/)</code> characters. The syntaxes for creating a regular expression are shown below.</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// using regular expression constructor</span>
+<span class="hljs-keyword">new</span> <span class="hljs-title class_">RegExp</span>(pattern[, flags]);
+
+<span class="hljs-comment">// using literals</span>
+<span class="hljs-regexp">/pattern/m</span>odifiers
+</code></pre>
+<p>The flags are optional while creating a regular expression using literals. Example of creating identical regular using above mentioned method is as follows.</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> re1 = <span class="hljs-keyword">new</span> <span class="hljs-title class_">RegExp</span>(<span class="hljs-string">"xyz"</span>); 
+<span class="hljs-keyword">let</span> re2 = <span class="hljs-regexp">/xyz/</span>;
+</code></pre>
+<p>Both ways will create a regex object and have the same methods and properties. There are cases where we might need dynamic values to create a regular expression, in that case, literals won't work and have to go with the constructor.</p>
+<p></p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle"></i></div><div class="hints-container"><p>In cases where we want to have a forward slash to be a part of a regular expression, we have to escape the forward slash <code>(/)</code> with backslash <code>(\)</code>.</p>
+</div></div><p></p>
+<p>The different modifiers that are used to perform case-insensitive searches are:</p>
+<ul>
+<li><code>g</code> - global search (finds all matches instead of stopping after the first match)</li>
+</ul>
+<p>Example :</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> str = <span class="hljs-string">"Hello world, hello again!"</span>;
+<span class="hljs-keyword">const</span> regex = <span class="hljs-regexp">/hello/g</span>;
+<span class="hljs-keyword">const</span> matches = str.<span class="hljs-title function_">match</span>(regex);
+<span class="hljs-comment">// If you are thinking about .match() Read This 👇</span>
+<span class="hljs-comment">// It is a built-in method in JavaScript that is used to search a string for a match against an expression.</span>
+<span class="hljs-comment">// If the match is found, It returns an array of all the matches that were found. and if not, the .match() method returns null.</span>
+
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(matches); <span class="hljs-comment">// ["Hello", "hello"]</span>
+</code></pre>
+<ul>
+<li><code>i</code> - case insensitive search</li>
+</ul>
+<p>Example :</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> str = <span class="hljs-string">"HeLlO WoRlD"</span>;
+<span class="hljs-keyword">const</span> regex = <span class="hljs-regexp">/hello/i</span>;
+<span class="hljs-keyword">const</span> match = regex.<span class="hljs-title function_">test</span>(str);
+<span class="hljs-comment">// The .test() method returns a boolean value: </span>
+<span class="hljs-comment">// true if the match is found, and false if the match is not found.</span>
+
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(match); <span class="hljs-comment">// true</span>
+</code></pre>
+<ul>
+<li><code>m</code> - multiline matching </li>
+</ul>
+<p>Example :</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> str = <span class="hljs-string">"This is a\nmultiline string."</span>;
+<span class="hljs-keyword">const</span> regex = <span class="hljs-regexp">/./mg</span>;
+<span class="hljs-keyword">const</span> matches = str.<span class="hljs-title function_">match</span>(regex);
+<span class="hljs-comment">// the m flag is used to match newline characters (\n).</span>
+<span class="hljs-comment">// This means that the regex will match all 26 characters in the string,</span>
+<span class="hljs-comment">//  including the newline character.</span>
+
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(matches.<span class="hljs-property">length</span>); <span class="hljs-comment">// 26</span>
+</code></pre>
+<p><em>Brackets</em> are used in a regular expression to find a range of characters. Some of them are mentioned below.</p>
+<ul>
+<li><code>[abc]</code> - find any character between the brackets</li>
+</ul>
+<p>Example :</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> str = <span class="hljs-string">"The cat and the dog are both animals."</span>;
+<span class="hljs-keyword">const</span> regex = <span class="hljs-regexp">/[abc]/g</span>;
+<span class="hljs-keyword">const</span> matches = str.<span class="hljs-title function_">match</span>(regex);
+
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(matches); <span class="hljs-comment">// Array of all occurrences of a, b, and c</span>
+
+[
+  <span class="hljs-string">'c'</span>, <span class="hljs-string">'a'</span>, <span class="hljs-string">'a'</span>,
+  <span class="hljs-string">'a'</span>, <span class="hljs-string">'b'</span>, <span class="hljs-string">'a'</span>,
+  <span class="hljs-string">'a'</span>
+]
+</code></pre>
+<ul>
+<li><code>[^abc]</code> - find any character, not between the brackets</li>
+</ul>
+<p>Example :</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> str = <span class="hljs-string">"The cat and dog."</span>;
+<span class="hljs-keyword">const</span> regex = <span class="hljs-regexp">/[^abc]/g</span>; <span class="hljs-comment">// Matches any character that is not 'a', 'b', or 'c'</span>
+<span class="hljs-keyword">const</span> matches = str.<span class="hljs-title function_">match</span>(regex);
+
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(matches); <span class="hljs-comment">// Array of all occurrences of characters not 'a', 'b', or 'c'</span>
+
+[
+  <span class="hljs-string">'T'</span>, <span class="hljs-string">'h'</span>, <span class="hljs-string">'e'</span>, <span class="hljs-string">' '</span>,
+  <span class="hljs-string">'t'</span>, <span class="hljs-string">' '</span>, <span class="hljs-string">'n'</span>, <span class="hljs-string">'d'</span>,
+  <span class="hljs-string">' '</span>, <span class="hljs-string">'d'</span>, <span class="hljs-string">'o'</span>, <span class="hljs-string">'g'</span>,
+  <span class="hljs-string">'.'</span>
+]
+</code></pre>
+<ul>
+<li><code>[0-9]</code> - find any digit between the bracket</li>
+</ul>
+<p>Example :</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> str = <span class="hljs-string">"The price of the item is $25, but it may change to $30."</span>;
+<span class="hljs-keyword">const</span> regex = <span class="hljs-regexp">/[0-9]/g</span>; <span class="hljs-comment">// Matches any digit from 0 to 9</span>
+<span class="hljs-keyword">const</span> matches = str.<span class="hljs-title function_">match</span>(regex);
+
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(matches); <span class="hljs-comment">// Array of all occurrences of digits</span>
+
+[
+  <span class="hljs-string">'2'</span>, <span class="hljs-string">'5'</span>, <span class="hljs-string">'3'</span>, <span class="hljs-string">'0'</span>
+]
+</code></pre>
+<ul>
+<li><code>[^0-9]</code> - find any character, not between the brackets (non-digit)</li>
+</ul>
+<p>Example :</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> str = <span class="hljs-string">"The price is $25."</span>;
+<span class="hljs-keyword">const</span> regex = <span class="hljs-regexp">/[^0-9]/g</span>; <span class="hljs-comment">// Matches any character that is not a digit</span>
+<span class="hljs-keyword">const</span> matches = str.<span class="hljs-title function_">match</span>(regex);
+
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(matches); <span class="hljs-comment">// Array of all occurrences of non-digits</span>
+
+[
+  <span class="hljs-string">'T'</span>, <span class="hljs-string">'h'</span>, <span class="hljs-string">'e'</span>, <span class="hljs-string">' '</span>,
+  <span class="hljs-string">'p'</span>, <span class="hljs-string">'r'</span>, <span class="hljs-string">'i'</span>, <span class="hljs-string">'c'</span>,
+  <span class="hljs-string">'e'</span>, <span class="hljs-string">' '</span>, <span class="hljs-string">'i'</span>, <span class="hljs-string">'s'</span>,
+  <span class="hljs-string">' '</span>, <span class="hljs-string">'$'</span>, <span class="hljs-string">'.'</span>
+]
+</code></pre>
+<ul>
+<li><code>(x|y)</code>- find any of the alternatives separated by |</li>
+</ul>
+<p>Example :</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> str = <span class="hljs-string">"The words 'xylophone' and 'yellow' contain the letters 'x' and 'y'."</span>;
+<span class="hljs-keyword">const</span> regex = <span class="hljs-regexp">/(x|y)/g</span>; <span class="hljs-comment">// Matches either 'x' or 'y'</span>
+<span class="hljs-keyword">const</span> matches = str.<span class="hljs-title function_">match</span>(regex);
+
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(matches); <span class="hljs-comment">// Array of all occurrences of 'x' or 'y'</span>
+
+[
+  <span class="hljs-string">'x'</span>, <span class="hljs-string">'y'</span>, <span class="hljs-string">'y'</span>, <span class="hljs-string">'x'</span>, <span class="hljs-string">'x'</span>, <span class="hljs-string">'y'</span>
+]
+</code></pre>
+<p><em>Metacharacters</em> are special character that has special meaning in the regular expression. These characters are further described below:</p>
+<table>
+<thead>
+<tr>
+<th>Metacharacter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>.</code></td>
+<td>Match a single character excpet newline or a terminator</td>
+</tr>
+<tr>
+<td><code>\w</code></td>
+<td>Match a word character (alphanumeric character <code>[a-zA-Z0–9_]</code>)</td>
+</tr>
+<tr>
+<td><code>\W</code></td>
+<td>Match a non word character (same as <code>[^a-zA-Z0–9_]</code>)</td>
+</tr>
+<tr>
+<td><code>\d</code></td>
+<td>Match any digit character( same as <code>[0-9]</code>)</td>
+</tr>
+<tr>
+<td><code>\D</code></td>
+<td>Match any non digiti character</td>
+</tr>
+<tr>
+<td><code>\s</code></td>
+<td>Match a whitespace character (spaces, tabs etc)</td>
+</tr>
+<tr>
+<td><code>\S</code></td>
+<td>Match a non whitespace character</td>
+</tr>
+<tr>
+<td><code>\b</code></td>
+<td>Match at the beginning / end of a word</td>
+</tr>
+<tr>
+<td><code>\B</code></td>
+<td>Match but not at the begining / end of a word</td>
+</tr>
+<tr>
+<td><code>\0</code></td>
+<td>Match a <code>NULL</code> character</td>
+</tr>
+<tr>
+<td><code>\n</code></td>
+<td>Match a new line character</td>
+</tr>
+<tr>
+<td><code>\f</code></td>
+<td>Match a form feed character</td>
+</tr>
+<tr>
+<td><code>\r</code></td>
+<td>Match a carriage return character</td>
+</tr>
+<tr>
+<td><code>\t</code></td>
+<td>Match a tab character</td>
+</tr>
+<tr>
+<td><code>\v</code></td>
+<td>Match a tab vertical character</td>
+</tr>
+<tr>
+<td><code>\xxx</code></td>
+<td>Match a character specified by an octal number <code>xxx</code></td>
+</tr>
+<tr>
+<td><code>\xdd</code></td>
+<td>Match a character specified by a hexadecimal number <code>dd</code></td>
+</tr>
+<tr>
+<td><code>\udddd</code></td>
+<td>Match Unicode character specified by a hexadecimal number <code>dddd</code></td>
+</tr>
+</tbody>
+</table>
+<p>Properties and methods supported by RegEx are listed below.</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>constructor</code></td>
+<td>Returns function that created RegExp object's protype</td>
+</tr>
+<tr>
+<td><code>exec()</code></td>
+<td>Test for the match and returns the first match, if no match then it returns <code>null</code></td>
+</tr>
+<tr>
+<td><code>global</code></td>
+<td>Checks if the <code>g</code> modifier is set</td>
+</tr>
+<tr>
+<td><code>ignoreCase</code></td>
+<td>Checks if the <code>i</code> modifier is set</td>
+</tr>
+<tr>
+<td><code>lastIndex</code></td>
+<td>Specifies the index at which to start the next match</td>
+</tr>
+<tr>
+<td><code>multiline</code></td>
+<td>Checks if the m modifier is set</td>
+</tr>
+<tr>
+<td><code>source</code></td>
+<td>Returns the text of the string</td>
+</tr>
+<tr>
+<td><code>test()</code></td>
+<td>Test for the match and returns the <code>true</code> or <code>false</code></td>
+</tr>
+<tr>
+<td><code>toString()</code></td>
+<td>Returns the string value of the regular exression</td>
+</tr>
+</tbody>
+</table>
+<p></p><div class="alert alert-undefined hints-alert"><div class="hints-icon"><i class="undefined"></i></div><div class="hints-container"><p>A <code>complie()</code> method complies the regular expression and is deprecated.</p>
+</div></div><p></p>
+<h3 id="a-common-example-of-regular-expression">A common example of regular expression</h3>
+<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> text = <span class="hljs-string">"The best things in life are free"</span>;
+<span class="hljs-keyword">let</span> result = <span class="hljs-regexp">/e/</span>.<span class="hljs-title function_">exec</span>(text); <span class="hljs-comment">// looks for a match  of e in a string</span>
+<span class="hljs-comment">// result: e</span>
+
+
+<span class="hljs-keyword">let</span> helloWorldText = <span class="hljs-string">"Hello world!"</span>;
+<span class="hljs-comment">// Look for "Hello"</span>
+<span class="hljs-keyword">let</span> pattern1 = <span class="hljs-regexp">/Hello/g</span>;
+<span class="hljs-keyword">let</span> result1 = pattern1.<span class="hljs-title function_">test</span>(helloWorldText);
+<span class="hljs-comment">// result1: true</span>
+
+<span class="hljs-keyword">let</span> pattern1String = pattern1.<span class="hljs-title function_">toString</span>();
+<span class="hljs-comment">// pattern1String : '/Hello/g'</span>
+</code></pre>
+<h3 id="a-real-life-example-of-regex-in-pincode-checking">A Real Life Example of Regex in Pincode Checking</h3>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> <span class="hljs-title function_">handleSubmit</span> = (<span class="hljs-params">e</span>) =&gt; {
+  <span class="hljs-comment">// Prevent the default form submission behavior</span>
+  e.<span class="hljs-title function_">preventDefault</span>();
+
+  <span class="hljs-comment">// Define a list of valid pincodes</span>
+  <span class="hljs-keyword">const</span> validPincodes = [
+    <span class="hljs-number">110001</span>, <span class="hljs-number">110002</span>, <span class="hljs-number">110003</span>, <span class="hljs-number">110004</span>, <span class="hljs-number">110005</span>, <span class="hljs-number">110006</span>, <span class="hljs-number">110007</span>, <span class="hljs-number">110008</span>, <span class="hljs-number">110009</span>,
+    <span class="hljs-number">110010</span>, <span class="hljs-number">110011</span>, <span class="hljs-number">110012</span>, <span class="hljs-number">110013</span>, <span class="hljs-number">110014</span>, <span class="hljs-number">110015</span>, <span class="hljs-number">110016</span>, <span class="hljs-number">110017</span>, <span class="hljs-number">110018</span>,
+    <span class="hljs-number">110019</span>, <span class="hljs-number">110020</span>, <span class="hljs-number">110021</span>, <span class="hljs-number">110022</span>, <span class="hljs-number">110023</span>, <span class="hljs-number">110050</span>, <span class="hljs-number">110051</span>, <span class="hljs-number">110056</span>, <span class="hljs-number">110048</span>,
+    <span class="hljs-number">110057</span>, <span class="hljs-number">110058</span>, <span class="hljs-number">110059</span>, <span class="hljs-number">110060</span>, <span class="hljs-number">110061</span>, <span class="hljs-number">110062</span>, <span class="hljs-number">110063</span>, <span class="hljs-number">110064</span>
+  ];
+
+  <span class="hljs-comment">// Convert the valid pincodes to strings</span>
+  <span class="hljs-keyword">const</span> validPincodeStrings = validPincodes.<span class="hljs-title function_">map</span>(<span class="hljs-function">(<span class="hljs-params">pincode</span>) =&gt;</span> <span class="hljs-title class_">String</span>(pincode));
+
+  <span class="hljs-comment">// Create a regular expression pattern to match valid pincodes</span>
+  <span class="hljs-keyword">const</span> regexPattern = <span class="hljs-keyword">new</span> <span class="hljs-title class_">RegExp</span>(<span class="hljs-string">`^(<span class="hljs-subst">${validPincodeStrings.join(<span class="hljs-string">"|"</span>)}</span>)$`</span>);
+
+  <span class="hljs-comment">// Get the submitted pincode from the input field</span>
+  <span class="hljs-keyword">const</span> submittedPincode = pincode; <span class="hljs-comment">// Make sure 'pincode' is defined elsewhere</span>
+
+  <span class="hljs-comment">// Check if the submitted pincode matches the valid pincode pattern</span>
+  <span class="hljs-keyword">if</span> (regexPattern.<span class="hljs-title function_">test</span>(submittedPincode)) {
+    <span class="hljs-comment">// Display a success message</span>
+    <span class="hljs-comment">// ...</span>
+  } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (submittedPincode === <span class="hljs-string">""</span>) {
+    <span class="hljs-comment">// Display an error message for empty input</span>
+    <span class="hljs-comment">// ...</span>
+  } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (submittedPincode.<span class="hljs-property">length</span> &lt; <span class="hljs-number">6</span>) {
+    <span class="hljs-comment">// Display an error message for invalid pincode length</span>
+    <span class="hljs-comment">// ...</span>
+  }
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Chapter13.html" class="navigation navigation-prev " aria-label="Previous page: 第十三章·模块化">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Chapter15.html" class="navigation navigation-next " aria-label="Next page: 第十五章·类">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"第十四章·正则表达式","level":"1.18","depth":1,"next":{"title":"第十五章·类","level":"1.19","depth":1,"path":"content/Chapter15.md","ref":"content/Chapter15.md","articles":[]},"previous":{"title":"第十三章·模块化","level":"1.17","depth":1,"path":"content/Chapter13.md","ref":"content/Chapter13.md","articles":[]},"dir":"ltr"},"config":{"plugins":["hints","hide-published-with","chapter-fold","intopic-toc","tooltips","exercises","theme-creative","sharing","@honkit/honkit-plugin-ga","sitemap","favicon-custom","edit-link","ace-editor"],"styles":{"website":".gitbook/css/custom.css"},"pluginsConfig":{"chapter-fold":{},"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"概览"},"search":{},"favicon-custom":{"favicon":"./favicon.ico","appleTouchIconPrecomposed152":"./favicon.ico"},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"tooltips":{},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-creative":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"maxWidth":"800px","showLevel":false,"fontSize":18,"colorSecondary":"#E6D7C1","fontFamily":"'Times New Roman', serif","backgroundColor":"#F9F6F1","textColor":"#3E3E3E","textAlign":"justify","lineHeight":1.6,"colorPrimary":"#D8CFC4"},"highlight":{},"favicon":"favicon.ico","sitemap":{"hostname":"https://javascript.sumankunwar.com.np/"},"@honkit/honkit-plugin-ga":{},"ace-editor":{},"appleTouchIconPrecomposed152":"js.png","exercises":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"","base":"https://github.com/dinglevin/learn-javascript-zh/edit/main"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"Sepia","keywords":"JavaScript tutorial, JavaScript学习教程","author":"Suman Kunwar, dinglevin","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"JavaScript学习教程, 初学者版本","language":"zh-cn","website":"https://learn-javascript.dinglevin.tech/","gitbook":"*","description":"JavaScript学习教程, 初学者版本"},"file":{"path":"content/Chapter14.md","mtime":"2024-10-07T08:10:38.065Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-10-07T08:10:49.404Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook-plugin-exercises/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+    
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-published-with/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-intopic-toc/anchor.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-intopic-toc/gumshoe.polyfills.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-intopic-toc/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/ace/theme-tomorrow.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/ace/mode-javascript.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/exercises.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace-editor/ace.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace-editor/ace/theme-tomorrow.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace-editor/ace/mode-javascript.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace-editor/main.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+
+    </body>
+</html>
+

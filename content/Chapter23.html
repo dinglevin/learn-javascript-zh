@@ -1,0 +1,2396 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-cn" >
+    <head>
+        <title>第二十三章·设计模式 · JavaScript学习教程, 初学者版本</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 5.1.4">
+        <meta name="author" content="Suman Kunwar, dinglevin">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-hints/plugin-hints.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-intopic-toc/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/honkit-plugin-tooltips/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-exercises/exercises.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-ace-editor/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../.gitbook/css/custom.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Chapter24.html" />
+    
+    
+    <link rel="prev" href="Chapter22.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="輸入並搜尋" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="Dedication.html">
+            
+                <a href="Dedication.html">
+            
+                    
+                    献词
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Copyright.html">
+            
+                <a href="Copyright.html">
+            
+                    
+                    版权声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="Preface.html">
+            
+                <a href="Preface.html">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="Chapter01.html">
+            
+                <a href="Chapter01.html">
+            
+                    
+                    第一章·介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="Chapter02.html">
+            
+                <a href="Chapter02.html">
+            
+                    
+                    第二章·基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="Chapter03.html">
+            
+                <a href="Chapter03.html">
+            
+                    
+                    第三章·数值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="Chapter04.html">
+            
+                <a href="Chapter04.html">
+            
+                    
+                    第四章·字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="Chapter05.html">
+            
+                <a href="Chapter05.html">
+            
+                    
+                    第五章·条件逻辑
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="Chapter06.html">
+            
+                <a href="Chapter06.html">
+            
+                    
+                    第六章·数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="Chapter07.html">
+            
+                <a href="Chapter07.html">
+            
+                    
+                    第七章·循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="Chapter08.html">
+            
+                <a href="Chapter08.html">
+            
+                    
+                    第八章·函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="Chapter09.html">
+            
+                <a href="Chapter09.html">
+            
+                    
+                    第九章·对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="Chapter10.html">
+            
+                <a href="Chapter10.html">
+            
+                    
+                    第十章·日期和时间
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="Chapter11.html">
+            
+                <a href="Chapter11.html">
+            
+                    
+                    第十一章·JSON
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="Chapter12.html">
+            
+                <a href="Chapter12.html">
+            
+                    
+                    第十二章·错误处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="Chapter13.html">
+            
+                <a href="Chapter13.html">
+            
+                    
+                    第十三章·模块化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="Chapter14.html">
+            
+                <a href="Chapter14.html">
+            
+                    
+                    第十四章·正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="Chapter15.html">
+            
+                <a href="Chapter15.html">
+            
+                    
+                    第十五章·类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="Chapter16.html">
+            
+                <a href="Chapter16.html">
+            
+                    
+                    第十六章·浏览器对象模型(BOM)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="Chapter17.html">
+            
+                <a href="Chapter17.html">
+            
+                    
+                    第十七章·事件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="Chapter18.html">
+            
+                <a href="Chapter18.html">
+            
+                    
+                    第十八章·Promise、async/await
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="Chapter19.html">
+            
+                <a href="Chapter19.html">
+            
+                    
+                    第十九章·其他杂项
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="Chapter20.html">
+            
+                <a href="Chapter20.html">
+            
+                    
+                    第二十章·服务端代码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="Chapter21.html">
+            
+                <a href="Chapter21.html">
+            
+                    
+                    第二十一章·实战练习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="Chapter22.html">
+            
+                <a href="Chapter22.html">
+            
+                    
+                    第二十二章·面试问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.27" data-path="Chapter23.html">
+            
+                <a href="Chapter23.html">
+            
+                    
+                    第二十三章·设计模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.28" data-path="Chapter24.html">
+            
+                <a href="Chapter24.html">
+            
+                    
+                    第二十四章·文件系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29" data-path="Chapter25.html">
+            
+                <a href="Chapter25.html">
+            
+                    
+                    第二十五章·ES6概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.30" data-path="Chapter26.html">
+            
+                <a href="Chapter26.html">
+            
+                    
+                    第二十六章·动画资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.31" data-path="Chapter27.html">
+            
+                <a href="Chapter27.html">
+            
+                    
+                    第二十七章·JavaScript运行原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.32" data-path="References.html">
+            
+                <a href="References.html">
+            
+                    
+                    引用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.33" data-path="Resources.html">
+            
+                <a href="Resources.html">
+            
+                    
+                    资料
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34" data-path="Credits.html">
+            
+                <a href="Credits.html">
+            
+                    
+                    鸣谢
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本書使用 GitBook 釋出
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >第二十三章·设计模式</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="第二十三章·设计模式">第二十三章·设计模式</h1>
+<p>Design patterns are object oriented solutions that you can  implement to solve common programming problems that may occur during the development process. Design patterns are not the same as algorithms, they are a coding concept that you can use to resolve specific kinds of issues. </p>
+<p>There are various design patterns that are not unique to any one language. These fundamental concepts can be applied across a wide variety of programming languages. Today, we will learn about each design pattern and how to implement them using JavaScript. Design patterns can be classified into one of three categories.</p>
+<ul>
+<li><a href="creational-patterns.md">Creational Patterns</a></li>
+<li><a href="structural-patterns.md">Structural Patterns</a></li>
+<li><a href="behavioral-patterns.md">Behavioral Patterns</a></li>
+</ul>
+<h1 id="creational-design-patterns">Creational Design Patterns</h1>
+<p>Creational design patterns focus on object creation mechanisms</p>
+<h2 id="1-factory-method">1. Factory Method</h2>
+<p>A factory function is just a function that creates an object and returns it. It is a creational design pattern that allows you to create objects without specifying the exact class or constructor to be used. It centralizes object creation logic, allowing for flexibility in creating different types of objects. Lets say you have a website and you want to create a method that will allow you to easily create html objects and add it to the DOM. A factory is the perfect solution for this and here is how we can implement it </p>
+<h3 id="11-components-of-the-factory-method">1.1. Components of the Factory Method</h3>
+<p><em>Creator</em>: This is the method implemented in the Factory that creates new products. </p>
+<p><em>Abstract Product</em>: An interface for the product being created.</p>
+<p><em>Concrete Product</em>: This is the actual object being created. </p>
+<h3 id="12-benefits-of-the-factory-method">1.2. Benefits of the Factory Method</h3>
+<p><strong>Abstraction of Object Creation</strong></p>
+<p>It removes the complexity of creating an object, allowing the client code to just focus on the created objects. </p>
+<p><strong>Flexibility and Customization</strong></p>
+<p>Factories enable customization of the object creation process, allowing for variations in the created objects</p>
+<p><strong>Encapsulation of Creation Logic</strong></p>
+<p>The creation logic is encapsulated within the factory, making it easier to modify or extend the creation process without affecting client code</p>
+<p><strong>Complex Object Creation</strong></p>
+<p>Factories are useful when the creation of objects is complex, involves multiple steps,  or requires certain conditions to be met.</p>
+<h3 id="13-example">1.3. Example</h3>
+<pre><code class="lang-javascript">    <span class="hljs-keyword">function</span> <span class="hljs-title function_">elementFactory</span>(<span class="hljs-params">type, text, color</span>){
+        <span class="hljs-keyword">const</span> newElement = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">createElement</span>(type)
+        newElement.<span class="hljs-property">innerText</span> = text 
+        newElement.<span class="hljs-property">style</span>.<span class="hljs-property">color</span> = color 
+        <span class="hljs-variable language_">document</span>.<span class="hljs-property">body</span>.<span class="hljs-title function_">append</span>(newElement)
+
+
+    <span class="hljs-keyword">function</span> <span class="hljs-title function_">setText</span>(<span class="hljs-params">newText</span>) {
+         newElement.<span class="hljs-property">innerText</span> = newText;
+    }
+
+    <span class="hljs-keyword">function</span> <span class="hljs-title function_">setColor</span>(<span class="hljs-params">newColor</span>) { 
+        newElement.<span class="hljs-property">innerText</span> = newColor; 
+    }
+
+    <span class="hljs-keyword">return</span> {
+        newElement, 
+        setText,
+        setColor,
+        }
+
+    }
+
+<span class="hljs-keyword">const</span> h1Tag = <span class="hljs-title function_">elementFactory</span>(<span class="hljs-string">'h1'</span>,<span class="hljs-string">'Initial Text'</span>,<span class="hljs-string">'Blue'</span>); 
+
+h1Tag.<span class="hljs-title function_">setText</span>(<span class="hljs-string">'Hello world'</span>);
+
+h1Tag.<span class="hljs-title function_">setColor</span>(<span class="hljs-string">'Red'</span>);
+</code></pre>
+<h2 id="2-abstract-factory-method">2. Abstract Factory Method</h2>
+<p>Abstract factories are another creational design pattern. Its main goal is to provide an interface for creating families of related or dependent objects without specifying their concrete classes. This pattern ensures that the created objects are compatible and work together. </p>
+<h3 id="21-the-4-components-of-an-abstract-factory">2.1. The 4 Components of an Abstract Factory</h3>
+<p><em>Abstract Factories</em></p>
+<p>This defines the interface for creating the abstract products, which are related families of objects (e.g. UI components).The abstract factory declares creation methods for each type of product in the family. </p>
+<p><em>Concreate Factories</em></p>
+<p>These are classes that implement the abstract factory interface, providing specific implementations for creating the concrete products. Each concrete factory creates a family of related products (e.g. UI factory might create a button or checkbox).</p>
+<p><em>Abstract Products</em></p>
+<p>These are the interfaces or base classes for the products that the abstract factory creates. Each product type in the family has its own abstract product definition (e.g., Button, Checkbox).</p>
+<p><em>Concrete Products</em></p>
+<p>These are the actual implementations of the abstract products. Each concrete factory creates its own set of concrete products.Concrete products implement the abstract product interfaces defined for their family (e.g., HTMLButton, WindowsButton).</p>
+<h3 id="22-benefits-of-abstract-factories">2.2. Benefits of Abstract Factories</h3>
+<p><strong>Consistency</strong></p>
+<p>It ensures that created objects are compatible and follow a consistent theme or style.</p>
+<p><strong>Isolation of Responsibilities</strong> </p>
+<p>It isolates the creation of objects from the client code, promoting a clean separation of concerns.</p>
+<p><strong>Flexibility and Scalability</strong></p>
+<p>It allows for easy addition of new product families without modifying existing client code.</p>
+<h3 id="23-example">2.3. Example</h3>
+<pre><code class="lang-javascript"> <span class="hljs-comment">// Abstract Factory: UIFactory</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">UIFactory</span> {
+    <span class="hljs-title function_">createButton</span>(<span class="hljs-params"></span>) {
+        <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Error</span>(<span class="hljs-string">'createButton method must be overridden'</span>);
+    }
+
+    <span class="hljs-title function_">createCheckbox</span>(<span class="hljs-params"></span>) {
+        <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Error</span>(<span class="hljs-string">'createCheckbox method must be overridden'</span>);
+    }
+}
+
+<span class="hljs-comment">// Concrete Factory: WindowsUIFactory</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">WindowsUIFactory</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_ inherited__">UIFactory</span> {
+    <span class="hljs-title function_">createButton</span>(<span class="hljs-params"></span>) {
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">WindowsButton</span>();
+    }
+
+    <span class="hljs-title function_">createCheckbox</span>(<span class="hljs-params"></span>) {
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">WindowsCheckbox</span>();
+    }
+}
+
+<span class="hljs-comment">// Concrete Factory: MacUIFactory</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">MacUIFactory</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_ inherited__">UIFactory</span> {
+    <span class="hljs-title function_">createButton</span>(<span class="hljs-params"></span>) {
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">MacButton</span>();
+    }
+
+    <span class="hljs-title function_">createCheckbox</span>(<span class="hljs-params"></span>) {
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">MacCheckbox</span>();
+    }
+}
+
+<span class="hljs-comment">// Abstract Product: Button</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">Button</span> {
+    <span class="hljs-title function_">render</span>(<span class="hljs-params"></span>) {
+        <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Error</span>(<span class="hljs-string">'render method must be overridden'</span>);
+    }
+}
+
+<span class="hljs-comment">// Concrete Product: WindowsButton</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">WindowsButton</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_ inherited__">Button</span> {
+    <span class="hljs-title function_">render</span>(<span class="hljs-params"></span>) {
+        <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'Rendering a Windows button'</span>);
+    }
+}
+
+<span class="hljs-comment">// Concrete Product: MacButton</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">MacButton</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_ inherited__">Button</span> {
+    <span class="hljs-title function_">render</span>(<span class="hljs-params"></span>) {
+        <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'Rendering a Mac button'</span>);
+    }
+}
+
+<span class="hljs-comment">// Abstract Product: Checkbox</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">Checkbox</span> {
+    <span class="hljs-title function_">render</span>(<span class="hljs-params"></span>) {
+        <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Error</span>(<span class="hljs-string">'render method must be overridden'</span>);
+    }
+}
+
+<span class="hljs-comment">// Concrete Product: WindowsCheckbox</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">WindowsCheckbox</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_ inherited__">Checkbox</span> {
+    <span class="hljs-title function_">render</span>(<span class="hljs-params"></span>) {
+        <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'Rendering a Windows checkbox'</span>);
+    }
+}
+
+<span class="hljs-comment">// Concrete Product: MacCheckbox</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">MacCheckbox</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_ inherited__">Checkbox</span> {
+    <span class="hljs-title function_">render</span>(<span class="hljs-params"></span>) {
+        <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'Rendering a Mac checkbox'</span>);
+    }
+}
+
+<span class="hljs-comment">// Usage</span>
+<span class="hljs-keyword">const</span> windowsFactory = <span class="hljs-keyword">new</span> <span class="hljs-title class_">WindowsUIFactory</span>();
+<span class="hljs-keyword">const</span> macFactory = <span class="hljs-keyword">new</span> <span class="hljs-title class_">MacUIFactory</span>();
+
+<span class="hljs-keyword">const</span> windowsButton = windowsFactory.<span class="hljs-title function_">createButton</span>();
+windowsButton.<span class="hljs-title function_">render</span>();  <span class="hljs-comment">// Output: Rendering a Windows button</span>
+
+<span class="hljs-keyword">const</span> macCheckbox = macFactory.<span class="hljs-title function_">createCheckbox</span>();
+macCheckbox.<span class="hljs-title function_">render</span>();  <span class="hljs-comment">// Output: Rendering a Mac checkbox</span>
+</code></pre>
+<h2 id="3-builder">3. Builder</h2>
+<p>The goal of a builder is to separate the construction of an object from its representation. What the builder pattern does is basically allow the client to construct a complex object by just passing in the type and content of the object only. The client does not have to worry about the construction details.</p>
+<h2 id="31-the-4-components-of-a-builder">3.1. The 4 Components of a Builder</h2>
+<p><em>Builder</em></p>
+<p>The builder usually contains a series of methods to build various parts of the object.</p>
+<p><em>Concrete Builder</em></p>
+<p>Implements methods from the builder interface to construct parts of the object </p>
+<p><em>Director (Optional)</em> </p>
+<p>This is not always necessary but can help with constructing the final object using a specific construction process </p>
+<p><em>Object</em> </p>
+<p>Representation of the final product. Contains parts that were constructed by the builder</p>
+<h2 id="32-benefits-of-the-builder-pattern">3.2. Benefits of the Builder Pattern</h2>
+<p><strong>Separation of Concerns</strong></p>
+<p>The Builder pattern separates the construction of a complex object from its representation, allowing different implementations of builders to vary the internal representation.</p>
+<p><strong>Flexible Object Creation</strong></p>
+<p>It allows for the creation of different configurations of a complex object by using a common construction process. Builders can be tailored to create specific variations of the object</p>
+<p><strong>Improved Readability</strong></p>
+<p>Using a builder can improve code readability by clearly outlining the steps needed to construct an object. It's easy to understand what each step contributes to the final object.</p>
+<p><strong>Parameterized Construction</strong></p>
+<p>Builders allow you to construct an object by passing parameters to the construction steps, enabling fine-grained control over the object's creation and configuration.</p>
+<p><strong>Reusability</strong></p>
+<p>Builders can be reused to create multiple instances of the complex object with different configurations, promoting code reuse and minimizing duplication of construction logic.</p>
+<h2 id="33-example">3.3. Example</h2>
+<pre><code class="lang-Javascript"><span class="hljs-comment">//Builder</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">ComputerBuilder</span> {
+    <span class="hljs-title function_">buildCPU</span>(<span class="hljs-params"></span>) {}
+    <span class="hljs-title function_">buildRAM</span>(<span class="hljs-params"></span>) {}
+    <span class="hljs-title function_">buildStorage</span>(<span class="hljs-params"></span>) {}
+    <span class="hljs-title function_">getResult</span>(<span class="hljs-params"></span>) {}
+}
+
+<span class="hljs-comment">//Concrete Builders</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">GamingComputerBuilder</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_ inherited__">ComputerBuilder</span> {
+    <span class="hljs-comment">// Implement specific steps to build a gaming computer</span>
+}
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">OfficeComputerBuilder</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_ inherited__">ComputerBuilder</span> {
+    <span class="hljs-comment">// Implement specific steps to build an office computer</span>
+}
+
+<span class="hljs-comment">//Object class</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">Computer</span> {
+    <span class="hljs-title function_">constructor</span>(<span class="hljs-params"></span>) {
+        <span class="hljs-variable language_">this</span>.<span class="hljs-property">parts</span> = [];
+    }
+
+    <span class="hljs-title function_">addPart</span>(<span class="hljs-params">part</span>) {
+        <span class="hljs-variable language_">this</span>.<span class="hljs-property">parts</span>.<span class="hljs-title function_">push</span>(part);
+    }
+}
+
+<span class="hljs-comment">// Director (Optional)</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">ComputerAssembler</span> {
+    <span class="hljs-title function_">constructor</span>(<span class="hljs-params">builder</span>) {
+        <span class="hljs-variable language_">this</span>.<span class="hljs-property">builder</span> = builder;
+    }
+
+    <span class="hljs-title function_">assembleComputer</span>(<span class="hljs-params"></span>) {
+        <span class="hljs-variable language_">this</span>.<span class="hljs-property">builder</span>.<span class="hljs-title function_">buildCPU</span>();
+        <span class="hljs-variable language_">this</span>.<span class="hljs-property">builder</span>.<span class="hljs-title function_">buildRAM</span>();
+        <span class="hljs-variable language_">this</span>.<span class="hljs-property">builder</span>.<span class="hljs-title function_">buildStorage</span>();
+        <span class="hljs-keyword">return</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">builder</span>.<span class="hljs-title function_">getResult</span>();
+    }
+}
+</code></pre>
+<h2 id="4-singleton">4. Singleton</h2>
+<p>A singleton is an object that can only be instantiated once. Singletons are useful when system wide actions need to be coordinated from a single central place. Singletons reduce the need for global variables which is particularly important in javascript because it limits namespace pollution.</p>
+<h2 id="41-components-of-a-singleton">4.1. Components of a Singleton</h2>
+<p><em>Anonymous Function</em></p>
+<p>A singleton is implemented using a anonymous function</p>
+<p><em>getInstance Function</em></p>
+<p>This is a function which returns the unique instantiated object</p>
+<p><em>Constructor (Optional)</em> </p>
+<p>In javascript, a constructor is not necessary for implementing the singleton pattern but having a constructor is common because it allows you to configure the singleton and add initialization logic. </p>
+<h2 id="42-benefits-of-a-singleton">4.2. Benefits of a Singleton</h2>
+<p><strong>Reduce Global Variables</strong></p>
+<p>Singletons can help reduce the number of global variables required in your program, promoting better code organization and maintainability. </p>
+<p><strong>Memory Efficient</strong></p>
+<p>Because a Singleton ensures there is only ever one instance that exists at a time, memory is saved because you avoid having multiple instances of the same class.</p>
+<p><strong>Global Point of Access</strong></p>
+<p>Singletons provide a global point of access to the instance. This allows other parts of the program to access and use the same instance without needing to pass it around. </p>
+<p><strong>Resource Sharing</strong></p>
+<p>Singletons are especially useful when it comes to tasks like managing shared resources. Singletons can be used to manage database connections, file handlers, and even thread pools, ensuring that these resources are shared efficiently across the application. </p>
+<h2 id="43-example">4.3. Example</h2>
+<pre><code class="lang-javascript"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Singleton</span> {
+  <span class="hljs-title function_">constructor</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">const</span> privateVariable = <span class="hljs-string">'This is a private variable'</span>;
+
+    <span class="hljs-keyword">function</span> <span class="hljs-title function_">privateMethod</span>(<span class="hljs-params"></span>) {
+      <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'This is a private method.'</span>);
+    }
+
+    <span class="hljs-keyword">return</span> {
+      <span class="hljs-attr">publicMethod</span>: <span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) {
+        <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'This is a public method.'</span>);
+      },
+      <span class="hljs-attr">publicVariable</span>: <span class="hljs-string">'I am public'</span>
+    };
+  }
+
+  <span class="hljs-keyword">static</span> <span class="hljs-title function_">getInstance</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">if</span> (!<span class="hljs-title class_">Singleton</span>.<span class="hljs-property">instance</span>) {
+      <span class="hljs-title class_">Singleton</span>.<span class="hljs-property">instance</span> = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Singleton</span>();
+    }
+    <span class="hljs-keyword">return</span> <span class="hljs-title class_">Singleton</span>.<span class="hljs-property">instance</span>;
+  }
+}
+
+<span class="hljs-keyword">const</span> singletonInstance1 = <span class="hljs-title class_">Singleton</span>.<span class="hljs-title function_">getInstance</span>();
+<span class="hljs-keyword">const</span> singletonInstance2 = <span class="hljs-title class_">Singleton</span>.<span class="hljs-title function_">getInstance</span>();
+
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(singletonInstance1 === singletonInstance2); <span class="hljs-comment">// Outputs: true</span>
+</code></pre>
+<h2 id="5-prototype">5. Prototype</h2>
+<p>The prototype pattern is an alternative way to implement inheritance but the main difference is instead of inheriting properties from a class, objects inherit properties from a prototype object. The prototype pattern is also referred to as the properties pattern and Javascript has native support for prototypes. In Javascript, each object has a prototype (reference to another object). When you attempt to access a property that does not exist in the object itself Javascript will look for it in the object's prototype and continue up the prototype chain until it finds it or reaches the end of the chain. </p>
+<h2 id="51-components-of-the-prototype-pattern">5.1. Components of the Prototype Pattern</h2>
+<p><em>Prototype Object</em> </p>
+<p>Contains the properties and methods that all the new instances will inherit</p>
+<p><em>Client</em></p>
+<p>The client is responsible for creating new objects based on the prototype. The client can create new instances based on the prototype and modify their
+properties accordingly. </p>
+<p><em>Clone/Creation Mechanism</em></p>
+<p> The mechanism used to create a new object based on the prototype. In Javascript this can be achieved using the <code>Object.create()</code> function. </p>
+<h2 id="52-benefits-of-the-prototype-pattern">5.2. Benefits of the Prototype Pattern</h2>
+<p><strong>Efficient Instance Creation</strong></p>
+<p>Creating new instances of the Prototyope is more efficient that using traditional classes and constructors. Objects are created by cloning the prototype, which reduces the need for setting up classes and initialization logic. </p>
+<p><strong>Code Reusability</strong></p>
+<p>The Prototype pattern allows you to define a set of default properties and methods in a prototype object. This allows multiple instances to share the same behaviour and structure without duplicating the code. This also reduces memory usage since each instance does not need to store duplicates of the prototypes properties. </p>
+<p><strong>Flexible Object Creation</strong></p>
+<p>Objects created using the Prototype pattern can be easily customized by modifying their properties or adding new properties specific to the instance.</p>
+<p><strong>Dynamic Runtime Changes</strong> </p>
+<p>Changes made to the prototype object at runtime are reflected in all instances based on the prototype. This behavior allows for updates and modifications to the prototype, impacting all instances sharing the same prototype. </p>
+<h2 id="53-example">5.3. Example</h2>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> cameraPrototype = {
+    model = <span class="hljs-string">'default'</span>,
+    make = <span class="hljs-string">'default'</span>,
+    <span class="hljs-attr">shutter</span>: <span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) {
+        <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`The <span class="hljs-subst">${<span class="hljs-variable language_">this</span>.make}</span> <span class="hljs-subst">${<span class="hljs-variable language_">this</span>.model}</span> has taken a photo`</span>);
+    }
+};
+
+<span class="hljs-keyword">const</span> camera1 = <span class="hljs-title class_">Object</span>.<span class="hljs-title function_">create</span>(cameraPrototype);
+camera1.<span class="hljs-property">model</span> = <span class="hljs-string">'X-Pro 3'</span>;
+camera1.<span class="hljs-property">make</span> = <span class="hljs-string">'Fujifilm'</span>;
+
+<span class="hljs-keyword">const</span> camera1 = <span class="hljs-title class_">Object</span>.<span class="hljs-title function_">create</span>(cameraPrototype);
+camera1.<span class="hljs-property">model</span> = <span class="hljs-string">'R5'</span>;
+camera1.<span class="hljs-property">make</span> = <span class="hljs-string">'Canon'</span>;
+</code></pre>
+<hr></hr>
+<h1 id="structural-design-patterns">Structural Design Patterns</h1>
+<p>Focus on how classes and objects are composed to form larger structures</p>
+<h2 id="1-adapter">1. Adapter</h2>
+<p>The Adapter is a structural design pattern that enables you to make make different interfaces with different methods work together without changing their code. The purpose of an Adapter is to make two incompatible interfaces work together seamlessly. </p>
+<h2 id="11-components-of-the-adapter">1.1 Components of the Adapter</h2>
+<p><em>Target Interface/Class</em> </p>
+<p>This is the interface or class that the client will work with. It contains all the methods and properties that the client code will use. </p>
+<p><em>Adaptee</em></p>
+<p>The Adaptee is the old interface/class that contains properties and methods that are incompatible with the new interface/class. </p>
+<p><em>Adapter</em> </p>
+<p>The Adapter is what bridges the gap between the Adaptee and the Target interface/class </p>
+<h2 id="12-benefits-of-adapters">1.2. Benefits of Adapters</h2>
+<p><strong>Easy Integration</strong></p>
+<p>Adapters create an easy way for new code or systems to interact with existing ones. By using Adapters, integrating new code becomes smoother and less error-prone. </p>
+<p><strong>Compatibility and Reusability</strong></p>
+<p>Adapters promote code reuse and extends the usability of existing code by making older code compatible with newer code. </p>
+<p><strong>Gradual System Integration</strong></p>
+<p>In situations where a new system needs to be implemented gradually, Adapters can serve as intermediaries, allowing new features to come in slowly while maintaining compatibility with the existing system. </p>
+<p><strong>Improved Testability</strong></p>
+<p>Adapters facilitate easier testing by allowing mocking or stubbing of the adaptee during testing of the client code. This improves the testability of the client code and helps in wrtiting more comprehensible unit tests. </p>
+<h2 id="13-example">1.3. Example</h2>
+<pre><code class="lang-javascript"><span class="hljs-comment">// Adaptee: EU charging brick</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">EUChargingBrick</span> {
+  <span class="hljs-title function_">chargeWithEUPlug</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'Charging with EU plug'</span>);
+  }
+}
+
+<span class="hljs-comment">// Adaptee: US charging brick</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">USChargingBrick</span> {
+  <span class="hljs-title function_">chargeWithUSPlug</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'Charging with US plug'</span>);
+  }
+}
+
+<span class="hljs-comment">// Target: Common charging interface expected by the client</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">ChargingInterface</span> {
+  <span class="hljs-title function_">charge</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'Charging...'</span>);
+  }
+}
+
+<span class="hljs-comment">// Adapter for EU charging brick</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">EUChargingAdapter</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_ inherited__">ChargingInterface</span> {
+  <span class="hljs-title function_">constructor</span>(<span class="hljs-params">euChargingBrick</span>) {
+    <span class="hljs-variable language_">super</span>();
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">euChargingBrick</span> = euChargingBrick;
+  }
+
+  <span class="hljs-title function_">charge</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">euChargingBrick</span>.<span class="hljs-title function_">chargeWithEUPlug</span>();
+  }
+}
+
+<span class="hljs-comment">// Adapter for US charging brick</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">USChargingAdapter</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_ inherited__">ChargingInterface</span> {
+  <span class="hljs-title function_">constructor</span>(<span class="hljs-params">usChargingBrick</span>) {
+    <span class="hljs-variable language_">super</span>();
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">usChargingBrick</span> = usChargingBrick;
+  }
+
+  <span class="hljs-title function_">charge</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">usChargingBrick</span>.<span class="hljs-title function_">chargeWithUSPlug</span>();
+  }
+}
+
+<span class="hljs-comment">// Client</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">chargeDevice</span>(<span class="hljs-params">chargingInterface</span>) {
+  chargingInterface.<span class="hljs-title function_">charge</span>();
+}
+
+<span class="hljs-comment">// Usage</span>
+<span class="hljs-keyword">const</span> euChargingBrick = <span class="hljs-keyword">new</span> <span class="hljs-title class_">EUChargingBrick</span>();
+<span class="hljs-keyword">const</span> euAdapter = <span class="hljs-keyword">new</span> <span class="hljs-title class_">EUChargingAdapter</span>(euChargingBrick);
+
+<span class="hljs-keyword">const</span> usChargingBrick = <span class="hljs-keyword">new</span> <span class="hljs-title class_">USChargingBrick</span>();
+<span class="hljs-keyword">const</span> usAdapter = <span class="hljs-keyword">new</span> <span class="hljs-title class_">USChargingAdapter</span>(usChargingBrick);
+
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'Charging with EU charging brick:'</span>);
+<span class="hljs-title function_">chargeDevice</span>(euAdapter);
+
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'Charging with US charging brick:'</span>);
+<span class="hljs-title function_">chargeDevice</span>(usAdapter);
+</code></pre>
+<h2 id="2-bridge">2. Bridge</h2>
+<p>The Bridge is a structural design pattern that is designed to split a very large class into two separate hierarchies which can be developed independendently. The two hierarchies are referred to as the Abstraction level and the Implementation level. Basically if you have a class that has multiple variants of some functionality, you can use a Bridge pattern to divide and organize the class into two easier to understand hierarchies. </p>
+<h2 id="21-components-of-the-bridge">2.1. Components of the Bridge</h2>
+<p><em>Abstraction</em> </p>
+<p>This is the high-level interface or abstraction. It defines the abstract functionality that the clients will use. </p>
+<p><em>Refined Abstraction</em> </p>
+<p>These are subclasses or extensions of the abstraction layer. These provide additional features or refinements. It extends the functionality defined by the abstraction. </p>
+<p><em>Implementor</em> </p>
+<p>This is the interface that defines the implementation methods, It usually doesn't mirror the abstraction interface, but its a lower-level interface that the abstraction relies upon. </p>
+<p><em>Concrete Implementor</em> </p>
+<p>Concrete classes that implement the implementor interface. Theses classes provide specific implementations of the methods defined by the implementor interface. </p>
+<h2 id="22-benefits-of-the-bridge-pattern">2.2. Benefits of the Bridge Pattern</h2>
+<p><strong>Decouples Abstraction from Implementation</strong></p>
+<p>The primary benefit of the Bridge pattern is it splits the abstraction layer from the implementation layer. This allows both sections to evolve independently, making the code base easier to modify. </p>
+<p><strong>Improves Maintainability</strong> </p>
+<p>Since the code base is split into two sections, making changes to one part of the system is most likely not going to impact the other part. Which makes maintaining the code base easier and more efficient</p>
+<p><strong>Improves Testing</strong></p>
+<p>Testing is a lot easier when you have a bridge pattern in your code base because you can focus on testing the abstraction layer separately from testing the implementation layer. This allows for easier and more targeted testing. </p>
+<p><strong>Improves Readability</strong></p>
+<p>The Bridge pattern creates a clear hierarchy in the code base. Organzing the code base in this way helps in understanding the relationships between different parts of the system. </p>
+<h2 id="23-example">2.3. Example</h2>
+<pre><code class="lang-javascript"><span class="hljs-comment">// Abstraction</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">Shape</span> {
+  <span class="hljs-title function_">constructor</span>(<span class="hljs-params">color</span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">color</span> = color;
+  }
+
+  <span class="hljs-title function_">draw</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`Drawing a shape with color <span class="hljs-subst">${<span class="hljs-variable language_">this</span>.color}</span>`</span>);
+  }
+}
+
+<span class="hljs-comment">// Implementations</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">RedColor</span> {
+  <span class="hljs-title function_">applyColor</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'Applying red color'</span>);
+  }
+}
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">BlueColor</span> {
+  <span class="hljs-title function_">applyColor</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'Applying blue color'</span>);
+  }
+}
+
+<span class="hljs-comment">// Bridge</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">ShapeWithColor</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_ inherited__">Shape</span> {
+  <span class="hljs-title function_">constructor</span>(<span class="hljs-params">color, colorImplementation</span>) {
+    <span class="hljs-variable language_">super</span>(color);
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">colorImplementation</span> = colorImplementation;
+  }
+
+  <span class="hljs-title function_">draw</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">super</span>.<span class="hljs-title function_">draw</span>();
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">colorImplementation</span>.<span class="hljs-title function_">applyColor</span>();
+  }
+}
+
+<span class="hljs-comment">// Usage</span>
+<span class="hljs-keyword">const</span> redShape = <span class="hljs-keyword">new</span> <span class="hljs-title class_">ShapeWithColor</span>(<span class="hljs-string">'red'</span>, <span class="hljs-keyword">new</span> <span class="hljs-title class_">RedColor</span>());
+<span class="hljs-keyword">const</span> blueShape = <span class="hljs-keyword">new</span> <span class="hljs-title class_">ShapeWithColor</span>(<span class="hljs-string">'blue'</span>, <span class="hljs-keyword">new</span> <span class="hljs-title class_">BlueColor</span>());
+
+redShape.<span class="hljs-title function_">draw</span>();  <span class="hljs-comment">// Output: Drawing a shape with color red, Applying red color</span>
+blueShape.<span class="hljs-title function_">draw</span>(); <span class="hljs-comment">// Output: Drawing a shape with color blue, Applying blue color</span>
+</code></pre>
+<h2 id="3-composite">3. Composite</h2>
+<p>The composite design pattern allows for the creation of objects with properties that are primitive items or a collection of objects. Imagine a tree like structure, where you have single objects (leaf nodes) or groups of objects (branches). The composite design pattern allows you to create this type of structure and be able to perform operations on each level in a consistent manner. </p>
+<h2 id="31-components-of-the-composite">3.1 Components of the Composite</h2>
+<p><em>Component</em></p>
+<p>This is the interface/class that represents both leaf nodes (individual elements) and composite nodes (collection of elements). The component defines operations that can be applied to both types of nodes. </p>
+<p><em>Leaf</em></p>
+<p>This represents individual objects in the tree that do not have any children. They implement the operations that are defined in the component interface. </p>
+<p><em>Composite</em></p>
+<p>This represents the composites or containers that can hold a collection of leaf nodes or other composite nodes. </p>
+<h2 id="32-benefits-of-composites">3.2. Benefits of Composites</h2>
+<p><strong>Uniformly and Consistency</strong> </p>
+<p>The Composite design pattern provides a uniform way to treat both individual objects and compositions of objects. Clients have one common interface to use to operate on these objects which simplifes the code base and object interactions. </p>
+<p><strong>Flexibility</strong> </p>
+<p>This design pattern allows for flexibility in adding new types of components or modifying existing ones without affecting the client code. You can introduce new types of leaf or composite objects easily. </p>
+<p><strong>Simplified Client Code</strong></p>
+<p>The client code doesn't need to distinguish between individual and composite components, making it simpler and more intuitive to work with the structure.</p>
+<h2 id="33-example">3.3. Example</h2>
+<pre><code class="lang-javascript"><span class="hljs-keyword">class</span> <span class="hljs-title class_">SingleBlock</span> {
+  <span class="hljs-title function_">constructor</span>(<span class="hljs-params">name</span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">name</span> = name;
+  }
+
+  <span class="hljs-title function_">display</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'Block:'</span>, <span class="hljs-variable language_">this</span>.<span class="hljs-property">name</span>);
+  }
+}
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">BlockCollection</span> {
+  <span class="hljs-title function_">constructor</span>(<span class="hljs-params">name</span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">name</span> = name;
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">blocks</span> = [];
+  }
+
+  <span class="hljs-title function_">add</span>(<span class="hljs-params">block</span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">blocks</span>.<span class="hljs-title function_">push</span>(block);
+  }
+
+  <span class="hljs-title function_">remove</span>(<span class="hljs-params">block</span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">blocks</span> = <span class="hljs-variable language_">this</span>.<span class="hljs-property">blocks</span>.<span class="hljs-title function_">filter</span>(<span class="hljs-function"><span class="hljs-params">b</span> =&gt;</span> b !== block);
+  }
+
+  <span class="hljs-title function_">display</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'Block Collection:'</span>, <span class="hljs-variable language_">this</span>.<span class="hljs-property">name</span>);
+
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> block <span class="hljs-keyword">of</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">blocks</span>) {
+      block.<span class="hljs-title function_">display</span>();
+    }
+  }
+}
+
+<span class="hljs-comment">// Usage</span>
+<span class="hljs-keyword">const</span> block1 = <span class="hljs-keyword">new</span> <span class="hljs-title class_">SingleBlock</span>(<span class="hljs-string">'Block 1'</span>);
+<span class="hljs-keyword">const</span> block2 = <span class="hljs-keyword">new</span> <span class="hljs-title class_">SingleBlock</span>(<span class="hljs-string">'Block 2'</span>);
+<span class="hljs-keyword">const</span> block3 = <span class="hljs-keyword">new</span> <span class="hljs-title class_">SingleBlock</span>(<span class="hljs-string">'Block 3'</span>);
+
+<span class="hljs-keyword">const</span> blockGroup1 = <span class="hljs-keyword">new</span> <span class="hljs-title class_">BlockCollection</span>(<span class="hljs-string">'Block Group 1'</span>);
+blockGroup1.<span class="hljs-title function_">add</span>(block1);
+blockGroup1.<span class="hljs-title function_">add</span>(block2);
+
+<span class="hljs-keyword">const</span> blockGroup2 = <span class="hljs-keyword">new</span> <span class="hljs-title class_">BlockCollection</span>(<span class="hljs-string">'Block Group 2'</span>);
+blockGroup2.<span class="hljs-title function_">add</span>(block3);
+
+<span class="hljs-keyword">const</span> megaStructure = <span class="hljs-keyword">new</span> <span class="hljs-title class_">BlockCollection</span>(<span class="hljs-string">'Mega Structure'</span>);
+megaStructure.<span class="hljs-title function_">add</span>(blockGroup1);
+megaStructure.<span class="hljs-title function_">add</span>(blockGroup2);
+
+megaStructure.<span class="hljs-title function_">display</span>();
+</code></pre>
+<h2 id="4-decorator">4. Decorator</h2>
+<p>The Decorator design pattern can be used to modify an objects behavior either statically or dynamically without affecting the behavior of other objects from the same class. Decorators are particularly useful when you want to add features to an object in a flexible and reusable way. </p>
+<h2 id="41-components-of-a-decorator">4.1. Components of a Decorator</h2>
+<p><em>Component Interface</em></p>
+<p>This defines the logic for the objects that can have resposibilities added to them dynamically. </p>
+<p><em>Concrete Components</em></p>
+<p>This is the initial object to which additional functionalities can be added. </p>
+<p><em>Decorator</em> </p>
+<p>This is an interface that extends the functionality of the concrete components. It has a reference to a component instance and implements the component interface. </p>
+<p><em>Concrete Decorators</em></p>
+<p>These are the concrete implementations of the decorator class, they add specific behavior to the desired component by extending the decorator class. </p>
+<h2 id="42-benefits-of-decorators">4.2. Benefits of Decorators</h2>
+<p><strong>Extensibility and Flexibility</strong> </p>
+<p>Decorators allow you to add new functionalities or behaviors to objects dynamically at runtime. This promotes extensibility without modifying the existing codebase and provides flexibility in how you can compose and use these additional functionalities.</p>
+<p><strong>Modularity</strong></p>
+<p>Decorators enable a more modular approach to code by breaking down functionality into smaller, more manageable units. These units can be combined and reused in various ways. </p>
+<p><strong>Runtime Configuration</strong></p>
+<p>Decorators allow you to dynamically configure an object at runtime. This allows you to add or remove functionalities without impacting the core components or needing to recompile the code. </p>
+<p><strong>Reduce Subclassing</strong></p>
+<p>Without Decorators, extending functionalities often involves creating numerous subclasses for each combination of behaviors. Decorators eliminate the need for subclasses which results in an cleaner and easier to understand code base. </p>
+<h2 id="43-example">4.3. Example</h2>
+<pre><code class="lang-javascript"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Coffee</span> {
+  <span class="hljs-title function_">cost</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">return</span> <span class="hljs-number">5</span>;
+  }
+}
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">MilkDecorator</span> {
+  <span class="hljs-title function_">constructor</span>(<span class="hljs-params">coffee</span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">coffee</span> = coffee;
+  }
+
+  <span class="hljs-title function_">cost</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">return</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">coffee</span>.<span class="hljs-title function_">cost</span>() + <span class="hljs-number">2</span>;
+  }
+}
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">SugarDecorator</span> {
+  <span class="hljs-title function_">constructor</span>(<span class="hljs-params">coffee</span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">coffee</span> = coffee;
+  }
+
+  <span class="hljs-title function_">cost</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">return</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">coffee</span>.<span class="hljs-title function_">cost</span>() + <span class="hljs-number">1</span>;
+  }
+}
+
+<span class="hljs-comment">// Usage</span>
+<span class="hljs-keyword">let</span> coffee = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Coffee</span>();
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'Cost of plain coffee:'</span>, coffee.<span class="hljs-title function_">cost</span>());
+
+<span class="hljs-keyword">let</span> milkCoffee = <span class="hljs-keyword">new</span> <span class="hljs-title class_">MilkDecorator</span>(coffee);
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'Cost of milk coffee:'</span>, milkCoffee.<span class="hljs-title function_">cost</span>());
+
+<span class="hljs-keyword">let</span> sugarMilkCoffee = <span class="hljs-keyword">new</span> <span class="hljs-title class_">SugarDecorator</span>(milkCoffee);
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'Cost of sugar milk coffee:'</span>, sugarMilkCoffee.<span class="hljs-title function_">cost</span>());
+</code></pre>
+<h2 id="5-facade">5. Facade</h2>
+<p>The Facade design pattern is basically a simplified interface that the client can interact with to use other low level operations hidden elsewhere in the code base. This design pattern is often used in systems that are built around a multi-layer architecture. Facades allow the client to perform certain tasks without needing to understand the complexity of the underlying system. </p>
+<h2 id="51-components-of-the-facade">5.1. Components of the Facade</h2>
+<p><em>Facade</em></p>
+<p>The facade is the interface that the client will interact with. It provides a simple and unified interface that delegates the clients requests to the appropriate objects within the subsystem</p>
+<p><em>Subsystem</em></p>
+<p>The subsystem consists of all the various components and functionalities that the Facade wraps around. The subsystem and the Facade interact with eachother but operate independently. </p>
+<h2 id="52-benefits-of-the-facade">5.2. Benefits of the Facade</h2>
+<p><strong>Simplified Interface</strong></p>
+<p>The Facade provides a simple and easy to understand interface </p>
+<p><strong>Code Organization</strong></p>
+<p>The Facade helps organize the code by encapsulating the subsystem's functionality and providing a clear separation of concerns </p>
+<p><strong>Easier Maintenance</strong></p>
+<p>Changes to the subsystem can be isolated within the facade, reducing the impact on the client code. </p>
+<h2 id="53-example">5.3. Example</h2>
+<pre><code class="lang-javascript"><span class="hljs-comment">// Plumbing subsystem</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">PlumbingSubsystem</span> {
+  <span class="hljs-title function_">constructor</span>(<span class="hljs-params"></span>) {}
+
+  <span class="hljs-title function_">turnOnWater</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'Plumbing: Water turned on'</span>);
+  }
+
+  <span class="hljs-title function_">turnOffWater</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'Plumbing: Water turned off'</span>);
+  }
+}
+
+<span class="hljs-comment">// Electrical subsystem</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">ElectricalSubsystem</span> {
+  <span class="hljs-title function_">constructor</span>(<span class="hljs-params"></span>) {}
+
+  <span class="hljs-title function_">turnOnElectricity</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'Electrical: Electricity turned on'</span>);
+  }
+
+  <span class="hljs-title function_">turnOffElectricity</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'Electrical: Electricity turned off'</span>);
+  }
+}
+
+<span class="hljs-comment">// House facade</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">HouseFacade</span> {
+  <span class="hljs-title function_">constructor</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">plumbingSubsystem</span> = <span class="hljs-keyword">new</span> <span class="hljs-title class_">PlumbingSubsystem</span>();
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">electricalSubsystem</span> = <span class="hljs-keyword">new</span> <span class="hljs-title class_">ElectricalSubsystem</span>();
+  }
+
+  <span class="hljs-title function_">enterHouse</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">plumbingSubsystem</span>.<span class="hljs-title function_">turnOnWater</span>();
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">electricalSubsystem</span>.<span class="hljs-title function_">turnOnElectricity</span>();
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'You have entered the house.'</span>);
+  }
+
+  <span class="hljs-title function_">leaveHouse</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">plumbingSubsystem</span>.<span class="hljs-title function_">turnOffWater</span>();
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">electricalSubsystem</span>.<span class="hljs-title function_">turnOffElectricity</span>();
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'You have left the house.'</span>);
+  }
+}
+
+<span class="hljs-comment">// Client</span>
+<span class="hljs-keyword">const</span> <span class="hljs-title function_">client</span> = (<span class="hljs-params"></span>) =&gt; {
+  <span class="hljs-keyword">const</span> house = <span class="hljs-keyword">new</span> <span class="hljs-title class_">HouseFacade</span>();
+
+  <span class="hljs-comment">// Enter the house</span>
+  house.<span class="hljs-title function_">enterHouse</span>();
+
+  <span class="hljs-comment">// Leave the house</span>
+  house.<span class="hljs-title function_">leaveHouse</span>();
+};
+
+<span class="hljs-comment">// Run the client</span>
+<span class="hljs-title function_">client</span>();
+</code></pre>
+<h2 id="6-flyweight">6. Flyweight</h2>
+<p>The Flyweight design pattern aims to minimize memory usage or computaional expenses by storing intrinsic values (similar properties) of similar object in an application, reducing the amount of duplicate code. This is particularly useful when dealing with a large number of similar objects in an application. </p>
+<h2 id="61-components-of-a-flyweight">6.1. Components of a Flyweight</h2>
+<p><em>FlyweightFactory</em></p>
+<p>The flyweight factory creates the flyweight objects. It contains a function that will create a flyweight if one does not already exist and it stores newly created flyweights for future request. </p>
+<p><em>Flyweight</em></p>
+<p>The flyweight contains the intrinsic data that will be shared across the application </p>
+<h2 id="62-benefits-of-flyweights">6.2. Benefits of Flyweights</h2>
+<p><strong>Memory Efficiency</strong></p>
+<p>By sharing intrinsic data among multiple objects, the Flyweight pattern significantly reduces memory usage especially when dealing with a large number of instances. </p>
+<p><strong>Performance Improvements</strong> </p>
+<p>Due to reduced memory usage, the application's overall performance improves. Lower memory usage typically leads to faster execution times and smoother application performance. </p>
+<p><strong>Simplifies State Management</strong></p>
+<p>By separating intrinsic data (shared values) and extrinisc data (unique values), Flyweights simplify the management of these states. It allows for a cleaner separation of concerns and more organized approach to state handling. </p>
+<h2 id="63-example">6.3. Example</h2>
+<pre><code class="lang-javascript"><span class="hljs-comment">// Flyweight object for Camera</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">Camera</span>(<span class="hljs-params">make, model, resolution</span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">make</span> = make;
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">model</span> = model;
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">resolution</span> = resolution;
+}
+
+<span class="hljs-comment">// Flyweight factory for Camera</span>
+<span class="hljs-keyword">var</span> <span class="hljs-title class_">FlyWeightCameraFactory</span> = (<span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">var</span> flyweights = {};
+
+    <span class="hljs-keyword">return</span> {
+        <span class="hljs-attr">get</span>: <span class="hljs-keyword">function</span> (<span class="hljs-params">make, model, resolution</span>) {
+            <span class="hljs-keyword">if</span> (!flyweights[make + model]) {
+                flyweights[make + model] = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Camera</span>(make, model, resolution);
+            }
+            <span class="hljs-keyword">return</span> flyweights[make + model];
+        },
+
+        <span class="hljs-attr">getCount</span>: <span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) {
+            <span class="hljs-keyword">var</span> count = <span class="hljs-number">0</span>;
+            <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> f <span class="hljs-keyword">in</span> flyweights) count++;
+            <span class="hljs-keyword">return</span> count;
+        }
+    };
+})();
+
+<span class="hljs-comment">// Camera collection</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">CameraCollection</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">var</span> cameras = {};
+    <span class="hljs-keyword">var</span> count = <span class="hljs-number">0</span>;
+
+    <span class="hljs-keyword">return</span> {
+        <span class="hljs-attr">add</span>: <span class="hljs-keyword">function</span> (<span class="hljs-params">make, model, resolution, serial</span>) {
+            cameras[serial] = {
+                <span class="hljs-attr">flyweight</span>: <span class="hljs-title class_">FlyWeightCameraFactory</span>.<span class="hljs-title function_">get</span>(make, model, resolution),
+                <span class="hljs-attr">serial</span>: serial
+            };
+            count++;
+        },
+
+        <span class="hljs-attr">get</span>: <span class="hljs-keyword">function</span> (<span class="hljs-params">serial</span>) {
+            <span class="hljs-keyword">return</span> cameras[serial];
+        },
+
+        <span class="hljs-attr">getCount</span>: <span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) {
+            <span class="hljs-keyword">return</span> count;
+        }
+    };
+}
+
+<span class="hljs-comment">// Run the example</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">run</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">var</span> cameras = <span class="hljs-keyword">new</span> <span class="hljs-title class_">CameraCollection</span>();
+
+    cameras.<span class="hljs-title function_">add</span>(<span class="hljs-string">"Canon"</span>, <span class="hljs-string">"EOS R5"</span>, <span class="hljs-string">"45MP"</span>, <span class="hljs-string">"A1234"</span>);
+    cameras.<span class="hljs-title function_">add</span>(<span class="hljs-string">"Nikon"</span>, <span class="hljs-string">"D850"</span>, <span class="hljs-string">"45.7MP"</span>, <span class="hljs-string">"B5678"</span>);
+    cameras.<span class="hljs-title function_">add</span>(<span class="hljs-string">"Sony"</span>, <span class="hljs-string">"A7R III"</span>, <span class="hljs-string">"42.4MP"</span>, <span class="hljs-string">"C9101"</span>);
+    cameras.<span class="hljs-title function_">add</span>(<span class="hljs-string">"Canon"</span>, <span class="hljs-string">"EOS R5"</span>, <span class="hljs-string">"45MP"</span>, <span class="hljs-string">"D1212"</span>); <span class="hljs-comment">// Reusing existing flyweight</span>
+
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"Cameras: "</span> + cameras.<span class="hljs-title function_">getCount</span>());
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"Flyweights: "</span> + <span class="hljs-title class_">FlyWeightCameraFactory</span>.<span class="hljs-title function_">getCount</span>());
+}
+
+<span class="hljs-comment">// Run the example</span>
+<span class="hljs-title function_">run</span>();
+</code></pre>
+<h2 id="7-proxy">7. Proxy</h2>
+<p>The Proxy design pattern is a structural design pattern that allows you to provide a substitute or placeholder for another object. This proxy object can control access to the original object. In Javascript, the <code>proxy</code> object is built into the language and facilitates the implementation of the Proxy design pattern. </p>
+<h2 id="71-components-of-the-proxy">7.1. Components of the Proxy</h2>
+<p><em>Proxy</em></p>
+<p>The Proxy contains an interface that is similar to the real object, it maintains a reference that lets the proxy access the real object and it handles requests and forwards them to the real object. </p>
+<p><em>RealSubject</em></p>
+<p>This is the actual object that the Proxy is substituting for. </p>
+<h2 id="72-benefits-of-proxies">7.2. Benefits of Proxies</h2>
+<p><strong>Controlled Access</strong> </p>
+<p>Proxies allow you to control access to the original object, enabling you to implement access control logic such as permissions, restrictions, or validations before allowing access to the underlying object. </p>
+<p><strong>Behavior Augmentation</strong></p>
+<p>Proxies can add additional behavior or functionality before or after the invocation of methods or access to properties of the original object. This is useful for implementing cross-cutting concerns like logging, caching, or error handling.</p>
+<p><strong>Caching</strong></p>
+<p>Proxies can implement caching mechanism to store results of expensive operations, improving performance and efficiency </p>
+<p><strong>Lazy Initialization</strong> </p>
+<p>Proxies enable lazy initialization, where you can delay the creation of the actual object until its needed. This can improve performance by reducing upfront resource usage. </p>
+<h2 id="73-example">7.3. Example</h2>
+<pre><code class="lang-javascript"><span class="hljs-comment">// Original object representing a bank account</span>
+<span class="hljs-keyword">const</span> bankAccount = {
+  <span class="hljs-attr">balance</span>: <span class="hljs-number">1000</span>,
+
+  <span class="hljs-title function_">deposit</span>(<span class="hljs-params">amount</span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">balance</span> += amount;
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`Deposited <span class="hljs-subst">${amount}</span>. New balance: <span class="hljs-subst">${<span class="hljs-variable language_">this</span>.balance}</span>`</span>);
+  },
+
+  <span class="hljs-title function_">withdraw</span>(<span class="hljs-params">amount</span>) {
+    <span class="hljs-keyword">if</span> (amount &lt;= <span class="hljs-variable language_">this</span>.<span class="hljs-property">balance</span>) {
+      <span class="hljs-variable language_">this</span>.<span class="hljs-property">balance</span> -= amount;
+      <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`Withdrew <span class="hljs-subst">${amount}</span>. New balance: <span class="hljs-subst">${<span class="hljs-variable language_">this</span>.balance}</span>`</span>);
+    } <span class="hljs-keyword">else</span> {
+      <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'Insufficient funds.'</span>);
+    }
+  }
+};
+
+<span class="hljs-comment">// Create a proxy for the bank account</span>
+<span class="hljs-keyword">const</span> bankAccountProxy = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Proxy</span>(bankAccount, {
+  <span class="hljs-comment">// Intercept property access</span>
+  <span class="hljs-title function_">get</span>(<span class="hljs-params">target, property</span>) {
+    <span class="hljs-keyword">if</span> (property === <span class="hljs-string">'balance'</span>) {
+      <span class="hljs-comment">// Add some custom behavior before accessing 'balance'</span>
+      <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'Balance accessed.'</span>);
+    }
+    <span class="hljs-keyword">return</span> target[property];
+  },
+
+  <span class="hljs-comment">// Intercept method invocation</span>
+  <span class="hljs-title function_">apply</span>(<span class="hljs-params">target, thisArg, args</span>) {
+    <span class="hljs-comment">// Add some custom behavior before invoking a method</span>
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`Method "<span class="hljs-subst">${args[<span class="hljs-number">0</span>]}</span>" called.`</span>);
+    <span class="hljs-keyword">return</span> target.<span class="hljs-title function_">apply</span>(thisArg, args);
+  }
+});
+
+<span class="hljs-comment">// Accessing the proxy</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(bankAccountProxy.<span class="hljs-property">balance</span>); <span class="hljs-comment">// This will trigger the custom behavior</span>
+
+bankAccountProxy.<span class="hljs-title function_">deposit</span>(<span class="hljs-number">500</span>); <span class="hljs-comment">// This will trigger the custom behavior for method invocation</span>
+</code></pre>
+<hr></hr>
+<h1 id="behavioral-design-patterns">Behavioral Design Patterns</h1>
+<p>Focus on how objects communicate with each other and assigning responsibilities to them.</p>
+<h2 id="1-chain-of-responsibility">1. Chain of Responsibility</h2>
+<p>The Chain of Responsibility is a behavioural design pattern and its main purpose is to take a request and pass it along a chain of handlers. When the request goes through the chain each handler will decide either to process the request or pass it to the next handler in the chain. This pattern allows multiple handlers to handle the request without the sender needing to know which one will process it. </p>
+<h2 id="11-components-of-the-chain-of-responsibility">1.1. Components of the Chain of Responsibility</h2>
+<p><em>Request</em></p>
+<p>The request is just the object the client sends that needs to be processed. The request goes through the chain of handlers until it is processed or reaches the end of the chain. </p>
+<p><em>Abstract Handler Interface/Class</em></p>
+<p>This is the base interface/class that defines the methods that will be used for handling the request. The handler interface contains the logic for the order of the chain and how the request gets passed through.</p>
+<p><em>Concrete Handlers</em></p>
+<p>These are the methods/classes that implement the abstract handler. Each concrete handler contains logic for handling a particular type of request. If the concrete handler can process the request it will, if it can't then it will pass the request to the next handler. </p>
+<h2 id="12-benefits-of-the-chain-of-responsibility">1.2. Benefits of the Chain of Responsibility</h2>
+<p><strong>Ease of Use</strong></p>
+<p>The sender does not need to know the specific method to process the request, the sender just needs to pass it to the chain. This makes it easier for the sender to process requests. </p>
+<p><strong>Flexibility and Extensibility</strong></p>
+<p>New Handlers can be added to the chain or removed from the chain without modifying the sender's code. This allows for dynamic modification of the processing order. </p>
+<p><strong>Promotes Responsible Segregation</strong></p>
+<p>Handlers are responsible for processing specific types of requests based on their defined logic. This promotes a clear separation of responsibilities, making it easier to manage and maintain each handler independently.</p>
+<p><strong>Sequential Request Processing</strong></p>
+<p>The pattern ensures that each request is processed sequentially through the chain of handlers. Each handler can choose to process the request or pass it to the next handler. This can be particularly useful in scenarios where requests need to be processed in a specific order.</p>
+<h2 id="13-example">1.3. Example</h2>
+<pre><code class="lang-javascript"><span class="hljs-comment">// Handler interface</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">CoffeeHandler</span> {
+  <span class="hljs-title function_">constructor</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">nextHandler</span> = <span class="hljs-literal">null</span>;
+  }
+
+  <span class="hljs-title function_">setNext</span>(<span class="hljs-params">handler</span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">nextHandler</span> = handler;
+  }
+
+  <span class="hljs-title function_">processRequest</span>(<span class="hljs-params">request</span>) {
+    <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Error</span>(<span class="hljs-string">'processRequest method must be implemented by subclasses'</span>);
+  }
+}
+
+<span class="hljs-comment">// Concrete handler for ordering coffee</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">OrderCoffeeHandler</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_ inherited__">CoffeeHandler</span> {
+  <span class="hljs-title function_">processRequest</span>(<span class="hljs-params">request</span>) {
+    <span class="hljs-keyword">if</span> (request === <span class="hljs-string">'Coffee'</span>) {
+      <span class="hljs-keyword">return</span> <span class="hljs-string">'Order placed for a cup of coffee.'</span>;
+    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (<span class="hljs-variable language_">this</span>.<span class="hljs-property">nextHandler</span>) {
+      <span class="hljs-keyword">return</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">nextHandler</span>.<span class="hljs-title function_">processRequest</span>(request);
+    } <span class="hljs-keyword">else</span> {
+      <span class="hljs-keyword">return</span> <span class="hljs-string">'Sorry, we do not serve '</span> + request + <span class="hljs-string">'.'</span>;
+    }
+  }
+}
+
+<span class="hljs-comment">// Concrete handler for preparing coffee</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">PrepareCoffeeHandler</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_ inherited__">CoffeeHandler</span> {
+  <span class="hljs-title function_">processRequest</span>(<span class="hljs-params">request</span>) {
+    <span class="hljs-keyword">if</span> (request === <span class="hljs-string">'PrepareCoffee'</span>) {
+      <span class="hljs-keyword">return</span> <span class="hljs-string">'Coffee is being prepared.'</span>;
+    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (<span class="hljs-variable language_">this</span>.<span class="hljs-property">nextHandler</span>) {
+      <span class="hljs-keyword">return</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">nextHandler</span>.<span class="hljs-title function_">processRequest</span>(request);
+    } <span class="hljs-keyword">else</span> {
+      <span class="hljs-keyword">return</span> <span class="hljs-string">'Cannot prepare '</span> + request + <span class="hljs-string">'.'</span>;
+    }
+  }
+}
+
+<span class="hljs-comment">// Client code</span>
+<span class="hljs-keyword">const</span> orderHandler = <span class="hljs-keyword">new</span> <span class="hljs-title class_">OrderCoffeeHandler</span>();
+<span class="hljs-keyword">const</span> prepareHandler = <span class="hljs-keyword">new</span> <span class="hljs-title class_">PrepareCoffeeHandler</span>();
+
+<span class="hljs-comment">// Set up the chain</span>
+orderHandler.<span class="hljs-title function_">setNext</span>(prepareHandler);
+
+<span class="hljs-comment">// Order coffee</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(orderHandler.<span class="hljs-title function_">processRequest</span>(<span class="hljs-string">'Coffee'</span>));  <span class="hljs-comment">// Output: Order placed for a cup of coffee.</span>
+
+<span class="hljs-comment">// Prepare coffee</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(orderHandler.<span class="hljs-title function_">processRequest</span>(<span class="hljs-string">'PrepareCoffee'</span>));  <span class="hljs-comment">// Output: Coffee is being prepared.</span>
+
+<span class="hljs-comment">// Try ordering something else</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(orderHandler.<span class="hljs-title function_">processRequest</span>(<span class="hljs-string">'Tea'</span>));  <span class="hljs-comment">// Output: Sorry, we do not serve Tea.</span>
+</code></pre>
+<h2 id="2-command">2. Command</h2>
+<p>The command design pattern is a behavioral design pattern that allows you to encapsulate a request as an object, that object will contain all the necessary information for the request's execution. This pattern allows for the parameterization and queuing of requests and provides the ability to undo operations. </p>
+<h2 id="21-components-of-the-command">2.1. Components of the Command</h2>
+<p><em>Invoker</em></p>
+<p>This is the object that requests the execution of a command. It has a reference to a command and can execute the command by calling its <code>execute</code> method. The Invoker does not need to know the specifics of how the command is executed. It just triggers the command. </p>
+<p><em>Command</em></p>
+<p>This is the interface or abstract class that declares the <code>execute</code> method. It defines the common method that concrete command classes should implement.</p>
+<p><em>Receiver</em> </p>
+<p>This is an object that performs the actual work when the <code>execute</code> method of a command is called. The receiver knows how to carry out the action associate with a specific command. </p>
+<h2 id="22-benefits-of-the-command">2.2. Benefits of the Command</h2>
+<p><strong>Flexibility and Extensibility</strong></p>
+<p>This pattern allows for easy addition of new commands without needing to modify the invoker or receiver. </p>
+<p><strong>Undo and Redo Operations</strong></p>
+<p>The command pattern facilitates the implementation of undo and redo operations.Each command object can keep track of the previous state, enabling the reversal of the executed action.</p>
+<p><strong>Parameterization and Queuing</strong></p>
+<p>Commands can be parameterized with arguments, allowing for the customization of actions at runtime. Additionally, the pattern enables the queuing and scheduling of requests, providing control over the order of execution.</p>
+<p><strong>History and Logging</strong></p>
+<p>It's possible to maintain a history of executed commands, which can be useful for auditing, logging, or tracking user actions.</p>
+<h2 id="23-example">2.3. Example</h2>
+<pre><code class="lang-javascript">
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">Command</span> {
+  <span class="hljs-title function_">constructor</span>(<span class="hljs-params">receiver</span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">receiver</span> = receiver;
+  }
+
+  <span class="hljs-title function_">execute</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Error</span>(<span class="hljs-string">'execute() method must be implemented'</span>);
+  }
+}
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">ConcreteCommand</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_ inherited__">Command</span> {
+  <span class="hljs-title function_">constructor</span>(<span class="hljs-params">receiver, parameter</span>) {
+    <span class="hljs-variable language_">super</span>(receiver);
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">parameter</span> = parameter;
+  }
+
+  <span class="hljs-title function_">execute</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">receiver</span>.<span class="hljs-title function_">action</span>(<span class="hljs-variable language_">this</span>.<span class="hljs-property">parameter</span>);
+  }
+}
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">Receiver</span> {
+  <span class="hljs-title function_">action</span>(<span class="hljs-params">parameter</span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`Receiver is performing action with parameter: <span class="hljs-subst">${parameter}</span>`</span>);
+  }
+}
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">Invoker</span> {
+  <span class="hljs-title function_">constructor</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">commands</span> = [];
+  }
+
+  <span class="hljs-title function_">addCommand</span>(<span class="hljs-params">command</span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">commands</span>.<span class="hljs-title function_">push</span>(command);
+  }
+
+  <span class="hljs-title function_">executeCommands</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">commands</span>.<span class="hljs-title function_">forEach</span>(<span class="hljs-function"><span class="hljs-params">command</span> =&gt;</span> command.<span class="hljs-title function_">execute</span>());
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">commands</span> = []; <span class="hljs-comment">// Clear the executed commands</span>
+  }
+}
+
+<span class="hljs-comment">// Usage</span>
+<span class="hljs-keyword">const</span> receiver = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Receiver</span>();
+<span class="hljs-keyword">const</span> command1 = <span class="hljs-keyword">new</span> <span class="hljs-title class_">ConcreteCommand</span>(receiver, <span class="hljs-string">'Command 1 parameter'</span>);
+<span class="hljs-keyword">const</span> command2 = <span class="hljs-keyword">new</span> <span class="hljs-title class_">ConcreteCommand</span>(receiver, <span class="hljs-string">'Command 2 parameter'</span>);
+
+<span class="hljs-keyword">const</span> invoker = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Invoker</span>();
+invoker.<span class="hljs-title function_">addCommand</span>(command1);
+invoker.<span class="hljs-title function_">addCommand</span>(command2);
+
+invoker.<span class="hljs-title function_">executeCommands</span>();
+</code></pre>
+<h2 id="3-interperator">3. Interperator</h2>
+<p>The interperator design pattern is used to define a grammar for a language and provide an interpreter to interpret sentences in that language. It's typically use for creating language interpreters or parsers but you could also use them inside your application. Imagine you have a complex desktop application, you could design a basic scripting language which allows the end-user to manipulate your application through simple instructions. </p>
+<h2 id="31-components-of-the-interperator">3.1. Components of the Interperator</h2>
+<p><em>Context</em></p>
+<p>A global state or context that the Interpreter uses to interpret expressions. It often contains information that is relevant during the interpretation of expressions. </p>
+<p><em>Abstract Expressions</em> </p>
+<p>Defines an interface for all types of expressions in the language's grammar. These expressions are typically represented as an abstract class or interface. </p>
+<p><em>Terminal Expressions</em></p>
+<p>Represents the terminal symbols in the grammar. These are the leaves of the expression tree. Terminal expression implement the interface defined by the abstract expression.</p>
+<p><em>Non-terminal Expression</em> </p>
+<p>Represents the non-terminal symbols in the grammar. Non-terminal expressions use terminal and/or other non-terminal expressions to define complex expressions by combining or composing them.</p>
+<p><em>Expression Tree</em> </p>
+<p>Represents the hierarchical structure of the language's expressions. The expression tree is built by combining terminal and non-terminal expressions based on the rules of the language's grammar. </p>
+<p><em>Interpreter</em></p>
+<p>Defines an interface or class that interprets the abstract syntax tree created by the expression tree. It typically includes an <code>interpret</code> method that takes a context and interprets the expression based on the given context.</p>
+<p><em>client</em></p>
+<p>Builds the abstract syntax tree using terminal and non-terminal expressions based on the language's grammar. The client then uses the interpreter to interpret the expression. </p>
+<h2 id="32-benefits-of-interpreters">3.2. Benefits of Interpreters</h2>
+<p><strong>Ease of Grammar Interpretation</strong></p>
+<p>The pattern simplifies the interpretation of complex grammatical rules by breaking them down into smaller, more manageable expressions. Each expression type handles its own interpretation, making the overall interpretation process easier to manage.</p>
+<p><strong>Better Error Handling</strong></p>
+<p>Since each expression type handles its own interpretation, error handling can be tailored to specific expressions. This allows for more precise and meaningful error messages when parsing or interpreting the input.</p>
+<p><strong>Flexibility and Extensibility</strong> </p>
+<p>The interpreter pattern provides a flexible way to define and extend grammatical rules and language expressions without modifying the core interpreter logic. You can easily add new expressions by creating new terminal and non-terminal expression classes. </p>
+<p><strong>Integration with other Design Patterns</strong></p>
+<p>The Interpreter pattern can be combined with other design patterns, such as Composite, to build complex hierarchies of expressions. This allows for the creation of powerful and feature-rich interpreters.</p>
+<h2 id="33-example">3.3. Example</h2>
+<pre><code class="lang-javascript"><span class="hljs-comment">// Abstract Expression</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">Expression</span> {
+  <span class="hljs-title function_">interpret</span>(<span class="hljs-params">context</span>) {
+    <span class="hljs-comment">// To be overridden by subclasses</span>
+  }
+}
+
+<span class="hljs-comment">// Terminal Expression: NumberExpression</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">NumberExpression</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_ inherited__">Expression</span> {
+  <span class="hljs-title function_">constructor</span>(<span class="hljs-params">number</span>) {
+    <span class="hljs-variable language_">super</span>();
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">number</span> = number;
+  }
+
+  <span class="hljs-title function_">interpret</span>(<span class="hljs-params">context</span>) {
+    <span class="hljs-keyword">return</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">number</span>;
+  }
+}
+
+<span class="hljs-comment">// Terminal Expression: VariableExpression</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">VariableExpression</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_ inherited__">Expression</span> {
+  <span class="hljs-title function_">constructor</span>(<span class="hljs-params">variable</span>) {
+    <span class="hljs-variable language_">super</span>();
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">variable</span> = variable;
+  }
+
+  <span class="hljs-title function_">interpret</span>(<span class="hljs-params">context</span>) {
+    <span class="hljs-keyword">return</span> context[<span class="hljs-variable language_">this</span>.<span class="hljs-property">variable</span>] || <span class="hljs-number">0</span>;
+  }
+}
+
+<span class="hljs-comment">// Non-terminal Expression: AddExpression</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">AddExpression</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_ inherited__">Expression</span> {
+  <span class="hljs-title function_">constructor</span>(<span class="hljs-params">expression1, expression2</span>) {
+    <span class="hljs-variable language_">super</span>();
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">expression1</span> = expression1;
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">expression2</span> = expression2;
+  }
+
+  <span class="hljs-title function_">interpret</span>(<span class="hljs-params">context</span>) {
+    <span class="hljs-keyword">return</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">expression1</span>.<span class="hljs-title function_">interpret</span>(context) + <span class="hljs-variable language_">this</span>.<span class="hljs-property">expression2</span>.<span class="hljs-title function_">interpret</span>(context);
+  }
+}
+
+<span class="hljs-comment">// Non-terminal Expression: SubtractExpression</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">SubtractExpression</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_ inherited__">Expression</span> {
+  <span class="hljs-title function_">constructor</span>(<span class="hljs-params">expression1, expression2</span>) {
+    <span class="hljs-variable language_">super</span>();
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">expression1</span> = expression1;
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">expression2</span> = expression2;
+  }
+
+  <span class="hljs-title function_">interpret</span>(<span class="hljs-params">context</span>) {
+    <span class="hljs-keyword">return</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">expression1</span>.<span class="hljs-title function_">interpret</span>(context) - <span class="hljs-variable language_">this</span>.<span class="hljs-property">expression2</span>.<span class="hljs-title function_">interpret</span>(context);
+  }
+}
+
+<span class="hljs-comment">// Client code</span>
+<span class="hljs-keyword">const</span> context = { <span class="hljs-attr">a</span>: <span class="hljs-number">10</span>, <span class="hljs-attr">b</span>: <span class="hljs-number">5</span>, <span class="hljs-attr">c</span>: <span class="hljs-number">2</span> };
+
+<span class="hljs-keyword">const</span> expression = <span class="hljs-keyword">new</span> <span class="hljs-title class_">SubtractExpression</span>(
+  <span class="hljs-keyword">new</span> <span class="hljs-title class_">AddExpression</span>(
+    <span class="hljs-keyword">new</span> <span class="hljs-title class_">VariableExpression</span>(<span class="hljs-string">'a'</span>),
+    <span class="hljs-keyword">new</span> <span class="hljs-title class_">VariableExpression</span>(<span class="hljs-string">'b'</span>)
+  ),
+  <span class="hljs-keyword">new</span> <span class="hljs-title class_">VariableExpression</span>(<span class="hljs-string">'c'</span>)
+);
+
+<span class="hljs-keyword">const</span> result = expression.<span class="hljs-title function_">interpret</span>(context);
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'Result:'</span>, result); <span class="hljs-comment">// Output: Result: 13</span>
+</code></pre>
+<h2 id="4-iterator">4. Iterator</h2>
+<p>The Iterator pattern allows clients to effectively loop over a collection of objects</p>
+<h2 id="41-components-of-the-iterator">4.1. Components of the Iterator</h2>
+<p><em>Iterator</em></p>
+<p>Implements Iterator interface or class with methods like <code>first()</code>,<code>next()</code>. The Iterator keeps track of the current position when traversing collections. </p>
+<p><em>Items</em></p>
+<p>These are the individual objects of the collection that the Iterator will traverse </p>
+<h2 id="42-benefits-of-iterators">4.2. Benefits of iterators</h2>
+<p><strong>Compatibility with Different Data Structures</strong> </p>
+<p>The Iterator pattern allows the same iteration logic to be applied to different data structures. </p>
+<p><strong>Support for concurrent Iteration</strong></p>
+<p>Iterators can support concurrent iteration over the same collection without interfering with each other, this enables the client to iterate over the collection in different ways simultaneously.</p>
+<p><strong>Lazy Loading</strong></p>
+<p>Iterators can be designed to load elements on demand, which is beneficial for large collections where loading all elements at once might be impractical or resource-intensive. Elements can be fetched as needed, optimizing memory usage.</p>
+<p><strong>Simplified Interface</strong></p>
+<p>The Iterator pattern provides a clean and consistent interface for accessing elements in a collection without exposing the internal structure of the collection. This simplifies the usage and understanding of the collection.</p>
+<h2 id="43-example">4.3. Example</h2>
+<pre><code class="lang-javascript"><span class="hljs-comment">// Car class representing a car</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">Car</span> {
+  <span class="hljs-title function_">constructor</span>(<span class="hljs-params">make, model</span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">make</span> = make;
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">model</span> = model;
+  }
+
+  <span class="hljs-title function_">getInfo</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">return</span> <span class="hljs-string">`<span class="hljs-subst">${<span class="hljs-variable language_">this</span>.make}</span> <span class="hljs-subst">${<span class="hljs-variable language_">this</span>.model}</span>`</span>;
+  }
+}
+
+<span class="hljs-comment">// Iterator interface</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">Iterator</span> {
+  <span class="hljs-title function_">constructor</span>(<span class="hljs-params">collection</span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">collection</span> = collection;
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">index</span> = <span class="hljs-number">0</span>;
+  }
+
+  <span class="hljs-title function_">next</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">return</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">collection</span>[<span class="hljs-variable language_">this</span>.<span class="hljs-property">index</span>++];
+  }
+
+  <span class="hljs-title function_">hasNext</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">return</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">index</span> &lt; <span class="hljs-variable language_">this</span>.<span class="hljs-property">collection</span>.<span class="hljs-property">length</span>;
+  }
+}
+
+<span class="hljs-comment">// Collection of cars</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">CarCollection</span> {
+  <span class="hljs-title function_">constructor</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">cars</span> = [];
+  }
+
+  <span class="hljs-title function_">addCar</span>(<span class="hljs-params">car</span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">cars</span>.<span class="hljs-title function_">push</span>(car);
+  }
+
+  <span class="hljs-title function_">createIterator</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Iterator</span>(<span class="hljs-variable language_">this</span>.<span class="hljs-property">cars</span>);
+  }
+}
+
+<span class="hljs-comment">// Usage</span>
+<span class="hljs-keyword">const</span> carCollection = <span class="hljs-keyword">new</span> <span class="hljs-title class_">CarCollection</span>();
+carCollection.<span class="hljs-title function_">addCar</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">Car</span>(<span class="hljs-string">'Toyota'</span>, <span class="hljs-string">'Corolla'</span>));
+carCollection.<span class="hljs-title function_">addCar</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">Car</span>(<span class="hljs-string">'Honda'</span>, <span class="hljs-string">'Civic'</span>));
+carCollection.<span class="hljs-title function_">addCar</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">Car</span>(<span class="hljs-string">'Ford'</span>, <span class="hljs-string">'Mustang'</span>));
+
+<span class="hljs-keyword">const</span> iterator = carCollection.<span class="hljs-title function_">createIterator</span>();
+
+<span class="hljs-keyword">while</span> (iterator.<span class="hljs-title function_">hasNext</span>()) {
+  <span class="hljs-keyword">const</span> car = iterator.<span class="hljs-title function_">next</span>();
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(car.<span class="hljs-title function_">getInfo</span>());
+}
+</code></pre>
+<h2 id="5-mediator">5. Mediator</h2>
+<p>The Mediator pattern acts as a middle man between a group of objects by encapsulating how these objects interact. The mediator facilitates communication between different components of a system without them needing to directly reference each other. </p>
+<h2 id="51-components-of-the-mediator">5.1. Components of the Mediator</h2>
+<p><em>Mediator</em></p>
+<p>The mediator manages central control over operations. It contains an interface for communicating with the Colleague objects and has a reference to each Colleague object.</p>
+<p><em>Colleague</em></p>
+<p>The colleagues are the objects that are being mediated, each colleague has a reference to the mediator.</p>
+<h2 id="52-benefits-of-the-mediator">5.2. Benefits of the Mediator</h2>
+<p><strong>Centralized Control</strong></p>
+<p>Centralizing communication within the Mediator allows for better control and coordination of interactions between components. The ,Mediator can manage message distribution, prioritize messages, and apply specific logic based on the system's requirements.</p>
+<p><strong>Simplified Communication</strong></p>
+<p>Mediators simplify communication logic, as components send messages to the Mediator instead of dealing with the complexity of direct communication. This simplifies the interaction between components and allows for easier maintenance and updates.</p>
+<p><strong>Reusability of Mediator</strong></p>
+<p>The Mediator can be reused across various components and scenarios, allowing for a single point of control for different parts of the application. This reusability promotes consistency and helps in managing the communication flow efficiently.</p>
+<p><strong>Promotes Maintainability</strong></p>
+<p>The Mediator pattern promotes maintainability by reducing the complexity of direct inter-component communication. As the system grows, changes and updates can be made within the Mediator without affecting the individual components, making maintenance easier and less error-prone.</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> <span class="hljs-title class_">Participant</span> = <span class="hljs-keyword">function</span> (<span class="hljs-params">name</span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">name</span> = name;
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">chatroom</span> = <span class="hljs-literal">null</span>;
+};
+
+<span class="hljs-title class_">Participant</span>.<span class="hljs-property"><span class="hljs-keyword">prototype</span></span> = {
+    <span class="hljs-attr">send</span>: <span class="hljs-keyword">function</span> (<span class="hljs-params">message, to</span>) {
+        <span class="hljs-variable language_">this</span>.<span class="hljs-property">chatroom</span>.<span class="hljs-title function_">send</span>(message, <span class="hljs-variable language_">this</span>, to);
+    },
+    <span class="hljs-attr">receive</span>: <span class="hljs-keyword">function</span> (<span class="hljs-params">message, <span class="hljs-keyword">from</span></span>) {
+        <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-keyword">from</span>.<span class="hljs-property">name</span> + <span class="hljs-string">" to "</span> + <span class="hljs-variable language_">this</span>.<span class="hljs-property">name</span> + <span class="hljs-string">": "</span> + message);
+    }
+};
+
+<span class="hljs-keyword">var</span> <span class="hljs-title class_">Chatroom</span> = <span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">var</span> participants = {};
+
+    <span class="hljs-keyword">return</span> {
+
+        <span class="hljs-attr">register</span>: <span class="hljs-keyword">function</span> (<span class="hljs-params">participant</span>) {
+            participants[participant.<span class="hljs-property">name</span>] = participant;
+            participant.<span class="hljs-property">chatroom</span> = <span class="hljs-variable language_">this</span>;
+        },
+
+        <span class="hljs-attr">send</span>: <span class="hljs-keyword">function</span> (<span class="hljs-params">message, <span class="hljs-keyword">from</span>, to</span>) {
+            <span class="hljs-keyword">if</span> (to) {                      <span class="hljs-comment">// single message</span>
+                to.<span class="hljs-title function_">receive</span>(message, <span class="hljs-keyword">from</span>);
+            } <span class="hljs-keyword">else</span> {                       <span class="hljs-comment">// broadcast message</span>
+                <span class="hljs-keyword">for</span> (key <span class="hljs-keyword">in</span> participants) {
+                    <span class="hljs-keyword">if</span> (participants[key] !== <span class="hljs-keyword">from</span>) {
+                        participants[key].<span class="hljs-title function_">receive</span>(message, <span class="hljs-keyword">from</span>);
+                    }
+                }
+            }
+        }
+    };
+};
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">run</span>(<span class="hljs-params"></span>) {
+
+    <span class="hljs-keyword">var</span> yoko = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Participant</span>(<span class="hljs-string">"Yoko"</span>);
+    <span class="hljs-keyword">var</span> john = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Participant</span>(<span class="hljs-string">"John"</span>);
+    <span class="hljs-keyword">var</span> paul = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Participant</span>(<span class="hljs-string">"Paul"</span>);
+    <span class="hljs-keyword">var</span> ringo = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Participant</span>(<span class="hljs-string">"Ringo"</span>);
+
+    <span class="hljs-keyword">var</span> chatroom = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Chatroom</span>();
+    chatroom.<span class="hljs-title function_">register</span>(yoko);
+    chatroom.<span class="hljs-title function_">register</span>(john);
+    chatroom.<span class="hljs-title function_">register</span>(paul);
+    chatroom.<span class="hljs-title function_">register</span>(ringo);
+
+    yoko.<span class="hljs-title function_">send</span>(<span class="hljs-string">"All you need is love."</span>);
+    yoko.<span class="hljs-title function_">send</span>(<span class="hljs-string">"I love you John."</span>);
+    john.<span class="hljs-title function_">send</span>(<span class="hljs-string">"Hey, no need to broadcast"</span>, yoko);
+    paul.<span class="hljs-title function_">send</span>(<span class="hljs-string">"Ha, I heard that!"</span>);
+    ringo.<span class="hljs-title function_">send</span>(<span class="hljs-string">"Paul, what do you think?"</span>, paul);
+}
+</code></pre>
+<h2 id="6-memento">6. Memento</h2>
+<p>The Memento design pattern allows an objects state to be captured and restored at a later time without exposing its internal structure. The Memento is a separate object that stores the state of the original object. </p>
+<h2 id="61-components-of-the-memento">6.1. Components of the Memento</h2>
+<p><em>Originator</em></p>
+<p>This is the object that gets saved. It creates a Memento object to store its internal state. </p>
+<p><em>Memento</em></p>
+<p>The Memento is responsible for storing the state of the originator. It has methods to retrieve and set the state of the originator but does not expose the originator's internal structure. </p>
+<p><em>Caretaker</em></p>
+<p>The caretaker is responsible for keeping track and managing the Mementos. It does not modify or inspect the contents of the Mementos</p>
+<h2 id="62-benefits-of-the-memento">6.2. Benefits of the Memento</h2>
+<p><strong>State Preservation and Restoration</strong></p>
+<p>Mementos allow an objects internal state to be captured and restored at a later time. </p>
+<p><strong>Undo/Redo Operations</strong></p>
+<p>Memento facilitates implementing undo and redo functionality easily. Since Mementos store the objects state at various points in time, you can support undoing changes made to the object or redoing changes made to the object</p>
+<p><strong>Improved Performance</strong></p>
+<p>Storing the object's state in a Memento allows for more efficient storage and retrieval operations compared to other approaches. </p>
+<p><strong>Flexible Design</strong> </p>
+<p>It provides a flexible way to manage the history of an object's state. The caretaker can decide which states to keep and when to restore them, allowing for a customizable approach based on the application's requirements.</p>
+<h2 id="63-example">6.3. Example</h2>
+<pre><code class="lang-javascript"><span class="hljs-comment">// Computer class (originator)</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">Computer</span> {
+  <span class="hljs-title function_">constructor</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">os</span> = <span class="hljs-string">''</span>;
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">version</span> = <span class="hljs-string">''</span>;
+  }
+
+  <span class="hljs-title function_">setOS</span>(<span class="hljs-params">os, version</span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">os</span> = os;
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">version</span> = version;
+  }
+
+  <span class="hljs-title function_">getState</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">return</span> {
+      <span class="hljs-attr">os</span>: <span class="hljs-variable language_">this</span>.<span class="hljs-property">os</span>,
+      <span class="hljs-attr">version</span>: <span class="hljs-variable language_">this</span>.<span class="hljs-property">version</span>
+    };
+  }
+
+  <span class="hljs-title function_">restoreState</span>(<span class="hljs-params">state</span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">os</span> = state.<span class="hljs-property">os</span>;
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">version</span> = state.<span class="hljs-property">version</span>;
+  }
+}
+
+<span class="hljs-comment">// Caretaker</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">Caretaker</span> {
+  <span class="hljs-title function_">constructor</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">mementos</span> = {};
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">nextKey</span> = <span class="hljs-number">1</span>;
+  }
+
+  <span class="hljs-title function_">add</span>(<span class="hljs-params">memento</span>) {
+    <span class="hljs-keyword">const</span> key = <span class="hljs-variable language_">this</span>.<span class="hljs-property">nextKey</span>++;
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">mementos</span>[key] = memento;
+    <span class="hljs-keyword">return</span> key;
+  }
+
+  <span class="hljs-title function_">get</span>(<span class="hljs-params">key</span>) {
+    <span class="hljs-keyword">return</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">mementos</span>[key];
+  }
+}
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">run</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> computer = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Computer</span>();
+  <span class="hljs-keyword">const</span> caretaker = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Caretaker</span>();
+
+  <span class="hljs-comment">// Save state</span>
+  <span class="hljs-keyword">const</span> originalState = computer.<span class="hljs-title function_">getState</span>();
+  <span class="hljs-keyword">const</span> key = caretaker.<span class="hljs-title function_">add</span>(originalState);
+
+  <span class="hljs-comment">// Mess up the state</span>
+  computer.<span class="hljs-title function_">setOS</span>(<span class="hljs-string">'Windows'</span>, <span class="hljs-string">'11'</span>);
+
+  <span class="hljs-comment">// Restore original state</span>
+  <span class="hljs-keyword">const</span> restoredState = caretaker.<span class="hljs-title function_">get</span>(key);
+  computer.<span class="hljs-title function_">restoreState</span>(restoredState);
+
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(computer.<span class="hljs-title function_">getState</span>()); <span class="hljs-comment">// Output: { os: '', version: '' }</span>
+}
+
+<span class="hljs-title function_">run</span>();
+</code></pre>
+<h2 id="7-observer">7. Observer</h2>
+<p>The observer pattern allows many objects to subscribe to events that are broadcast by another object. </p>
+<h2 id="71-components-of-the-observer">7.1. Components of the Observer</h2>
+<p><em>Subject</em></p>
+<p>The subject is an object that implements an interface that lets observer objects subscribe to it and send notifications to observers when its state changes. </p>
+<p><em>Observers</em></p>
+<p>The Observer subscribes to the subject and and typically has a function that get invoked when notified by the Subject</p>
+<h2 id="72-benefits-of-observers">7.2. Benefits of Observers</h2>
+<p><strong>Simplified Event Handling</strong></p>
+<p>The Observer pattern can simplify event handling mechanisms, as events can be treated as notifications to observers about a state change.</p>
+<p><strong>Reduces Duplicate code</strong></p>
+<p>Instead of duplicating the same code to respond to state changes in multiple places, the Observer pattern allows for a centralized place to manage these responses, promoting cleaner and more maintainable code.</p>
+<p><strong>Support for Broadcast Communication</strong></p>
+<p>The Observer pattern facilitates a "one-to-many" communication model, where a single event triggers actions in multiple observers. This is useful in scenarios where multiple components need to react to a change in state.</p>
+<p><strong>Modularity and Resuability</strong></p>
+<p>Observers can be reused across different subjects, promoting modularity and code reusability. This allows for more flexible and maintainable code.</p>
+<h2 id="73-example">7.3. Example</h2>
+<pre><code class="lang-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">Click</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">handlers</span> = [];  <span class="hljs-comment">// observers</span>
+}
+
+<span class="hljs-title class_">Click</span>.<span class="hljs-property"><span class="hljs-keyword">prototype</span></span> = {
+
+    <span class="hljs-attr">subscribe</span>: <span class="hljs-keyword">function</span> (<span class="hljs-params">fn</span>) {
+        <span class="hljs-variable language_">this</span>.<span class="hljs-property">handlers</span>.<span class="hljs-title function_">push</span>(fn);
+    },
+
+    <span class="hljs-attr">unsubscribe</span>: <span class="hljs-keyword">function</span> (<span class="hljs-params">fn</span>) {
+        <span class="hljs-variable language_">this</span>.<span class="hljs-property">handlers</span> = <span class="hljs-variable language_">this</span>.<span class="hljs-property">handlers</span>.<span class="hljs-title function_">filter</span>(
+            <span class="hljs-keyword">function</span> (<span class="hljs-params">item</span>) {
+                <span class="hljs-keyword">if</span> (item !== fn) {
+                    <span class="hljs-keyword">return</span> item;
+                }
+            }
+        );
+    },
+
+    <span class="hljs-attr">fire</span>: <span class="hljs-keyword">function</span> (<span class="hljs-params">o, thisObj</span>) {
+        <span class="hljs-keyword">var</span> scope = thisObj || <span class="hljs-variable language_">window</span>;
+        <span class="hljs-variable language_">this</span>.<span class="hljs-property">handlers</span>.<span class="hljs-title function_">forEach</span>(<span class="hljs-keyword">function</span> (<span class="hljs-params">item</span>) {
+            item.<span class="hljs-title function_">call</span>(scope, o);
+        });
+    }
+}
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">run</span>(<span class="hljs-params"></span>) {
+
+    <span class="hljs-keyword">var</span> clickHandler = <span class="hljs-keyword">function</span> (<span class="hljs-params">item</span>) {
+        <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"fired: "</span> + item);
+    };
+
+    <span class="hljs-keyword">var</span> click = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Click</span>();
+
+    click.<span class="hljs-title function_">subscribe</span>(clickHandler);
+    click.<span class="hljs-title function_">fire</span>(<span class="hljs-string">'event #1'</span>);
+    click.<span class="hljs-title function_">unsubscribe</span>(clickHandler);
+    click.<span class="hljs-title function_">fire</span>(<span class="hljs-string">'event #2'</span>);
+    click.<span class="hljs-title function_">subscribe</span>(clickHandler);
+    click.<span class="hljs-title function_">fire</span>(<span class="hljs-string">'event #3'</span>);
+}
+</code></pre>
+<h2 id="8-state">8. State</h2>
+<p>The State pattern is a behavioral design pattern that allows you to have a base object and provide it with additional functionality based on its state. This pattern is particularly useful when an object needs to change its behavior based on its internal state.</p>
+<h2 id="81-components-of-the-state">8.1. Components of the State</h2>
+<p><em>State</em></p>
+<p>This is the object that encapsulates the State values and the associated behavior of the State. </p>
+<p><em>Context</em></p>
+<p>This is the object that maintains a reference to a State object that defines the current State. It also includes an interface that allows other State objects to change its current State to a different State.</p>
+<h2 id="82-benefits-of-the-state">8.2. Benefits of the State</h2>
+<p><strong>Modular and Organized Code</strong></p>
+<p>Each State is encapuslated within its own class, making the code modular and easy to manage. </p>
+<p><strong>No Need for Switch Statements</strong></p>
+<p>Switch statements can also be used to change the behavior of an object but the problem with this method is that switch statements can become very lengthy as your project scales. The State pattern fixes this issue. </p>
+<p><strong>Promotes Reusability</strong></p>
+<p>States can be reused across different contexts, this reduces code duplication. </p>
+<p><strong>Simplifies Testing</strong></p>
+<p>Testing individual state classes in isolation is easier and more effective than testing a monolithic object with complex conditional logic. </p>
+<h2 id="83-example">8.3. Example</h2>
+<pre><code class="lang-javascript"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Car</span> {
+  <span class="hljs-title function_">constructor</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">state</span> = <span class="hljs-keyword">new</span> <span class="hljs-title class_">ParkState</span>();
+  }
+
+  <span class="hljs-title function_">setState</span>(<span class="hljs-params">state</span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">state</span> = state;
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`Changed state to: <span class="hljs-subst">${state.constructor.name}</span>`</span>);
+  }
+
+  <span class="hljs-title function_">park</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">state</span>.<span class="hljs-title function_">park</span>(<span class="hljs-variable language_">this</span>);
+  }
+
+  <span class="hljs-title function_">drive</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">state</span>.<span class="hljs-title function_">drive</span>(<span class="hljs-variable language_">this</span>);
+  }
+
+  <span class="hljs-title function_">reverse</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">state</span>.<span class="hljs-title function_">reverse</span>(<span class="hljs-variable language_">this</span>);
+  }
+}
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">ParkState</span> {
+  <span class="hljs-title function_">park</span>(<span class="hljs-params">car</span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"Car is already in Park"</span>);
+  }
+
+  <span class="hljs-title function_">drive</span>(<span class="hljs-params">car</span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"Shifting to Drive"</span>);
+    car.<span class="hljs-title function_">setState</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">DriveState</span>());
+  }
+
+  <span class="hljs-title function_">reverse</span>(<span class="hljs-params">car</span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"Shifting to Reverse"</span>);
+    car.<span class="hljs-title function_">setState</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">ReverseState</span>());
+  }
+}
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">DriveState</span> {
+  <span class="hljs-title function_">park</span>(<span class="hljs-params">car</span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"Shifting to Park"</span>);
+    car.<span class="hljs-title function_">setState</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">ParkState</span>());
+  }
+
+  <span class="hljs-title function_">drive</span>(<span class="hljs-params">car</span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"Car is already in Drive"</span>);
+  }
+
+  <span class="hljs-title function_">reverse</span>(<span class="hljs-params">car</span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"Shifting to Reverse"</span>);
+    car.<span class="hljs-title function_">setState</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">ReverseState</span>());
+  }
+}
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">ReverseState</span> {
+  <span class="hljs-title function_">park</span>(<span class="hljs-params">car</span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"Shifting to Park"</span>);
+    car.<span class="hljs-title function_">setState</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">ParkState</span>());
+  }
+
+  <span class="hljs-title function_">drive</span>(<span class="hljs-params">car</span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"Shifting to Drive"</span>);
+    car.<span class="hljs-title function_">setState</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">DriveState</span>());
+  }
+
+  <span class="hljs-title function_">reverse</span>(<span class="hljs-params">car</span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"Car is already in Reverse"</span>);
+  }
+}
+
+<span class="hljs-comment">// Example usage</span>
+<span class="hljs-keyword">const</span> car = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Car</span>();
+
+car.<span class="hljs-title function_">drive</span>();
+car.<span class="hljs-title function_">reverse</span>();
+car.<span class="hljs-title function_">drive</span>();
+car.<span class="hljs-title function_">park</span>();
+car.<span class="hljs-title function_">drive</span>();  <span class="hljs-comment">// Trying to drive while parked</span>
+</code></pre>
+<h2 id="9-strategy">9. Strategy</h2>
+<p>The Strategy pattern is essentially a design pattern that allows you to have a group of algorithms (strategies) that are interchangeable. </p>
+<h2 id="91-components-of-strategy">9.1. Components of Strategy</h2>
+<p><em>Strategy</em></p>
+<p>This is an algorithm that implements the Strategy interface. </p>
+<p><em>Context</em></p>
+<p>This is the object that maintains a reference to the current strategy. It defines an interface that allows the client to change the current Strategy to a different Strategy or retrieve calculations from the current Strategy referenced. </p>
+<h2 id="92-benefits-of-strategy">9.2. Benefits of Strategy</h2>
+<p><strong>Dynamically Swappable Algorithms</strong></p>
+<p>Strategies can be swapped at runtime, allowing for dynamic selection of algorithms based on different conditions or requirements. This is particularly useful when the appropriate algorithm may vary based on user input, configuration settings, or other factors.</p>
+<p><strong>Flexibility and Maintainability</strong></p>
+<p>Strategies can be changed or extended without modifying the context using them. This makes the system more flexible and easier to maintain since changes in one strategy do not affect others.</p>
+<p><strong>Simplifies Testing</strong></p>
+<p>Testing strategies in isolation is easier since each strategy is a separate class. This allows for targeted testing and ensures that changes to one strategy don't inadvertently affect others.</p>
+<p><strong>Reusability</strong></p>
+<p>Strategies can be reused in multiple contexts or applications, promoting code reuse and minimizing redundancy.</p>
+<h2 id="93-example">9.3. Example</h2>
+<pre><code class="lang-javascript"><span class="hljs-keyword">class</span> <span class="hljs-title class_">RegularCustomerStrategy</span> {
+  <span class="hljs-title function_">calculatePrice</span>(<span class="hljs-params">bookPrice</span>) {
+    <span class="hljs-comment">// Regular customers get a fixed discount of 10%</span>
+    <span class="hljs-keyword">return</span> bookPrice * <span class="hljs-number">0.9</span>;
+  }
+}
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">VIPCustomerStrategy</span> {
+  <span class="hljs-title function_">calculatePrice</span>(<span class="hljs-params">bookPrice</span>) {
+    <span class="hljs-comment">// VIP customers get a fixed discount of 20%</span>
+    <span class="hljs-keyword">return</span> bookPrice * <span class="hljs-number">0.8</span>;
+  }
+}
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">BookStore</span> {
+  <span class="hljs-title function_">constructor</span>(<span class="hljs-params">pricingStrategy</span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">pricingStrategy</span> = pricingStrategy;
+  }
+
+  <span class="hljs-title function_">setPricingStrategy</span>(<span class="hljs-params">pricingStrategy</span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">pricingStrategy</span> = pricingStrategy;
+  }
+
+  <span class="hljs-title function_">calculatePrice</span>(<span class="hljs-params">bookPrice</span>) {
+    <span class="hljs-keyword">return</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">pricingStrategy</span>.<span class="hljs-title function_">calculatePrice</span>(bookPrice);
+  }
+}
+
+<span class="hljs-comment">// Usage</span>
+<span class="hljs-keyword">const</span> regularCustomerStrategy = <span class="hljs-keyword">new</span> <span class="hljs-title class_">RegularCustomerStrategy</span>();
+<span class="hljs-keyword">const</span> vipCustomerStrategy = <span class="hljs-keyword">new</span> <span class="hljs-title class_">VIPCustomerStrategy</span>();
+
+<span class="hljs-keyword">const</span> bookstore = <span class="hljs-keyword">new</span> <span class="hljs-title class_">BookStore</span>(regularCustomerStrategy);
+
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'Regular customer price:'</span>, bookstore.<span class="hljs-title function_">calculatePrice</span>(<span class="hljs-number">50</span>)); <span class="hljs-comment">// Outputs: 45 (10% discount)</span>
+bookstore.<span class="hljs-title function_">setPricingStrategy</span>(vipCustomerStrategy);
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'VIP customer price:'</span>, bookstore.<span class="hljs-title function_">calculatePrice</span>(<span class="hljs-number">50</span>)); <span class="hljs-comment">// Outputs: 40 (20% discount)</span>
+</code></pre>
+<h2 id="10-template-method">10. Template Method</h2>
+<p>The Template Method is a behavioral design pattern that defines the program skeleton of an algorithm in a method but lets subclasses override specific steps of the algorithm without changing its structure. </p>
+<h2 id="101-components-of-the-template-method">10.1. Components of the Template Method</h2>
+<p><em>Abstract Class</em></p>
+<p>The abstract class is the template for the algorithm. It defines an interface for the client to invoke its method. It also contains all the functions that can be overridden by subclasses.</p>
+<p><em>Concrete Class</em></p>
+<p>Implements the steps as defined in the Abstract Class and can make changes to the steps. </p>
+<h2 id="102-benefits-of-the-template-method">10.2. Benefits of the Template Method</h2>
+<p><strong>Code Reusability</strong></p>
+<p>The pattern promotes code reusability by defining the algorithm's skeleton in a base class. Subclasses can reuse this structure and only need to provide implementations for specific steps.</p>
+<p><strong>Easy Maintenance</strong></p>
+<p>Making changes to the algorithm is simplified because modifications only need to be made in one place—the template method in the abstract class—rather than in multiple subclasses. This reduces the chances of errors and makes maintenance more straightforward.</p>
+<p><strong>Extension and Variation</strong></p>
+<p>The pattern allows for easy extension and variation of the algorithm. Subclasses can override certain steps to provide custom implementations, effectively extending or modifying the behavior of the algorithm without altering its core structure.</p>
+<p><strong>Control Flow</strong></p>
+<p>The template method defines the control flow of the algorithm, making it easier to manage and understand the sequence of operations in the algorithm.</p>
+<h2 id="103-example">10.3. Example</h2>
+<pre><code class="lang-javascript"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Camera</span> {
+  <span class="hljs-comment">// Template method defining the common steps for capturing a photo</span>
+  <span class="hljs-title function_">capturePhoto</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">turnOn</span>();
+    <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">initialize</span>();
+    <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">setExposure</span>();
+    <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">capture</span>();
+    <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">turnOff</span>();
+  }
+
+  <span class="hljs-comment">// Common steps for turning on the camera</span>
+  <span class="hljs-title function_">turnOn</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'Turning on the camera'</span>);
+  }
+
+  <span class="hljs-comment">// Abstract method for initializing the camera (to be overridden by subclasses)</span>
+  <span class="hljs-title function_">initialize</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Error</span>(<span class="hljs-string">'Abstract method: initialize() must be implemented by subclasses'</span>);
+  }
+
+  <span class="hljs-comment">// Abstract method for setting exposure (to be overridden by subclasses)</span>
+  <span class="hljs-title function_">setExposure</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Error</span>(<span class="hljs-string">'Abstract method: setExposure() must be implemented by subclasses'</span>);
+  }
+
+  <span class="hljs-comment">// Common steps for capturing a photo</span>
+  <span class="hljs-title function_">capture</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'Capturing a photo'</span>);
+  }
+
+  <span class="hljs-comment">// Common steps for turning off the camera</span>
+  <span class="hljs-title function_">turnOff</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'Turning off the camera'</span>);
+  }
+}
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">DSLRCamera</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_ inherited__">Camera</span> {
+  <span class="hljs-title function_">initialize</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'Initializing DSLR camera'</span>);
+  }
+
+  <span class="hljs-title function_">setExposure</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'Setting exposure for DSLR camera'</span>);
+  }
+}
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">MirrorlessCamera</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_ inherited__">Camera</span> {
+  <span class="hljs-title function_">initialize</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'Initializing mirrorless camera'</span>);
+  }
+
+  <span class="hljs-title function_">setExposure</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'Setting exposure for mirrorless camera'</span>);
+  }
+}
+
+<span class="hljs-comment">// Usage</span>
+<span class="hljs-keyword">const</span> dslrCamera = <span class="hljs-keyword">new</span> <span class="hljs-title class_">DSLRCamera</span>();
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'Capturing photo with DSLR camera:'</span>);
+dslrCamera.<span class="hljs-title function_">capturePhoto</span>();
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">''</span>);
+
+<span class="hljs-keyword">const</span> mirrorlessCamera = <span class="hljs-keyword">new</span> <span class="hljs-title class_">MirrorlessCamera</span>();
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'Capturing photo with mirrorless camera:'</span>);
+mirrorlessCamera.<span class="hljs-title function_">capturePhoto</span>();
+</code></pre>
+<h2 id="11-visitor">11. Visitor</h2>
+<p>The visitor design pattern is a behavioral design pattern that allows you to separate algorithms or operations from the object on which they operate. </p>
+<h2 id="111-components-of-the-visitor">11.1 Components of the Visitor</h2>
+<p><em>ObjectStructure</em></p>
+<p>Maintains a collection of Elements which can be iterated over. </p>
+<p><em>Elements</em></p>
+<p>The element contains an accept method that accepts the visitor objects.</p>
+<p><em>Visitor</em></p>
+<p>Implements a visit method where the argument of the method is the element being visited. This is how changes to the element get made. </p>
+<h2 id="112-benefits-of-the-visitor">11.2. Benefits of the Visitor</h2>
+<p><strong>Open/Closed Principle</strong></p>
+<p>The pattern aligns with the Open/Closed Principle, which states that software entities (classes, modules, functions) should be open for extension but closed for modification. You can introduce new operations (new visitors) without modifying the existing object structure or elements.</p>
+<p><strong>Extensibility</strong></p>
+<p>You can introduce new behaviors or operations by adding new visitor implementations without modifying the existing elements or the object structure. This makes the system more extensible, allowing for new features or behaviors to be added easily.</p>
+<p><strong>Centralized Behavior</strong></p>
+<p>The Visitor pattern centralizes behavior-related code within the visitor classes. Each visitor encapsulates a specific behavior, which can be reused across different elements, promoting code reuse and modularity.</p>
+<p><strong>Consistency in Operations</strong></p>
+<p>With the Visitor pattern, you can ensure that a specific operation (visitor method) is applied consistently across various elements, as each element's accept method calls the appropriate visitor method for that element type.</p>
+<h2 id="113-example">11.3 Example</h2>
+<pre><code class="lang-javascript"><span class="hljs-keyword">class</span> <span class="hljs-title class_">GymMember</span> {
+    <span class="hljs-title function_">constructor</span>(<span class="hljs-params">name, subscriptionType, fitnessScore</span>) {
+        <span class="hljs-variable language_">this</span>.<span class="hljs-property">name</span> = name;
+        <span class="hljs-variable language_">this</span>.<span class="hljs-property">subscriptionType</span> = subscriptionType;
+        <span class="hljs-variable language_">this</span>.<span class="hljs-property">fitnessScore</span> = fitnessScore;
+    }
+
+    <span class="hljs-title function_">accept</span>(<span class="hljs-params">visitor</span>) {
+        visitor.<span class="hljs-title function_">visit</span>(<span class="hljs-variable language_">this</span>);
+    }
+
+    <span class="hljs-title function_">getName</span>(<span class="hljs-params"></span>) {
+        <span class="hljs-keyword">return</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">name</span>;
+    }
+
+    <span class="hljs-title function_">getSubscriptionType</span>(<span class="hljs-params"></span>) {
+        <span class="hljs-keyword">return</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">subscriptionType</span>;
+    }
+
+    <span class="hljs-title function_">getFitnessScore</span>(<span class="hljs-params"></span>) {
+        <span class="hljs-keyword">return</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">fitnessScore</span>;
+    }
+
+    <span class="hljs-title function_">setFitnessScore</span>(<span class="hljs-params">score</span>) {
+        <span class="hljs-variable language_">this</span>.<span class="hljs-property">fitnessScore</span> = score;
+    }
+}
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">FitnessEvaluation</span> {
+    <span class="hljs-title function_">visit</span>(<span class="hljs-params">member</span>) {
+        member.<span class="hljs-title function_">setFitnessScore</span>(member.<span class="hljs-title function_">getFitnessScore</span>() + <span class="hljs-number">10</span>);
+    }
+}
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">MembershipDiscount</span> {
+    <span class="hljs-title function_">visit</span>(<span class="hljs-params">member</span>) {
+        <span class="hljs-keyword">if</span> (member.<span class="hljs-title function_">getSubscriptionType</span>() === <span class="hljs-string">'Premium'</span>) {
+            <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`<span class="hljs-subst">${member.getName()}</span>: Fitness score - <span class="hljs-subst">${member.getFitnessScore()}</span>, Membership type - <span class="hljs-subst">${member.getSubscriptionType()}</span>, Eligible for a 10% discount!`</span>);
+        } <span class="hljs-keyword">else</span> {
+            <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`<span class="hljs-subst">${member.getName()}</span>: Fitness score - <span class="hljs-subst">${member.getFitnessScore()}</span>, Membership type - <span class="hljs-subst">${member.getSubscriptionType()}</span>, Not eligible for a discount.`</span>);
+        }
+    }
+}
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">run</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">const</span> gymMembers = [
+        <span class="hljs-keyword">new</span> <span class="hljs-title class_">GymMember</span>(<span class="hljs-string">"Alice"</span>, <span class="hljs-string">"Basic"</span>, <span class="hljs-number">80</span>),
+        <span class="hljs-keyword">new</span> <span class="hljs-title class_">GymMember</span>(<span class="hljs-string">"Bob"</span>, <span class="hljs-string">"Premium"</span>, <span class="hljs-number">90</span>),
+        <span class="hljs-keyword">new</span> <span class="hljs-title class_">GymMember</span>(<span class="hljs-string">"Eve"</span>, <span class="hljs-string">"Basic"</span>, <span class="hljs-number">85</span>)
+    ];
+
+    <span class="hljs-keyword">const</span> fitnessEvaluation = <span class="hljs-keyword">new</span> <span class="hljs-title class_">FitnessEvaluation</span>();
+    <span class="hljs-keyword">const</span> membershipDiscount = <span class="hljs-keyword">new</span> <span class="hljs-title class_">MembershipDiscount</span>();
+
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; gymMembers.<span class="hljs-property">length</span>; i++) {
+        <span class="hljs-keyword">const</span> member = gymMembers[i];
+
+        member.<span class="hljs-title function_">accept</span>(fitnessEvaluation);
+        member.<span class="hljs-title function_">accept</span>(membershipDiscount);
+    }
+}
+
+<span class="hljs-title function_">run</span>();
+</code></pre>
+<hr></hr>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Chapter22.html" class="navigation navigation-prev " aria-label="Previous page: 第二十二章·面试问题">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Chapter24.html" class="navigation navigation-next " aria-label="Next page: 第二十四章·文件系统">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"第二十三章·设计模式","level":"1.27","depth":1,"next":{"title":"第二十四章·文件系统","level":"1.28","depth":1,"path":"content/Chapter24.md","ref":"content/Chapter24.md","articles":[]},"previous":{"title":"第二十二章·面试问题","level":"1.26","depth":1,"path":"content/Chapter22.md","ref":"content/Chapter22.md","articles":[]},"dir":"ltr"},"config":{"plugins":["hints","hide-published-with","chapter-fold","intopic-toc","tooltips","exercises","theme-creative","sharing","@honkit/honkit-plugin-ga","sitemap","favicon-custom","edit-link","ace-editor"],"styles":{"website":".gitbook/css/custom.css"},"pluginsConfig":{"chapter-fold":{},"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"概览"},"search":{},"favicon-custom":{"favicon":"./favicon.ico","appleTouchIconPrecomposed152":"./favicon.ico"},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"tooltips":{},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-creative":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"maxWidth":"800px","showLevel":false,"fontSize":18,"colorSecondary":"#E6D7C1","fontFamily":"'Times New Roman', serif","backgroundColor":"#F9F6F1","textColor":"#3E3E3E","textAlign":"justify","lineHeight":1.6,"colorPrimary":"#D8CFC4"},"highlight":{},"favicon":"favicon.ico","sitemap":{"hostname":"https://javascript.sumankunwar.com.np/"},"@honkit/honkit-plugin-ga":{},"ace-editor":{},"appleTouchIconPrecomposed152":"js.png","exercises":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"","base":"https://github.com/dinglevin/learn-javascript-zh/edit/main"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"Sepia","keywords":"JavaScript tutorial, JavaScript学习教程","author":"Suman Kunwar, dinglevin","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"JavaScript学习教程, 初学者版本","language":"zh-cn","website":"https://learn-javascript.dinglevin.tech/","gitbook":"*","description":"JavaScript学习教程, 初学者版本"},"file":{"path":"content/Chapter23.md","mtime":"2024-10-07T08:10:38.066Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-10-07T08:10:49.404Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook-plugin-exercises/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+    
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-published-with/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-intopic-toc/anchor.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-intopic-toc/gumshoe.polyfills.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-intopic-toc/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/ace/theme-tomorrow.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/ace/mode-javascript.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/exercises.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace-editor/ace.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace-editor/ace/theme-tomorrow.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace-editor/ace/mode-javascript.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace-editor/main.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+
+    </body>
+</html>
+

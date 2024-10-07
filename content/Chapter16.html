@@ -1,0 +1,950 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-cn" >
+    <head>
+        <title>第十六章·浏览器对象模型(BOM) · JavaScript学习教程, 初学者版本</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 5.1.4">
+        <meta name="author" content="Suman Kunwar, dinglevin">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-hints/plugin-hints.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-intopic-toc/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/honkit-plugin-tooltips/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-exercises/exercises.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-ace-editor/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../.gitbook/css/custom.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Chapter17.html" />
+    
+    
+    <link rel="prev" href="Chapter15.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="輸入並搜尋" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="Dedication.html">
+            
+                <a href="Dedication.html">
+            
+                    
+                    献词
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Copyright.html">
+            
+                <a href="Copyright.html">
+            
+                    
+                    版权声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="Preface.html">
+            
+                <a href="Preface.html">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="Chapter01.html">
+            
+                <a href="Chapter01.html">
+            
+                    
+                    第一章·介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="Chapter02.html">
+            
+                <a href="Chapter02.html">
+            
+                    
+                    第二章·基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="Chapter03.html">
+            
+                <a href="Chapter03.html">
+            
+                    
+                    第三章·数值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="Chapter04.html">
+            
+                <a href="Chapter04.html">
+            
+                    
+                    第四章·字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="Chapter05.html">
+            
+                <a href="Chapter05.html">
+            
+                    
+                    第五章·条件逻辑
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="Chapter06.html">
+            
+                <a href="Chapter06.html">
+            
+                    
+                    第六章·数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="Chapter07.html">
+            
+                <a href="Chapter07.html">
+            
+                    
+                    第七章·循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="Chapter08.html">
+            
+                <a href="Chapter08.html">
+            
+                    
+                    第八章·函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="Chapter09.html">
+            
+                <a href="Chapter09.html">
+            
+                    
+                    第九章·对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="Chapter10.html">
+            
+                <a href="Chapter10.html">
+            
+                    
+                    第十章·日期和时间
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="Chapter11.html">
+            
+                <a href="Chapter11.html">
+            
+                    
+                    第十一章·JSON
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="Chapter12.html">
+            
+                <a href="Chapter12.html">
+            
+                    
+                    第十二章·错误处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="Chapter13.html">
+            
+                <a href="Chapter13.html">
+            
+                    
+                    第十三章·模块化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="Chapter14.html">
+            
+                <a href="Chapter14.html">
+            
+                    
+                    第十四章·正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="Chapter15.html">
+            
+                <a href="Chapter15.html">
+            
+                    
+                    第十五章·类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.20" data-path="Chapter16.html">
+            
+                <a href="Chapter16.html">
+            
+                    
+                    第十六章·浏览器对象模型(BOM)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="Chapter17.html">
+            
+                <a href="Chapter17.html">
+            
+                    
+                    第十七章·事件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="Chapter18.html">
+            
+                <a href="Chapter18.html">
+            
+                    
+                    第十八章·Promise、async/await
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="Chapter19.html">
+            
+                <a href="Chapter19.html">
+            
+                    
+                    第十九章·其他杂项
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="Chapter20.html">
+            
+                <a href="Chapter20.html">
+            
+                    
+                    第二十章·服务端代码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="Chapter21.html">
+            
+                <a href="Chapter21.html">
+            
+                    
+                    第二十一章·实战练习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="Chapter22.html">
+            
+                <a href="Chapter22.html">
+            
+                    
+                    第二十二章·面试问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27" data-path="Chapter23.html">
+            
+                <a href="Chapter23.html">
+            
+                    
+                    第二十三章·设计模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.28" data-path="Chapter24.html">
+            
+                <a href="Chapter24.html">
+            
+                    
+                    第二十四章·文件系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29" data-path="Chapter25.html">
+            
+                <a href="Chapter25.html">
+            
+                    
+                    第二十五章·ES6概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.30" data-path="Chapter26.html">
+            
+                <a href="Chapter26.html">
+            
+                    
+                    第二十六章·动画资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.31" data-path="Chapter27.html">
+            
+                <a href="Chapter27.html">
+            
+                    
+                    第二十七章·JavaScript运行原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.32" data-path="References.html">
+            
+                <a href="References.html">
+            
+                    
+                    引用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.33" data-path="Resources.html">
+            
+                <a href="Resources.html">
+            
+                    
+                    资料
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34" data-path="Credits.html">
+            
+                <a href="Credits.html">
+            
+                    
+                    鸣谢
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本書使用 GitBook 釋出
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >第十六章·浏览器对象模型(BOM)</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="第十六章·浏览器对象模型bom">第十六章·浏览器对象模型(BOM)</h1>
+<p>The browser object model lets us interact with the browser window. The <code>window</code> object represents the browser's window and is supported by all browsers.</p>
+<p>Object <code>window</code> is the default object for a browser, so we can specify <code>window</code> or call directly all the functions.</p>
+<pre><code class="lang-javascript"><span class="hljs-variable language_">window</span>.<span class="hljs-title function_">alert</span>(<span class="hljs-string">"Welcome to Learn JavaScript"</span>);  
+
+<span class="hljs-title function_">alert</span>(<span class="hljs-string">"Welcome to Learn JavaScript"</span>)
+</code></pre>
+<p>In this chapter, we are going to talk about various properties and methods of browser object model.</p>
+<ul>
+<li><a href="cookies.md">Cookies</a></li>
+<li><a href="history.md">History</a></li>
+<li><a href="location.md">Location</a></li>
+<li><a href="navigator.md">Navigator</a></li>
+<li><a href="popup.md">Popup</a></li>
+<li><a href="screen.md">Screen</a></li>
+<li><a href="window.md">Window</a></li>
+</ul>
+<h1 id="cookies-🍪">Cookies 🍪</h1>
+<p>Cookies are pieces of information that are store on a computer and can be accessed by the browser.</p>
+<p>Communication between a web browser and the server is stateless meaning that it treats each request independently. There are cases where we need to store user information and make that information available to the browser. With cookies, information can be fetched from the computer whenever it is required.</p>
+<p>Cookies are saved in name-value pair</p>
+<pre><code class="lang-javascript">book = <span class="hljs-title class_">Learn</span> <span class="hljs-title class_">JavaScript</span>
+</code></pre>
+<p>The <code>document.cookie</code> property is used to create, read and delete cookies. Creating cookie is pretty easy you need to provide the name and value</p>
+<pre><code class="lang-javascript"><span class="hljs-variable language_">document</span>.<span class="hljs-property">cookie</span> = <span class="hljs-string">"book=Learn JavaScript"</span>;
+</code></pre>
+<p>By default, a cookie gets deleted when the browser is closed. To make it persistent, we need to specify the expiry date (in UTC time).</p>
+<pre><code class="lang-javascript"><span class="hljs-variable language_">document</span>.<span class="hljs-property">cookie</span> = <span class="hljs-string">"book=Learn JavaScript; expires=Fri, 08 Jan 2022 12:00:00 UTC"</span>;
+</code></pre>
+<p>We can add a parameter to tell which path the cookie belongs to. By default, the cookie belongs to the current page.</p>
+<pre><code class="lang-javascript"><span class="hljs-variable language_">document</span>.<span class="hljs-property">cookie</span> = <span class="hljs-string">"book=Learn JavaScript; expires=Fri, 08 Jan 2022 12:00:00 UTC; path=/"</span>;
+</code></pre>
+<p>Here is a simple example of a cookie.</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> cookies = <span class="hljs-variable language_">document</span>.<span class="hljs-property">cookie</span>;
+<span class="hljs-comment">// a simple way to retrieve all cookie.</span>
+
+<span class="hljs-variable language_">document</span>.<span class="hljs-property">cookie</span> = <span class="hljs-string">"book=Learn JavaScript; expires=Fri, 08 Jan 2022 12:00:00 UTC; path=/"</span>;
+<span class="hljs-comment">// setting up a cookie</span>
+</code></pre>
+<h1 id="history">History</h1>
+<p>When we open a web browser and surf a web page it creates a new entry in the history stack. As we keep navigating to different pages new entries get pushed into the stack. </p>
+<p>To access the history object we can use</p>
+<pre><code class="lang-javascript"><span class="hljs-variable language_">window</span>.<span class="hljs-property">history</span>
+<span class="hljs-comment">// or</span>
+history
+</code></pre>
+<p>To navigate  between the different history stack we can use   <code>go()</code> , <code>forward()</code> and  <code>back()</code>methods of <strong>history</strong> object.  </p>
+<ol>
+<li><p><strong>go()</strong>: It is used to navigate the specific URL of the history stack.</p>
+<pre><code class="lang-javascript">history.<span class="hljs-title function_">go</span>(-<span class="hljs-number">1</span>); <span class="hljs-comment">// moves page backward</span>
+history.<span class="hljs-title function_">go</span>(<span class="hljs-number">0</span>);  <span class="hljs-comment">// refreshes the current page</span>
+history.<span class="hljs-title function_">go</span>(); <span class="hljs-comment">// refreshes the current page</span>
+history.<span class="hljs-title function_">go</span>(<span class="hljs-number">1</span>) <span class="hljs-comment">// moves page forward</span>
+</code></pre>
+<blockquote>
+<p><em><strong>Note:</strong></em> the current  page position in history stack is  <strong>0</strong>.</p>
+</blockquote>
+</li>
+<li><p><strong>back()</strong> : To navigate page backward we use <code>back()</code> method.</p>
+<pre><code class="lang-javascript">history.<span class="hljs-title function_">back</span>();
+</code></pre>
+</li>
+<li><p><strong>forward()</strong>: It loads the next list in the browser history. It is similar to clicking the forward button in the browser.</p>
+<pre><code class="lang-javascript">history.<span class="hljs-title function_">forward</span>();
+</code></pre>
+</li>
+</ol>
+<h1 id="location">Location</h1>
+<p>The <code>location</code> object is used to retrieve the current location (URL) of the document and provides different methods to manipulate document location. One can access the current location by</p>
+<pre><code class="lang-javascript"><span class="hljs-variable language_">window</span>.<span class="hljs-property">location</span>
+<span class="hljs-comment">//or</span>
+<span class="hljs-variable language_">document</span>.<span class="hljs-property">location</span>
+<span class="hljs-comment">//or</span>
+location
+</code></pre>
+<blockquote>
+<p><em><strong>Note</strong></em>: <code>window.location</code> and <code>document.location</code> references the same location object.</p>
+</blockquote>
+<p>Let's take an example of the following URL and explore the different properties of <code>location</code></p>
+<p><a href="http://localhost:8080/js/index.html?type=listing\&amp;page=2#title" target="_blank"><code>http://localhost:3000/js/index.html?type=listing&amp;page=2#title</code></a></p>
+<pre><code class="lang-javascript">location.<span class="hljs-property">href</span> <span class="hljs-comment">//prints current document URL</span>
+location.<span class="hljs-property">protocol</span> <span class="hljs-comment">//prints protocol like http: or https:</span>
+location.<span class="hljs-property">host</span> <span class="hljs-comment">//prints hostname with port like localhost or localhost:3000</span>
+location.<span class="hljs-property">hostname</span> <span class="hljs-comment">//prints hostname like localhost or www.example.com</span>
+location.<span class="hljs-property">port</span> <span class="hljs-comment">//prints port number like 3000</span>
+location.<span class="hljs-property">pathname</span> <span class="hljs-comment">//prints pathname like /js/index.html</span>
+location.<span class="hljs-property">search</span> <span class="hljs-comment">//prints query string like ?type=listing&amp;page=2</span>
+location.<span class="hljs-property">hash</span> <span class="hljs-comment">//prints fragment identifier like #title</span>
+</code></pre>
+<h1 id="navigator">Navigator</h1>
+<p>The <code>window.navigator</code>  or <code>navigator</code>   is a <strong>read-only</strong> property and contains different methods and functions related to the browser. </p>
+<p>Let's look at a  few examples of navigation.</p>
+<ol>
+<li><p><strong>navigator.appName</strong>: It gives the name of the browser application</p>
+<pre><code class="lang-javascript">navigator.<span class="hljs-property">appName</span>; 
+<span class="hljs-comment">// "Netscape"</span>
+</code></pre>
+<blockquote>
+<p><em><strong>Note:</strong></em> "Netscape" is the application name for IE11, Chrome, Firefox, and Safari.</p>
+</blockquote>
+</li>
+<li><p><strong>navigator.cookieEnabled</strong>: Returns a boolean value based on the cookie value in the browser.</p>
+<pre><code class="lang-javascript">navigator.<span class="hljs-property">cookieEnabled</span>;
+<span class="hljs-comment">//true</span>
+</code></pre>
+</li>
+<li><p><strong>navigator.platform</strong>: Provides information about the browser operating system.</p>
+<pre><code class="lang-javascript">navigator.<span class="hljs-property">platform</span>;
+<span class="hljs-string">"MacIntel"</span>
+</code></pre>
+</li>
+</ol>
+<h1 id="popup">Popup</h1>
+<p>Popups are an additional way to show information, take user confirmation, or take user input from additional documents. A popup can navigate to a new URL and send information to the opener window. <strong>Alert box</strong>, <strong>Confirmation box</strong>,  and <strong>Prompt box</strong> are the global functions where we can show the popup information.</p>
+<ol>
+<li><p><strong>alert()</strong>: It displays information to the user and has an  "<strong>OK</strong>" button to proceed.</p>
+<pre><code class="lang-javascript"><span class="hljs-title function_">alert</span>(<span class="hljs-string">"Alert message example"</span>);
+</code></pre>
+</li>
+<li><p><strong>confirm()</strong>: Use as a dialog box to confirm or accept something. It has "<strong>Ok</strong>" and "<strong>Cancel</strong>" to proceed. If the user clicks "<strong>Ok</strong>" then it returns <code>true</code>, if click "<strong>Cancel</strong>" it returns  <code>false</code>. </p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> txt;
+<span class="hljs-keyword">if</span> (<span class="hljs-title function_">confirm</span>(<span class="hljs-string">"Press a button!"</span>)) {
+  txt = <span class="hljs-string">"You pressed OK!"</span>;
+} <span class="hljs-keyword">else</span> {
+  txt = <span class="hljs-string">"You pressed Cancel!"</span>;
+}
+</code></pre>
+</li>
+<li><p><strong>prompt()</strong>: Takes user input value with "<strong>Ok"</strong> and "<strong>Cancel"</strong> buttons. It returns <code>null</code> if the user does not provide any input value.</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">//syntax </span>
+<span class="hljs-comment">//window.prompt("sometext","defaultText");</span>
+
+<span class="hljs-keyword">let</span> person = <span class="hljs-title function_">prompt</span>(<span class="hljs-string">"Please enter your name"</span>, <span class="hljs-string">"Harry Potter"</span>);
+
+<span class="hljs-keyword">if</span> (person == <span class="hljs-literal">null</span> || person == <span class="hljs-string">""</span>) {
+  txt = <span class="hljs-string">"User cancelled the prompt."</span>;
+} <span class="hljs-keyword">else</span> {
+  txt = <span class="hljs-string">"Hello "</span> + person + <span class="hljs-string">"! How are you today?"</span>;
+}
+</code></pre>
+</li>
+</ol>
+<h1 id="screen">Screen</h1>
+<p>The <code>screen</code> object contains the information about the screen on which the current window is being rendered. To access <code>screen</code> object we can use the <code>screen</code> property of <code>window</code> object.</p>
+<pre><code class="lang-javascript"><span class="hljs-variable language_">window</span>.<span class="hljs-property">screen</span>
+<span class="hljs-comment">//or</span>
+screen
+</code></pre>
+<p>The <code>window.screen</code> object has different properties, some of them are listed here:</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>availTop</code></td>
+<td>A read-only property that returns the first pixel from the top that is not taken up by system elements.</td>
+</tr>
+<tr>
+<td><code>availWidth</code></td>
+<td>A read-only property that returns the pixel width of the screen excluding system elements.</td>
+</tr>
+<tr>
+<td><code>colorDepth</code></td>
+<td>A read-only property that returns the number of bits used to represent colors.</td>
+</tr>
+<tr>
+<td><code>height</code></td>
+<td>Represents the pixel height of the screen.</td>
+</tr>
+<tr>
+<td><code>left</code></td>
+<td>Represents the pixel distance of the current screen’s left side.</td>
+</tr>
+<tr>
+<td><code>orientation</code></td>
+<td>Returns the screen orientation as specified in the Screen Orientation API.</td>
+</tr>
+<tr>
+<td><code>pixelDepth</code></td>
+<td>A read-only property that returns the bit depth of the screen.</td>
+</tr>
+<tr>
+<td><code>top</code></td>
+<td>Represents the pixel distance of the current screen’s top.</td>
+</tr>
+<tr>
+<td><code>width</code></td>
+<td>Represents the pixel width of the screen.</td>
+</tr>
+</tbody>
+</table>
+<h1 id="window">Window</h1>
+<p>The <code>window</code> object represents the browser window and is supported by the browsers. Global variables, objects, and functions are also part of the window object. </p>
+<p>Global <strong>variables</strong> are <strong>properties</strong> and <strong>functions</strong> are <strong>methods</strong> of the window object.</p>
+<p>Let's take an example of the screen properties. It is used to determine the size of the browser window and is measured in pixels.    </p>
+<ul>
+<li><code>window.innerHeight</code> - the inner height of the browser window</li>
+<li><code>window.innerWidth</code> - the inner width of the browser window</li>
+</ul>
+<blockquote>
+<p><em><strong>Note</strong></em>:  <code>window.document</code> is same as   <code>document.location</code> as  the document object model(DOM) is part of window object.</p>
+</blockquote>
+<p>Few examples of the window methods</p>
+<ul>
+<li><code>window.open()</code> - open a new window</li>
+<li><code>window.close()</code> - close the current window</li>
+<li><code>window.moveTo()</code> - move the current window</li>
+<li><code>window.resizeTo()</code> - resize the current window</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Chapter15.html" class="navigation navigation-prev " aria-label="Previous page: 第十五章·类">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Chapter17.html" class="navigation navigation-next " aria-label="Next page: 第十七章·事件">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"第十六章·浏览器对象模型(BOM)","level":"1.20","depth":1,"next":{"title":"第十七章·事件","level":"1.21","depth":1,"path":"content/Chapter17.md","ref":"content/Chapter17.md","articles":[]},"previous":{"title":"第十五章·类","level":"1.19","depth":1,"path":"content/Chapter15.md","ref":"content/Chapter15.md","articles":[]},"dir":"ltr"},"config":{"plugins":["hints","hide-published-with","chapter-fold","intopic-toc","tooltips","exercises","theme-creative","sharing","@honkit/honkit-plugin-ga","sitemap","favicon-custom","edit-link","ace-editor"],"styles":{"website":".gitbook/css/custom.css"},"pluginsConfig":{"chapter-fold":{},"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"概览"},"search":{},"favicon-custom":{"favicon":"./favicon.ico","appleTouchIconPrecomposed152":"./favicon.ico"},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"tooltips":{},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-creative":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"maxWidth":"800px","showLevel":false,"fontSize":18,"colorSecondary":"#E6D7C1","fontFamily":"'Times New Roman', serif","backgroundColor":"#F9F6F1","textColor":"#3E3E3E","textAlign":"justify","lineHeight":1.6,"colorPrimary":"#D8CFC4"},"highlight":{},"favicon":"favicon.ico","sitemap":{"hostname":"https://javascript.sumankunwar.com.np/"},"@honkit/honkit-plugin-ga":{},"ace-editor":{},"appleTouchIconPrecomposed152":"js.png","exercises":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"","base":"https://github.com/dinglevin/learn-javascript-zh/edit/main"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"Sepia","keywords":"JavaScript tutorial, JavaScript学习教程","author":"Suman Kunwar, dinglevin","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"JavaScript学习教程, 初学者版本","language":"zh-cn","website":"https://learn-javascript.dinglevin.tech/","gitbook":"*","description":"JavaScript学习教程, 初学者版本"},"file":{"path":"content/Chapter16.md","mtime":"2024-10-07T08:10:38.065Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-10-07T08:10:49.404Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook-plugin-exercises/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+    
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-published-with/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-intopic-toc/anchor.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-intopic-toc/gumshoe.polyfills.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-intopic-toc/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/ace/theme-tomorrow.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/ace/mode-javascript.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/exercises.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace-editor/ace.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace-editor/ace/theme-tomorrow.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace-editor/ace/mode-javascript.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace-editor/main.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+
+    </body>
+</html>
+

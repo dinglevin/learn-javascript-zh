@@ -1,0 +1,2206 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-cn" >
+    <head>
+        <title>第二十二章·面试问题 · JavaScript学习教程, 初学者版本</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 5.1.4">
+        <meta name="author" content="Suman Kunwar, dinglevin">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-hints/plugin-hints.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-intopic-toc/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/honkit-plugin-tooltips/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-exercises/exercises.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-ace-editor/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../.gitbook/css/custom.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Chapter23.html" />
+    
+    
+    <link rel="prev" href="Chapter21.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="輸入並搜尋" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="Dedication.html">
+            
+                <a href="Dedication.html">
+            
+                    
+                    献词
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Copyright.html">
+            
+                <a href="Copyright.html">
+            
+                    
+                    版权声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="Preface.html">
+            
+                <a href="Preface.html">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="Chapter01.html">
+            
+                <a href="Chapter01.html">
+            
+                    
+                    第一章·介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="Chapter02.html">
+            
+                <a href="Chapter02.html">
+            
+                    
+                    第二章·基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="Chapter03.html">
+            
+                <a href="Chapter03.html">
+            
+                    
+                    第三章·数值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="Chapter04.html">
+            
+                <a href="Chapter04.html">
+            
+                    
+                    第四章·字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="Chapter05.html">
+            
+                <a href="Chapter05.html">
+            
+                    
+                    第五章·条件逻辑
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="Chapter06.html">
+            
+                <a href="Chapter06.html">
+            
+                    
+                    第六章·数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="Chapter07.html">
+            
+                <a href="Chapter07.html">
+            
+                    
+                    第七章·循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="Chapter08.html">
+            
+                <a href="Chapter08.html">
+            
+                    
+                    第八章·函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="Chapter09.html">
+            
+                <a href="Chapter09.html">
+            
+                    
+                    第九章·对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="Chapter10.html">
+            
+                <a href="Chapter10.html">
+            
+                    
+                    第十章·日期和时间
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="Chapter11.html">
+            
+                <a href="Chapter11.html">
+            
+                    
+                    第十一章·JSON
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="Chapter12.html">
+            
+                <a href="Chapter12.html">
+            
+                    
+                    第十二章·错误处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="Chapter13.html">
+            
+                <a href="Chapter13.html">
+            
+                    
+                    第十三章·模块化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="Chapter14.html">
+            
+                <a href="Chapter14.html">
+            
+                    
+                    第十四章·正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="Chapter15.html">
+            
+                <a href="Chapter15.html">
+            
+                    
+                    第十五章·类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="Chapter16.html">
+            
+                <a href="Chapter16.html">
+            
+                    
+                    第十六章·浏览器对象模型(BOM)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="Chapter17.html">
+            
+                <a href="Chapter17.html">
+            
+                    
+                    第十七章·事件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="Chapter18.html">
+            
+                <a href="Chapter18.html">
+            
+                    
+                    第十八章·Promise、async/await
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="Chapter19.html">
+            
+                <a href="Chapter19.html">
+            
+                    
+                    第十九章·其他杂项
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="Chapter20.html">
+            
+                <a href="Chapter20.html">
+            
+                    
+                    第二十章·服务端代码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="Chapter21.html">
+            
+                <a href="Chapter21.html">
+            
+                    
+                    第二十一章·实战练习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.26" data-path="Chapter22.html">
+            
+                <a href="Chapter22.html">
+            
+                    
+                    第二十二章·面试问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27" data-path="Chapter23.html">
+            
+                <a href="Chapter23.html">
+            
+                    
+                    第二十三章·设计模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.28" data-path="Chapter24.html">
+            
+                <a href="Chapter24.html">
+            
+                    
+                    第二十四章·文件系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29" data-path="Chapter25.html">
+            
+                <a href="Chapter25.html">
+            
+                    
+                    第二十五章·ES6概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.30" data-path="Chapter26.html">
+            
+                <a href="Chapter26.html">
+            
+                    
+                    第二十六章·动画资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.31" data-path="Chapter27.html">
+            
+                <a href="Chapter27.html">
+            
+                    
+                    第二十七章·JavaScript运行原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.32" data-path="References.html">
+            
+                <a href="References.html">
+            
+                    
+                    引用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.33" data-path="Resources.html">
+            
+                <a href="Resources.html">
+            
+                    
+                    资料
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34" data-path="Credits.html">
+            
+                <a href="Credits.html">
+            
+                    
+                    鸣谢
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本書使用 GitBook 釋出
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >第二十二章·面试问题</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="第二十二章·面试问题">第二十二章·面试问题</h1>
+<p>This chapter discusses various questions to better prepare candidate on their understanding about JavaScript. It is divided into three parts: basic, intermediate and advance level.</p>
+<ul>
+<li><a href="basic-level.md">Basic Level</a></li>
+<li><a href="intermediate-level.md">Intermediate Level</a></li>
+<li><a href="advance-level.md">Advance Level</a></li>
+</ul>
+<h1 id="basic-javascript-interview-questions">Basic JavaScript Interview Questions</h1>
+<h2 id="1-history-and-defining-variables">1. History and Defining Variables.</h2>
+<h3 id="11-what-is-javascript">1.1. What is JavaScript?</h3>
+<p><strong>Answer:</strong>
+JavaScript is a high-level, interpreted programming language commonly used for web development to add interactivity and dynamic behavior to websites.</p>
+<h3 id="12-who-createddeveloped-javascript">1.2. Who created/Developed JavaScript?</h3>
+<p><strong>Answer:</strong>
+JavaScript was created by <em>Brendan Eich</em> while he was working at <strong>Netscape Communications Corporation</strong>. He developed the language in just ten days in May 1995. JavaScript was originally called "<em>Mocha</em>" but was later renamed "<em>LiveScript</em>" and eventually "<em>JavaScript</em>" as part of a marketing collaboration with <strong>Sun Microsystems</strong> (now <strong>Oracle Corporation</strong>), which had a programming language called <strong>Java</strong> that was gaining popularity at the time. Despite the name similarity, <em>JavaScript</em> and <em>Java</em> are entirely different programming languages with distinct purposes and characteristics.</p>
+<h3 id="13-how-do-you-declare-a-variable-in-javascript">1.3. How do you declare a variable in JavaScript?</h3>
+<p><strong>Answer:</strong>
+You can declare a variable using <code>var</code>, <code>let</code>, or <code>const</code>:</p>
+<ul>
+<li><code>var</code> (function-scoped)</li>
+<li><code>let</code> (block-scoped)</li>
+<li><code>const</code> (block-scoped, for constants)</li>
+</ul>
+<h3 id="14-what-is-the-difference-between-let-var-and-const">1.4. What is the difference between <code>let</code>, <code>var</code>, and <code>const</code>?</h3>
+<p><strong>Answer:</strong></p>
+<ul>
+<li><code>var</code> is function-scoped, while <code>let</code> and <code>const</code> are block-scoped.</li>
+<li><code>let</code> allows variable reassignment, while <code>const</code> is used for constants.</li>
+<li>Variables declared with <code>var</code> are hoisted, whereas <code>let</code> and <code>const</code> are not hoisted.</li>
+</ul>
+<h3 id="15-is-javascript-a-statically-typed-or-a-dynamically-typed-language">1.5. Is javascript a statically typed or a dynamically typed language?</h3>
+<p><strong>Answer:</strong>
+JavaScript is a dynamically typed language. In a dynamically typed language, the type of a variable is checked during run-time in contrast to a statically typed language, where the type of a variable is checked during compile-time.</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Static Typing</th>
+<th>Dynamic Typing</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Variables have types</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Values have types</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Variables can change type</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Variables can change type dramatically</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+<p>Since javascript is a <em>loosely(dynamically)</em> typed language, variables in JS are not associated with any type. A variable can hold the value of any data type.</p>
+<p>For example, a variable that is assigned a number type can be converted to a string type:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> a = <span class="hljs-number">23</span>;
+<span class="hljs-keyword">var</span> a = <span class="hljs-string">"Hello World!"</span>;
+</code></pre>
+<h3 id="16-what-are-the-types-of-errors-in-javascript">1.6. What are the types of errors in javascript?</h3>
+<p><strong>Answer:</strong>
+There are seven types of errors in javascript.</p>
+<ol>
+<li><strong>Syntax error</strong> - The error occurs when you use a predefined syntax incorrectly.<pre><code class="lang-js"><span class="hljs-keyword">const</span> <span class="hljs-title function_">func</span> = (<span class="hljs-params"></span>) =&gt;
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(hello)
+}
+</code></pre>
+</li>
+<li><strong>Reference Error</strong> - In a case where a variable reference can't be found or hasn't been declared, then a Reference error occurs.<pre><code class="lang-js"><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(x);
+</code></pre>
+</li>
+<li><strong>Type Error</strong> - An error occurs when a value is used outside the scope of its data type.<pre><code class="lang-js"><span class="hljs-keyword">let</span> num = <span class="hljs-number">15</span>;
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(num.<span class="hljs-title function_">split</span>(<span class="hljs-string">""</span>));
+</code></pre>
+</li>
+<li><strong>Evaluation Error</strong> - Current JavaScript engines and EcmaScript specifications do not throw this error. However, it is still available for backward compatibility. The error is called when the <code>eval()</code> backward function is used, as shown in the following code block</li>
+</ol>
+<pre><code class="lang-js"><span class="hljs-keyword">try</span>{
+  <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">EvalError</span>(<span class="hljs-string">"'Throws an error'"</span>)
+}<span class="hljs-keyword">catch</span>(error){
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(error.<span class="hljs-property">name</span>, error.<span class="hljs-property">message</span>)
+}
+</code></pre>
+<ol>
+<li><strong>RangeError</strong> - There is an error when a range of expected values is required.</li>
+</ol>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> <span class="hljs-title function_">checkRange</span> = (<span class="hljs-params">num</span>)=&gt;{
+  <span class="hljs-keyword">if</span> (num &lt; <span class="hljs-number">30</span>) <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">RangeError</span>(<span class="hljs-string">"Wrong number"</span>);
+  <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>
+}
+
+<span class="hljs-title function_">checkRange</span>(<span class="hljs-number">20</span>);
+</code></pre>
+<ol>
+<li><strong>URI Error</strong> - When the wrong character(s) are used in a URI function, the error is called uri error<pre><code class="lang-js"><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-built_in">decodeURI</span>(<span class="hljs-string">"https://www.educative.io/shoteditor"</span>))
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-built_in">decodeURI</span>(<span class="hljs-string">"%sdfk"</span>));
+</code></pre>
+</li>
+<li><strong>Internal Error</strong> - In the JS engine, this error occurs most often when there is too much data and the stack exceeds its critical size. When there are too many recursion patterns, switch cases, etc., the JS engine gets overwhelmed.<pre><code class="lang-js"><span class="hljs-keyword">switch</span>(condition) {
+<span class="hljs-keyword">case</span> <span class="hljs-number">1</span>:
+...
+<span class="hljs-keyword">break</span>
+<span class="hljs-keyword">case</span> <span class="hljs-number">2</span>:
+...
+<span class="hljs-keyword">break</span>
+<span class="hljs-keyword">case</span> <span class="hljs-number">3</span>:
+...
+<span class="hljs-keyword">break</span>
+<span class="hljs-keyword">case</span> <span class="hljs-number">4</span>:
+...
+<span class="hljs-keyword">break</span>
+<span class="hljs-keyword">case</span> <span class="hljs-number">5</span>:
+...
+<span class="hljs-keyword">break</span>
+<span class="hljs-keyword">case</span> <span class="hljs-number">6</span>:
+...
+<span class="hljs-keyword">break</span>
+<span class="hljs-keyword">case</span> <span class="hljs-number">7</span>:
+...
+<span class="hljs-keyword">break</span>
+... up to <span class="hljs-number">500</span> cases
+}
+</code></pre>
+</li>
+</ol>
+<h3 id="17-mention-some-advantages-of-javascript">1.7. Mention some advantages of javascript.</h3>
+<p><strong>Answer:</strong>
+There are many advantages of javascript. Some of them are</p>
+<ul>
+<li>Javascript is executed on the client-side as well as server-side also. There are a variety of Frontend Frameworks that you may study and utilize. However, if you want to use JavaScript on the backend, you'll need to learn NodeJS. It is currently the only JavaScript framework that may be used on the backend.</li>
+<li>Javascript is a simple language to learn.</li>
+<li>Web pages now have more functionality because of Javascript.</li>
+<li>To the end-user, Javascript is quite quick.</li>
+</ul>
+<h3 id="18-what-is-the-this-keyword-in-javascript">1.8. What is the <code>this</code> keyword in JavaScript?</h3>
+<p><strong>Answer:</strong> The Keyword <code>this</code> in JavaScript is used to call the current object as a constructor to assign values to object properties.</p>
+<h2 id="2-functions">2. Functions</h2>
+<h3 id="21-how-do-you-create-a-function-in-javascript">2.1. How do you create a function in JavaScript?</h3>
+<p><strong>Answer:</strong> You can create a function using the <code>function</code> keyword or arrow functions (<code>=&gt;</code>):
+<strong>Example</strong>:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">function</span> <span class="hljs-title function_">myFunction</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-comment">// Function body</span>
+}
+
+<span class="hljs-keyword">const</span> <span class="hljs-title function_">myArrowFunction</span> = (<span class="hljs-params"></span>) =&gt; {
+  <span class="hljs-comment">// Function body</span>
+};
+</code></pre>
+<h3 id="22-what-are-callbacks">2.2. What are Callbacks?</h3>
+<p><strong>Answer:</strong>
+A callback is a function that will be executed after another function gets executed. In javascript, functions are treated as first-class citizens, they can be used as an argument of another function, can be returned by another function, and can be used as a property of an object.</p>
+<p>Functions that are used as an argument to another function are called callback functions.</p>
+<p><strong>Example</strong>:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">function</span> <span class="hljs-title function_">divideByHalf</span>(<span class="hljs-params">sum</span>) {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-title class_">Math</span>.<span class="hljs-title function_">floor</span>(sum / <span class="hljs-number">2</span>));
+}
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">multiplyBy2</span>(<span class="hljs-params">sum</span>) {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(sum * <span class="hljs-number">2</span>);
+}
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">operationOnSum</span>(<span class="hljs-params">num1, num2, operation</span>) {
+  <span class="hljs-keyword">var</span> sum = num1 + num2;
+  <span class="hljs-title function_">operation</span>(sum);
+}
+
+<span class="hljs-title function_">operationOnSum</span>(<span class="hljs-number">3</span>, <span class="hljs-number">3</span>, divideByHalf); <span class="hljs-comment">// Outputs 3</span>
+
+<span class="hljs-title function_">operationOnSum</span>(<span class="hljs-number">5</span>, <span class="hljs-number">5</span>, multiplyBy2); <span class="hljs-comment">// Outputs 20</span>
+</code></pre>
+<ul>
+<li>In the code above, we are performing mathematical operations on the sum of two numbers. The <code>operationOnSum</code> function takes 3 arguments, the first number, the second number, and the operation that is to be performed on their sum (callback).</li>
+<li>Both <code>divideByHalf</code> and <code>multiplyBy2</code> functions are used as callback functions in the code above.</li>
+<li>These callback functions will be executed only after the function <code>operationOnSum</code> is executed.</li>
+<li>Therefore, a callback is a function that will be executed after another function gets executed.</li>
+</ul>
+<h3 id="23-explain-scope-and-scope-chain-in-javascript">2.3. Explain Scope and Scope Chain in javascript.</h3>
+<p><strong>Answer:</strong>
+Scope in JS determines the accessibility of variables and functions at various parts of one’s code.</p>
+<p>In general terms, the scope will let us know at a given part of code, what are variables and functions we can or cannot access.</p>
+<p>There are three types of scopes in JS:</p>
+<ul>
+<li>Global Scope</li>
+<li>Local or Function Scope</li>
+<li>Block Scope</li>
+</ul>
+<p><strong>Global Scope</strong>: Variables or functions declared in the global namespace have global scope, which means all the variables and functions having global scope can be accessed from anywhere inside the code.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> globalVariable = <span class="hljs-string">"Hello world"</span>;
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">sendMessage</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">return</span> globalVariable; <span class="hljs-comment">// can access globalVariable since it's written in global space</span>
+}
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">sendMessage2</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">return</span> <span class="hljs-title function_">sendMessage</span>(); <span class="hljs-comment">// Can access sendMessage function since it's written in global space</span>
+}
+<span class="hljs-title function_">sendMessage2</span>(); <span class="hljs-comment">// Returns “Hello world”</span>
+</code></pre>
+<p><strong>Function Scope</strong>: Any variables or functions declared inside a function have <code>local/function scope</code>, which means that all the variables and functions declared inside a function, can be accessed from within the function and not outside of it.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">function</span> <span class="hljs-title function_">awesomeFunction</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">var</span> a = <span class="hljs-number">2</span>;
+
+  <span class="hljs-keyword">var</span> multiplyBy2 = <span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(a * <span class="hljs-number">2</span>); <span class="hljs-comment">// Can access variable "a" since a and multiplyBy2 both are written inside the same function</span>
+  };
+}
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(a); <span class="hljs-comment">// Throws reference error since a is written in local scope and cannot be accessed outside</span>
+
+<span class="hljs-title function_">multiplyBy2</span>(); <span class="hljs-comment">// Throws reference error since multiplyBy2 is written in local scope</span>
+</code></pre>
+<p><strong>Block Scope</strong>: <code>Block scope</code> is related to the variables declared using let and const. Variables declared with var do not have block scope. Block scope tells us that any variable declared inside a block <code>{ }</code>, can be accessed only inside that block and cannot be accessed outside of it.</p>
+<pre><code class="lang-js">{
+  <span class="hljs-keyword">let</span> x = <span class="hljs-number">45</span>;
+}
+
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(x); <span class="hljs-comment">// Gives reference error since x cannot be accessed outside of the block</span>
+
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">2</span>; i++) {
+  <span class="hljs-comment">// do something</span>
+}
+
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(i); <span class="hljs-comment">// Gives reference error since i cannot be accessed outside of the for loop block</span>
+</code></pre>
+<p><strong>Scope Chain</strong>: JavaScript engine also uses Scope to find variables. Let’s understand that using an example:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> y = <span class="hljs-number">24</span>;
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">favFunction</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">var</span> x = <span class="hljs-number">667</span>;
+  <span class="hljs-keyword">var</span> anotherFavFunction = <span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(x); <span class="hljs-comment">// Does not find x inside anotherFavFunction, so looks for variable inside favFunction, outputs 667</span>
+  };
+
+  <span class="hljs-keyword">var</span> yetAnotherFavFunction = <span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(y); <span class="hljs-comment">// Does not find y inside yetAnotherFavFunction, so looks for variable inside favFunction and does not find it, so looks for variable in global scope, finds it and outputs 24</span>
+  };
+
+  <span class="hljs-title function_">anotherFavFunction</span>();
+  <span class="hljs-title function_">yetAnotherFavFunction</span>();
+}
+<span class="hljs-title function_">favFunction</span>();
+</code></pre>
+<p>As you can see in the code above, if the javascript engine does not find the variable in local scope, it tries to check for the variable in the outer scope. If the variable does not exist in the outer scope, it tries to find the variable in the global scope.</p>
+<p>If the variable is not found in the global space as well, a reference error is thrown.</p>
+<h3 id="24-explain-higher-order-functions-in-javascript">2.4. Explain Higher Order Functions in javascript.</h3>
+<p><strong>Answer:</strong>
+Functions that operate on other functions, either by taking them as arguments or by returning them, are called <em>higher-order functions</em>.</p>
+<p>Higher-order functions are a result of functions being <strong>first-class citizens</strong> in javascript.</p>
+<p>Examples of higher-order functions:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">function</span> <span class="hljs-title function_">higherOrder</span>(<span class="hljs-params">fn</span>) {
+  <span class="hljs-title function_">fn</span>();
+}
+
+<span class="hljs-title function_">higherOrder</span>(<span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"Hello world"</span>);
+});
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">higherOrder2</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">return</span> <span class="hljs-string">"Do something"</span>;
+  };
+}
+<span class="hljs-keyword">var</span> x = <span class="hljs-title function_">higherOrder2</span>();
+<span class="hljs-title function_">x</span>(); <span class="hljs-comment">// Returns "Do something"</span>
+</code></pre>
+<h3 id="25-what-do-you-mean-by-self-invoking-functions-in-javascript">2.5. What do you mean by Self Invoking Functions in javascript?</h3>
+<p><strong>Answer:</strong> Without being requested, a self-invoking expression is automatically invoked (initiated). If a function expression is followed by <code>()</code>, it will execute automatically. A function declaration cannot be invoked by itself.</p>
+<p>Normally, we declare a function and call it, however, anonymous functions may be used to run a function automatically when it is described and will not be called again. And there is no name for these kinds of functions.</p>
+<h3 id="26-what-is-the-difference-between-exec-and-test-methods-in-javascript">2.6. What is the difference between <code>exec()</code> and <code>test()</code> methods in javascript?</h3>
+<p><strong>Answer:</strong> The following points discusses the differences between <code>test()</code> and <code>exec()</code> methods.</p>
+<ul>
+<li><p><code>test()</code> and <code>exec()</code> are RegExp expression methods used in javascript.</p>
+</li>
+<li><p>We'll use <code>exec()</code> to search a string for a specific pattern, and if it finds it, it'll return the pattern directly; else, it'll return an 'empty' result.</p>
+</li>
+<li>We will use a <code>test()</code> to find a string for a specific pattern. It will return the Boolean value <code>true</code> on finding the given text otherwise, it will return <code>false</code></li>
+</ul>
+<h3 id="27--what-is-the-difference-between-function-declaration-and-function-expression">2.7.  What is the difference between Function declaration and Function expression?</h3>
+<p><strong>Answer:</strong> The difference between function declaration and function expression are as follows:</p>
+<p><strong>Function declaration</strong>:</p>
+<ol style="list-style-type: upper-alpha">
+<li> Declared as a separate statement within the main JavaScript code.</li>
+<li> Can be called before the function is defined.</li>
+<li> Offers better code readability and better code organization.</li>
+
+</ol>
+
+<p>Example:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">function</span> <span class="hljs-title function_">abc</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">return</span> <span class="hljs-number">5</span>;
+}
+</code></pre>
+<p><strong>Function expression</strong>:</p>
+<ol style="list-style-type: upper-alpha">
+<li>Created inside an expression or some other construct.</li>
+<li>Created when the execution point reaches it; can be used only after that.</li>
+<li>Used when there is a need for a conditional declaration of a function.</li>
+
+</ol>
+
+<p>Example:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> a = <span class="hljs-keyword">function</span> <span class="hljs-title function_">abc</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">return</span> <span class="hljs-number">5</span>;
+}
+</code></pre>
+<h3 id="28-what-are-the-arrow-functions-in-javascript">2.8. What are the arrow functions in JavaScript?</h3>
+<p><strong>Answer</strong>: Arrow functions are a short and concise way of writing functions in JavaScript. The general syntax of an arrow function is as below:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> <span class="hljs-title function_">helloWorld</span> = (<span class="hljs-params"></span>) =&gt; {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"hello world!"</span>);
+};
+</code></pre>
+<h3 id="29-passed-by-value-and-passed-by-reference-">2.9. Passed by value and passed by reference :</h3>
+<p><strong>Answer:</strong> </p>
+<ul>
+<li>Passed By Values Are Primitive Data Types.<br></br>Consider the following example:</li>
+</ul>
+<p>Here, the <code>a=432</code> is a primitive data type i.e. a number type that has an assigned value by the operator.  When the <code>var b=a</code> code gets executed, the value of <code>var a</code> returns a new address for <code>var b</code> by allocating a new space in the memory, so that ‘var b’ will be operated at a new location. </p>
+<p>Example:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> a = <span class="hljs-number">432</span>;
+<span class="hljs-keyword">var</span> b = a;
+</code></pre>
+<p>Passed_by_values_new</p>
+<ul>
+<li>Passed by References Are Non-primitive Data Types.</li>
+</ul>
+<p>Consider the following example:</p>
+<p>The reference of the 1st variable object i.e. <code>var obj</code> is passed through the location of another variable i.e. <code>var obj2</code> with the help of an assigned operator.</p>
+<p>Example: </p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> obj = { <span class="hljs-attr">name</span>: <span class="hljs-string">"Raj"</span>, <span class="hljs-attr">surname</span>: <span class="hljs-string">"Sharma"</span> };
+<span class="hljs-keyword">var</span> obj2 = obj;
+</code></pre>
+<h1 id="3-data-types-and-operator">3. Data Types and Operator</h1>
+<h3 id="31-what-are-the-different-data-types-present-in-javascript">3.1. What are the different data types present in JavaScript?</h3>
+<p><strong>Answer:</strong> The different data types present in JavaScript are as follows:</p>
+<ol>
+<li><p><strong>Primitive types</strong></p>
+<ul>
+<li><p><code>String</code> - It represents a series of characters and is written with quotes. A string can be represented using a single or a double quote.</p>
+<p><strong>Example</strong> :</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> str = <span class="hljs-string">"Vivek Singh Bisht"</span>; <span class="hljs-comment">//using double quotes</span>
+<span class="hljs-keyword">var</span> str2 = <span class="hljs-string">"John Doe"</span>; <span class="hljs-comment">//using single quotes</span>
+</code></pre>
+</li>
+<li><p><code>Number</code> - It represents a number and can be written with or without decimals.</p>
+<p><strong>Example</strong> :</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> x = <span class="hljs-number">3</span>; <span class="hljs-comment">//without decimal</span>
+<span class="hljs-keyword">var</span> y = <span class="hljs-number">3.6</span>; <span class="hljs-comment">//with decimal</span>
+</code></pre>
+</li>
+<li><p><code>BigInt</code> - This data type is used to store numbers which are above the limitation of the Number data type. It can store large integers and is represented by adding “n” to an integer literal.</p>
+<p><strong>Example</strong> :</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> bigInteger = <span class="hljs-number">234567890123456789012345678901234567890</span>;
+</code></pre>
+</li>
+<li><p><code>Boolean</code> - It represents a logical entity and can have only two values : true or false. Booleans are generally used for conditional testing.</p>
+<p><strong>Example</strong> :</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> a = <span class="hljs-number">2</span>;
+<span class="hljs-keyword">var</span> b = <span class="hljs-number">3</span>;
+<span class="hljs-keyword">var</span> c = <span class="hljs-number">2</span>;
+(a == b)(
+  <span class="hljs-comment">// returns false</span>
+  a == c
+); <span class="hljs-comment">//returns true</span>
+</code></pre>
+</li>
+<li><p><code>Undefined</code> - When a variable is declared but not assigned, it has the value of undefined and it’s type is also undefined.</p>
+<p><strong>Example</strong> :</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> x; <span class="hljs-comment">// value of x is undefined</span>
+<span class="hljs-keyword">var</span> y = <span class="hljs-literal">undefined</span>; <span class="hljs-comment">// we can also set the value of a variable as undefined</span>
+</code></pre>
+</li>
+<li><p><code>Null</code> - It represents a non-existent or a invalid value.</p>
+<p><strong>Example</strong> :</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> z = <span class="hljs-literal">null</span>;
+</code></pre>
+</li>
+<li><p><code>Symbol</code> - It is a new data type introduced in the ES6 version of javascript. It is used to store an anonymous and unique value.</p>
+<p><strong>Example:</strong></p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> symbol1 = <span class="hljs-title class_">Symbol</span>(<span class="hljs-string">'symbol'</span>);
+<span class="hljs-keyword">typeof</span> <span class="hljs-keyword">of</span> primitive types :
+<span class="hljs-keyword">typeof</span> <span class="hljs-string">"John Doe"</span> <span class="hljs-comment">// Returns "string"</span>
+<span class="hljs-keyword">typeof</span> <span class="hljs-number">3.14</span> <span class="hljs-comment">// Returns "number"</span>
+<span class="hljs-keyword">typeof</span> <span class="hljs-literal">true</span> <span class="hljs-comment">// Returns "boolean"</span>
+<span class="hljs-keyword">typeof</span> <span class="hljs-number">234567890123456789012345678901234567890n</span> <span class="hljs-comment">// Returns bigint</span>
+<span class="hljs-keyword">typeof</span> <span class="hljs-literal">undefined</span> <span class="hljs-comment">// Returns "undefined"</span>
+<span class="hljs-keyword">typeof</span> <span class="hljs-literal">null</span> <span class="hljs-comment">// Returns "object" (kind of a bug in JavaScript)</span>
+<span class="hljs-keyword">typeof</span> <span class="hljs-title class_">Symbol</span>(<span class="hljs-string">'symbol'</span>) <span class="hljs-comment">// Returns Symbol 2. Non-primitive types</span>
+</code></pre>
+</li>
+</ul>
+</li>
+</ol>
+<p>Primitive data types can store only a single value. To store multiple and complex values, non-primitive data types are used.</p>
+<ol>
+<li><p><strong>Non-Primitive types</strong></p>
+<ul>
+<li><p><code>Object</code> - Used to store collection of data.</p>
+<p><strong>Example</strong>:</p>
+<pre><code class="lang-js"><span class="hljs-comment">// Collection of data in key-value pairs</span>
+<span class="hljs-keyword">var</span> obj1 = {
+  <span class="hljs-attr">x</span>: <span class="hljs-number">43</span>,
+  <span class="hljs-attr">y</span>: <span class="hljs-string">"Hello world!"</span>,
+  <span class="hljs-attr">z</span>: <span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">return</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">x</span>;
+  },
+};
+</code></pre>
+</li>
+<li><p><code>Array</code></p>
+<p><strong>Example:</strong></p>
+<pre><code class="lang-js"><span class="hljs-comment">// Collection of data as an ordered list</span>
+
+<span class="hljs-keyword">var</span> array1 = [<span class="hljs-number">5</span>, <span class="hljs-string">"Hello"</span>, <span class="hljs-literal">true</span>, <span class="hljs-number">4.1</span>];
+</code></pre>
+</li>
+</ul>
+</li>
+</ol>
+<blockquote>
+<p><strong>Note- It is important to remember that any data type that is not a primitive data type, is of <code>Object</code> type in javascript.</strong></p>
+</blockquote>
+<h3 id="32-difference-between--and--operators">3.2 Difference between <code>==</code> and <code>===</code> operators.</h3>
+<p><strong>Answer:</strong>
+Both are comparison operators. The difference between both the operators is that <code>==</code> is used to compare values whereas, <code>===</code> is used to compare both values and types.</p>
+<p><strong>Example</strong>:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> x = <span class="hljs-number">2</span>;
+<span class="hljs-keyword">var</span> y = <span class="hljs-string">"2"</span>;
+(x == y)(
+  <span class="hljs-comment">// Returns true since the value of both x and y is the same</span>
+  x === y
+); <span class="hljs-comment">// Returns false since the typeof x is "number" and typeof y is "string"</span>
+</code></pre>
+<h3 id="33-what-is-nan-property-in-javascript">3.3. What is NaN property in JavaScript?</h3>
+<p><strong>Answer:</strong>
+<code>NaN</code> property represents the “<strong>Not-a-Number</strong>” value. It indicates a value that is not a legal number.</p>
+<p><code>typeof</code> of <code>NaN</code> will return a Number.</p>
+<p>To check if a value is <code>NaN</code>, we use the <code>isNaN()</code> function,</p>
+<blockquote>
+<p>Note- <code>isNaN()</code> function converts the given value to a Number type, and then equates to NaN.</p>
+</blockquote>
+<p><strong>Example:</strong></p>
+<pre><code class="lang-js"><span class="hljs-built_in">isNaN</span>(<span class="hljs-string">"Hello"</span>); <span class="hljs-comment">// Returns true</span>
+<span class="hljs-built_in">isNaN</span>(<span class="hljs-number">345</span>); <span class="hljs-comment">// Returns false</span>
+<span class="hljs-built_in">isNaN</span>(<span class="hljs-string">"1"</span>); <span class="hljs-comment">// Returns false, since '1' is converted to Number type which results in 0 ( a number)</span>
+<span class="hljs-built_in">isNaN</span>(<span class="hljs-literal">true</span>); <span class="hljs-comment">// Returns false, since true converted to Number type results in 1 ( a number)</span>
+<span class="hljs-built_in">isNaN</span>(<span class="hljs-literal">false</span>); <span class="hljs-comment">// Returns false</span>
+<span class="hljs-built_in">isNaN</span>(<span class="hljs-literal">undefined</span>); <span class="hljs-comment">// Returns true</span>
+</code></pre>
+<h3 id="34-which-method-is-used-to-retrieve-a-character-from-a-certain-index">3.4. Which method is used to retrieve a character from a certain index?</h3>
+<p><strong>Answer:</strong>
+The <code>charAt()</code> function of the JavaScript string finds a char element at the supplied index. The index number begins at <code>0</code> and continues up to <code>n-1</code>, Here <code>n</code> is the string length. The index value must be positive, higher than, or the same as the string length.</p>
+<h1 id="4-some-important-concepts">4. Some important concepts</h1>
+<h3 id="41-what-is-hoisting-in-javascript">4.1. What is Hoisting in JavaScript?</h3>
+<p><strong>Answer:</strong>
+Hoisting is a JavaScript mechanism where variables and function declarations are moved to the top of their scope before code execution. Inevitably, this means that no matter where functions and variables are declared, they are moved to the top of their scope regardless of whether their scope is global or local.</p>
+<p><strong>Example 1:</strong> Hoisting of variable</p>
+<pre><code class="lang-js">hoistedVariable = <span class="hljs-number">3</span>;
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(hoistedVariable); <span class="hljs-comment">// outputs 3 even when the variable is declared after it is initialized    </span>
+<span class="hljs-keyword">var</span> hoistedVariable;
+</code></pre>
+<p><strong>Example 2:</strong> Hoisting of function</p>
+<pre><code class="lang-js"><span class="hljs-title function_">hoistedFunction</span>();  <span class="hljs-comment">// Outputs " Hello world! " even when the function is declared after calling</span>
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">hoistedFunction</span>(<span class="hljs-params"></span>){ 
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">" Hello world! "</span>);
+}
+</code></pre>
+<p><strong>Example 3:</strong> Hoisting of function expression</p>
+<pre><code class="lang-js"><span class="hljs-comment">// Hoisting takes place in the local scope as well</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">doSomething</span>(<span class="hljs-params"></span>){
+  x = <span class="hljs-number">33</span>;
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(x);
+  <span class="hljs-keyword">var</span> x;
+} 
+<span class="hljs-title function_">doSomething</span>(); <span class="hljs-comment">// Outputs 33 since the local variable “x” is hoisted inside the local scope</span>
+
+<span class="hljs-comment">/* Note - Variable initializations are not hoisted, only variable declarations are hoisted: */</span>
+<span class="hljs-keyword">var</span> x;
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(x); <span class="hljs-comment">// Outputs "undefined" since the initialization of "x" is not hoisted</span>
+x = <span class="hljs-number">23</span>;
+
+<span class="hljs-comment">/* Note - To avoid hoisting, you can run javascript in strict mode by using “use strict” on top of the code: */</span>
+<span class="hljs-meta">"use strict"</span>;
+x = <span class="hljs-number">23</span>; <span class="hljs-comment">// Gives an error since 'x' is not declared</span>
+<span class="hljs-keyword">var</span> x;
+</code></pre>
+<h3 id="42-why-do-we-use-the-word-debugger-in-javascript">4.2. Why do we use the word “debugger” in javascript?</h3>
+<p><strong>Answer:</strong> The <code>debugger</code> keyword is used to create breakpoints in the code. When the browser finds the debugger keyword in the code, it stops executing the code and opens the debugging tool of the browser.</p>
+<h3 id="43-what-is-currying-in-javascript">4.3. What is currying in JavaScript?</h3>
+<p><strong>Answer:</strong> Currying is an advanced technique to transform a function of arguments <code>n</code>, to <code>n</code> functions of one or fewer arguments.</p>
+<p><em>Example of a curried function:</em></p>
+<pre><code class="lang-js"><span class="hljs-keyword">function</span> <span class="hljs-title function_">add</span> (<span class="hljs-params">a</span>) {
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">function</span>(<span class="hljs-params">b</span>){
+    <span class="hljs-keyword">return</span> a + b;
+  }
+}
+
+<span class="hljs-title function_">add</span>(<span class="hljs-number">3</span>)(<span class="hljs-number">4</span>)
+</code></pre>
+<p>For Example, if we have a function <code>f(a,b)</code>, then the function after currying, will be transformed to <code>f(a)(b)</code>.</p>
+<p>By using the currying technique, we do not change the functionality of a function, we just change the way it is invoked.</p>
+<p>Let’s see currying in action:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">function</span> <span class="hljs-title function_">multiply</span>(<span class="hljs-params">a,b</span>){
+  <span class="hljs-keyword">return</span> a*b;
+}
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">currying</span>(<span class="hljs-params">fn</span>){
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">function</span>(<span class="hljs-params">a</span>){
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">function</span>(<span class="hljs-params">b</span>){
+      <span class="hljs-keyword">return</span> <span class="hljs-title function_">fn</span>(a,b);
+    }
+  }
+}
+
+<span class="hljs-keyword">var</span> curriedMultiply = <span class="hljs-title function_">currying</span>(multiply);
+
+<span class="hljs-title function_">multiply</span>(<span class="hljs-number">4</span>, <span class="hljs-number">3</span>); <span class="hljs-comment">// Returns 12</span>
+
+<span class="hljs-title function_">curriedMultiply</span>(<span class="hljs-number">4</span>)(<span class="hljs-number">3</span>); <span class="hljs-comment">// Also returns 12</span>
+</code></pre>
+<p>As one can see in the code above, we have transformed the <code>function multiply(a,b)</code> to a function <code>curriedMultiply</code>, which takes in one parameter at a time.</p>
+<h3 id="44-what-are-some-advantages-of-using-external-javascript">4.4. What are some advantages of using External JavaScript?</h3>
+<p><strong>Answer:</strong> External JavaScript is the JavaScript Code (script) written in a separate file with the <code>extension.js</code>, and then we link that file inside the <code>&lt;head&gt;</code> or <code>&lt;body&gt;</code> element of the HTML file where the code is to be placed. </p>
+<p>Some advantages of external javascript are:</p>
+<ul>
+<li>It allows web designers and developers to collaborate on HTML and javascript files.</li>
+<li>We can reuse the code.</li>
+<li>Code readability is simple in external javascript.</li>
+</ul>
+<h3 id="45-what-is-a-closure-in-javascript">4.5. What is a closure in JavaScript?</h3>
+<p><strong>Answer:</strong> A closure is a function that has access to its outer function scope even after the outer function has returned. This means a closure can remember and access variables and arguments of its outer function even after the function has finished.</p>
+<p>In Short- A closure is a function that has access to variables from its outer (enclosing) function scope, even after the outer function has finished executing.</p>
+<h3 id="46-what-is-the-dom-in-javascript">4.6. What is the DOM in JavaScript?</h3>
+<p><strong>Answer:</strong> The Document Object Model (DOM) is a programming interface for HTML and XML documents. It represents the page so that programs can change the document structure, style, and content. The DOM represents the document as nodes and objects. That way, programming languages can connect to the page.</p>
+<h3 id="47-what-is-event-delegation">4.7. What is event delegation?</h3>
+<p><strong>Answer:</strong> Event delegation is a technique for listening to events where you delegate a parent element as the listener for all of the events that happen inside it. The events are handled by the callback function of the parent element.</p>
+<h3 id="48-how-can-you-make-an-ajax-request-in-javascript">4.8. How can you make an AJAX request in JavaScript?</h3>
+<p><strong>Answer:</strong> <a href="../miscellaneous/api-ajax.md">AJAX</a> stands for Asynchronous JavaScript and XML. It is a set of web development techniques using many web technologies on the client-side to create asynchronous web applications. With AJAX, web applications can send and retrieve data from a server asynchronously (in the background) without interfering with the display and behavior of the existing page.</p>
+<p>You can make AJAX requests using the XMLHttpRequest object or by using the fetch API. Here's an example using fetch:</p>
+<pre><code class="lang-js">  <span class="hljs-title function_">fetch</span>(<span class="hljs-string">'https://example.com/api/data'</span>)
+    .<span class="hljs-title function_">then</span>(<span class="hljs-function"><span class="hljs-params">response</span> =&gt;</span> response.<span class="hljs-title function_">json</span>())
+    .<span class="hljs-title function_">then</span>(<span class="hljs-function"><span class="hljs-params">data</span> =&gt;</span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(data))
+    .<span class="hljs-title function_">catch</span>(<span class="hljs-function"><span class="hljs-params">error</span> =&gt;</span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(error));
+</code></pre>
+<h3 id="49-what-is-a-promise-in-javascript">4.9. What is a promise in JavaScript?</h3>
+<p><strong>Answer:</strong> A promise is an object that may produce a single value sometime in the future: either a resolved value or a reason that it’s not resolved (e.g., a network error occurred). A promise may be in one of 3 possible states:  <code>fulfilled</code>, <code>rejected</code>, or <code>pending</code>. Promise users can attach callbacks to handle the fulfilled value or the reason for rejection.</p>
+<h3 id="410-why-do-you-need-a-promise-in-javascript-">4.10. Why do you need a promise in JavaScript ?</h3>
+<p><strong>Answer:</strong> Promises are used to handle asynchronous operations. They provide an alternative approach for callbacks by reducing the callback hell and writing the cleaner code.</p>
+<h3 id="411-explain-equality-in-javascript-">4.11. Explain equality in JavaScript ?</h3>
+<p><strong>Answer:</strong> JavaScript provides two types of equality operators: strict equality <code>(===)</code> and loose equality <code>(==)</code></p>
+<ul>
+<li><p>Strict Equality <code>(===)</code>: This operator compares two values without performing any type conversion. If the values have different types, they are considered unequal. If the values have the same type, are not numbers, and have the same value, they are considered equal. For numbers, they are considered equal if they are both not NaN and have the same value, or if one is <code>+0</code> and the other is <code>-0</code>.</p>
+</li>
+<li><p>Loose Equality <code>(==)</code>: This operator performs type conversion when comparing the operands. If the operands have the same type, they are compared in the same way as the strict equality operator. If the operands have different types, JavaScript attempts to convert them to a common type and then compare them. The rules for type conversion can sometimes lead to unexpected results, so it's generally recommended to use the strict equality operator to avoid potential issues</p>
+</li>
+</ul>
+<h2 id="5-object">5. Object</h2>
+<h3 id="51-what-are-the-possible-ways-to-create-objects-in-javascript">5.1. What are the possible ways to create objects in JavaScript?</h3>
+<p><strong>Answer:</strong> There are many ways to create objects in javascript as below</p>
+<p>Object constructor:</p>
+<p>i. The simplest way to create an empty object is using the Object constructor. Currently this approach is not recommended.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> object = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Object</span>();
+</code></pre>
+<p>The Object() is a built-in constructor function so "new" keyword is not required. the above can be written as:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> object = <span class="hljs-title class_">Object</span>();
+</code></pre>
+<p>ii. Object's create method:</p>
+<p>The create method of Object creates a new object by passing the prototype object as a parameter</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> object = <span class="hljs-title class_">Object</span>.<span class="hljs-title function_">create</span>(<span class="hljs-literal">null</span>);
+</code></pre>
+<p>iii. Object literal syntax:</p>
+<p>The object literal syntax (or object initializer), is a comma-separated set of name-value pairs wrapped in curly braces.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> object = {
+     <span class="hljs-attr">name</span>: <span class="hljs-string">"Sudheer"</span>,
+     <span class="hljs-attr">age</span>: <span class="hljs-number">34</span>
+};
+
+<span class="hljs-title class_">Object</span> literal property values can be <span class="hljs-keyword">of</span> any data type, including array, <span class="hljs-keyword">function</span>, and nested object.
+</code></pre>
+<p>Note: This is an easiest way to create an object</p>
+<p>iv. Function constructor:</p>
+<p>Create any function and apply the new operator to create object instances,</p>
+<pre><code class="lang-js"><span class="hljs-keyword">function</span> <span class="hljs-title function_">Person</span>(<span class="hljs-params">name</span>) {
+  <span class="hljs-variable language_">this</span>.<span class="hljs-property">name</span> = name;
+  <span class="hljs-variable language_">this</span>.<span class="hljs-property">age</span> = <span class="hljs-number">21</span>;
+}
+<span class="hljs-keyword">var</span> object = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Person</span>(<span class="hljs-string">"Sudheer"</span>);
+</code></pre>
+<p>v. Function constructor with prototype:</p>
+<p>This is similar to function constructor but it uses prototype for their properties and methods,</p>
+<pre><code class="lang-js"><span class="hljs-keyword">function</span> <span class="hljs-title function_">Person</span>(<span class="hljs-params"></span>) {}
+<span class="hljs-title class_">Person</span>.<span class="hljs-property"><span class="hljs-keyword">prototype</span></span>.<span class="hljs-property">name</span> = <span class="hljs-string">"Sudheer"</span>;
+<span class="hljs-keyword">var</span> object = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Person</span>();
+</code></pre>
+<p>This is equivalent to an instance created with an object create method with a function prototype and then call that function with an instance and parameters as arguments.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">function</span> <span class="hljs-title function_">func</span>(<span class="hljs-params"></span>) {}
+
+<span class="hljs-keyword">new</span> <span class="hljs-title function_">func</span>(x, y, z);
+</code></pre>
+<p>(OR)</p>
+<pre><code class="lang-js"><span class="hljs-comment">// Create a new instance using function prototype.</span>
+<span class="hljs-keyword">var</span> newInstance = <span class="hljs-title class_">Object</span>.<span class="hljs-title function_">create</span>(func.<span class="hljs-property"><span class="hljs-keyword">prototype</span></span>)
+
+<span class="hljs-comment">// Call the function</span>
+<span class="hljs-keyword">var</span> result = func.<span class="hljs-title function_">call</span>(newInstance, x, y, z),
+
+<span class="hljs-comment">// If the result is a non-null object then use it otherwise just use the new instance.</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(result &amp;&amp; <span class="hljs-keyword">typeof</span> result === <span class="hljs-string">'object'</span> ? result : newInstance);
+</code></pre>
+<p>vi. ES6 Class syntax:</p>
+<p>ES6 introduces class feature to create the objects</p>
+<pre><code class="lang-js"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Person</span> {
+  <span class="hljs-title function_">constructor</span>(<span class="hljs-params">name</span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">name</span> = name;
+  }
+}
+
+<span class="hljs-keyword">var</span> object = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Person</span>(<span class="hljs-string">"Sudheer"</span>);
+</code></pre>
+<h2 id="6miscellaneous">6.Miscellaneous</h2>
+<h3 id="61-what-is-a-strict-mode-in-javascript-">6.1. What is a strict mode in JavaScript ?</h3>
+<p><strong>Answer:</strong> Strict Mode is a new feature in ECMAScript 5 that allows you to place a program, or a function, in a "strict" operating context. This way it prevents certain actions from being taken and throws more exceptions. The literal expression "use strict"; instructs the browser to use the javascript code in the Strict mode.</p>
+<h3 id="62-what-is-null-value-in-javascript-">6.2. What is null value in JavaScript ?</h3>
+<p><strong>Answer:</strong> The value null represents the intentional absence of any object value. It is one of JavaScript's primitive values. The type of null value is object. You can empty the variable by setting the value to null.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> user = <span class="hljs-literal">null</span>;
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-keyword">typeof</span> user); <span class="hljs-comment">//object</span>
+</code></pre>
+<h3 id="63-what-is-eval-in-javascript-">6.3. What is <code>eval</code> in JavaScript ?</h3>
+<p><strong>Answer:</strong> The <code>eval()</code> function evaluates JavaScript code represented as a string. The string can be a JavaScript expression, variable, statement, or sequence of statements.</p>
+<pre><code class="lang-js"><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-built_in">eval</span>(<span class="hljs-string">"1 + 2"</span>)); <span class="hljs-comment">//  3</span>
+</code></pre>
+<h3 id="64-is-javascript-a-compiled-or-interpreted-language-">6.4. Is JavaScript a compiled or interpreted language ?</h3>
+<p><strong>Answer:</strong> JavaScript is an interpreted language, not a compiled language. An interpreter in the browser reads over the JavaScript code, interprets each line, and runs it. Nowadays modern browsers use a technology known as Just-In-Time (JIT) compilation, which compiles JavaScript to executable bytecode just as it is about to run.</p>
+<h3 id="65-difference-between-exec-and-test-methods">6.5. difference between <code>exec()</code> and <code>test()</code> methods</h3>
+<p><strong>Answer</strong> The differences between <code>exec()</code> and <code>test()</code> methods are as follows:</p>
+<p><code>exec()</code>:
+1) It is an expression method in JavaScript that is used to search a string with a specific pattern. 
+2) Once it has been found, the pattern will be returned directly, otherwise, it returns an “empty” result.</p>
+<p><code>test()</code>:
+1) It is an expression method in JavaScript that is also used to search a string with a specific pattern or text. 
+2) Once it has been found, the pattern will return the Boolean value <code>true</code>, else it returns <code>false</code>. </p>
+<h3 id="66-is-javascript-a-case-sensitive-language-">6.6. Is JavaScript a case-sensitive language ?</h3>
+<p><strong>Answer:</strong> Yes, JavaScript is a case sensitive language. The language keywords, variables, function &amp; object names, and any other identifiers must always be typed with a consistent capitalization of letters.</p>
+<h2 id="7json">7.JSON</h2>
+<h3 id="71-what-is-json-">7.1. What is JSON ?</h3>
+<p><strong>Answer:</strong> JSON (JavaScript Object Notation) is a lightweight format that is used for data interchanging. It is based on a subset of JavaScript language in the way objects are built in JavaScript.</p>
+<h3 id="72-what-are-the-syntax-rules-of-json-">7.2. What are the syntax rules of JSON ?</h3>
+<p><strong>Answer:</strong>  Below are the list of syntax rules of JSON</p>
+<ul>
+<li>The data is in name/value pairs</li>
+<li>The data is separated by commas</li>
+<li>Curly braces hold objects</li>
+<li>Square brackets hold arrays</li>
+</ul>
+<h3 id="73-what-is-the-purpose-json-stringify-">7.3. What is the purpose JSON stringify ?</h3>
+<p><strong>Answer:</strong> When sending data to a web server, the data has to be in a string format. You can achieve this by converting JSON object into a string using <code>stringify()</code> method.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> userJSON = { <span class="hljs-attr">name</span>: <span class="hljs-string">"John"</span>, <span class="hljs-attr">age</span>: <span class="hljs-number">31</span> };
+<span class="hljs-keyword">var</span> userString = <span class="hljs-title class_">JSON</span>.<span class="hljs-title function_">stringify</span>(userJSON);
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(userString); <span class="hljs-comment">//"{"name":"John","age":31}"</span>
+</code></pre>
+<h3 id="74-how-do-you-parse-json-string-">7.4. How do you parse JSON string ?</h3>
+<p><strong>Answer:</strong> When receiving the data from a web server, the data is always in a string format. But you can convert this string value to a javascript object using <code>parse()</code> method.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> userString = <span class="hljs-string">'{"name":"John","age":31}'</span>;
+<span class="hljs-keyword">var</span> userJSON = <span class="hljs-title class_">JSON</span>.<span class="hljs-title function_">parse</span>(userString);
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(userJSON); <span class="hljs-comment">// {name: "John", age: 31}</span>
+</code></pre>
+<h3 id="75-why-do-you-need-json-">7.5. Why do you need JSON ?</h3>
+<p><strong>Answer:</strong> When exchanging data between a browser and a server, the data can only be text. Since JSON is text only, it can easily be sent to and from a server, and used as a data format by any programming language.</p>
+<h3 id="76-how-do-you-define-json-arrays-">7.6. How do you define JSON arrays ?</h3>
+<p><strong>Answer:</strong>  JSON arrays are written inside square brackets and arrays contain javascript objects. For example, the JSON array of users would be as below,</p>
+<pre><code class="lang-js"><span class="hljs-string">"users"</span>:[
+  {<span class="hljs-string">"firstName"</span>:<span class="hljs-string">"John"</span>, <span class="hljs-string">"lastName"</span>:<span class="hljs-string">"Abrahm"</span>},
+  {<span class="hljs-string">"firstName"</span>:<span class="hljs-string">"Anna"</span>, <span class="hljs-string">"lastName"</span>:<span class="hljs-string">"Smith"</span>},
+  {<span class="hljs-string">"firstName"</span>:<span class="hljs-string">"Shane"</span>, <span class="hljs-string">"lastName"</span>:<span class="hljs-string">"Warn"</span>}
+]
+</code></pre>
+<h3 id="76-in-json-what-is-the-purpose-of-square-brackets-and-how-are-they-used">7.6. In JSON, what is the purpose of square brackets, and how are they used?</h3>
+<p><strong>Answer:</strong> In JSON, square brackets <code>[ ]</code> are used to encapsulate and define arrays within JSON data structures. JSON arrays can contain a collection of values, which can be of various data types, including objects, strings, numbers, and other JSON arrays.</p>
+<h1 id="intermediate-level-javascript-interview-questions">Intermediate Level JavaScript Interview Questions</h1>
+<h2 id="1-loops">1. Loops</h2>
+<h3 id="11-what-is-the-definition-of-an-iteration-in-a-javascript-loop">1.1. What is the definition of an iteration in a JavaScript loop?</h3>
+<p><strong>Answer:</strong> An iteration in a JavaScript loop refers to each individual execution of the loop's body, typically corresponding to one cycle of the loop.</p>
+<h3 id="12-what-are-all-the-looping-structures-in-javascript">1.2. What are all the looping structures in JavaScript?</h3>
+<p><strong>Answer:</strong> Various looping structures are used in JavaScript. Some of them are as follows:</p>
+<p><strong>While loop</strong>: A <a href="../loops/while.md">while</a> loop is a control flow statement that allows code to be executed repeatedly based on a given Boolean condition. The while loop can be thought of as a repeating if statement.</p>
+<p><strong>For loop</strong>: A <a href="../loops/for.md">for</a> loop provides a concise way of writing the loop structure. Unlike a while loop, for statement consumes the initialization, condition and increment/decrement in one line thereby providing a shorter, easy to debug structure of looping.</p>
+<p><strong>Do while</strong>: A <a href="../loops/dowhile.md">do-while</a> loop is similar to while loop with the only difference that it checks the condition after executing the statements, and therefore is an example of Exit Control Loop.</p>
+<h3 id="13-how-does-the-break-statement-work-in-a-loop">1.3. How does the break statement work in a loop?</h3>
+<p><strong>Answer:</strong> The break statement terminates the current loop or switch statement and transfers program control to the statement following the terminated statement. It can also be used to jump past a labeled statement when used within that labeled statement.</p>
+<h3 id="14-how-does-the-continue-statement-work-in-a-loop">1.4. How does the continue statement work in a loop?</h3>
+<p><strong>Answer:</strong> The continue directive is a "lighter version" of the break statement. It does not stop the whole loop; instead, it stops the current iteration and forces the loop to start a new one (if the condition allows).</p>
+<h2 id="2-switch-statement">2. Switch statement</h2>
+<h3 id="21-what-is-a-switch-statement-in-javascript">2.1. What is a switch statement in JavaScript?</h3>
+<p><strong>Answer:</strong> A switch statement in JavaScript is a control flow statement that evaluates an expression and executes a specific block of code based on the matched case.</p>
+<h3 id="22-what-are-the-advantages-of-employing-a-switch-statement">2.2. What are the advantages of employing a Switch statement?</h3>
+<p><strong>Answer:</strong> A <a href="../conditional/switch.md">switch</a> statement can replace multiple checks, and it is more descriptive and easier to read. Switch statements improve code readability, provide better performance, simplify complex conditionals, enhance maintainability, and support cleaner syntax.</p>
+<h3 id="23-is-the-order-of-case-statements-important-in-a-switch-statement">2.3. Is the order of case statements important in a switch statement?</h3>
+<p><strong>Answer:</strong> The order of case statements is important in a switch statement, especially when employing fall-through behavior. Cases are evaluated sequentially, so a matching case found earlier will prevent subsequent cases from being tested, affecting execution and performance.</p>
+<h2 id="3-javascript-cookies">3. JavaScript cookies</h2>
+<h3 id="31-what-are-javascript-cookies-">3.1. What are JavaScript Cookies ?</h3>
+<p><strong>Answer:</strong> <a href="../browser-object-model-bom/cookies.md">Cookies</a> are small files that are stored on a user’s computer. They are used to hold a modest amount of data specific to a particular client and website and can be accessed either by the web server or by the client’s computer. When cookies were invented, they were basically little documents containing information about you and your preferences. For instance, when you select the language in which you want to view your website, the website would save the information in a document called a cookie on your computer, and the next time when you visit the website, it would be able to read a cookie saved earlier.</p>
+<h3 id="32--how-to-create-a-cookie-using-javascript">3.2.  How to create a cookie using JavaScript?</h3>
+<p><strong>Answer:</strong> To create a cookie by using JavaScript you just need to assign a string value to the document.cookie object.</p>
+<pre><code class="lang-javascript"><span class="hljs-variable language_">document</span>.<span class="hljs-property">cookie</span> = <span class="hljs-string">"key1 = value1; key2 = value2; expires = date"</span>;
+</code></pre>
+<h3 id="33-how-to-read-a-cookie-using-javascript">3.3. How to read a cookie using JavaScript?</h3>
+<p><strong>Answer:</strong> The value of the document.cookie is used to create a cookie. Whenever you want to access the cookie you can use the string. The <code>document.cookie</code> string keep a list of <code>name = value</code> pairs separated by semicolons, where name is the name of a cookie and the value is its string value.</p>
+<h3 id="34-how-to-delete-a-cookie-using-javascript">3.4. How to delete a cookie using JavaScript?</h3>
+<p><strong>Answer:</strong> Deleting a cookie is much easier than creating or reading a cookie, you just need to set the expires = “past time” and make sure one thing defines the right cookie path unless few will not allow you to delete the cookie.</p>
+<h2 id="4-pop-up-boxes-in-javascript">4. Pop-up boxes in JavaScript</h2>
+<h3 id="41-what-are-the-types-of-pop-up-boxes-available-in-javascript">4.1. What are the types of Pop up boxes available in JavaScript?</h3>
+<p><strong>Answer:</strong> There are three types of pop boxes available in JavaScript:
+<code>Alert</code>, <code>Confirm</code>, <code>Prompt</code>.</p>
+<h3 id="42-what-is-the-difference-between-an-alert-box-and-a-confirmation-box">4.2. What is the difference between an alert box and a confirmation box?</h3>
+<p><strong>Answer:</strong> An alert box will display only one button which is the OK button. It is used to inform the user about the agreement has to agree. But a Confirmation box displays two buttons OK and cancel, where the user can decide to agree or not.</p>
+<h2 id="5-arrow-functions">5. Arrow Functions</h2>
+<h3 id="51-what-is-the-definition-of-an-arrow-function">5.1. What is the definition of an arrow function?</h3>
+<p><strong>Answer:</strong> An arrow function is a concise syntax for defining anonymous functions in JavaScript, using the arrow notation. It offers shorter syntax, lexical scoping of "this", and can't be used as a constructor.</p>
+<h3 id="52-how-do-arrow-functions-differ-from-function-expressions">5.2. How do arrow functions differ from function expressions?</h3>
+<p><strong>Answer:</strong> Arrow functions provide a shorter syntax, don't have their own this, arguments, super, or new.target, and can't be used as constructors, unlike function expressions.</p>
+<h3 id="53-what-does-lexical-this-binding-mean-in-arrow-functions">5.3. What does lexical 'this' binding mean in arrow functions?</h3>
+<p><strong>Answer:</strong> "Lexical this" binding in arrow functions means they don't create their own 'this' context; instead, they inherit 'this' from their surrounding, enclosing scope, reducing common 'this'-related issues.</p>
+<h3 id="54-what-are-the-advantages-of-using-arrow-functions">5.4. What are the advantages of using arrow functions?</h3>
+<p><strong>Answer:</strong> The advantages of using arrow functions in JavaScript include shorter syntax, implicit return, and lexical ‘this’ binding.</p>
+<h3 id="55-what-are-the-common-use-cases-for-arrow-functions">5.5. What are the common use cases for arrow functions?</h3>
+<p><strong>Answer:</strong> Arrow functions are commonly used for object methods, event listeners, callbacks, and other functions that require shorter, more concise syntax.</p>
+<h2 id="6-regular-expression">6. Regular Expression</h2>
+<h3 id="61-what-is-a-regular-expression-">6.1. What is a Regular Expression ?</h3>
+<p><strong>Answer:</strong> A regular expression is a sequence of characters that forms a search pattern. You can use this search pattern for searching data in a text. These can be used to perform all types of text search and textreplace operations. Let's see the syntax format now,</p>
+<pre><code class="lang-js"> /pattern/modifiers;
+</code></pre>
+<p>For example, the regular expression or search pattern with case-insensitive username would be,</p>
+<pre><code class="lang-js">/<span class="hljs-title class_">John</span>/i;
+</code></pre>
+<h3 id="62-what-are-the-string-methods-available-in-regular-expression-">6.2. What are the string methods available in Regular expression ?</h3>
+<p><strong>Answer:</strong> Regular Expressions has two string methods: search() and replace(). The search() method uses an expression to search for a match, and returns the position of the match.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> msg = <span class="hljs-string">"Hello John"</span>;
+<span class="hljs-keyword">var</span> n = msg.<span class="hljs-title function_">search</span>(<span class="hljs-regexp">/John/i</span>); <span class="hljs-comment">// 6</span>
+</code></pre>
+<p>The replace() method is used to return a modified string where the pattern is replaced.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> msg = <span class="hljs-string">"Hello John"</span>;
+<span class="hljs-keyword">var</span> n = msg.<span class="hljs-title function_">replace</span>(<span class="hljs-regexp">/John/i</span>, <span class="hljs-string">"Buttler"</span>); <span class="hljs-comment">// Hello Buttler</span>
+</code></pre>
+<h3 id="63-what-are-modifiers-in-regular-expression-">6.3. What are modifiers in regular expression ?</h3>
+<p><strong>Answer:</strong> Modifiers can be used to perform case-insensitive and global searches. Let's list down some of the modifiers:</p>
+<table>
+<thead>
+<tr>
+<th>Modifier</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>i</code></td>
+<td>Perform case-insensitive matching.</td>
+</tr>
+<tr>
+<td><code>g</code></td>
+<td>Perform a global match (find all matches).</td>
+</tr>
+<tr>
+<td><code>m</code></td>
+<td>Perform multiline matching.</td>
+</tr>
+</tbody>
+</table>
+<p>Let's take an example of global modifier,</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> text = <span class="hljs-string">"Learn JS one by one"</span>;
+<span class="hljs-keyword">var</span> pattern = <span class="hljs-regexp">/one/g</span>;
+<span class="hljs-keyword">var</span> result = text.<span class="hljs-title function_">match</span>(pattern); <span class="hljs-comment">// one,one</span>
+</code></pre>
+<h3 id="64-what-are-regular-expression-patterns-">6.4. What are regular expression patterns ?</h3>
+<p><strong>Answer:</strong> Regular Expressions provide a group of patterns in order to match characters. Basically they are categorized into 3 types,</p>
+<ul>
+<li>i.Brackets: These are used to find a range of characters. For example, below are some use cases,<ul>
+<li>a. [abc]: Used to find any of the characters between the brackets(a,b,c).</li>
+<li>b. [0-9]: Used to find any of the digits between the brackets.</li>
+<li>c. (a|b): Used to find any of the alternatives separated with |</li>
+</ul>
+</li>
+<li>ii.Metacharacters: These are characters with a special meaning For example, below are some use cases <ul>
+<li>a. \d: Used to find a digit </li>
+<li>b. \s: Used to find a whitespace character</li>
+<li>c. \b: Used to find a match at the beginning or ending of a word</li>
+</ul>
+</li>
+<li>iii.Quantifiers: These are useful to define quantities For example, below are some use cases<ul>
+<li>a. n+: Used to find matches for any string that contains at least one n </li>
+<li>b. n*: Used to find matches for any string that contains zero or more occurrences of n </li>
+<li>c. n?: Used to find matches for any string that contains zero or one occurrences of n</li>
+</ul>
+</li>
+</ul>
+<h3 id="65-what-is-a-regexp-object-">6.5. What is a RegExp object ?</h3>
+<p><strong>Answer:</strong> RegExp object is a regular expression object with predefined properties and methods. Let's see the simple usage of RegExp object,</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> regexp = <span class="hljs-keyword">new</span> <span class="hljs-title class_">RegExp</span>(<span class="hljs-string">"\\w+"</span>);
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(regexp);
+<span class="hljs-comment">// expected output: /\w+/</span>
+</code></pre>
+<h3 id="66-how-do-you-search-a-string-for-a-pattern-">6.6. How do you search a string for a pattern ?</h3>
+<p><strong>Answer:</strong>  You can use the <code>test()</code> method of regular expression in order to search a string for a pattern, and return true or false depending on the result.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> pattern = <span class="hljs-regexp">/you/</span>;
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(pattern.<span class="hljs-title function_">test</span>(<span class="hljs-string">"How are you?"</span>)); <span class="hljs-comment">//true</span>
+</code></pre>
+<h3 id="67-what-is-currying-in-javascript">6.7. What is Currying in Javascript?</h3>
+<p><strong>Answer:</strong> Currying in JavaScript transforms a function with multiple arguments into a nested series of functions, each taking a single argument. Currying helps you avoid passing the same variable multiple times, and it helps you create a higher order function.</p>
+<p>That is, when we turn a function call <code>sum(1,2,3)</code> into <code>sum(1)(2)(3)</code>. </p>
+<p>The number of arguments a function takes is also called arity.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">function</span> <span class="hljs-title function_">sum</span>(<span class="hljs-params">a, b</span>) {
+    <span class="hljs-comment">// do something</span>
+}
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">_sum</span>(<span class="hljs-params">a, b, c</span>) {
+    <span class="hljs-comment">// do something</span>
+}
+</code></pre>
+<p>The function sum takes two arguments (two-arity function) and _sum takes three arguments (three-arity function).</p>
+<p>Curried functions are constructed by chaining closures and by defining and immediately returning their inner functions simultaneously.</p>
+<h2 id="7-temporal-dead-zone">7. Temporal Dead Zone</h2>
+<h3 id="71-what-is-the-temporal-dead-zone-in-es6">7.1. What is the Temporal Dead Zone in ES6?</h3>
+<p><strong>Answer:</strong> In ES6 let and const are hoisted (like var , class and function ), but there is a period between entering scope 
+and being declared where they cannot be accessed. This period is the temporal dead zone (TDZ)</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">//console.log(aLet)  // would throw ReferenceError </span>
+<span class="hljs-keyword">let</span> aLet; 
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(aLet); <span class="hljs-comment">// undefined </span>
+aLet = <span class="hljs-number">10</span>; 
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(aLet); <span class="hljs-comment">// 10</span>
+</code></pre>
+<h3 id="72-what-are-truthy-and-falsy-values-in-javascript">7.2. What are Truthy and Falsy Values in JavaScript?</h3>
+<p><strong>Answer:</strong> In JavaScript, "truthy" and "falsy" are terms used to describe how values are evaluated in Boolean contexts, such as conditions in if statements and loops. Understanding truthy and falsy values is crucial when working with conditional logic.</p>
+<h4 id="falsy-values">Falsy Values:</h4>
+<ul>
+<li><code>false</code>: The Boolean value false.</li>
+<li><code>0</code>: The numeric value zero.</li>
+<li><code>""</code>: An empty string.</li>
+<li><code>null</code>: A special value indicating the absence of an object.</li>
+<li><code>undefined</code>: A variable that has not been assigned a value.</li>
+<li><code>NaN</code>: Stands for "Not-a-Number" and represents an invalid number.</li>
+<li>When any of these values are used in a Boolean context, they are treated as "falsy," meaning they are considered equivalent to false.</li>
+</ul>
+<p>Examples of falsy values:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">if</span> (<span class="hljs-literal">false</span>) {
+    <span class="hljs-comment">// This code block won't execute because false is falsy.</span>
+}
+
+<span class="hljs-keyword">if</span> (<span class="hljs-number">0</span>) {
+    <span class="hljs-comment">// This code block won't execute because 0 is falsy.</span>
+}
+
+<span class="hljs-keyword">if</span> (<span class="hljs-string">""</span> === <span class="hljs-literal">false</span>) {
+    <span class="hljs-comment">// This comparison is true because an empty string is falsy.</span>
+}
+
+<span class="hljs-keyword">if</span> (<span class="hljs-literal">null</span>) {
+    <span class="hljs-comment">// This code block won't execute because null is falsy.</span>
+}
+
+<span class="hljs-keyword">if</span> (<span class="hljs-literal">undefined</span>) {
+    <span class="hljs-comment">// This code block won't execute because undefined is falsy.</span>
+}
+
+<span class="hljs-keyword">if</span> (<span class="hljs-title class_">NaN</span>) {
+    <span class="hljs-comment">// This code block won't execute because NaN is falsy.</span>
+}
+</code></pre>
+<h4 id="truthy-values">Truthy Values:</h4>
+<p>Any value that is not explicitly "falsy" is considered "truthy" in JavaScript. These values are treated as equivalent to true in Boolean contexts.</p>
+<p>Example of truth values:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">if</span> (<span class="hljs-literal">true</span>) {
+    <span class="hljs-comment">// This code block will execute because true is truthy.</span>
+}
+
+<span class="hljs-keyword">if</span> (<span class="hljs-number">42</span>) {
+    <span class="hljs-comment">// This code block will execute because 42 is truthy.</span>
+}
+
+<span class="hljs-keyword">if</span> (<span class="hljs-string">"Hello"</span>) {
+    <span class="hljs-comment">// This code block will execute because a non-empty string is truthy.</span>
+}
+
+<span class="hljs-keyword">if</span> ({} === <span class="hljs-literal">true</span>) {
+    <span class="hljs-comment">// This comparison is false because an empty object is truthy but not equal to true.</span>
+}
+
+<span class="hljs-keyword">if</span> ([] === <span class="hljs-literal">true</span>) {
+    <span class="hljs-comment">// This comparison is false because an empty array is truthy but not equal to true.</span>
+}
+</code></pre>
+<p>Understanding truthy and falsy values allows us to write more concise and expressive code, especially when dealing with conditional logic. We can use this behavior to write shorter and more readable code when evaluating conditions and choosing between two values or actions.</p>
+<h2 id="8-classes">8. Classes</h2>
+<h3 id="81-what-are-javascript-classes">8.1. What are JavaScript classes?</h3>
+<p><strong>Answer:</strong> Classes are templates for creating objects. They encapsulate data and logic that works with the data.</p>
+<h3 id="82-what-are-class-members">8.2. What are class members?</h3>
+<p><strong>Answer:</strong> Class members refer to the methods and fields within a class.</p>
+<ul>
+<li>i. Methods<ul>
+<li>Functions that are defined within the class.</li>
+<li>They can operate on fields and perform actions with the data.</li>
+<li>They define the behavior of the class.</li>
+</ul>
+</li>
+<li>ii. Fields<ul>
+<li>Variables that are defined within the class.</li>
+<li>They hold data specific to the class instance.</li>
+<li>They define the state of the class.</li>
+</ul>
+</li>
+</ul>
+<h3 id="83-explain-the-types-of-access-modifiers-and-their-purpose-in-javascript">8.3. Explain the types of access modifiers and their purpose in JavaScript</h3>
+<p><strong>Answer:</strong> There are three types of access modifiers which are used to encapsulate information.</p>
+<ul>
+<li>Public<ul>
+<li>Can be accessed from anywhere.</li>
+</ul>
+</li>
+<li>Private<ul>
+<li>Indicated by prefixing members with the <code>#</code> symbol.</li>
+<li>Cannot be accessed from instances or child classes.</li>
+<li>Only available within the class itself.</li>
+<li>Useful for information hiding.</li>
+</ul>
+</li>
+<li>Protected<ul>
+<li>Indicated by prefixing members with the <code>_</code> symbol.</li>
+<li>Can be accessed from the within the class and any class that inherits from it.</li>
+<li>Useful for sharing state between classes.</li>
+</ul>
+</li>
+</ul>
+<h3 id="84-what-are-class-properties">8.4. What are class properties?</h3>
+<p><strong>Answer:</strong> Properties refer to the getter and setter within a class, which provide a way to control access to the fields of a class. The getter and setter are property bindings to a function that will be called when the property is accessed.</p>
+<ul>
+<li>i. Getter<ul>
+<li>A getter is a method that gets the value of a field.</li>
+<li>It must have exactly zero parameters.</li>
+<li>It must return a value.</li>
+<li>It is defined using the <code>get</code> keyword.</li>
+</ul>
+</li>
+<li>ii. Setter<ul>
+<li>A setter is a method that sets the value of a field.</li>
+<li>It must have exactly one parameter.</li>
+<li>It is defined using the <code>set</code> keyword.</li>
+</ul>
+</li>
+</ul>
+<p>They are used to encapsulate the data, ensuring only certain fields can be accessed or modified in a specific way.</p>
+<p>Example of encapsulation using getters and setters:</p>
+<pre><code class="lang-javascript">  <span class="hljs-keyword">class</span> <span class="hljs-title class_">Task</span> {
+    #id;
+    #description;
+
+    <span class="hljs-title function_">constructor</span>(<span class="hljs-params">id, description, </span>) {
+      <span class="hljs-comment">//  Use setters instead of directly modifying the private fields</span>
+      <span class="hljs-variable language_">this</span>.<span class="hljs-property">id</span> = id;
+      <span class="hljs-variable language_">this</span>.<span class="hljs-property">description</span> = description;
+    }
+
+    <span class="hljs-comment">//  Use getters to read the values</span>
+    <span class="hljs-keyword">get</span> <span class="hljs-title function_">id</span>() {
+      <span class="hljs-keyword">return</span> <span class="hljs-variable language_">this</span>.#id;
+    }
+
+    <span class="hljs-comment">//  ...</span>
+
+    <span class="hljs-comment">//  Use setters to validate data before writing</span>
+    <span class="hljs-keyword">set</span> <span class="hljs-title function_">id</span>(<span class="hljs-params">id</span>) {
+      <span class="hljs-comment">//  ...validate new ID</span>
+      <span class="hljs-variable language_">this</span>.#id = id;
+    }
+
+    <span class="hljs-comment">//  ...</span>
+  }
+</code></pre>
+<h3 id="85-explain-class-constructors">8.5. Explain class constructors</h3>
+<p><strong>Answer:</strong> The constructor is a special method of a class called upon the initialization of that class. It is used to initialize the object's properties and perform any setup that is necessary when the object is created.</p>
+<ul>
+<li>i. Declaration<ul>
+<li>The constructor method is declared using the <code>constructor</code> keyword within the class body.</li>
+<li>Each class can only have one constructor method.</li>
+<li>The constructor cannot be an async method.</li>
+<li>The constructor cannot be a private method.</li>
+</ul>
+</li>
+<li>ii. Initialization<ul>
+<li>The constructor can accept parameters that are used to initialize the instance's properties.</li>
+<li>It sets up the initial state by assigning values to properties.</li>
+</ul>
+</li>
+<li><p>iii. Inheritance</p>
+<ul>
+<li>In derived classes (classes that extend another class), the <code>super</code> keyword is used within the child's constructor to call the constructor of the parent class.</li>
+<li>The <code>super</code> call must be made before accessing any properties in the constructor of a derived class. Example of constructor inheritance:</li>
+</ul>
+<pre><code class="lang-javascript"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Animal</span> {
+    <span class="hljs-title function_">constructor</span>(<span class="hljs-params">species</span>) {
+        <span class="hljs-variable language_">this</span>.<span class="hljs-property">species</span> = species;
+    }
+}
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">Person</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_ inherited__">Animal</span> {
+    <span class="hljs-title function_">constructor</span>(<span class="hljs-params">name</span>) {
+        <span class="hljs-variable language_">super</span>(<span class="hljs-string">"Human"</span>); <span class="hljs-comment">//  Call the parent class constructor</span>
+        <span class="hljs-variable language_">this</span>.<span class="hljs-property">name</span> = name;
+    } 
+}
+</code></pre>
+</li>
+<li><p>iv. Default constructor - If no constructor is explicitly declared, a default one will be given to the class.</p>
+<ul>
+<li>Base class - If the class doesn't extend any other class, a default constructor will be assigned to it:<pre><code class="lang-javascript"><span class="hljs-title function_">constructor</span>(<span class="hljs-params"></span>) {}
+</code></pre>
+</li>
+<li><p>Child class - If the class extends another class, it will inherit its constructor</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Vehicle</span> {
+  <span class="hljs-title function_">constructor</span>(<span class="hljs-params">type</span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">type</span> = type;
+  }
+
+  <span class="hljs-title function_">move</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">return</span> <span class="hljs-string">`The <span class="hljs-subst">${<span class="hljs-variable language_">this</span>.type}</span> is moving`</span>;
+  }
+}
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">Car</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_ inherited__">Vehicle</span> {
+  #model;
+
+  <span class="hljs-keyword">set</span> <span class="hljs-title function_">model</span>(<span class="hljs-params">model</span>) {
+    <span class="hljs-variable language_">this</span>.#model = model;
+  }
+
+  <span class="hljs-title function_">drive</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-string">`Driving <span class="hljs-subst">${<span class="hljs-variable language_">this</span>.#model}</span>`</span>;
+  }
+}
+</code></pre>
+<p>Even though the constructor is not explicitly declared, the class Car inherits it from the Vehicle class:</p>
+<pre><code class="lang-javascript"><span class="hljs-title function_">constructor</span>(<span class="hljs-params">type</span>) {
+  <span class="hljs-variable language_">super</span>(type);
+}
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="86-static-members-vs-instance-members">8.6. Static members vs Instance members</h3>
+<p><strong>Answer:</strong> By default, properties and methods which we define inside a class belong to each instance of the class that we create. We can also assign members to the class itself. Such members are called static and are declared using the <code>static</code> keyword. They cannot be directly accessed on instances of the class.</p>
+<h1 id="advanced-javascript-interview-questions">Advanced JavaScript Interview Questions</h1>
+<h2 id="1-closures-and-scoping">1. Closures and Scoping</h2>
+<h3 id="11-what-is-a-closure-in-javascript-provide-an-example-where-using-closures-can-be-beneficial">1.1. What is a closure in JavaScript? Provide an example where using closures can be beneficial.</h3>
+<p><strong>Answer:</strong> A closure in JavaScript is a function that has access to its enclosing scope's variables, even after the outer function has finished executing. This mechanism allows functions to maintain state between executions.</p>
+<p><strong>Example:</strong>
+One common use of closures is to create factory functions or private variables. For instance, if we wanted to generate unique ID values for elements:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">createUniqueIdGenerator</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">let</span> id = <span class="hljs-number">0</span>;
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">return</span> id++;
+  };
+}
+
+<span class="hljs-keyword">const</span> generateId = <span class="hljs-title function_">createUniqueIdGenerator</span>();
+
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-title function_">generateId</span>()); <span class="hljs-comment">// 0</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-title function_">generateId</span>()); <span class="hljs-comment">// 1</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-title function_">generateId</span>()); <span class="hljs-comment">// 2</span>
+</code></pre>
+<h3 id="12-how-do-closures-relate-to-variables-scope-and-lifetime">1.2. How do closures relate to variables' scope and lifetime?</h3>
+<p><strong>Answer:</strong> Closures allow a function to access all the variables, as well as functions, that are in its lexical scope, even after the outer function has completed. This results in the variables being preserved in memory, effectively allowing for variables to have a prolonged lifetime compared to standard local variables which would typically be garbage collected after their parent function has executed.</p>
+<h3 id="13-give-some-examples-of-uses-of-closures-in-javascript">1.3. Give some examples of uses of closures in javascript?</h3>
+<p><strong>Answer:</strong> Here are some example of closures.</p>
+<ul>
+<li>Module Design Pattern.</li>
+<li>Currying.</li>
+<li>Memoize</li>
+</ul>
+<h2 id="2-prototypal-inheritance">2. Prototypal Inheritance</h2>
+<h3 id="21-explain-the-difference-between-classical-inheritance-and-prototypal-inheritance">2.1. Explain the difference between classical inheritance and prototypal inheritance.</h3>
+<p><strong>Answer:</strong> Classical inheritance is a concept most often found in traditional Object-Oriented Programming languages like Java or C++, where a class can inherit properties and methods from a parent class. Prototypal inheritance, on the other hand, is unique to JavaScript. In JavaScript, each object can have another object as its prototype, and it can inherit properties from its prototype.</p>
+<p>The primary difference is that classical inheritance is class-based, whereas prototypal inheritance is object-based. Although ES6 introduced the <code>class</code> keyword to JavaScript, it's syntactical sugar over the existing prototypal inheritance.</p>
+<h3 id="22-how-can-you-extend-built-in-javascript-objects">2.2. How can you extend built-in JavaScript objects?</h3>
+<p><strong>Answer:</strong> To extend built-in JavaScript objects, we can add methods or properties to their prototype. However, it's generally discouraged to modify native prototypes because it can lead to compatibility issues and unexpected behavior, especially if there are future changes to the JavaScript specification.</p>
+<h2 id="3-asynchronous-javascript">3. Asynchronous JavaScript</h2>
+<h3 id="31-explain-the-event-loop-in-javascript-how-does-it-relate-to-the-call-stack">3.1. Explain the event loop in JavaScript. How does it relate to the call stack?</h3>
+<p><strong>Answer:</strong> The event loop is a fundamental concept in JavaScript and is responsible for handling the execution of multiple chunks of program over time, each run to completion. It works as a continuous loop that checks if there are tasks waiting in the message queue. If there are tasks and the main thread (call stack) is empty, it dequeues the task and executes it.</p>
+<p>The call stack, on the other hand, is a data structure that tracks the execution of functions in a program. When a function is called, it is added to the call stack, and when it finishes executing, it is removed from the stack.</p>
+<p>In the context of JavaScript, the event loop continuously checks the call stack to determine if it is empty. If it is empty and there are callback functions waiting in the message queue, those callbacks are executed.</p>
+<h3 id="32-what-are-promises-and-how-do-they-differ-from-callbacks-in-managing-asynchronous-operations">3.2. What are promises, and how do they differ from callbacks in managing asynchronous operations?</h3>
+<p><strong>Answer:</strong> Promises are objects representing the eventual completion (or failure) of an asynchronous operation and its resulting value. A <code>Promise</code> is in one of these states:</p>
+<ul>
+<li><code>pending</code>: initial state, neither fulfilled nor rejected.</li>
+<li><code>fulfilled</code>: meaning the promised operation has completed and the promise has a resulting value.</li>
+<li><code>rejected</code>: meaning the operation failed, and the promise will never be fulfilled.</li>
+</ul>
+<p>Callbacks are functions that are passed into another function as arguments and are executed after the outer function has completed. While both promises and callbacks can handle asynchronous operations, promises provide a more robust way of handling them.</p>
+<p>The key differences include:</p>
+<ul>
+<li>Promises allow for better chaining of asynchronous operations.</li>
+<li>Callbacks can lead to callback hell or pyramid of doom, where the code becomes hard to read and manage due to nested callbacks.</li>
+<li>Promises have a standardized error handling mechanism using <code>.then</code> and <code>.catch</code>.</li>
+</ul>
+<h3 id="33-describe-asyncawait-how-does-it-simplify-working-with-asynchronous-code">3.3. Describe async/await. How does it simplify working with asynchronous code?</h3>
+<p><strong>Answer:</strong> <code>async/await</code> is a syntactic feature introduced in ES8 (or ES2017) to work with asynchronous code in a more synchronous-like fashion. It allows for writing asynchronous operations in a linear manner without callbacks, leading to cleaner, more readable code.</p>
+<p>The <code>async</code> keyword is used to declare an asynchronous function, which ensures that the function returns a promise. The <code>await</code> keyword is used inside an <code>async</code> function to pause the execution until the promise is resolved or rejected.</p>
+<p>Using <code>async/await</code> simplifies error handling, as we can use traditional try/catch blocks instead of <code>.catch</code> with promises.</p>
+<h2 id="4-advanced-array-methods">4. Advanced Array Methods</h2>
+<h3 id="41-describe-the-functions-of-map-reduce-and-filter-provide-an-example-of-a-practical-use-case-for-each">4.1. Describe the functions of <code>map</code>, <code>reduce</code>, and <code>filter</code>. Provide an example of a practical use case for each.</h3>
+<p><strong>Answer:</strong> <code>map</code>, <code>reduce</code>, and <code>filter</code> functions are defined below.</p>
+<ul>
+<li><code>map</code>: It transforms each element of an array based on a function, returning a new array of the same length.
+<strong>Example:</strong> Doubling each number in an array.<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> numbers = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>];
+<span class="hljs-keyword">const</span> doubled = numbers.<span class="hljs-title function_">map</span>(<span class="hljs-function">(<span class="hljs-params">num</span>) =&gt;</span> num * <span class="hljs-number">2</span>); <span class="hljs-comment">// [2, 4, 6, 8]</span>
+</code></pre>
+```</li>
+<li><code>reduce</code>: It applies a function against an accumulator and each element in the array (from left to right), reducing it to a single value..
+<strong>Example:</strong> Summing all numbers in an array.<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> numbers = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>];
+<span class="hljs-keyword">const</span> sum = numbers.<span class="hljs-title function_">reduce</span>(<span class="hljs-function">(<span class="hljs-params">accumulator, currentValue</span>) =&gt;</span> accumulator + currentValue, <span class="hljs-number">0</span>); <span class="hljs-comment">// 10</span>
+</code></pre>
+</li>
+<li><code>filter</code>: It creates a new array with elements that pass a test specified by a function.
+<strong>Example:</strong> Summing all numbers in an array.<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> numbers = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>];
+<span class="hljs-keyword">const</span> evenNumbers = numbers.<span class="hljs-title function_">filter</span>(<span class="hljs-function">(<span class="hljs-params">num</span>) =&gt;</span> num % <span class="hljs-number">2</span> === <span class="hljs-number">0</span>); <span class="hljs-comment">// [2, 4, 6]</span>
+</code></pre>
+</li>
+</ul>
+<h3 id="42-what-are-some-limitations-or-pitfalls-when-using-arrow-functions">4.2. What are some limitations or pitfalls when using arrow functions?</h3>
+<p><strong>Answer:</strong> Arrow functions introduce a concise way to write functions in JavaScript, but they come with certain limitations:</p>
+<ol>
+<li><p><strong>No <code>this</code> Binding</strong>: Arrow functions do not bind their own <code>this</code>. They inherit the <code>this</code> binding of the surrounding scope. This can be problematic, especially when using them as methods in objects or as event handlers.</p>
+</li>
+<li><p><strong>No <code>arguments</code> Object</strong>: Arrow functions do not have the <code>arguments</code> object of their own. If we need to access the arguments object, we'd have to use traditional function expressions.</p>
+</li>
+<li><p><strong>Cannot be Used as Constructors</strong>: Arrow functions cannot be used as constructors with the <code>new</code> keyword because they don't have the <code>[[Construct]]</code> internal method.</p>
+</li>
+<li><p><strong>No <code>prototype</code> Property</strong>: Unlike regular functions, arrow functions do not have a <code>prototype</code> property.</p>
+</li>
+<li><p><strong>Less Readable for Complex Logic</strong>: For simple operations, the concise syntax is beneficial. However, for functions containing complex logic, the concise syntax might make the code less readable.</p>
+</li>
+</ol>
+<h2 id="5-this-keyword">5. "this" Keyword</h2>
+<h3 id="51-explain-the-behavior-of-the-this-keyword-in-different-contexts-such-as-in-a-method-a-standalone-function-an-arrow-function-and-an-event-handler">5.1. Explain the behavior of the <code>this</code> keyword in different contexts, such as in a method, a standalone function, an arrow function, and an event handler.</h3>
+<p><strong>Answer:</strong> The <code>this</code> word can vary on depending upon the context it's used. Some of them are explored below:</p>
+<ul>
+<li>In Method: It refers to the object that the method is called on.</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> person = {
+  <span class="hljs-attr">name</span>: <span class="hljs-string">"Alice"</span>,
+  <span class="hljs-attr">sayHello</span>: <span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`Hello, my name is <span class="hljs-subst">${<span class="hljs-variable language_">this</span>.name}</span>`</span>);
+  },
+};
+
+person.<span class="hljs-title function_">sayHello</span>(); <span class="hljs-comment">// Output: Hello, my name is Alice</span>
+</code></pre>
+<ul>
+<li>In Standalone Function:  Here, the <code>this</code> behavior depends on how function is called. If the function is called in the global scope, <code>this</code> refer to the global object.</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-keyword">function</span> <span class="hljs-title function_">greet</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`Hello, my name is <span class="hljs-subst">${<span class="hljs-variable language_">this</span>.name}</span>`</span>);
+}
+
+<span class="hljs-keyword">const</span> name = <span class="hljs-string">"Alice"</span>;
+<span class="hljs-title function_">greet</span>(); <span class="hljs-comment">// Output: Hello, my name is Alice</span>
+</code></pre>
+<ul>
+<li>In Arrow Function: Arrow functions capture the this value from their surrounding lexical scope, unlike regular functions. This means they lack their own this context.</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> person = {
+  <span class="hljs-attr">name</span>: <span class="hljs-string">"Bob"</span>,
+  <span class="hljs-attr">sayHello</span>: <span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`Hello, my name is <span class="hljs-subst">${<span class="hljs-variable language_">this</span>.name}</span>`</span>);
+  },
+};
+
+person.<span class="hljs-title function_">sayHello</span>(); <span class="hljs-comment">// Output: Hello, my name is undefined</span>
+</code></pre>
+<h3 id="52-how-can-you-ensure-a-function-uses-a-specific-object-as-its-this-value">5.2. How can you ensure a function uses a specific object as its <code>this</code> value?</h3>
+<p><strong>Answer:</strong>
+We can ensure a function uses a specific object as its this value in JavaScript using methods like bind, arrow functions, call, apply, or by defining methods within ES6 classes. These techniques allow us to control the context in which the function operates and ensure it accesses the desired object's properties and methods.</p>
+<h2 id="6-memory-management">6. Memory Management</h2>
+<h3 id="61-what-are-memory-leaks-in-javascript-discuss-potential-causes-and-how-to-prevent-them">6.1. What are memory leaks in JavaScript? Discuss potential causes and how to prevent them.</h3>
+<p><strong>Answer:</strong>
+Memory leaks in JavaScript occur when the program unintentionally retains references to objects that are no longer needed, leading to increased memory usage and potential application issues. Common causes include unused variables, closures, event listeners, and circular references. To prevent memory leaks, developers should explicitly remove references, manage event listeners, avoid circular dependencies, use weak references, employ memory profiling tools, conduct testing and code reviews, and utilize linters and static analysis tools to detect potential issues early in the development process.</p>
+<h3 id="62-describe-the-difference-between-shallow-copy-and-deep-copy-how-can-you-achieve-each-in-javascript">6.2. Describe the difference between shallow copy and deep copy. How can you achieve each in JavaScript?</h3>
+<p><strong>Answer:</strong>
+Shallow copy and deep copy are methods for duplicating objects or arrays in JavaScript.</p>
+<p>Shallow copy duplicates the top-level structure and values of an object or array but retains references to nested objects or arrays. Changes to nested structures affect both the original and the copy.
+Deep copy creates a new object or array and recursively duplicates all levels of nested structures, ensuring changes in the copy do not affect the original.
+To achieve a shallow copy, we can use methods like the spread operator or slice(). For a deep copy, custom logic or libraries like lodash's cloneDeep are necessary due to the lack of built-in deep copy methods in JavaScript.</p>
+<h2 id="7-es6-and-beyond">7. ES6 and Beyond</h2>
+<h3 id="71-explain-the-purpose-and-usage-of-javascripts-destructuring-assignment">7.1. Explain the purpose and usage of JavaScript's destructuring assignment.</h3>
+<p><strong>Answer:</strong>
+JavaScript's destructuring assignment is a feature that simplifies the extraction of values from objects and arrays, making code more concise and readable. It allows us to assign values to variables based on property names (object destructuring) or position (array destructuring). Destructuring can also be used in function parameters and supports the rest syntax to capture remaining elements. It's a powerful tool for working with complex data structures.</p>
+<h3 id="72-describe-the-significance-of-javascript-modules-and-the-es6-importexport-syntax">7.2. Describe the significance of JavaScript modules and the ES6 <code>import/export</code> syntax.</h3>
+<p><strong>Answer:</strong>
+JavaScript modules, along with the ES6 import/export syntax, are crucial for modern JavaScript development. They enable developers to organize, reuse, and maintain code effectively. Modules encapsulate related code, promote code reusability, manage dependencies, and improve code scalability. The ES6 import/export syntax provides a standardized way to declare and use modules, making it easier to structure and share code in a clean and maintainable manner. These features have become essential for building modular and maintainable JavaScript applications, both on the client and server sides.</p>
+<h3 id="73-how-do-template-literals-enhance-string-manipulation-in-es6-provide-examples">7.3. How do template literals enhance string manipulation in ES6? Provide examples.</h3>
+<p><strong>Answer:</strong>
+Template literals in ES6 enhance string manipulation by allowing developers to create strings with embedded expressions and multiline content in a more readable and flexible way. They support variable interpolation, multiline strings, expression evaluation, function calls, and even advanced use cases like tagged templates. This feature improves code readability and maintainability when working with complex strings that involve dynamic content or expressions.</p>
+<h3 id="74-can-i-redeclare-let-and-const-variables-">7.4. Can I redeclare let and const variables ?</h3>
+<p><strong>Answer:</strong> No, you cannot redeclare let and const variables. If you do, it throws below error.</p>
+<pre><code class="lang-js"><span class="hljs-title class_">Uncaught</span> <span class="hljs-title class_">SyntaxError</span>: <span class="hljs-title class_">Identifier</span> <span class="hljs-string">'someVariable'</span> has already been declared
+</code></pre>
+<p>Explanation: The variable declaration with var keyword refers to a function scope and the variable is treated as if it were declared at the top of the enclosing scope due to hoisting feature. So all the multiple declarations contributing to the same hoisted variable without any error. Let's take an example of re-declaring variables in the same scope for both var and let/const variables.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> name = <span class="hljs-string">"John"</span>;
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">myFunc</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">var</span> name = <span class="hljs-string">"Nick"</span>;
+  <span class="hljs-keyword">var</span> name = <span class="hljs-string">"Abraham"</span>; <span class="hljs-comment">// Re-assigned in the same function block</span>
+  <span class="hljs-title function_">alert</span>(name); <span class="hljs-comment">// Abraham</span>
+}
+<span class="hljs-title function_">myFunc</span>();
+<span class="hljs-title function_">alert</span>(name); <span class="hljs-comment">// John</span>
+</code></pre>
+<p>The block-scoped multi-declaration throws syntax error,</p>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> name = <span class="hljs-string">"John"</span>;
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">myFunc</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">let</span> name = <span class="hljs-string">"Nick"</span>;
+  <span class="hljs-keyword">let</span> name = <span class="hljs-string">"Abraham"</span>; <span class="hljs-comment">// Uncaught SyntaxError: Identifier 'name' has already been declared</span>
+  <span class="hljs-title function_">alert</span>(name);
+}
+
+<span class="hljs-title function_">myFunc</span>();
+<span class="hljs-title function_">alert</span>(name);
+</code></pre>
+<h3 id="75-is-const-variable-makes-the-value-immutable-">7.5. Is const variable makes the value immutable ?</h3>
+<p><strong>Answer:</strong> No, the const variable doesn't make the value immutable. But it disallows subsequent assignments(i.e, You can declare with assignment but can't assign another value later)</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> userList = [];
+userList.<span class="hljs-title function_">push</span>(<span class="hljs-string">"John"</span>); <span class="hljs-comment">// Can mutate even though it can't re-assign</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(userList); <span class="hljs-comment">// ['John']</span>
+</code></pre>
+<h3 id="76-what-are-default-parameters-">7.6. What are default parameters ?</h3>
+<p><strong>Answer:</strong> In ES5, we need to depend on logical OR operators to handle default values of function parameters. Whereas in ES6, Default function parameters feature allows parameters to be initialized with default values if no value or undefined is passed. Let's compare the behavior with an examples,</p>
+<pre><code class="lang-js"><span class="hljs-comment">//ES5</span>
+<span class="hljs-keyword">var</span> calculateArea = <span class="hljs-keyword">function</span> (<span class="hljs-params">height, width</span>) {
+  height = height || <span class="hljs-number">50</span>;
+  width = width || <span class="hljs-number">60</span>;
+
+  <span class="hljs-keyword">return</span> width * height;
+};
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-title function_">calculateArea</span>()); <span class="hljs-comment">//300</span>
+</code></pre>
+<p>The default parameters makes the initialization more simpler,</p>
+<pre><code class="lang-js"><span class="hljs-comment">//ES6</span>
+<span class="hljs-keyword">var</span> calculateArea = <span class="hljs-keyword">function</span> (<span class="hljs-params">height = <span class="hljs-number">50</span>, width = <span class="hljs-number">60</span></span>) {
+  <span class="hljs-keyword">return</span> width * height;
+};
+
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-title function_">calculateArea</span>()); <span class="hljs-comment">//300</span>
+</code></pre>
+<h3 id="77-what-are-template-literals-">7.7. What are template literals ?</h3>
+<p><strong>Answer:</strong> Template literals or template strings are string literals allowing embedded expressions. These are enclosed by the back-tick <em>(`)</em> character instead of double or single quotes. In ES6, this feature enables using dynamic expressions as below,</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> greeting = <span class="hljs-string">`Welcome to JS World, Mr. <span class="hljs-subst">${firstName}</span> <span class="hljs-subst">${lastName}</span>.`</span>;
+</code></pre>
+<p>In ES5, you need break string like below,</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> greeting = <span class="hljs-string">'Welcome to JS World, Mr. '</span> + firstName + <span class="hljs-string">' '</span> + lastName.<span class="hljs-string">`
+</span></code></pre>
+<p>Note: You can use multi-line strings and string interpolation features with template literals.</p>
+<h3 id="78-how-do-you-write-multi-line-strings-in-template-literals-">7.8. How do you write multi-line strings in template literals ?</h3>
+<p><strong>Answer:</strong> In ES5, you would have to use newline escape characters <code>('\n')</code> and concatenation symbols <code>(+)</code> in order to get multi-line strings.</p>
+<pre><code class="lang-js"><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"This is string sentence 1\n"</span> + <span class="hljs-string">"This is string sentence 2"</span>);
+</code></pre>
+<p>Whereas in ES6, You don't need to mention any newline sequence character,</p>
+<pre><code class="lang-js"><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`This is string sentence 'This is string sentence 2`</span>);
+</code></pre>
+<h3 id="79-what-are-nesting-templates-">7.9. What are nesting templates ?</h3>
+<p><strong>Answer:</strong> The nesting template is a feature supported within template literals syntax to allow inner backticks inside a placeholder <code>${ }</code> within the template. For example, the below nesting template is used to display the icons based on user permissions whereas outer template checks for platform type:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> iconStyles = <span class="hljs-string">`icon <span class="hljs-subst">${
+  isMobilePlatform()
+    ? <span class="hljs-string">""</span>
+    : <span class="hljs-string">`icon-<span class="hljs-subst">${user.isAuthorized ? <span class="hljs-string">"submit"</span> : <span class="hljs-string">"disabled"</span>}</span>`</span>
+}</span>`</span>;
+</code></pre>
+<p>You can write the above use case without nesting template features as well. However, the nesting template feature is more compact and readable.</p>
+<pre><code class="lang-js"><span class="hljs-comment">//Without nesting templates</span>
+<span class="hljs-keyword">const</span> iconStyles = <span class="hljs-string">`icon <span class="hljs-subst">${
+  isMobilePlatform()
+    ? <span class="hljs-string">""</span>
+    : user.isAuthorized
+    ? <span class="hljs-string">"icon-submit"</span>
+    : <span class="hljs-string">"icon-disabled"</span>
+}</span>`</span>;
+</code></pre>
+<h3 id="710-what-are-tagged-templates-">7.10. What are tagged templates ?</h3>
+<p><strong>Answer:</strong> Tagged templates are the advanced form of templates in which tags allow you to parse template literals with a function. The tag function accepts the first parameter as an array of strings and remaining parameters as expressions. This function can also return manipulated strings based on parameters. Let's see the usage of this tagged template behavior of an IT professional skill set in an organization,</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> user1 = <span class="hljs-string">"John"</span>;
+<span class="hljs-keyword">var</span> skill1 = <span class="hljs-string">"JavaScript"</span>;
+<span class="hljs-keyword">var</span> experience1 = <span class="hljs-number">15</span>;
+
+<span class="hljs-keyword">var</span> user2 = <span class="hljs-string">"Kane"</span>;
+<span class="hljs-keyword">var</span> skill2 = <span class="hljs-string">"JavaScript"</span>;
+<span class="hljs-keyword">var</span> experience2 = <span class="hljs-number">5</span>;
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">myInfoTag</span>(<span class="hljs-params">strings, userExp, experienceExp, skillExp</span>) {
+  <span class="hljs-keyword">var</span> str0 = strings[<span class="hljs-number">0</span>]; <span class="hljs-comment">// "Mr/Ms. "</span>
+  <span class="hljs-keyword">var</span> str1 = strings[<span class="hljs-number">1</span>]; <span class="hljs-comment">// " is a/an "</span>
+  <span class="hljs-keyword">var</span> str2 = strings[<span class="hljs-number">2</span>]; <span class="hljs-comment">// "in"</span>
+
+  <span class="hljs-keyword">var</span> expertiseStr;
+  <span class="hljs-keyword">if</span> (experienceExp &gt; <span class="hljs-number">10</span>) {
+    expertiseStr = <span class="hljs-string">"expert developer"</span>;
+  } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (skillExp &gt; <span class="hljs-number">5</span> &amp;&amp; skillExp &lt;= <span class="hljs-number">10</span>) {
+    expertiseStr = <span class="hljs-string">"senior developer"</span>;
+  } <span class="hljs-keyword">else</span> {
+    expertiseStr = <span class="hljs-string">"junior developer"</span>;
+  }
+
+  <span class="hljs-keyword">return</span> <span class="hljs-string">`<span class="hljs-subst">${str0}</span><span class="hljs-subst">${userExp}</span><span class="hljs-subst">${str1}</span><span class="hljs-subst">${expertiseStr}</span><span class="hljs-subst">${str2}</span><span class="hljs-subst">${skillExp}</span>`</span>;
+}
+
+<span class="hljs-keyword">var</span> output1 = myInfoTag<span class="hljs-string">`Mr/Ms. <span class="hljs-subst">${user1}</span> is a/an <span class="hljs-subst">${experience1}</span> in <span class="hljs-subst">${skill1}</span>`</span>;
+<span class="hljs-keyword">var</span> output2 = myInfoTag<span class="hljs-string">`Mr/Ms. <span class="hljs-subst">${user2}</span> is a/an <span class="hljs-subst">${experience2}</span> in <span class="hljs-subst">${skill2}</span>`</span>;
+
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(output1); <span class="hljs-comment">// Mr/Ms. John is a/an expert developer in JavaScript</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(output2); <span class="hljs-comment">// Mr/Ms. Kane is a/an junior developer in JavaScript</span>
+</code></pre>
+<h3 id="711-what-are-raw-strings-">7.11. What are raw strings ?</h3>
+<p><strong>Answer:</strong> ES6 provides a raw strings feature using the <code>String.raw()</code> method which is used to get the raw string form of template strings. This feature allows you to access the raw strings as they were entered, without processing escape sequences. For example, the usage would be as below,</p>
+<pre><code class="lang-js"> <span class="hljs-keyword">var</span> calculationString = <span class="hljs-title class_">String</span>.<span class="hljs-property">raw</span><span class="hljs-string">`The sum of numbers is \n<span class="hljs-subst">${
+  <span class="hljs-number">1</span> + <span class="hljs-number">2</span> + <span class="hljs-number">3</span> + <span class="hljs-number">4</span>
+}</span>!`</span>;
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(calculationString); <span class="hljs-comment">// The sum of numbers is \n10!</span>
+</code></pre>
+<p>If you don't use raw strings, the newline character sequence will be processed by displaying the output in multiple lines</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> calculationString = <span class="hljs-string">`The sum of numbers is \n<span class="hljs-subst">${<span class="hljs-number">1</span> + <span class="hljs-number">2</span> + <span class="hljs-number">3</span> + <span class="hljs-number">4</span>}</span>!`</span>;
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(calculationString);
+<span class="hljs-comment">// The sum of numbers is</span>
+<span class="hljs-comment">// 10!</span>
+</code></pre>
+<p>Also, the raw property is available on the first argument to the tag function</p>
+<pre><code class="lang-js"><span class="hljs-keyword">function</span> <span class="hljs-title function_">tag</span>(<span class="hljs-params">strings</span>) {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(strings.<span class="hljs-property">raw</span>[<span class="hljs-number">0</span>]);
+}
+</code></pre>
+<h2 id="8-functional-programming">8. Functional Programming</h2>
+<h3 id="81-how-does-functional-programming-differ-from-imperative-programming-in-javascript">8.1. How does functional programming differ from imperative programming in JavaScript?</h3>
+<p><strong>Answer:</strong> Functional programming and imperative programming are two predominant programming paradigms.</p>
+<ul>
+<li><p><strong>Imperative Programming</strong>: This paradigm is about telling the computer "how" to do something and relies on statements that change a programs state. In essence, it focuses on describing the steps to achieve a particular task. This often involves loops, conditionals, and statements that modify variables.</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> total = <span class="hljs-number">0</span>;
+<span class="hljs-keyword">for</span>(<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; array.<span class="hljs-property">length</span>; i++) {
+    total += array[i];
+}<span class="hljs-string">``</span><span class="hljs-string">`
+</span></code></pre>
+</li>
+</ul>
+<h4 id="functional-programming-fp">Functional Programming (FP)</h4>
+<p>FP is more about instructing the computer "what" to achieve, rather than detailing "how" to achieve it. It treats computational tasks as evaluations of mathematical functions and steers clear of mutable data and state alterations. In the context of JavaScript and most FP languages:</p>
+<ul>
+<li><p><strong>Pure Functions</strong>: These are functions where the output value is determined solely by its input values, without observable side effects. This means, for the same input, the function will always produce the same output.</p>
+</li>
+<li><p><strong>Immutable Data</strong>: Once data is created, it can never change. Instead of altering existing data, functional programming practices involve creating new data structures.</p>
+</li>
+<li><p><strong>First-Class and Higher-Order Functions</strong>: In FP, functions are first-class citizens. This means they can be assigned to variables, passed into other functions as parameters, and returned as values. A higher-order function is a function that receives another function as an argument, returns a function, or both.</p>
+</li>
+</ul>
+<h3 id="82-explain-first-class-functions-and-their-importance-in-functional-programming">8.2. Explain first-class functions and their importance in functional programming.</h3>
+<p><strong>Answer:</strong> In JavaScript and many other programming languages, functions are considered as "first-class citizens." This means that functions can be:</p>
+<ul>
+<li>Assigned to variables.</li>
+<li>Passed as arguments to other functions.</li>
+<li>Returned from other functions as values.</li>
+<li>Stored in data structures like arrays and objects.</li>
+</ul>
+<p>Here's a simple example demonstrating these properties:</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// Assigning a function to a variable</span>
+<span class="hljs-keyword">const</span> greet = <span class="hljs-keyword">function</span>(<span class="hljs-params">name</span>) {
+  <span class="hljs-keyword">return</span> <span class="hljs-string">"Hello, "</span> + name;
+}
+<span class="hljs-comment">// Passing a function as an argument to another function</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">runFunction</span>(<span class="hljs-params">fn, value</span>) {
+  <span class="hljs-keyword">return</span> <span class="hljs-title function_">fn</span>(value);
+}
+<span class="hljs-title function_">runFunction</span>(greet, <span class="hljs-string">'John'</span>); <span class="hljs-comment">// Returns: "Hello, John"</span>
+<span class="hljs-comment">// Returning a function from another function</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">multiplier</span>(<span class="hljs-params">factor</span>) {
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">function</span>(<span class="hljs-params">number</span>) {
+    <span class="hljs-keyword">return</span> number \* factor;
+  }
+}
+<span class="hljs-keyword">const</span> double = <span class="hljs-title function_">multiplier</span>(<span class="hljs-number">2</span>);
+<span class="hljs-title function_">double</span>(<span class="hljs-number">5</span>); <span class="hljs-comment">// Returns: 10</span>
+<span class="hljs-comment">// Storing function in an array</span>
+<span class="hljs-keyword">const</span> functions = [greet, double];
+</code></pre>
+<h3 id="83-what-is-execution-context-and-lexical-environment">8.3. What is Execution Context and Lexical Environment?</h3>
+<p><strong>Answer:</strong> Generally, a function has its imaginary container or we can say some sort of context API. It provides the function with 3 things: </p>
+<ul>
+<li>Variables declared in the function</li>
+<li>The functions defined in the function</li>
+<li>Lexical environment
+This is known as Execution Context of a function.</li>
+</ul>
+<p>The lexical environment is a type of information source which provides the parent function with the scope of variables it can use. For ex:</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// Assigning a function to a variable</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">parent</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">var</span> a;
+  <span class="hljs-keyword">var</span> b;
+
+  <span class="hljs-keyword">function</span> <span class="hljs-title function_">child</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">var</span> x;
+    <span class="hljs-keyword">var</span> y;
+    {rest code}
+  }
+}
+</code></pre>
+<p>Here, the lexical environment will have the information that parent function can use the variable a and b but not x and y (provides scope to the parent).</p>
+<hr></hr>
+<h2 id="9-storing-data-in-browser">9. Storing data in browser</h2>
+<h3 id="a-local-storage-and-session-storage">A. Local storage and Session storage</h3>
+<h3 id="91-what-are-the-key-differences-between-local-storage-and-session-storage">9.1 what are the key differences between Local Storage and Session Storage?</h3>
+<p><strong>Answer:</strong> Web Storage is a web API that provides two mechanisms for storing data in a web browser: Local Storage and Session Storage. The key differences are:</p>
+<ul>
+<li>Lifetime: Local Storage data persists even after the browser is closed, while Session Storage data is only available for the duration of the page session.</li>
+<li>Scope: Local Storage data is accessible across multiple windows and tabs from the same origin, whereas Session Storage data is limited to the current page or tab.</li>
+<li>Storage Limit: Local Storage typically has a larger storage limit (around 5-10 MB) compared to Session Storage (about 5-10 MB as well).</li>
+</ul>
+<h3 id="92-how-do-you-store-data-in-local-storage-and-session-storage-using-javascript">9.2 How do you store data in Local Storage and Session Storage using JavaScript?</h3>
+<p><strong>Answer:</strong> You can use the localStorage and sessionStorage objects to store data. Here's an example of storing data in Local Storage:</p>
+<p><code>localStorage.setItem('username', 'JohnDoe');</code></p>
+<p>To store data in Session Storage, replace localStorage with <code>sessionStorage.</code></p>
+<h3 id="93-how-can-you-clear-or-remove-data-from-local-storage-and-session-storage">9.3 How can you clear or remove data from Local Storage and Session Storage?</h3>
+<p><strong>Answer:</strong> You can remove an item from storage using the removeItem method. To clear all items, you can use the clear method. For example:</p>
+<p>Remove an item : 
+<code>localStorage.removeItem('username');</code></p>
+<p>Clear all items : 
+<code>localStorage.clear();</code></p>
+<h3 id="94-explain-the-security-concerns-associated-with-web-storage">9.4 Explain the security concerns associated with Web Storage.</h3>
+<p><strong>Answer:</strong> Web Storage is domain-specific, meaning that data is accessible only from the same domain that stored it. However, there are security concerns related to storing sensitive information in Web Storage. Data is not encrypted, and it's vulnerable to cross-site scripting (XSS) attacks, where malicious scripts can access and modify the stored data.</p>
+<h3 id="b-indexdb">B. IndexDB</h3>
+<p>IndexedDB can be thought of as a “localStorage on steroids”. It’s a simple key-value database, powerful enough for offline apps, yet simple to use.</p>
+<h3 id="95-what-is-indexdb-and-how-does-it-differ-from-web-storage-local-storage-and-session-storage">9.5 What is IndexDB, and how does it differ from Web Storage (Local Storage and Session Storage)?</h3>
+<p><strong>Answer:</strong> IndexDB is a low-level JavaScript-based database for storing large amounts of structured data. It differs from Web Storage in several ways:</p>
+<ul>
+<li>Data Structure: IndexedDB stores structured data, while Web Storage stores key-value pairs.</li>
+<li>Storage Limit: IndexedDB typically offers a larger storage limit (often in megabytes) compared to the limited storage of Web Storage.</li>
+<li>API Complexity: IndexedDB has a more complex API, requiring developers to define a database schema and work with transactions.</li>
+</ul>
+<h3 id="96-how-do-you-open-a-database-and-create-an-object-store-in-indexeddb-using-javascript">9.6 How do you open a database and create an object store in IndexedDB using JavaScript?</h3>
+<p><strong>Answer:</strong> You can open a database and create an object store like this:</p>
+<p>Open a database (or create if it doesn't exist) :  </p>
+<p><code>const request = indexedDB.open('myDatabase', 1);</code></p>
+<p>Create an object store : </p>
+<pre><code class="lang-sh">request.onupgradeneeded = (event) =&gt; {
+  const db = event.target.result;
+  db.createObjectStore(<span class="hljs-string">'myStore'</span>, { keyPath: <span class="hljs-string">'id'</span> });
+};
+</code></pre>
+<h2 id="10-code-optimization">10. Code Optimization</h2>
+<h3 id="101-what-is-tree-shaking-">10.1. What is tree shaking ?</h3>
+<p><strong>Answer:</strong> Tree shaking is a form of dead code elimination. It means that unused modules will not be included in the bundle during the build process and for that it relies on the static structure of ES2015 module syntax,( i.e. import and export). Initially this has been popularized by the ES2015 module bundler rollup.</p>
+<h3 id="102-what-is-the-need-of-tree-shaking-">10.2. What is the need of tree shaking ?</h3>
+<p><strong>Answer:</strong> Tree Shaking can significantly reduce the code size in any application. i.e, The less code we send over the wire the more performant the application will be. For example, if we just want to create a “Hello World” Application using SPA frameworks then it will take around a few MBs, but by tree shaking it can bring down the size to just a few hundred KBs. Tree shaking is implemented in Rollup and Webpack bundlers.</p>
+<h3 id="103-explain-the-role-of-the-static-structure-of-es2015-module-syntax-in-tree-shaking-how-does-tree-shaking-leverage-this-structure-to-eliminate-dead-code">10.3. Explain the role of the static structure of ES2015 module syntax in tree shaking. How does tree shaking leverage this structure to eliminate dead code?</h3>
+<p><strong>Answer:</strong> Tree shaking relies on the static structure of ES2015 module syntax, which means that the import and export statements have a clear and static structure at compile time. During the build process, the bundler (e.g., Rollup or Webpack) analyzes the import statements to determine which modules are being used and which are not. It then eliminates the unused modules from the final bundle, resulting in smaller and more efficient code.</p>
+<h3 id="104-what-steps-can-you-take-to-optimize-tree-shaking-in-a-complex-javascript-project-with-multiple-dependencies-and-deep-module-hierarchies">10.4. What steps can you take to optimize tree shaking in a complex JavaScript project with multiple dependencies and deep module hierarchies?</h3>
+<p><strong>Answer:</strong> To optimize tree shaking in a complex project:</p>
+<ul>
+<li>Ensure all dependencies use ES2015 module syntax.</li>
+<li>Configure your bundler to perform tree shaking.</li>
+<li>Use the "sideEffects" property in your package.json to mark files or directories as side-effect free.</li>
+<li>Minimize the use of dynamic imports.</li>
+<li>Regularly audit and update your code to remove unused exports and functions.</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Chapter21.html" class="navigation navigation-prev " aria-label="Previous page: 第二十一章·实战练习">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Chapter23.html" class="navigation navigation-next " aria-label="Next page: 第二十三章·设计模式">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"第二十二章·面试问题","level":"1.26","depth":1,"next":{"title":"第二十三章·设计模式","level":"1.27","depth":1,"path":"content/Chapter23.md","ref":"content/Chapter23.md","articles":[]},"previous":{"title":"第二十一章·实战练习","level":"1.25","depth":1,"path":"content/Chapter21.md","ref":"content/Chapter21.md","articles":[]},"dir":"ltr"},"config":{"plugins":["hints","hide-published-with","chapter-fold","intopic-toc","tooltips","exercises","theme-creative","sharing","@honkit/honkit-plugin-ga","sitemap","favicon-custom","edit-link","ace-editor"],"styles":{"website":".gitbook/css/custom.css"},"pluginsConfig":{"chapter-fold":{},"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"概览"},"search":{},"favicon-custom":{"favicon":"./favicon.ico","appleTouchIconPrecomposed152":"./favicon.ico"},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"tooltips":{},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-creative":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"maxWidth":"800px","showLevel":false,"fontSize":18,"colorSecondary":"#E6D7C1","fontFamily":"'Times New Roman', serif","backgroundColor":"#F9F6F1","textColor":"#3E3E3E","textAlign":"justify","lineHeight":1.6,"colorPrimary":"#D8CFC4"},"highlight":{},"favicon":"favicon.ico","sitemap":{"hostname":"https://javascript.sumankunwar.com.np/"},"@honkit/honkit-plugin-ga":{},"ace-editor":{},"appleTouchIconPrecomposed152":"js.png","exercises":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"","base":"https://github.com/dinglevin/learn-javascript-zh/edit/main"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"Sepia","keywords":"JavaScript tutorial, JavaScript学习教程","author":"Suman Kunwar, dinglevin","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"JavaScript学习教程, 初学者版本","language":"zh-cn","website":"https://learn-javascript.dinglevin.tech/","gitbook":"*","description":"JavaScript学习教程, 初学者版本"},"file":{"path":"content/Chapter22.md","mtime":"2024-10-07T08:10:38.066Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-10-07T08:10:49.404Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook-plugin-exercises/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+    
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-published-with/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-intopic-toc/anchor.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-intopic-toc/gumshoe.polyfills.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-intopic-toc/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/ace/theme-tomorrow.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/ace/mode-javascript.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/exercises.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace-editor/ace.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace-editor/ace/theme-tomorrow.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace-editor/ace/mode-javascript.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace-editor/main.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+
+    </body>
+</html>
+

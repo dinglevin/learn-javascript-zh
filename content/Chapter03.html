@@ -2,12 +2,11 @@
 <!DOCTYPE HTML>
 <html lang="zh-cn" >
     <head>
-        <title>第三章·数值 · JavaScript学习教程, 初学者版本</title>
         <meta charset="UTF-8">
+        <title>第三章·数值 · JavaScript学习教程, 初学者版本</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 5.1.4">
+        <meta name="generator" content="HonKit 5.1.4">
         <meta name="author" content="Suman Kunwar, dinglevin">
         
         
@@ -82,7 +81,7 @@
     </head>
     <body>
         
-<div class="book">
+<div class="book honkit-cloak">
     <div class="book-summary">
         
             
@@ -553,8 +552,8 @@
     <li class="divider"></li>
 
     <li>
-        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-            本書使用 GitBook 釋出
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            本書使用 HonKit 釋出
         </a>
     </li>
 </ul>
@@ -593,33 +592,87 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="第三章·数值">第三章·数值</h1>
-<p>JavaScript has <strong>only one type of number</strong> – 64 bit float point. It's the same as Java's <code>double</code>. Unlike most other programming languages, there is no separate integer type, so 1 and 1.0 are the same value. Creating a number is easy, it can be done just like for any other variable type using the <code>var</code> keyword.</p>
-<p>Numbers can be created from a constant value:</p>
+<p>
+            </p><div class="tooltips">
+                <p>JavaScript<strong><em>只有一种数字类型</em></strong> —— 64 位浮点数。这与 Java 的 <code>double</code> 相同。与大多数其他编程语言不同的是，它没有单独的整数类型，因此 1 和 1.0 是相同的值。创建数字非常简单，可以像其他任何变量类型一样使用 <code>var</code> 关键字来创建。</p>
+
+                <div class="tooltipstext-bottom"><p>JavaScript has <strong>only one type of number</strong> – 64 bit float point. It's the same as Java's <code>double</code>. Unlike most other programming languages, there is no separate integer type, so 1 and 1.0 are the same value. Creating a number is easy, it can be done just like for any other variable type using the <code>var</code> keyword.</p>
+</div>
+            </div>
+        <p></p>
+<p>
+            </p><div class="tooltips">
+                <p>数字可以通过常量值创建：</p>
+
+                <div class="tooltipstext-bottom"><p>Numbers can be created from a constant value:</p>
+</div>
+            </div>
+        <p></p>
 <pre><code class="lang-javascript"><span class="hljs-comment">// This is a float:</span>
 <span class="hljs-keyword">let</span> a = <span class="hljs-number">1.2</span>;
 
 <span class="hljs-comment">// This is an integer:</span>
 <span class="hljs-keyword">let</span> b = <span class="hljs-number">10</span>;
 </code></pre>
-<p>Or, from the value of another variable:</p>
+<p>
+            </p><div class="tooltips">
+                <p>或者，从另一个变量的值创建：</p>
+
+                <div class="tooltipstext-bottom"><p>Or, from the value of another variable:</p>
+</div>
+            </div>
+        <p></p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">let</span> a = <span class="hljs-number">2</span>;
 <span class="hljs-keyword">let</span> b = a;
 </code></pre>
-<p>The precision of integers is accurate up to 15 digits and the maximum number is 17.</p>
+<p>
+            </p><div class="tooltips">
+                <p>整数的精度准确到 15 位，最大数字为 17。</p>
+
+                <div class="tooltipstext-bottom"><p>The precision of integers is accurate up to 15 digits and the maximum number is 17.</p>
+</div>
+            </div>
+        <p></p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">let</span> x = <span class="hljs-number">999999999999999</span>;   <span class="hljs-comment">// x will be 999999999999999</span>
 <span class="hljs-keyword">let</span> y = <span class="hljs-number">9999999999999999</span>;  <span class="hljs-comment">// y will be 10000000000000000</span>
 </code></pre>
-<p>The numeric constants are interpreted as hexadecimal if they are preceded by an <code>0x</code>.</p>
+<p>
+            </p><div class="tooltips">
+                <p>如果数字常量前面加上 0x，则会被解释为十六进制。</p>
+
+                <div class="tooltipstext-bottom"><p>The numeric constants are interpreted as hexadecimal if they are preceded by an <code>0x</code>.</p>
+</div>
+            </div>
+        <p></p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">let</span> z = <span class="hljs-number">0xFF</span>; <span class="hljs-comment">// 255</span>
 </code></pre>
-<p>In this chapter, we will explore following topics:</p>
+<p>
+            </p><div class="tooltips">
+                <p>在本章中，我们将探讨以下主题：</p>
 <ul>
-<li><a href="math.md">Math</a></li>
-<li><a href="operators.md">Basic Operators</a></li>
-<li><a href="advanced.md">Advanced Operators</a></li>
+<li><a href="#Math类">Math类</a></li>
+<li><a href="#基本运算符">基本运算符</a></li>
+<li><a href="#高级运算符">高级运算符</a></li>
 </ul>
-<h1 id="math">Math</h1>
-<p>The <code>Math</code> object allows performing mathematical operations in JavaScript. It is static and doesn't have a constructor. One can use method and properties of Math object without creating a Math object first. For accessing its property one can use <em>Math.property.</em> Some of the math properties are described below:</p>
+
+                <div class="tooltipstext-bottom"><p>In this chapter, we will explore following topics:</p>
+<ul>
+<li>Math</li>
+<li>Basic Operators</li>
+<li>Advanced Operators</li>
+</ul>
+</div>
+            </div>
+        <p></p>
+<h2 id="math类">Math类</h2>
+<p>
+            </p><div class="tooltips">
+                <p>Math 对象允许在 JavaScript 中执行数学运算。它是静态的，没有构造函数。可以在不先创建 Math 对象的情况下使用 Math 对象的方法和属性。要访问其属性，可以使用 Math.property. 一些数学属性如下所述：</p>
+
+                <div class="tooltipstext-bottom"><p>The <code>Math</code> object allows performing mathematical operations in JavaScript. It is static and doesn't have a constructor. One can use method and properties of Math object without creating a Math object first. For accessing its property one can use <em>Math.property.</em> Some of the math properties are described below:</p>
+</div>
+            </div>
+        <p></p>
 <pre><code class="lang-javascript"><span class="hljs-title class_">Math</span>.<span class="hljs-property">E</span>; <span class="hljs-comment">// returns Euler's number</span>
 <span class="hljs-title class_">Math</span>.<span class="hljs-property">PI</span>; <span class="hljs-comment">// returns PI</span>
 <span class="hljs-title class_">Math</span>.<span class="hljs-property">SQRT2</span>; <span class="hljs-comment">// returns the square root of 2</span>
@@ -629,7 +682,14 @@
 <span class="hljs-title class_">Math</span>.<span class="hljs-property">LOG2E</span>; <span class="hljs-comment">// returns base 2 logarithm of E</span>
 <span class="hljs-title class_">Math</span>.<span class="hljs-property">LOG10E</span>; <span class="hljs-comment">// returns base 10 logarithm of E</span>
 </code></pre>
-<p>Examples of some of the math methods are:</p>
+<p>
+            </p><div class="tooltips">
+                <p>以下是一些数学方法的示例：</p>
+
+                <div class="tooltipstext-bottom"><p>Examples of some of the math methods are:</p>
+</div>
+            </div>
+        <p></p>
 <pre><code class="lang-javascript"><span class="hljs-title class_">Math</span>.<span class="hljs-title function_">pow</span>(<span class="hljs-number">8</span>, <span class="hljs-number">2</span>); <span class="hljs-comment">// 64</span>
 <span class="hljs-title class_">Math</span>.<span class="hljs-title function_">round</span>(<span class="hljs-number">4.6</span>); <span class="hljs-comment">// 5</span>
 <span class="hljs-title class_">Math</span>.<span class="hljs-title function_">ceil</span>(<span class="hljs-number">4.9</span>); <span class="hljs-comment">// 5</span>
@@ -647,7 +707,129 @@
 <span class="hljs-title class_">Math</span>.<span class="hljs-title function_">log2</span>(<span class="hljs-number">8</span>); <span class="hljs-comment">// 3</span>
 <span class="hljs-title class_">Math</span>.<span class="hljs-title function_">log10</span>(<span class="hljs-number">1000</span>); <span class="hljs-comment">// 3</span>
 </code></pre>
-<p>To access maths method, one can call its methods directly with arguments wherever necessary.</p>
+<p>
+            </p><div class="tooltips">
+                <p>要访问数学方法，可以直接调用其方法，并在需要时传入参数。</p>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>abs(x)</code></td>
+<td>返回 <code>x</code> 的绝对值</td>
+</tr>
+<tr>
+<td><code>acos(x)</code></td>
+<td>返回 <code>x</code> 的反余弦值，以弧度表示</td>
+</tr>
+<tr>
+<td><code>acosh(x)</code></td>
+<td>返回 <code>x</code> 的双曲反余弦值</td>
+</tr>
+<tr>
+<td><code>asin(x)</code></td>
+<td>返回 <code>x</code> 的反正弦值，以弧度表示</td>
+</tr>
+<tr>
+<td><code>asinh(x)</code></td>
+<td>返回 <code>x</code> 的双曲反正弦值</td>
+</tr>
+<tr>
+<td><code>atan(x)</code></td>
+<td>返回 <code>x</code> 的反正切值，值在 <code>-PI/2</code> 到 <code>PI/2</code> 之间（以弧度表示）</td>
+</tr>
+<tr>
+<td><code>atan2(y,x)</code></td>
+<td>返回其参数商的反正切值</td>
+</tr>
+<tr>
+<td><code>atanh(x)</code></td>
+<td>返回 <code>x</code> 的双曲反正切值</td>
+</tr>
+<tr>
+<td><code>crbt(x)</code></td>
+<td>返回 <code>x</code> 的立方根</td>
+</tr>
+<tr>
+<td><code>ceil(x)</code></td>
+<td>返回 <code>x</code> 向上舍入到最接近的整数</td>
+</tr>
+<tr>
+<td><code>cos(x)</code></td>
+<td>返回 <code>x</code> 的余弦值，以弧度表示</td>
+</tr>
+<tr>
+<td><code>cosh(x)</code></td>
+<td>返回 <code>x</code> 的双曲余弦值</td>
+</tr>
+<tr>
+<td><code>exp(x)</code></td>
+<td>返回 <code>x</code> 的指数值</td>
+</tr>
+<tr>
+<td><code>floor(x)</code></td>
+<td>返回 <code>x</code> 向下舍入到最接近的整数</td>
+</tr>
+<tr>
+<td><code>log(x)</code></td>
+<td>返回 <code>x</code> 的自然对数</td>
+</tr>
+<tr>
+<td><code>max(x,y,z,... n)</code></td>
+<td>返回最高的数值</td>
+</tr>
+<tr>
+<td><code>min(x,y,z,... n)</code></td>
+<td>返回最低的数值</td>
+</tr>
+<tr>
+<td><code>pow(x,y)</code></td>
+<td>返回 <code>x</code> 的 <code>y</code> 次方</td>
+</tr>
+<tr>
+<td><code>random()</code></td>
+<td>返回介于 <code>0</code> 和 <code>1</code> 之间的数字</td>
+</tr>
+<tr>
+<td><code>round(x)</code></td>
+<td>将数字四舍五入到最接近的整数</td>
+</tr>
+<tr>
+<td><code>sign(x)</code></td>
+<td>返回 <code>x</code> 的符号，负数为 <code>-1</code>，零为 <code>0</code>，正数为 <code>1</code></td>
+</tr>
+<tr>
+<td><code>sin(x)</code></td>
+<td>返回 <code>x</code> 的正弦值，以弧度表示</td>
+</tr>
+<tr>
+<td><code>sinh(x)</code></td>
+<td>返回 <code>x</code> 的双曲正弦值</td>
+</tr>
+<tr>
+<td><code>sqrt(x)</code></td>
+<td>返回 <code>x</code> 的平方根</td>
+</tr>
+<tr>
+<td><code>tan(x)</code></td>
+<td>返回角度的正切值</td>
+</tr>
+<tr>
+<td><code>tanh(x)</code></td>
+<td>返回 <code>x</code> 的双曲正切值</td>
+</tr>
+<tr>
+<td><code>trunc(x)</code></td>
+<td>返回数字 <code>x</code> 的整数部分</td>
+</tr>
+</tbody>
+</table>
+
+                <div class="tooltipstext-bottom"><p>To access maths method, one can call its methods directly with arguments wherever necessary.</p>
 <table>
 <thead>
 <tr>
@@ -766,64 +948,178 @@
 </tr>
 </tbody>
 </table>
-<h1 id="basic-operators">Basic Operators</h1>
-<p>In JavaScript, an operator is a symbol or keyword user to perform operations on operands (values and variables). For example:</p>
+</div>
+            </div>
+        <p></p>
+<h2 id="基本运算符">基本运算符</h2>
+<p>
+            </p><div class="tooltips">
+                <p>在 JavaScript 中，运算符是用于对操作数（值和变量）执行操作的符号或关键字。例如：</p>
+
+                <div class="tooltipstext-bottom"><p>In JavaScript, an operator is a symbol or keyword user to perform operations on operands (values and variables). For example:</p>
+</div>
+            </div>
+        <p></p>
 <pre><code class="lang-javascript"><span class="hljs-number">2</span> + <span class="hljs-number">3</span>; <span class="hljs-comment">//5</span>
 </code></pre>
-<p>Here <code>+</code> is an operator that performs addition, and <code>2</code> and <code>3</code> are operands.</p>
-<h2 id="types-of-operators">Types of Operators</h2>
-<p>There are various operators supported by JavaScript. They are as follows:</p>
+<p>
+            </p><div class="tooltips">
+                <p>这里 <code>+</code> 是一个执行加法的运算符，而 <code>2</code> 和 <code>3</code> 是操作数。</p>
+
+                <div class="tooltipstext-bottom"><p>Here <code>+</code> is an operator that performs addition, and <code>2</code> and <code>3</code> are operands.</p>
+</div>
+            </div>
+        <p></p>
+<h3 id="运算符类型">运算符类型</h3>
+<p>
+            </p><div class="tooltips">
+                <p>JavaScript 支持多种运算符，具体如下：</p>
 <ul>
-<li><a href="#arithmetic-operators">Arithmetic Operators</a></li>
-<li><a href="#assignment-operators">Assignment Operators</a></li>
-<li><a href="#Comparison-operators">Comparison Operators</a></li>
-<li><a href="#logical-operators">Logical Operators</a></li>
-<li><a href="#ternary-operators">Ternary Operators</a></li>
-<li><a href="#bitwise-operators">Bitwise Operators</a></li>
-<li><a href="#typeof-operators">`typeof`` Operators</a></li>
+<li><a href="#算术运算符">算术运算符</a></li>
+<li><a href="#赋值运算符">赋值运算符</a></li>
+<li><a href="#比较运算符">比较运算符</a></li>
+<li><a href="#逻辑运算符">逻辑运算符</a></li>
+<li><a href="#三元运算符">三元运算符</a></li>
+<li><a href="#位运算符">位运算符</a></li>
+<li><a href="#%60typeof%60%20运算符"><code>typeof</code> 运算符</a></li>
 </ul>
-<h3 id="arithmetic-operators">Arithmetic Operators</h3>
-<p>Arithmetic operators are used to perform mathematical operations on values. They include</p>
+
+                <div class="tooltipstext-bottom"><p>There are various operators supported by JavaScript. They are as follows:</p>
 <ul>
-<li><a href="#addition-operator">Addition (<code>+</code>) operator</a></li>
-<li><a href="#subtraction-operator">Subtraction (<code>-</code>) operator</a></li>
-<li><a href="#multiplication-operator">Multiplication (<code>*</code>) operator</a></li>
-<li><a href="#multiplication-operator">Division (<code>/</code>) operator </a></li>
-<li><a href="#remainder-operator">Remainder (<code>%</code>) operator</a></li>
+<li>Arithmetic Operators</li>
+<li>Assignment Operators</li>
+<li>Comparison Operators</li>
+<li>Logical Operators</li>
+<li>Ternary Operators</li>
+<li>Bitwise Operators</li>
+<li><code>typeof</code> Operators</li>
 </ul>
-<h4 id="addition-operator-">Addition Operator (<code>+</code>)</h4>
-<p>The addition operator adds two numbers together. For example:</p>
+</div>
+            </div>
+        <p></p>
+<h4 id="算术运算符">算术运算符</h4>
+<p>
+            </p><div class="tooltips">
+                <p>算术运算符用于对值执行数学运算。它们包括：</p>
+<ul>
+<li><a href="#加法运算符-">加法运算符 (+)</a></li>
+<li><a href="#减法运算符-">减法运算符 (-)</a></li>
+<li><a href="#乘法运算符-">乘法运算符 (*)</a></li>
+<li><a href="#除法运算符-">除法运算符 (/)</a></li>
+<li><a href="#取余运算符-">取余运算符 (%)</a></li>
+</ul>
+
+                <div class="tooltipstext-bottom"><p>Arithmetic operators are used to perform mathematical operations on values. They include</p>
+<ul>
+<li>Addition (<code>+</code>) operator</li>
+<li>Subtraction (<code>-</code>) operator</li>
+<li>Multiplication (<code>*</code>) operator</li>
+<li>Division (<code>/</code>) operator</li>
+<li>Remainder (<code>%</code>) operator</li>
+</ul>
+</div>
+            </div>
+        <p></p>
+<h5 id="加法运算符-">加法运算符 (<code>+</code>)</h5>
+<p>
+            </p><div class="tooltips">
+                <p>加法运算符将两个数字相加。例如：</p>
+
+                <div class="tooltipstext-bottom"><p>The addition operator adds two numbers together. For example:</p>
+</div>
+            </div>
+        <p></p>
 <pre><code class="lang-javascript"><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-number">1</span> + <span class="hljs-number">2</span>); <span class="hljs-comment">// 3</span>
 <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-number">1</span> + -<span class="hljs-number">2</span>); <span class="hljs-comment">// -1</span>
 </code></pre>
-<h4 id="subtraction-operator--">Subtraction operator (<code>-</code>)</h4>
-<p>The subtraction operator subtracts one number from another. For example:</p>
+<h5 id="减法运算符--">减法运算符 (<code>-</code>)</h5>
+<p>
+            </p><div class="tooltips">
+                <p>减法运算符用于从一个数字中减去另一个数字。例如：</p>
+
+                <div class="tooltipstext-bottom"><p>The subtraction operator subtracts one number from another. For example:</p>
+</div>
+            </div>
+        <p></p>
 <pre><code class="lang-javascript"><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-number">3</span> - <span class="hljs-number">2</span>); <span class="hljs-comment">// 1</span>
 <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-number">3</span> - -<span class="hljs-number">2</span>); <span class="hljs-comment">// 5</span>
 </code></pre>
-<h4 id="multiplication-operator-">Multiplication operator (<code>*</code>)</h4>
-<p>The multiplication operator multiplies two numbers. For example:</p>
+<h5 id="乘法运算符-">乘法运算符 (<code>*</code>)</h5>
+<p>
+            </p><div class="tooltips">
+                <p>乘法运算符将两个数字相乘。例如：</p>
+
+                <div class="tooltipstext-bottom"><p>The multiplication operator multiplies two numbers. For example:</p>
+</div>
+            </div>
+        <p></p>
 <pre><code class="lang-javascript"><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-number">2</span> * <span class="hljs-number">3</span>); <span class="hljs-comment">// 6</span>
 <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-number">2</span> * -<span class="hljs-number">3</span>); <span class="hljs-comment">// -6</span>
 </code></pre>
-<h4 id="division-operator-">Division operator (<code>/</code>)</h4>
-<p>The division operator divides one number by another. For example:</p>
+<h5 id="除法运算符-">除法运算符 (<code>/</code>)</h5>
+<p>
+            </p><div class="tooltips">
+                <p>除法运算符将一个数字除以另一个数字。例如：</p>
+
+                <div class="tooltipstext-bottom"><p>The division operator divides one number by another. For example:</p>
+</div>
+            </div>
+        <p></p>
 <pre><code class="lang-javascript"><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-number">6</span> / <span class="hljs-number">2</span>); <span class="hljs-comment">// 3</span>
 <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-number">6</span> / -<span class="hljs-number">2</span>); <span class="hljs-comment">// -3</span>
 </code></pre>
-<h4 id="remainder-operator-">Remainder operator (<code>%</code>)</h4>
-<p>The remainder operator returns the remainder of a division operation. For example:</p>
+<h5 id="取余运算符-">取余运算符 (<code>%</code>)</h5>
+<p>
+            </p><div class="tooltips">
+                <p>取余运算符返回除法运算的余数。例如：</p>
+
+                <div class="tooltipstext-bottom"><p>The remainder operator returns the remainder of a division operation. For example:</p>
+</div>
+            </div>
+        <p></p>
 <pre><code class="lang-javascript"><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-number">10</span> % <span class="hljs-number">3</span>); <span class="hljs-comment">// 1</span>
 <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-number">11</span> % <span class="hljs-number">3</span>); <span class="hljs-comment">// 2</span>
 <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-number">12</span> % <span class="hljs-number">3</span>); <span class="hljs-comment">// 0</span>
 </code></pre>
-<p>The JavaScript interpreter works from left to right. One can use parentheses just like in math to separate and group expressions: <code>c = (a / b) + d</code></p>
-<p></p><div class="alert alert-undefined hints-alert"><div class="hints-icon"><i class="undefined"></i></div><div class="hints-container"><p>JavaScript uses the <code>+</code> operator for both addition and concatenation. Numbers are added whereas strings are concatenated.</p>
-</div></div><p></p>
-<p>The term <code>NaN</code> is a reserved word indicating that a number is not a legal number, this arises when we perform arithmetic with a non-numeric string will result in <code>NaN</code> (Not a Number).</p>
+<p>
+            </p><div class="tooltips">
+                <p>JavaScript 解释器从左到右执行运算。可以像数学中一样使用括号来分隔和组合表达式：<code>c = (a / b) + d</code></p>
+
+                <div class="tooltipstext-bottom"><p>The JavaScript interpreter works from left to right. One can use parentheses just like in math to separate and group expressions: <code>c = (a / b) + d</code></p>
+</div>
+            </div>
+        <p></p>
+<p>
+            </p><div class="tooltips">
+                
+        <div class="alert alert-info hints-alert">
+            <div class="hints-icon"><i class="fa fa-info-circle"></i></div>
+            <div class="hints-container"><p>JavaScript 使用 <code>+</code> 运算符既用于加法也用于字符串连接。数字会相加，而字符串会连接。</p>
+</div>
+        </div>
+    
+                <div class="tooltipstext-bottom"><p>JavaScript uses the <code>+</code> operator for both addition and concatenation. Numbers are added whereas strings are concatenated.</p>
+</div>
+            </div>
+        <p></p>
+<p>
+            </p><div class="tooltips">
+                <p>术语 <code>NaN</code> 是一个保留字，表示一个数字不是合法数字。当我们对非数字字符串执行算术运算时，会得到 <code>NaN</code>（非数字）。</p>
+
+                <div class="tooltipstext-bottom"><p>The term <code>NaN</code> is a reserved word indicating that a number is not a legal number, this arises when we perform arithmetic with a non-numeric string will result in <code>NaN</code> (Not a Number).</p>
+</div>
+            </div>
+        <p></p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">let</span> x = <span class="hljs-number">100</span> / <span class="hljs-string">"10"</span>;
 </code></pre>
-<p>The <code>parseInt</code> method parses a value as a string and returns the first integer.</p>
+<p>
+            </p><div class="tooltips">
+                <p><code>parseInt</code> 方法会将值解析为字符串并返回第一个整数。</p>
+
+                <div class="tooltipstext-bottom"><p>The <code>parseInt</code> method parses a value as a string and returns the first integer.</p>
+</div>
+            </div>
+        <p></p>
 <pre><code class="lang-javascript"><span class="hljs-built_in">parseInt</span>(<span class="hljs-string">"10"</span>); <span class="hljs-comment">// 10</span>
 <span class="hljs-built_in">parseInt</span>(<span class="hljs-string">"10.00"</span>); <span class="hljs-comment">// 10</span>
 <span class="hljs-built_in">parseInt</span>(<span class="hljs-string">"10.33"</span>); <span class="hljs-comment">// 10</span>
@@ -832,7 +1128,14 @@
 <span class="hljs-built_in">parseInt</span>(<span class="hljs-string">"40 years"</span>); <span class="hljs-comment">//40</span>
 <span class="hljs-built_in">parseInt</span>(<span class="hljs-string">"He was 40"</span>); <span class="hljs-comment">//NaN</span>
 </code></pre>
-<p>In JavaScript, if we calculate a number outside the largest possible number it returns <code>Infinity</code>.</p>
+<p>
+            </p><div class="tooltips">
+                <p>在 JavaScript 中，如果我们计算的数字超出最大可能值，它将返回 <code>Infinity</code>（无穷大）。</p>
+
+                <div class="tooltipstext-bottom"><p>In JavaScript, if we calculate a number outside the largest possible number it returns <code>Infinity</code>.</p>
+</div>
+            </div>
+        <p></p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">let</span> x = <span class="hljs-number">2</span> / <span class="hljs-number">0</span>; <span class="hljs-comment">// Infinity</span>
 <span class="hljs-keyword">let</span> y = -<span class="hljs-number">2</span> / <span class="hljs-number">0</span>; <span class="hljs-comment">// -Infinity</span>
 </code></pre>
@@ -887,26 +1190,80 @@ let reminderResult = (num1 % num2);</pre>
 	    <a href="#" class="button size-2 action-solution">Solution</a>
 	</div>
 </div><p></p>
-<h3 id="assignment-operators">Assignment Operators</h3>
-<p>Assignment operators are used to assign values to variables or evaluates the assigned value. <em>Chaining the assignmentoperator is possible in order to assign a single value to multiple values.</em> They includes the assignment(<code>=</code>) operator and compound assignment operators like <code>+=</code>, <code>-=</code>, <code>*=</code> and <code>/=</code>.</p>
-<h4 id="assignment-operator"><code>=</code> (Assignment Operator)</h4>
-<p>This operator is used to assign the value on the right side to the variable on the left side.
-For examples:</p>
+<h4 id="赋值运算符">赋值运算符</h4>
+<p>
+            </p><div class="tooltips">
+                <p>赋值运算符用于将值赋给变量或计算被赋值的值。<em>可以链接赋值运算符，以将单个值赋给多个变量。</em> 它们包括赋值运算符 (<code>=</code>) 和复合赋值运算符，如 <code>+=</code>、<code>-=</code>、<code>*=</code> 和 <code>/=</code>。</p>
+
+                <div class="tooltipstext-bottom"><p>Assignment operators are used to assign values to variables or evaluates the assigned value. <em>Chaining the assignmentoperator is possible in order to assign a single value to multiple values.</em> They includes the assignment(<code>=</code>) operator and compound assignment operators like <code>+=</code>, <code>-=</code>, <code>*=</code> and <code>/=</code>.</p>
+</div>
+            </div>
+        <p></p>
+<h5 id="赋值运算符">赋值运算符(<code>=</code>)</h5>
+<p>
+            </p><div class="tooltips">
+                <p>该运算符用于将右侧的值赋给左侧的变量。 例如：</p>
+
+                <div class="tooltipstext-bottom"><p>This operator is used to assign the value on the right side to the variable on the left side. For examples:</p>
+</div>
+            </div>
+        <p></p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">let</span> x = <span class="hljs-number">10</span>; <span class="hljs-comment">//Assigns the value 10 to the variable x.</span>
 </code></pre>
-<h4 id="compound-assignment-operators">Compound Assignment Operators</h4>
-<p>These operator combine the arithmetic operation with the assignment operation. They are shortcuts for performing an operation and then assigning the result back to the variable.
-For example:</p>
-<h5 id="addition-assignment"><code>+=</code> (Addition Assignment)</h5>
-<p>It adds the value on the right side to the variable and assigns the result back to the variable.</p>
-<h5 id="-subtraction-assignment"><code>-=</code> (Subtraction Assignment)</h5>
-<p>It subtracts the value on the right side from the variable and assigns the result back to the variable.</p>
-<h5 id="-multiplication-assignment"><code>*=-</code> (Multiplication Assignment)</h5>
-<p>It multiplies the variable by the value on the right side and assigns the result back to the variable.</p>
-<h5 id="division-assignment"><code>/=</code> (Division Assignment)</h5>
-<p>It divides the variable by the value on the right side and assigns the result back to the variable.</p>
-<h5 id="modulesremainder-assignment"><code>%=</code> (Modules/Remainder Assignment)</h5>
-<p>It computes the remainder when the variable is divided by the value on the right side and assigns the result back to the variable.</p>
+<h5 id="复合赋值运算符">复合赋值运算符</h5>
+<p>
+            </p><div class="tooltips">
+                <p>这些运算符将算术运算与赋值操作结合在一起。它们是执行运算后将结果重新赋值给变量的快捷方式。例如：</p>
+
+                <div class="tooltipstext-bottom"><p>These operator combine the arithmetic operation with the assignment operation. They are shortcuts for performing an operation and then assigning the result back to the variable. For example:</p>
+</div>
+            </div>
+        <p></p>
+<h6 id="加法赋值">加法赋值(<code>+=</code>)</h6>
+<p>
+            </p><div class="tooltips">
+                <p>它将右侧的值加到变量上，并将结果重新赋值给该变量。</p>
+
+                <div class="tooltipstext-bottom"><p>It adds the value on the right side to the variable and assigns the result back to the variable.</p>
+</div>
+            </div>
+        <p></p>
+<h6 id="减法赋值-">减法赋值(<code>-=</code>)</h6>
+<p>
+            </p><div class="tooltips">
+                <p>它将右侧的值从变量中减去，并将结果重新赋值给该变量。</p>
+
+                <div class="tooltipstext-bottom"><p>It subtracts the value on the right side from the variable and assigns the result back to the variable.</p>
+</div>
+            </div>
+        <p></p>
+<h6 id="乘法赋值">乘法赋值(<code>*=</code>)</h6>
+<p>
+            </p><div class="tooltips">
+                <p>它将变量乘以右侧的值，并将结果重新赋值给该变量。</p>
+
+                <div class="tooltipstext-bottom"><p>It multiplies the variable by the value on the right side and assigns the result back to the variable.</p>
+</div>
+            </div>
+        <p></p>
+<h6 id="除法赋值">除法赋值(<code>/=</code>)</h6>
+<p>
+            </p><div class="tooltips">
+                <p>它将变量除以右侧的值，并将结果重新赋值给该变量。</p>
+
+                <div class="tooltipstext-bottom"><p>It divides the variable by the value on the right side and assigns the result back to the variable.</p>
+</div>
+            </div>
+        <p></p>
+<h6 id="取模余数赋值">取模/余数赋值(<code>%=</code>)</h6>
+<p>
+            </p><div class="tooltips">
+                <p>它计算变量除以右侧值后的余数，并将结果重新赋值给该变量。</p>
+
+                <div class="tooltipstext-bottom"><p>It computes the remainder when the variable is divided by the value on the right side and assigns the result back to the variable.</p>
+</div>
+            </div>
+        <p></p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">let</span> a = <span class="hljs-number">10</span>;
 a += <span class="hljs-number">5</span>; <span class="hljs-comment">// Equivalent to a = a + 5; (a becomes 15)</span>
 a -= <span class="hljs-number">3</span>; <span class="hljs-comment">// Equivalent to a = a - 3; (a becomes 12)</span>
@@ -914,107 +1271,276 @@ a *= <span class="hljs-number">2</span>; <span class="hljs-comment">// Equivalen
 a /= <span class="hljs-number">4</span>; <span class="hljs-comment">// Equivalent to a = a / 4; (a becomes 6)</span>
 a %= <span class="hljs-number">5</span>; <span class="hljs-comment">// Equivalent to a = a % 5; (a becomes 1)</span>
 </code></pre>
-<h3 id="comparison-operators">Comparison Operators</h3>
-<p>Comparison operators are used to compare two values or expressions and return a <code>boolean</code> result, which is either <code>true</code> or <code>false</code>. These operators are commonly used in conditional statements to make decision or evaluate conditions.</p>
-<h4 id="equal-to-">Equal to (<code>==</code>)</h4>
-<p>This operator checks if the values on the left and right sides are equal. If they are equal, it returns <code>true</code> otherwise, it returns false. It does not consider data types.</p>
+<h4 id="比较运算符">比较运算符</h4>
+<p>
+            </p><div class="tooltips">
+                <p>比较运算符用于比较两个值或表达式，并返回一个 boolean 结果，即 <code>true</code> 或 <code>false</code>。这些运算符通常用于条件语句中，以进行决策或评估条件。</p>
+
+                <div class="tooltipstext-bottom"><p>Comparison operators are used to compare two values or expressions and return a <code>boolean</code> result, which is either <code>true</code> or <code>false</code>. These operators are commonly used in conditional statements to make decision or evaluate 
+conditions.</p>
+</div>
+            </div>
+        <p></p>
+<h5 id="等于-">等于 (<code>==</code>)</h5>
+<p>
+            </p><div class="tooltips">
+                <p>此运算符检查左右两边的值是否相等。如果它们相等，则返回 <code>true</code>，否则返回 <code>false</code>。它不考虑数据类型。</p>
+
+                <div class="tooltipstext-bottom"><p>This operator checks if the values on the left and right sides are equal. If they are equal, it returns <code>true</code> otherwise, it returns false. It does not consider data types.</p>
+</div>
+            </div>
+        <p></p>
 <pre><code class="lang-javascript"><span class="hljs-number">5</span> == <span class="hljs-number">5</span>; <span class="hljs-comment">// true</span>
 <span class="hljs-string">"5"</span> == <span class="hljs-number">5</span>; <span class="hljs-comment">// true (implicit type conversion)</span>
 </code></pre>
-<h4 id="not-equal-to-">Not equal to (<code>!=</code>)</h4>
-<p>This operator checks if the values on the left and right sides are not equal. If they are not equal, it returns <code>true</code> otherwise, it returns <code>false</code>.</p>
+<h5 id="不等于-">不等于 (<code>!=</code>)</h5>
+<p>
+            </p><div class="tooltips">
+                <p>此运算符检查左右两边的值是否不相等。如果它们不相等，则返回 <code>true</code>，否则返回 <code>false</code>。</p>
+
+                <div class="tooltipstext-bottom"><p>This operator checks if the values on the left and right sides are not equal. If they are not equal, it returns <code>true</code> otherwise, it returns <code>false</code>.</p>
+</div>
+            </div>
+        <p></p>
 <pre><code class="lang-javascript"><span class="hljs-number">5</span> != <span class="hljs-number">3</span>; <span class="hljs-comment">// true</span>
 <span class="hljs-string">"5"</span> != <span class="hljs-number">5</span>; <span class="hljs-comment">// false (implicit type conversion)</span>
 </code></pre>
-<h4 id="strict-equal-to-">Strict Equal to (<code>===</code>)</h4>
-<p>This operator checks if the values on the left and right sides are equal and have the same data type. If both the value and data type match, it returns <code>true</code> otherwise, it returns <code>false</code>.</p>
+<h5 id="严格等于-">严格等于 (<code>===</code>)</h5>
+<p>
+            </p><div class="tooltips">
+                <p>此运算符检查左右两边的值是否相等并且数据类型是否相同。如果值和数据类型都匹配，则返回 <code>true</code>，否则返回 <code>false</code>。</p>
+
+                <div class="tooltipstext-bottom"><p>This operator checks if the values on the left and right sides are equal and have the same data type. If both the value and data type match, it returns <code>true</code> otherwise, it returns <code>false</code>.</p>
+</div>
+            </div>
+        <p></p>
 <pre><code class="lang-javascript"><span class="hljs-number">5</span> === <span class="hljs-number">5</span>; <span class="hljs-comment">// true</span>
 <span class="hljs-string">"5"</span> === <span class="hljs-number">5</span>; <span class="hljs-comment">// false (different data types)</span>
 </code></pre>
-<h4 id="strict-not-equal-to-">Strict Not equal to (<code>!==</code>)</h4>
-<p>This operator checks if the values on the left and right sides are not equal or have different data types. If they are not equal or have different data types, it returns <code>true</code> otherwise, it returns <code>false</code>.</p>
+<h5 id="严格不等于-">严格不等于 (<code>!==</code>)</h5>
+<p>
+            </p><div class="tooltips">
+                <p>此运算符检查左右两边的值是否不相等或数据类型是否不同。如果它们不相等或数据类型不同，则返回 <code>true</code>，否则返回 <code>false</code>。</p>
+
+                <div class="tooltipstext-bottom"><p>This operator checks if the values on the left and right sides are not equal or have different data types. If they are not equal or have different data types, it returns <code>true</code> otherwise, it returns <code>false</code>.</p>
+</div>
+            </div>
+        <p></p>
 <pre><code class="lang-javascript"><span class="hljs-number">5</span> !== <span class="hljs-string">"5"</span>; <span class="hljs-comment">// true (different data types)</span>
 <span class="hljs-number">5</span> !== <span class="hljs-number">5</span>; <span class="hljs-comment">// false</span>
 </code></pre>
-<h4 id="greater-than-">Greater than (<code>&gt;</code>)</h4>
-<p>This operator checks if the value on the left is greater than the value on the right. If the left value is greater, it returns <code>true</code> otherwise, it returns <code>false</code>.</p>
+<h5 id="大于-">大于 (<code>&gt;</code>)</h5>
+<p>
+            </p><div class="tooltips">
+                <p>此运算符检查左边的值是否大于右边的值。如果左边的值更大，则返回 <code>true</code>，否则返回 <code>false</code>。</p>
+
+                <div class="tooltipstext-bottom"><p>This operator checks if the value on the left is greater than the value on the right. If the left value is greater, it returns <code>true</code> otherwise, it returns <code>false</code>.</p>
+</div>
+            </div>
+        <p></p>
 <pre><code class="lang-javascript"><span class="hljs-number">8</span> &gt; <span class="hljs-number">5</span>; <span class="hljs-comment">// true</span>
 <span class="hljs-number">3</span> &gt; <span class="hljs-number">10</span>; <span class="hljs-comment">// false</span>
 </code></pre>
-<h4 id="less-than-">Less than (<code>&lt;</code>)</h4>
-<p>This operator checks if the value on the left is less than the value on the right. If the left value is less, it returns <code>true</code> otherwise, it returns <code>false</code>.</p>
+<h5 id="小于-">小于 (<code>&lt;</code>)</h5>
+<p>
+            </p><div class="tooltips">
+                <p>此运算符检查左边的值是否小于右边的值。如果左边的值更小，则返回 <code>true</code>，否则返回 <code>false</code>。</p>
+
+                <div class="tooltipstext-bottom"><p>This operator checks if the value on the left is less than the value on the right. If the left value is less, it returns <code>true</code> otherwise, it returns <code>false</code>.</p>
+</div>
+            </div>
+        <p></p>
 <pre><code class="lang-javascript"><span class="hljs-number">3</span> &lt; <span class="hljs-number">5</span>; <span class="hljs-comment">// true</span>
 <span class="hljs-number">8</span> &lt; <span class="hljs-number">2</span>; <span class="hljs-comment">// false</span>
 </code></pre>
-<h4 id="greater-than-or-equal-to">Greater than or equal to(<code>&gt;=</code>)</h4>
-<p>This operator checks if the value on the left is greater than or equal to the value on the right. If the left value is greater or equal, it returns <code>true</code> otherwise, it returns <code>false</code>.</p>
+<h5 id="大于或等于-">大于或等于 (<code>&gt;=)</code></h5>
+<p>
+            </p><div class="tooltips">
+                <p>此运算符检查左边的值是否大于或等于右边的值。如果左边的值大于或等于，则返回 <code>true</code>，否则返回 <code>false</code>。</p>
+
+                <div class="tooltipstext-bottom"><p>This operator checks if the value on the left is greater than or equal to the value on the right. If the left value is greater or equal, it returns <code>true</code> otherwise, it returns <code>false</code>.</p>
+</div>
+            </div>
+        <p></p>
 <pre><code class="lang-javascript"><span class="hljs-number">8</span> &gt;= <span class="hljs-number">5</span>; <span class="hljs-comment">// true</span>
 <span class="hljs-number">3</span> &gt;= <span class="hljs-number">8</span>; <span class="hljs-comment">// false</span>
 </code></pre>
-<h4 id="less-than-or-equal-to-">Less than or equal to (<code>&gt;=</code>)</h4>
-<p>This operator checks if the value on the left is less than or equal to the value on the right. If the left value is less or equal, it returns <code>true</code> otherwise, it returns <code>false</code>.</p>
+<h5 id="小于或等于-">小于或等于 (<code>&lt;=</code>)</h5>
+<p>
+            </p><div class="tooltips">
+                <p>此运算符检查左边的值是否小于或等于右边的值。如果左边的值小于或等于，则返回 <code>true</code>，否则返回 <code>false</code>。</p>
+
+                <div class="tooltipstext-bottom"><p>This operator checks if the value on the left is less than or equal to the value on the right. If the left value is less or equal, it returns <code>true</code> otherwise, it returns <code>false</code>.</p>
+</div>
+            </div>
+        <p></p>
 <pre><code class="lang-javascript"><span class="hljs-number">3</span> &lt;= <span class="hljs-number">5</span>; <span class="hljs-comment">// true</span>
 <span class="hljs-number">8</span> &lt;= <span class="hljs-number">2</span>; <span class="hljs-comment">// false</span>
 </code></pre>
-<h3 id="logical-operators">Logical Operators</h3>
-<p>Logical operators are used to perform logical operations on Boolean values or expressions. These operators allow you to combine or manipulate Boolean values to make decisions or evaluate complex conditions.</p>
-<h4 id="logical-and-">Logical AND (<code>&amp;&amp;</code>)</h4>
-<p>The logical AND operator returns <code>true</code> if both operands are <code>true</code>. If at least one of the operands is <code>false</code>, it returns <code>false</code>.</p>
+<h4 id="逻辑运算符">逻辑运算符</h4>
+<p>
+            </p><div class="tooltips">
+                <p>逻辑运算符用于对布尔值或表达式执行逻辑运算。这些运算符允许您组合或操作布尔值，以做出决策或评估复杂的条件。</p>
+
+                <div class="tooltipstext-bottom"><p>Logical operators are used to perform logical operations on Boolean values or expressions. These operators allow you to combine or manipulate Boolean values to make decisions or evaluate complex conditions.</p>
+</div>
+            </div>
+        <p></p>
+<h5 id="逻辑与-">逻辑与 (<code>&amp;&amp;</code>)</h5>
+<p>
+            </p><div class="tooltips">
+                <p>逻辑与运算符在两个操作数都为 true 时返回 true。如果至少有一个操作数为 <code>false</code>，则返回 <code>false</code>。</p>
+
+                <div class="tooltipstext-bottom"><p>The logical AND operator returns <code>true</code> if both operands are <code>true</code>. If at least one of the operands is <code>false</code>, it returns <code>false</code>.</p>
+</div>
+            </div>
+        <p></p>
 <pre><code class="lang-javascript"><span class="hljs-literal">true</span> &amp;&amp; <span class="hljs-literal">true</span>; <span class="hljs-comment">// true</span>
 <span class="hljs-literal">true</span> &amp;&amp; <span class="hljs-literal">false</span>; <span class="hljs-comment">// false</span>
 <span class="hljs-literal">false</span> &amp;&amp; <span class="hljs-literal">true</span>; <span class="hljs-comment">// false</span>
 <span class="hljs-literal">false</span> &amp;&amp; <span class="hljs-literal">false</span>; <span class="hljs-comment">// false</span>
 </code></pre>
-<h4 id="logical-or-">Logical OR (<code>||</code>)</h4>
-<p>The logical OR operator returns <code>true</code> if at least one of the operands is <code>true</code>. It returns <code>false</code> only if both operands are <code>false</code>.</p>
+<h5 id="逻辑或-">逻辑或 (<code>||</code>)</h5>
+<p>
+            </p><div class="tooltips">
+                <p>逻辑或运算符在至少有一个操作数为 <code>true</code> 时返回 <code>true</code>。只有当两个操作数都为 <code>false</code> 时才返回 <code>false</code>。</p>
+
+                <div class="tooltipstext-bottom"><p>The logical OR operator returns <code>true</code> if at least one of the operands is <code>true</code>. It returns <code>false</code> only if both operands are <code>false</code>.</p>
+</div>
+            </div>
+        <p></p>
 <pre><code class="lang-javascript"><span class="hljs-literal">true</span> || <span class="hljs-literal">true</span>; <span class="hljs-comment">// true</span>
 <span class="hljs-literal">true</span> || <span class="hljs-literal">false</span>; <span class="hljs-comment">// true</span>
 <span class="hljs-literal">false</span> || <span class="hljs-literal">true</span>; <span class="hljs-comment">// true</span>
 <span class="hljs-literal">false</span> || <span class="hljs-literal">false</span>; <span class="hljs-comment">// false</span>
 </code></pre>
-<h4 id="logical-not-">Logical NOT (<code>!</code>)</h4>
-<p>The logical NOT operator negates the value of an operand. It returns <code>true</code> if the operand is <code>false</code>, and it returns <code>false</code> if the operand is <code>true</code>.</p>
+<h5 id="逻辑非-">逻辑非 (<code>!</code>)</h5>
+<p>
+            </p><div class="tooltips">
+                <p>逻辑非运算符对操作数的值进行取反。如果操作数为 false，则返回 true；如果操作数为 <code>true</code>，则返回 <code>false</code>。</p>
+
+                <div class="tooltipstext-bottom"><p>The logical NOT operator negates the value of an operand. It returns <code>true</code> if the operand is <code>false</code>, and it returns <code>false</code> if the operand is <code>true</code>.</p>
+</div>
+            </div>
+        <p></p>
 <pre><code class="lang-javascript">!<span class="hljs-literal">true</span>; <span class="hljs-comment">// false</span>
 !<span class="hljs-literal">false</span>; <span class="hljs-comment">// true</span>
 </code></pre>
-<h3 id="ternary-operators">Ternary Operators</h3>
-<p>Ternary operator has three operands. It is the simplified operator of if/else.</p>
-<p>It is the short form of the <code>if-else</code> condition.</p>
-<p><strong>Syntax</strong></p>
+<h4 id="三元运算符">三元运算符</h4>
+<p>
+            </p><div class="tooltips">
+                <p>三元运算符有三个操作数。它是 <code>if/else</code> 的简化形式。</p>
+
+                <div class="tooltipstext-bottom"><p>Ternary operator has three operands. It is the simplified operator of <code>if/else</code>.</p>
+</div>
+            </div>
+        <p></p>
+<p>
+            </p><div class="tooltips">
+                <p>这是 <code>if-else</code> 条件的简写形式。</p>
+
+                <div class="tooltipstext-bottom"><p>It is the short form of the <code>if-else</code> condition.</p>
+</div>
+            </div>
+        <p></p>
+<p>
+            </p><div class="tooltips">
+                <p><strong>语法</strong></p>
+
+                <div class="tooltipstext-bottom"><p><strong>Syntax</strong></p>
+</div>
+            </div>
+        <p></p>
 <pre><code class="lang-js">Y =  ? A : B
 <span class="hljs-title class_">If</span> the condition is <span class="hljs-literal">true</span> then Y = A otherwise Y = B
 </code></pre>
 <pre><code class="lang-javascript"><span class="hljs-keyword">let</span> isEven = <span class="hljs-number">8</span> % <span class="hljs-number">2</span> === <span class="hljs-number">0</span> ? <span class="hljs-string">"Even"</span> : <span class="hljs-string">"Odd"</span>;
 <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(isEven); <span class="hljs-comment">// "Even"</span>
 </code></pre>
-<h3 id="bitwise-operators">Bitwise Operators</h3>
-<p>Bitwise operators are used to manipulate individual bits of binary numbers. They perform operations at the bit level, which is especially useful in situations where you need to control or analyze low-level data.</p>
-<h4 id="bitwise-and-">Bitwise AND (<code>&amp;</code>)</h4>
-<p>This operator compares each bit of two numbers and returns 1 for each bit that is 1 in both numbers. All other bits are set to 0.</p>
+<h4 id="位运算符">位运算符</h4>
+<p>
+            </p><div class="tooltips">
+                <p>位运算符用于操作二进制数字的单个位。它们在位级别上执行操作，在需要控制或分析低级数据的情况下非常有用。</p>
+
+                <div class="tooltipstext-bottom"><p>Bitwise operators are used to manipulate individual bits of binary numbers. They perform operations at the bit level,</p>
+</div>
+            </div>
+        which is especially useful in situations where you need to control or analyze low-level data.<p></p>
+<h5 id="位与-">位与 (<code>&amp;</code>)</h5>
+<p>
+            </p><div class="tooltips">
+                <p>该运算符比较两个数字的每一位，只有当两个数字的对应位都是 1 时返回 1。其他所有位都设置为 0。</p>
+
+                <div class="tooltipstext-bottom"><p>This operator compares each bit of two numbers and returns 1 for each bit that is 1 in both numbers. All other bits are set to 0.</p>
+</div>
+            </div>
+        <p></p>
 <pre><code class="lang-javascript"><span class="hljs-number">1010</span> &amp; <span class="hljs-number">1100</span>; <span class="hljs-comment">// 1000</span>
 </code></pre>
-<h4 id="bitwise-or-">Bitwise OR (<code>|</code>)</h4>
-<p>This operator compares each bit of two numbers and returns 1 for each bit that is 1 in at least one of the numbers.</p>
+<h5 id="位或-">位或 (<code>|</code>)</h5>
+<p>
+            </p><div class="tooltips">
+                <p>该运算符比较两个数字的每一位，只要至少有一个数字的对应位是 1，就返回 1。</p>
+
+                <div class="tooltipstext-bottom"><p>This operator compares each bit of two numbers and returns 1 for each bit that is 1 in at least one of the numbers.</p>
+</div>
+            </div>
+        <p></p>
 <pre><code class="lang-javascript"><span class="hljs-number">1010</span> | <span class="hljs-number">1100</span>; <span class="hljs-comment">// 1110</span>
 </code></pre>
-<h4 id="bitwise-xor-">Bitwise XOR (<code>^</code>)</h4>
-<p>This operator compares each bit of two numbers and returns 1 for each bit that is 1 in one number but not in both.</p>
+<h5 id="位异或-">位异或 (<code>^</code>)</h5>
+<p>
+            </p><div class="tooltips">
+                <p>该运算符比较两个数字的每一位，如果某一位在一个数字中是 1 而在另一个数字中不是，则返回 1。</p>
+
+                <div class="tooltipstext-bottom"><p>This operator compares each bit of two numbers and returns 1 for each bit that is 1 in one number but not in both.</p>
+</div>
+            </div>
+        <p></p>
 <pre><code class="lang-javascript"><span class="hljs-number">1010</span> ^ <span class="hljs-number">1100</span>; <span class="hljs-comment">// 0110</span>
 </code></pre>
-<h4 id="bitwise-not--">Bitwise NOT (<code>-</code>)</h4>
-<p>This operator inverts (flips) all the bits of a number. It changes each 0 to 1 and each 1 to 0.</p>
+<h5 id="位非-">位非 (<code>~</code>)</h5>
+<p>
+            </p><div class="tooltips">
+                <p>该运算符翻转一个数字的所有位。它将每个 0 变为 1，每个 1 变为 0。</p>
+
+                <div class="tooltipstext-bottom"><p>This operator inverts (flips) all the bits of a number. It changes each 0 to 1 and each 1 to 0.</p>
+</div>
+            </div>
+        <p></p>
 <pre><code class="lang-javascript">~<span class="hljs-number">1010</span>; <span class="hljs-comment">// 0101</span>
 </code></pre>
-<h4 id="left-shift-">Left Shift (<code>&lt;&lt;</code>)</h4>
-<p>This operator shifts the bits of a number to the left by a specified number of positions, filling the shifted-in positions with 0.</p>
+<h5 id="左移-">左移 (<code>&lt;&lt;</code>)</h5>
+<p>
+            </p><div class="tooltips">
+                <p>该运算符将一个数字的位向左移动指定的位数，用 0 填充移入的位。</p>
+
+                <div class="tooltipstext-bottom"><p>This operator shifts the bits of a number to the left by a specified number of positions, filling the shifted-in positions with 0.</p>
+</div>
+            </div>
+        <p></p>
 <pre><code class="lang-javascript"><span class="hljs-number">1010</span> &lt;&lt; <span class="hljs-number">2</span>; <span class="hljs-comment">// 101000 (shifted left by 2 positions)</span>
 </code></pre>
-<h4 id="right-shift-">Right Shift (<code>&gt;&gt;</code>)</h4>
-<p>This operator shifts the bits of a number to the right by a specified number of positions. The shifted-in positions are filled based on the leftmost bit (sign bit).</p>
+<h5 id="右移-">右移 (<code>&gt;&gt;</code>)</h5>
+<p>
+            </p><div class="tooltips">
+                <p>该运算符将一个数字的位向右移动指定的位数。移入的位根据最左边的位（符号位）填充。</p>
+
+                <div class="tooltipstext-bottom"><p>This operator shifts the bits of a number to the right by a specified number of positions. The shifted-in positions are filled based on the leftmost bit (sign bit).</p>
+</div>
+            </div>
+        <p></p>
 <pre><code class="lang-javascript"><span class="hljs-number">1010</span> &gt;&gt; <span class="hljs-number">2</span>; <span class="hljs-comment">// 0010 (shifted right by 2 positions)</span>
 </code></pre>
-<h3 id="typeof-operators"><code>typeof</code> Operators</h3>
-<p>It returns the operand type, The possible types that exist in javascript are undefined, Object, boolean, number, string, symbol, and function.</p>
+<h4 id="typeof-运算符"><code>typeof</code> 运算符</h4>
+<p>
+            </p><div class="tooltips">
+                <p>它返回操作数的类型，JavaScript 中可能存在的类型包括：<code>undefined</code>、<code>Object</code>、<code>boolean</code>、<code>number</code>、<code>string</code>、<code>symbol</code> 和 <code>function</code>。</p>
+
+                <div class="tooltipstext-bottom"><p>It returns the operand type, The possible types that exist in javascript are <code>undefined</code>, <code>Object</code>, <code>boolean</code>, <code>number</code>, <code>string</code>, <code>symbol</code>, and <code>function</code>.</p>
+</div>
+            </div>
+        <p></p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">let</span> value1 = <span class="hljs-number">42</span>;
 <span class="hljs-keyword">let</span> value2 = <span class="hljs-string">"Hello, World!"</span>;
 <span class="hljs-keyword">let</span> value3 = <span class="hljs-literal">true</span>;
@@ -1025,8 +1551,15 @@ a %= <span class="hljs-number">5</span>; <span class="hljs-comment">// Equivalen
 <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-keyword">typeof</span> value3); <span class="hljs-comment">// "boolean"</span>
 <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-keyword">typeof</span> value4); <span class="hljs-comment">// "object" (Note: `typeof null` returns "object" due to historical reasons)</span>
 </code></pre>
-<h1 id="advanced-operators">Advanced Operators</h1>
-<p>When operators are put together without parenthesis, the order in which they are applied is determined by the <em>precedence</em> of the operators. Multiplication <code>(*)</code> and division <code>(/)</code> has higher precedence than addition <code>(+)</code> and subtraction <code>(-)</code>.</p>
+<h2 id="高级运算符">高级运算符</h2>
+<p>
+            </p><div class="tooltips">
+                <p>当运算符没有括号时，它们的应用顺序由运算符的优先级决定。乘法 (<code>*</code>) 和除法 (<code>/</code>) 的优先级高于加法 (<code>+</code>) 和减法 (<code>-</code>)。</p>
+
+                <div class="tooltipstext-bottom"><p>When operators are put together without parenthesis, the order in which they are applied is determined by the <em>precedence</em> of the operators. Multiplication <code>(*)</code> and division <code>(/)</code> has higher precedence than addition <code>(+)</code> and subtraction <code>(-)</code>.</p>
+</div>
+            </div>
+        <p></p>
 <pre><code class="lang-javascript"><span class="hljs-comment">// multiplication is done first, which is then followed by addition</span>
 <span class="hljs-keyword">let</span> x = <span class="hljs-number">100</span> + <span class="hljs-number">50</span> * <span class="hljs-number">3</span>; <span class="hljs-comment">// 250</span>
 <span class="hljs-comment">// with parenthesis operations inside the parenthesis are computed first</span>
@@ -1034,43 +1567,102 @@ a %= <span class="hljs-number">5</span>; <span class="hljs-comment">// Equivalen
 <span class="hljs-comment">// operations with the same precedences are computed from left to right</span>
 <span class="hljs-keyword">let</span> z = <span class="hljs-number">100</span> / <span class="hljs-number">50</span> * <span class="hljs-number">3</span>;
 </code></pre>
-<p>Several advanced math operators can use be used while writing program. Here is a list of some of the main advanced math operators:</p>
-<ul>
+<p>
+            </p><div class="tooltips">
+                <p>在编写程序时，可以使用一些高级数学运算符。以下是一些主要的高级数学运算符：</p>
+
+                <div class="tooltipstext-bottom"><p>Several advanced math operators can use be used while writing program. Here is a list of some of the main advanced math operators:</p>
+</div>
+            </div>
+        <p></p>
+<p>
+            </p><div class="tooltips">
+                <ul>
+<li><strong>取模运算符 (<code>%</code>)</strong>：取模运算符返回除法运算的余数。例如：</li>
+</ul>
+
+                <div class="tooltipstext-bottom"><ul>
 <li><strong>Modulo operator (<code>%</code>)</strong>: The modulo operator returns the remainder of a division operation. For example:</li>
 </ul>
+</div>
+            </div>
+        <p></p>
 <pre><code class="lang-javascript"><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-number">10</span> % <span class="hljs-number">3</span>); <span class="hljs-comment">// 1</span>
 <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-number">11</span> % <span class="hljs-number">3</span>); <span class="hljs-comment">// 2</span>
 <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-number">12</span> % <span class="hljs-number">3</span>); <span class="hljs-comment">// 0</span>
 </code></pre>
-<ul>
-<li><strong>Exponentiation operator (* *)</strong>: The exponentiation operator raises a number to the power of another number. It is a newer operator and is not supported in all browsers, so you may need to use the <code>Math.pow</code> function instead. For example:</li>
+<p>
+            </p><div class="tooltips">
+                <ul>
+<li><strong>幂运算符</strong> (<code>**</code>)：幂运算符将一个数提升到另一个数的幂次方。这是一个较新的运算符，不是所有浏览器都支持，因此可能需要使用 Math.pow 函数来替代。例如：</li>
 </ul>
+
+                <div class="tooltipstext-bottom"><ul>
+<li><strong>Exponentiation operator</strong> (<code>**</code>): The exponentiation operator raises a number to the power of another number. It is a newer operator and is not supported in all browsers, so you may need to use the <code>Math.pow</code> function instead. For example:</li>
+</ul>
+</div>
+            </div>
+        <p></p>
 <pre><code class="lang-javascript"><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-number">2</span> ** <span class="hljs-number">3</span>); <span class="hljs-comment">// 8</span>
 <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-number">3</span> ** <span class="hljs-number">2</span>); <span class="hljs-comment">// 9</span>
 <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-number">4</span> ** <span class="hljs-number">3</span>); <span class="hljs-comment">// 64</span>
 </code></pre>
-<ul>
+<p>
+            </p><div class="tooltips">
+                <ul>
+<li><strong>递增运算符 (<code>++</code>)</strong>：递增运算符将一个数加一。它可以作为前缀（在操作数前）或后缀（在操作数后）使用。例如：</li>
+</ul>
+
+                <div class="tooltipstext-bottom"><ul>
 <li><strong>Increment operator (<code>++</code>)</strong>: The increment operator increments a number by one. It can be used as a prefix (before the operand) or a postfix (after the operand). For example:</li>
 </ul>
+</div>
+            </div>
+        <p></p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">let</span> x = <span class="hljs-number">1</span>;
 x++; <span class="hljs-comment">// x is now 2</span>
 ++x; <span class="hljs-comment">// x is now 3</span>
 </code></pre>
-<ul>
+<p>
+            </p><div class="tooltips">
+                <ul>
+<li><strong>递减运算符 (<code>--</code>)</strong>：递减运算符将一个数减一。它可以作为前缀（在操作数前）或后缀（在操作数后）使用。例如：</li>
+</ul>
+
+                <div class="tooltipstext-bottom"><ul>
 <li><strong>Decrement operator (<code>--</code>)</strong>: The decrement operator decrements a number by one. It can be used as a prefix (before the operand) or a postfix (after the operand). For example:</li>
 </ul>
+</div>
+            </div>
+        <p></p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">let</span> y = <span class="hljs-number">3</span>;
 y--; <span class="hljs-comment">// y is now 2</span>
 --y; <span class="hljs-comment">// y is now 1</span>
 </code></pre>
-<ul>
+<p>
+            </p><div class="tooltips">
+                <ul>
+<li><strong>Math 对象</strong>：<code>Math</code> 对象是 JavaScript 中的内置对象，它提供了数学函数和常量。您可以使用 <code>Math</code> 对象的方法执行高级数学操作，例如求一个数的平方根、计算一个数的正弦值或生成一个随机数。例如：</li>
+</ul>
+
+                <div class="tooltipstext-bottom"><ul>
 <li><strong>Math object</strong>: The <code>Math</code> object is a built-in object in JavaScript that provides mathematical functions and constants. You can use the methods of the <code>Math</code> object to perform advanced math operations, such as finding the square root of a number, calculating the sine of a number, or generating a random number. For example:</li>
 </ul>
+</div>
+            </div>
+        <p></p>
 <pre><code class="lang-javascript"><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-title class_">Math</span>.<span class="hljs-title function_">sqrt</span>(<span class="hljs-number">9</span>)); <span class="hljs-comment">// 3</span>
 <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-title class_">Math</span>.<span class="hljs-title function_">sin</span>(<span class="hljs-number">0</span>)); <span class="hljs-comment">// 0</span>
 <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-title class_">Math</span>.<span class="hljs-title function_">random</span>()); <span class="hljs-comment">// a random number between 0 and 1</span>
 </code></pre>
-<p>These are just a few examples of the advanced math operators and functions available in JavaScript. There are many more that you can use to perform advanced math operations while writing program.</p>
+<p>
+            </p><div class="tooltips">
+                <p>这些只是 JavaScript 中可用的高级数学运算符和函数的几个例子。在编写程序时，您可以使用更多其他运算符来执行高级数学操作。</p>
+
+                <div class="tooltipstext-bottom"><p>These are just a few examples of the advanced math operators and functions available in JavaScript. There are many more that you can use to perform advanced math operations while writing program.</p>
+</div>
+            </div>
+        <p></p>
 <p></p><div class="exercise">
 	<div class="header">Exercise</div>
 	<div class="alert alert-success">
@@ -1123,14 +1715,36 @@ const result4 = num1 // 11</pre>
 	    <a href="#" class="button size-2 action-solution">Solution</a>
 	</div>
 </div><p></p>
-<h2 id="nullish-coalescing-operator-">Nullish coalescing operator '??'</h2>
-<p>The <code>nullish</code> coalescing operator returns the first argument if it's not <code>null/undefined</code>, else the second one. It is written as two question marks <code>??</code>. The result of <code>x ?? y</code> is:</p>
+<h3 id="空值合并运算符-">空值合并运算符 <code>??</code></h3>
+<p>
+            </p><div class="tooltips">
+                <p><code>nullish</code> 合并运算符在第一个参数不是 <code>null/undefined</code> 时返回该参数，否则返回第二个参数。它用两个问号 <code>??</code> 表示。<code>x ?? y</code> 的结果是：</p>
+<ul>
+<li>如果 <code>x</code> 已定义，则返回 <code>x</code>，</li>
+<li>如果 <code>y</code> 未定义，则返回 <code>y</code>。</li>
+</ul>
+
+                <div class="tooltipstext-bottom"><p>The <code>nullish</code> coalescing operator returns the first argument if it's not <code>null/undefined</code>, else the second one. It is written as two question marks <code>??</code>. The result of <code>x ?? y</code> is:</p>
 <ul>
 <li>if <code>x</code> is defined, then <code>x</code>,</li>
 <li>if <code>y</code> isn’t defined, then <code>y</code>.</li>
 </ul>
-<p></p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle"></i></div><div class="hints-container"><p>It's a recent addition to the language and might need polyfills to support old browsers</p>
-</div></div><p></p>
+</div>
+            </div>
+        <p></p>
+<p>
+            </p><div class="tooltips">
+                
+        <div class="alert alert-info hints-alert">
+            <div class="hints-icon"><i class="fa fa-info-circle"></i></div>
+            <div class="hints-container"><p>这是语言中的一项新功能，可能需要使用 polyfills 来支持旧浏览器</p>
+</div>
+        </div>
+    
+                <div class="tooltipstext-bottom"><p>It's a recent addition to the language and might need polyfills to support old browsers</p>
+</div>
+            </div>
+        <p></p>
 
                                 
                                 </section>
@@ -1174,7 +1788,7 @@ const result4 = num1 // 11</pre>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"第三章·数值","level":"1.7","depth":1,"next":{"title":"第四章·字符串","level":"1.8","depth":1,"path":"content/Chapter04.md","ref":"content/Chapter04.md","articles":[]},"previous":{"title":"第二章·基础","level":"1.6","depth":1,"path":"content/Chapter02.md","ref":"content/Chapter02.md","articles":[]},"dir":"ltr"},"config":{"plugins":["hints","hide-published-with","chapter-fold","intopic-toc","tooltips","exercises","theme-creative","sharing","@honkit/honkit-plugin-ga","sitemap","favicon-custom","edit-link","ace-editor"],"styles":{"website":".gitbook/css/custom.css"},"pluginsConfig":{"chapter-fold":{},"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"概览"},"search":{},"favicon-custom":{"favicon":"./favicon.ico","appleTouchIconPrecomposed152":"./favicon.ico"},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"tooltips":{},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-creative":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"maxWidth":"800px","showLevel":false,"fontSize":18,"colorSecondary":"#E6D7C1","fontFamily":"'Times New Roman', serif","backgroundColor":"#F9F6F1","textColor":"#3E3E3E","textAlign":"justify","lineHeight":1.6,"colorPrimary":"#D8CFC4"},"highlight":{},"favicon":"favicon.ico","sitemap":{"hostname":"https://javascript.sumankunwar.com.np/"},"@honkit/honkit-plugin-ga":{},"ace-editor":{},"appleTouchIconPrecomposed152":"js.png","exercises":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"","base":"https://github.com/dinglevin/learn-javascript-zh/edit/main"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"Sepia","keywords":"JavaScript tutorial, JavaScript学习教程","author":"Suman Kunwar, dinglevin","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"JavaScript学习教程, 初学者版本","language":"zh-cn","website":"https://learn-javascript.dinglevin.tech/","gitbook":"*","description":"JavaScript学习教程, 初学者版本"},"file":{"path":"content/Chapter03.md","mtime":"2024-10-07T08:10:38.063Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-10-07T08:10:49.404Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"第三章·数值","level":"1.7","depth":1,"next":{"title":"第四章·字符串","level":"1.8","depth":1,"path":"content/Chapter04.md","ref":"content/Chapter04.md","articles":[]},"previous":{"title":"第二章·基础","level":"1.6","depth":1,"path":"content/Chapter02.md","ref":"content/Chapter02.md","articles":[]},"dir":"ltr"},"config":{"plugins":["hints","hide-published-with","chapter-fold","intopic-toc","tooltips","exercises","sharing","sitemap","favicon-custom","edit-link","ace-editor"],"styles":{"website":".gitbook/css/custom.css"},"pluginsConfig":{"chapter-fold":{},"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"概览"},"search":{},"favicon-custom":{"favicon":"./favicon.ico","appleTouchIconPrecomposed152":"./favicon.ico"},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"tooltips":{},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"favicon.ico","sitemap":{"hostname":"https://learn-javascript.dinglevin.tech/"},"ace-editor":{},"appleTouchIconPrecomposed152":"js.png","exercises":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"","base":"https://github.com/dinglevin/learn-javascript-zh/edit/main"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"Sepia","keywords":"JavaScript tutorial, JavaScript学习教程","author":"Suman Kunwar, dinglevin","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"JavaScript学习教程, 初学者版本","language":"zh-cn","website":"https://learn-javascript.dinglevin.tech/","gitbook":"*","description":"JavaScript学习教程, 初学者版本"},"file":{"path":"content/Chapter03.md","mtime":"2024-10-07T16:22:55.341Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-10-07T16:23:04.295Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -1182,6 +1796,50 @@ const result4 = num1 // 11</pre>
         
     <script src="../gitbook/gitbook-plugin-exercises/jsrepl/jsrepl.js" id="jsrepl-script"></script>
     
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
     
@@ -1223,10 +1881,6 @@ const result4 = num1 // 11</pre>
     
         
         <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
-        
-    
-        
-        <script src="../gitbook/@honkit/honkit-plugin-ga/plugin.js"></script>
         
     
         

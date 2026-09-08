@@ -903,7 +903,7 @@ The `nullish` coalescing operator returns the first argument if it's not `null/u
 * if `y` isn’t defined, then `y`.
 {% endtooltips %}
 
-{% tooltips hintStyle="info" %}
+{% tooltips hintStyle="info" direction="top" %}
 这是语言中的一项新功能，可能需要使用 polyfills 来支持旧浏览器
 @@
 It's a recent addition to the language and might need polyfills to support old browsers
